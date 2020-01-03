@@ -5,18 +5,17 @@ Data type is used to define the type of the data we are capturing like integers,
 ### What are the data types are there in java?  
 Int, Boolean, String, Char etc.  
 
+### Sample Programs
 <details>
 <summary>I could use some help...</summary>
 <p>
 
-```c#
-public class Order
-{
-    public int OrderId { get; set; }
-    public int CustomerId { get; set; }
-
-    public List<int> Products { get; set; }
-}
+```java
+class App{  
+    public static void main(String args[]){  
+     System.out.println("Hello Java");  
+    }  
+}  
 ```
 
 </p>
