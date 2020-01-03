@@ -7,7 +7,7 @@ Int, Boolean, String, Char etc.
 
 ### Sample Programs
 <details>
-<summary>I could use some help...</summary>
+<summary>Print Hellow World Program.</summary>
 <p>
 
 ```java
