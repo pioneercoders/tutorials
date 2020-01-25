@@ -2,4 +2,4 @@
 
 | JAVA  |
 | ------------- |
-| [Introduction](../java/)  |
+| [Introduction](./java/1-introduction/introduction_tutorial.md)  |
