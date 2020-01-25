@@ -45,11 +45,7 @@ class App{
 <p>Variables defined with the var keyword in function have "function scope" that is more limited; these are variables that might be accessed only within a function (often the function in which they are defined).</p>
 
 <section >  
-<div ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'html', previewId:'preview',
-	onLoad: htmlcssjsContentOnLoaded,
-	rendererOptions: { fontSize: 16 },
-	advanced: { highlightActiveLine: true}
-}" style="min-height:350px;"><xmp><html>
+<div ace-editor style="min-height:350px;"><xmp><html>
 <head>
 <script language="javascript" type="text/javascript">
 	var pi = 3.45;
