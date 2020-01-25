@@ -45,6 +45,7 @@ class App{
 <p>Variables defined with the var keyword in function have "function scope" that is more limited; these are variables that might be accessed only within a function (often the function in which they are defined).</p>
 
 <section >  
+	<div>my test....</div>
 <div ace-editor style="min-height:350px;"><xmp><html>
 <head>
 <script language="javascript" type="text/javascript">
