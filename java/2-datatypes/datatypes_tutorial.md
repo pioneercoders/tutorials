@@ -25,7 +25,7 @@ class App{
 <summary>Print Welcome to PC Program.</summary>
 <p>
 
-```java --ran
+```java --run
 class App{  
     public static void main(String args[]){  
      System.out.print("Welcome to PC.");  
