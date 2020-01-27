@@ -25,8 +25,8 @@ var bob = {
 ```
 
 More info: [MDN Arrow Functions](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
-
-// How it works?
+```JavaScript
+ How it works?
 
 // this function
 var func = function (param) {
@@ -68,3 +68,4 @@ document.body.addEventListener('click', function (evt) {
 
 // In ES6
 document.body.addEventListener('click', evt=>console.log(evt, this)); // EventObject, BodyElement
+```
