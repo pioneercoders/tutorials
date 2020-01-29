@@ -5,7 +5,7 @@
 
 <section >  
 <div>
-```
+```javascript
 var pi = 3.45;
 p = 3;
 function area(r) {
