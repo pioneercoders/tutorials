@@ -4,38 +4,25 @@
 <p>Variables defined with the var keyword in function have "function scope" that is more limited; these are variables that might be accessed only within a function (often the function in which they are defined).</p>
 
 <section >  
-<div ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'html', previewId:'preview',
-	onLoad: htmlcssjsContentOnLoaded,
-	rendererOptions: { fontSize: 16 },
-	advanced: { highlightActiveLine: true}
-}" style="min-height:350px;"><xmp><html>
-<head>
-<script language="javascript" type="text/javascript">
-	var pi = 3.45;
-	p = 3;
-	function area(r) {
-		var a =  pi * r * r;
-		area = a;
-		return a;
-	}
-	var ar = area(3);
-	console.log("area of circle from variable ar", ar);
-	console.log("variable area value outside function", area);
-	
-	for(var x=0;x<2;x++){
-	}
-	console.log("X value outside for loop:"+x);
-</script>
-</head>
-<body>
-	<h3>Please open the console and see the log </h3>
-<h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
-</body>
-</html></xmp>
-</div>
 <div>
-	<iframe id="preview"></iframe>
+```
+var pi = 3.45;
+p = 3;
+function area(r) {
+	var a =  pi * r * r;
+	area = a;
+	return a;
+}
+var ar = area(3);
+console.log("area of circle from variable ar", ar);
+console.log("variable area value outside function", area);
+
+for(var x=0;x<2;x++){
+}
+console.log("X value outside for loop:"+x);
+```
 </div>
+
 </section>
 
 <p>the fact that the var keyword ensures that a variable created inside of a function is local to that function</p>
