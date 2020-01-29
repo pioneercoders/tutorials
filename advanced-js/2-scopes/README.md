@@ -3,9 +3,7 @@
 <p>Global variables have, unsurprisingly, global scope - they can be accessed (set or read) anywhere in your script.</p>
 <p>Variables defined with the var keyword in function have "function scope" that is more limited; these are variables that might be accessed only within a function (often the function in which they are defined).</p>
 
-<section >  
-<div>
-```javascript
+``` javascript
 var pi = 3.45;
 p = 3;
 function area(r) {
@@ -21,9 +19,6 @@ for(var x=0;x<2;x++){
 }
 console.log("X value outside for loop:"+x);
 ```
-</div>
-
-</section>
 
 <p>the fact that the var keyword ensures that a variable created inside of a function is local to that function</p>
 <p> The let keyword works in a similar fashion but has block-level scope - with for loops and if statements being two common examples of enclosing blocks.</p>
