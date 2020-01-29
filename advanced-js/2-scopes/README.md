@@ -28,41 +28,21 @@ console.log("X value outside for loop:"+x);
 <p>The first thing to understand about let and const is that they are block scoped, compared to var, which is function scoped. This means they are local to the closest block (curly braces) that they are defined in, whereas var is local to the entire function, or even global if defined outside functions.</p> 
 <p>The difference between let and const lies in that the former should be used to hold variables that are subject to change, while const, as the name implies, data that you know will stay constant. In fact, trying to reset a const's value after it's been set will result in an error.</p>
 
-<section >  
-<div ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'html', previewId:'preview1',
-	onLoad: htmlcssjsContentOnLoaded,
-	rendererOptions: { fontSize: 16 },
-	advanced: { highlightActiveLine: true}
-}" style="min-height:350px;"><xmp><html>
-<head>
-<script language="javascript" type="text/javascript">
-	const pi = 3.45;
-	function area(r) {
-		var a =  pi * r * r;
-		return a;
-	}
-	var ar = area(3);
-	console.log("area of circle from variable ar", ar);
-	
-	for(let x=0;x<2;x++){
-		
-	}
-	//we cant access x outside of the loop.
-	//console.log("X value outside for loop:"+x); 
-</script>
-</head>
-<body>
-	<h3>Please open the console and see the log </h3>
-<h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
-</body>
-</html></xmp>
-</div>
-<div>
-	<iframe id="preview1"></iframe>
-</div>
-</section>
+```javascript
+const pi = 3.45;
+function area(r) {
+	var a =  pi * r * r;
+	return a;
+}
+var ar = area(3);
+console.log("area of circle from variable ar", ar);
 
+for(let x=0;x<2;x++){
 
+}
+//we cant access x outside of the loop.
+//console.log("X value outside for loop:"+x); 
+```
 
 
 
