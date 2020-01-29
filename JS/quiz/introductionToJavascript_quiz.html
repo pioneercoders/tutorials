@@ -1,0 +1,59 @@
+<div>
+	<form name="quizForm" ng-init="quizObj = {actAnswers : ['b','a','c','d','a','e','a','c','d'], selAnswers: []}">
+		<div>
+			<h6>1.Who was the creator of JavaScript</h6>
+			<options values='{"values":["John Resig","Brendan Eich","Chris Beard","Rasmus Lerdorf"]}' 
+			bind-model='quizObj.selAnswers' id="0"></options>
+		</div>
+		<br>
+		<div>
+			<h6>2.What is the earlier name of JavaScript</h6>
+			<options values='{"values":["Mocha","Macro","Maacho","Macho"]}' 
+			bind-model='quizObj.selAnswers' id="1"></options>
+		</div>
+		<br>
+		<div>
+			<h6>3.JavaScript is___________</h6>
+			<options values='{"values":["Object oriented programming language","Procedural  Language","Object based programming language","Non-Procedural Language"]}' 
+			bind-model='quizObj.selAnswers' id="2"></options>
+		</div>
+		<br>
+		<div>
+			<h6>4.In this JavaScript Features?</h6>
+			<options values='{"values":["Lightweight","interpreted","cross-platform","All above"]}' 
+			bind-model='quizObj.selAnswers' id="3"></options>
+		</div>
+		<br>
+		<div>
+			<h6>5.JavaScript widely used at client side validations?</h6>
+			<options values='{"values":["True","false"]}' 
+			bind-model='quizObj.selAnswers' id="4"></options>
+		</div>
+		<br>
+		<div>
+			<h6>6.Main advantages of JavaScript</h6>
+			<options values='{"values":["Less server interaction","Immediate feedback to the visitors","Increased interactivity","Richer interfaces","All the above"]}' 
+			bind-model='quizObj.selAnswers' id="5"></options>
+		</div>
+		<br>
+		<div>
+			<h6>7.In this which tag is used to dovelope JavaScript in HTML page</h6>
+			<options values='{"values":["&lt;script&gt;","&lt;style&gt;","&lt;div&gt;","None"]}' 
+			bind-model='quizObj.selAnswers' id="6"></options>
+		</div>
+		<br>
+		<div>
+			<h6>8.Where we can place JavaScript code in HTML page</h6>
+			<options values='{"values":["&lt;body&gt;","&lt;head&gt;","above a,b&d","Extenal file(.js)"]}' 
+			bind-model='quizObj.selAnswers' id="7"></options>
+		</div>
+		<br>
+		<div>
+			<h6>9.In this list which are limitations of JavaScript</h6>
+			<options values='{"values":["Does not have multithreading","Less server interaction","Cannot access databases","Both a&c","Both a&b"]}' 
+			bind-model='quizObj.selAnswers' id="8"></options>
+		</div>
+		<br>		
+	</form>
+	<div id="results" ng-hide="true" ></div>
+</div>

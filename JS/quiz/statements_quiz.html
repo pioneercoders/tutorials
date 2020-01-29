@@ -1,0 +1,155 @@
+<div>
+	<form name="quizForm" ng-init="quizObj = {actAnswers : ['a','c','b','b','ç','d','a','b','b','e','a','a','b','c','b','a','a','c'], selAnswers: []}">
+		<div>
+			<h6>1.Executable single line of Script is called as</h6>
+			<options values='{"values":["Statement in JavaScript","Breakpoint in JS","Line in Js","None Of these"]}' 
+			bind-model='quizObj.selAnswers' id="0"></options>
+		</div>
+		<br>
+		<div>
+			<h6>2.JavaScript Statements are executed by _</h6>
+			<options values='{"values":["Server","Jvm","Browser","Complailer"]}' 
+			bind-model='quizObj.selAnswers' id="1"></options>
+		</div>
+		<br>
+		<div>
+			<h6>3.Java Statement terminated by ______________ ,</h6>
+			<options values='{"values":["Slash","SemiColon","Comma","fullstop"]}' 
+			bind-model='quizObj.selAnswers' id="2"></options>
+		</div>
+		<br>
+		<div>
+			<h6>4.JavaScript code contain sequence of</h6>
+			<options values='{"values":["HTML Tags","All of these","Method Calls","Executable Statements"]}' 
+			bind-model='quizObj.selAnswers' id="3"></options>
+		</div>
+		<br>
+		<div>
+			<h6>5.Multiple JS statements are written inside pair of ________ to form a statement block.</h6>
+			<options values='{"values":["Pair of Square Brackets","Pair of Round Brackets","Pair of Curly braces","None of the above"]}' 
+			bind-model='quizObj.selAnswers' id="4"></options>
+		</div>
+		<br>
+		<div>
+			<h6>6.In the following list JavaScript Statements are </h6>
+			<options values='{"values":["if","break","continue","switch","All the above"]}' 
+			bind-model='quizObj.selAnswers' id="5"></options>
+		</div>
+		<br>
+		<div>
+			<h6>7.JavaScript if-else statement can be used for?</h6>
+			<options values='{"values":[
+			"It is used to execute the code whether condition is true or false",
+			"It is used to execute one code from multiple expressions",
+			"It is iterates the elements for the fixed number of times",
+			"It is iterates the elements for the infinite number of times."]}' 
+			bind-model='quizObj.selAnswers' id="6"></options>
+		</div>
+		<br>
+		<div>
+			<h6>8.JavaScript Switch statement can be used for?</h6>
+			<options values='{"values":[
+			"It is used to execute the code whether condition is true or false",
+			"It is used to execute one code from multiple expressions",
+			"It is iterates the elements for the fixed number of times",
+			"It is iterates the elements for the infinite number of times."]}' 
+			bind-model='quizObj.selAnswers' id="7"></options>
+		</div>
+		<br>
+		<div>
+			<h6>9.HTML Tags are allowed inside JS. Is this error free code check below code</h6>
+@CODE_START@@HTML@			
+<script type="text/javascript">
+{
+	document.write("<h1>This is a heading</h1>");
+	document.write("<p>This is a paragraph.</p>");
+	document.write("<p>This is another paragraph.</p>");
+}
+</script>@CODE_END@			
+			<options values='{"values":["No","Yes"]}' 
+			bind-model='quizObj.selAnswers' id="8"></options>
+		</div>
+		<br>
+		<div>
+			<h6>10.What are different Type of statements written inside below code.</h6>
+@CODE_START@@HTML@
+<script type="text/javascript">
+    var i = 10;
+    if (i < 10) {
+        document.write("<h1>This is a heading</h1>");
+        document.write("<p>This is a paragraph.</p>");
+        document.write("<p>This is another paragraph.</p>");
+    }
+</script>@CODE_END@			
+			<options values='{"values":["Declaration Statement","Executable Statement","Conditional Statement","Assignment Statement","All Type of Statements are included inside JS Code"]}' 
+			bind-model='quizObj.selAnswers' id="9"></options>
+		</div>
+		<br>
+		<div>
+			<h6>11.What is the purpose of 'else'in if-else </h6>
+			<options values='{"values":[
+			"a block of code to be executed if the condition is false",
+			"a block of code to be executed if a condition is true:",
+			"It Specifies  new condition if the first condition is false:",
+			"All the above"]}' 
+			bind-model='quizObj.selAnswers' id="10"></options>
+		</div>
+		<br>
+		<div>
+			<h6>12.Group of JavaScript Statements is called as?</h6>
+			<options values='{"values":["Statement Block","Group","Cluster","Code Block"]}' 
+			bind-model='quizObj.selAnswers' id="11"></options>
+		</div>
+		<br>
+		<div>
+			<h6>13.Which statement skip the current iteration and execute to the next iterations of the loop.</h6>
+			<options values='{"values":["Break","Continue","Switch","None"]}' 
+			bind-model='quizObj.selAnswers' id="12"></options>
+		</div>
+		<br>
+		<div>
+			<h6>14.What is the purpose of break statement</h6>
+			<options values='{"values":[
+			"skip the current iteration and execute to the next iterations of the loop"
+			,"Continue the current iteration and execute to the next iterations of the loop",
+			"Simply Terminate Loop and takes control out of the loop.",
+			"None of these"]}' 
+			bind-model='quizObj.selAnswers' id="13"></options>
+		</div>
+		<br>
+		<div>
+			<h6>15.The below code shows which kind of statement</h6>
+@CODE_START@@HTML@
+if( marks > 40 ){
+   document.write("Status : Pass");
+}
+@CODE_END@			
+			<options values='{"values":["Declaration","Conditional","Assignment","Executable"]}' 
+			bind-model='quizObj.selAnswers' id="14"></options>
+		</div>
+		<br>
+		<div>
+			<h6>16.Which statements are used to perform certain action depending on the condition.</h6>		
+			<options values='{"values":["Conditional","Assignment","Executable","Declaration"]}' 
+			bind-model='quizObj.selAnswers' id="15"></options>
+		</div>
+		<br>
+		<div>
+			<h6>17.Using _______ statement is how you test for a specific condition</h6>
+			<options values='{"values":["if","Switch","For","Selecct"]}' 
+			bind-model='quizObj.selAnswers' id="16"></options>
+		</div>
+		<br>
+		<div>
+			<h6>18.Which of the following is the structure of an if statement?</h6>
+			<options values='{"values":[
+			" if (conditional expression is true) thenexecute this codeend if",
+			"if (conditional expression is true)execute this codeend if",
+			"if (conditional expression is true)   {then execute this code}",
+			"if (conditional expression is true) then {execute this code}"]}' 
+			bind-model='quizObj.selAnswers' id="16"></options>
+		</div>
+		<br>		
+	</form>
+	<div id="results" ng-hide="true" ></div>
+</div>

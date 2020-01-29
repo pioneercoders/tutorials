@@ -1,0 +1,10 @@
+<div>
+	<form name="quizForm" ng-init="quizObj = {actAnswers : ['a','e','b','c','c','a','d','b','d'], selAnswers: []}">
+			<div>
+				<h6> Inside which HTML element do we put the JavaScript?</h6>
+				<options values='{"values":["<js>","<'script'>","<scripting>","<javascript>"]}' 
+				bind-model='quizObj.selAnswers' id="0"></options>
+			</div>
+	</form>
+	<div id="results" ng-hide="true" ></div>
+</div>

@@ -1,0 +1,45 @@
+<div>
+	<form name="quizForm" ng-init="quizObj = {actAnswers : ['a','b','c','d','b'], selAnswers: []}">
+		<div>
+			<h6>1.What is the Purpose of for loop</h6>
+			<options values='{"values":[
+			"It iterates the elements for the fixed number of times.",
+			"It iterates the elements for the infinite number of times.",
+			"It is used to execute the code whether condition is true or false.",
+			"It is used to execute one code from multiple expressions."]}' 
+			bind-model='quizObj.selAnswers' id="0"></options>
+		</div>
+		<br>
+		<div>
+			<h6>2.What are the three important manipulations done in a for loop on a loop variable?</h6>
+			<options values='{"values":["Updation, Incrementation, Initialization","Initialization,Testing, Updation","Testing, Updation, Testing","Initialization,Testing, Incrementation"]}' 
+			bind-model='quizObj.selAnswers' id="1"></options>
+		</div>
+		<br>
+		<div>
+			<h6>3.What is the output of following for loop</h6>
+@CODE_START@@HTML@var i=1;
+for (i=1;;i++)
+{
+	document.write("The number is " + i)
+}@CODE_END@			
+			<options values='{"values":["1","Error","Infinet Loop","None"]}' 
+			bind-model='quizObj.selAnswers' id="2"></options>
+		</div>
+		<br>
+		<div>
+			<h6>4.For loop body contains________</h6>
+			<options values='{"values":["Initialization","Test conditions","Incrementation","All"]}' 
+			bind-model='quizObj.selAnswers' id="3"></options>
+		</div>
+		<br>
+		<div>
+			<h6>5.In Which loop,the condition is not evaluated until the end of each loop.</h6>
+			<options values='{"values":["While","Do While","For","If"]}' 
+			bind-model='quizObj.selAnswers' id="4"></options>
+		</div>
+		<br>
+		<div>		
+	</form>
+	<div id="results" ng-hide="true" ></div>
+</div>

@@ -1,0 +1,34 @@
+<div>
+	<form name="quizForm" ng-init="quizObj = {actAnswers : ['d','b','b','b','a'], selAnswers: []}">
+		<div>
+			<h6>1.Which of the following are the features of javascript?</h6>
+			<options values='{"values":["Light Weighted","High Level","Client side(user's input) validation","All the above"]}' 
+			bind-model='quizObj.selAnswers' id="0"></options>
+		</div>
+		<br>
+		<div>
+			<h6>2.Is Javascript is a non case sensitive programming language?</h6>
+			<options values='{"values":["True","False"]}' 
+			bind-model='quizObj.selAnswers' id="1"></options>
+		</div>
+		<br>
+		<div>
+			<h6>3.Clint Side programming increases the performance</h6>
+			<options values='{"values":["True","False"]}' 
+			bind-model='quizObj.selAnswers' id="2"></options>
+		</div>
+		<br>
+		<div>
+			<h6>4.Is Javascript provide Security to the application?</h6>
+			<options values='{"values":["True","False"]}' 
+			bind-model='quizObj.selAnswers' id="3"></options>
+		</div>
+		<br>
+		<div>
+			<h6>5.who developed the javascript?</h6>
+			<options values='{"values":["Netscape","Google","Oracle","MIT Lab"]}' 
+			bind-model='quizObj.selAnswers' id="4"></options>
+		</div>		
+	</form>
+	<div id="results" ng-hide="true" ></div>
+</div>

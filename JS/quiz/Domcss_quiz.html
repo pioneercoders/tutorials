@@ -1,0 +1,36 @@
+<div>
+	<form name="quizForm" ng-init="quizObj = {actAnswers : ['a','b','d','a','b'], selAnswers: []}">
+		<div>
+			<h6>1.How to change the style of the HTML element</h6>
+			<options values='{"values":["document.getElementById(id).style.property = new style","document().style.property=new style"]}' 
+			bind-model='quizObj.selAnswers' id="0"></options>
+		</div>
+		<br>
+		
+		<div>
+			<h6>2.DOM full form</h6>
+			<options values='{"values":["Documents Object Model","Document Object Model","Document Objects Model"]}' 
+			bind-model='quizObj.selAnswers' id="1"></options>
+		</div>
+		<br>
+		<div>
+			<h6>3.The _______________  property is used to get as well as set the inline style of an element.</h6>
+			<options values='{"values":["HTMLElement.style ","HTMLsetAttribute","elt.style.cssText","All the above"]}' 
+			bind-model='quizObj.selAnswers' id="2"></options>
+		</div>
+		<br>
+		<div>
+			<h6>4.The _______________ connects web pages to scripts or programming languages.</h6>
+			<options values='{"values":["Document Object Model","Browser Object Model","Both"]}' 
+			bind-model='quizObj.selAnswers' id="3"></options>
+		</div>
+		<br>
+		<div>
+			<h6>5.Styles should be set by assigning a string directly to the style property</h6>
+			<options values='{"values":["True","false"]}' 
+			bind-model='quizObj.selAnswers' id="4"></options>
+		</div>	
+	
+	</form>
+	<div id="results" ng-hide="true" ></div>
+</div>

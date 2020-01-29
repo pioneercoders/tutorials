@@ -1,0 +1,42 @@
+<div>
+	<form name="quizForm" ng-init="quizObj = {actAnswers : ['c','b','a'], selAnswers: []}">
+
+			<h6>1.The below program shows which type of JavaScript style</h6>
+@CODE_START@@HTML@<!DOCTYPE html>
+<html>
+<form>
+	<input type="button" value="Click" onclick="alert('Button Clicked')"/>
+</form>
+</html>@CODE_END@				
+			<options values='{"values":["External style","internal style","inline style","None"]}' 
+			bind-model='quizObj.selAnswers' id="9"></options>
+		</div>
+		<br>
+		<div>
+			<h6>2.The below program shows which type of JavaScript style</h6>
+@CODE_START@@HTML@<!DOCTYPE html>
+<html>
+<head> 
+<script>
+function msg()
+{
+	alert("Welcome");
+}
+</script>
+</head>
+<form>
+<input type="button" value="Click" onclick="msg()"/>
+</form>
+</html>@CODE_END@				
+			<options values='{"values":["External style","internal style","inline style","None"]}' 
+			bind-model='quizObj.selAnswers' id="10"></options>
+		</div>
+		<br>
+		<div>
+			<h6>3.Scripting Language is</h6>
+			<options values='{"values":["High Level Programming language"," Assembly Level programming language"," Machine level programming language","None of these"]}' 
+			bind-model='quizObj.selAnswers' id="12"></options>
+		</div>	
+	</form>
+	<div id="results" ng-hide="true" ></div>
+</div>

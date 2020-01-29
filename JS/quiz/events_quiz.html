@@ -1,0 +1,118 @@
+<div>
+	<form name="quizForm" ng-init="quizObj = {actAnswers : ['c','b','a','a','c','d','a','c','d','a','a','c','d','a'], selAnswers: []}">
+		<div>
+			<h6>1.Which of the following is true about variable naming conventions in JavaScript?</h6>
+			<options values='{"values":["You should not use any of the JavaScript reserved keyword as variable name.","JavaScript variable names should not start with a numeral (0-9).","Both of the above.","None of the above."]}' 
+			bind-model='quizObj.selAnswers' id="0"></options>
+		</div>
+		<br>
+		<div>
+			<h6>2.Which of the following type of variable is visible only within a function where it is defined?</h6>
+			<options values='{"values":["global variable","local variable","Both of the above.","None of the above."]}' 
+			bind-model='quizObj.selAnswers' id="1"></options>
+		</div>
+		<br>
+		<div>
+			<h6>3.What are variables used for in JavaScript Programs?</h6>
+			<options values='{"values":["Storing numbers, dates, or other values","Varying randomly","Causing high-school algebra flashbacks","None of the above."]}' 
+			bind-model='quizObj.selAnswers' id="2"></options>
+		</div>
+		<br>
+		<div>
+			<h6>4.Variable can hold ________ value at a time</h6>
+			<options values='{"values":["Single","Multiple","Double","None"]}' 
+			bind-model='quizObj.selAnswers' id="3"></options>
+		</div>
+		<br>
+		<div>
+			<h6>5.Integer Variable is declared using following syntax in JavaScript.</h6>
+			<options values='{"values":["Integer num;","int num;","var num;","integer num;"]}' 
+			bind-model='quizObj.selAnswers' id="4"></options>
+		</div>
+		<br>
+		<div>
+			<h6>6.We can declare ___________ at a time. Select most appropriate option.</h6>
+			<options values='{"values":["One Variable Only","None","More than One Variables","One or more Variables"]}' 
+			bind-model='quizObj.selAnswers' id="5"></options>
+		</div>
+		<br>
+		<div>
+			<h6>7.We can declare all type of variables in JavaScript with the keyword _____________.</h6>
+			<options values='{"values":["var","None","Obj","jvar"]}' 
+			bind-model='quizObj.selAnswers' id="6"></options>
+		</div>
+		<br>
+		<div>
+			<h6>8.Below statement is called</h6>
+@CODE_START@@HTML@var num;@CODE_END@			
+			<options values='{"values":["Instantization","Globalization","Declaration","Initialization"]}' 
+			bind-model='quizObj.selAnswers' id="7"></options>
+		</div>
+		<br>
+		<div>
+			<h6>9.Variable name contain following type of characters 
+			1.Alpahbet<br>
+			2.Digits<br>
+			3.Underscore<br>
+			4.Special Characters
+			</h6>
+			<options values='{"values":["3 4 2","4 3 1","1 2 3 4","1 2 3"]}' 
+			bind-model='quizObj.selAnswers' id="8"></options>
+		</div>
+		<br>
+		<div>
+			<h6>10.Spaces,Punctuation marks are called as __________ Symbols in JavaScript</h6>
+			<options values='{"values":["Special","Punctual","None","Mandetory"]}' 
+			bind-model='quizObj.selAnswers' id="9"></options>
+		</div>
+		<br>
+		<div>
+			<h6>11.Java Script Variable should be Case</h6>
+			<options values='{"values":["Sensitive","InSensitive"]}' 
+			bind-model='quizObj.selAnswers' id="10"></options>
+		</div>
+		<br>
+		<div>
+			<h6>12.What is the output of the following code</h6>
+@CODE_START@@HTML@<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		var x = "5";
+		var y = 6;
+		var z = x + y;
+		document.write(x + "<br>");
+		document.write(y + "<br>");
+		document.write(z + "<br>");
+	</script>
+</body>
+</html>@CODE_END@			
+			<options values='{"values":["5611","5600","5656","5658"]}' 
+			bind-model='quizObj.selAnswers' id="11"></options>
+		</div>
+		<br>
+		<div>
+			<h6>13.What is the output of the following code</h6>
+@CODE_START@@HTML@<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		var x = 12.45;
+		var y = 1;
+		var z = '8' + x + y;
+		document.write(z + "<br>");
+	</script>
+</body>
+</html>@CODE_END@			
+			<options values='{"values":["21.450","21.451","812.450","812.451"]}' 
+			bind-model='quizObj.selAnswers' id="12"></options>
+		</div>
+		<div>
+			<h6>14._________ keyword is used to declare variables in javascript.</h6>
+			<options values='{"values":["var","Dim","None","String"]}' 
+			bind-model='quizObj.selAnswers' id="13"></options>
+		</div>
+		<br>		
+	</form>
+	<div id="results" ng-hide="true" ></div>
+</div>

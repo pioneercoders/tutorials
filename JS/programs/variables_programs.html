@@ -1,0 +1,154 @@
+<pc-accordion>
+	<accordion-item>
+		<accordion-title>1.Declare the employee information using Javascrip variables</accordion-title>
+		<accordion-content>
+@CODE_START@@HTML@<!DOCTYPE html>
+<html>
+	<body>
+		<script>
+			var empName;
+			var empID;
+			var empEmail;
+			var empMobileNo;
+			var empAddress;
+			var empState
+			var empPincode;
+		</script>
+	</body>
+</html>@CODE_END@
+
+		</accordion-content>
+		</accordion-item>
+		<accordion-item>
+		<accordion-title>2. Initialize and display above mentioned variables using JS</accordion-title>
+		<accordion-content>
+@CODE_START@@HTML@<!DOCTYPE html>
+<html>
+	<body>
+		<script>
+			var empName = "Shekar";
+			var empId = 1415;
+			var empEmail = shekar4532@gmail.com;
+			var empMobileNo = 9876543210;
+			var empAddress = "Bangalore";
+			var empState = "Karnataka";
+			var empPincode = 454884;
+			document.writeln(empName);
+			document.writeln(empId);
+			document.writeln(empEmail);
+			document.writeln(empMobileNo);
+			document.writeln(empAddress);
+			document.writeln(empState);
+			document.writeln(empPincode);
+		</script>
+	</body>
+</html>@CODE_END@
+<div class="output-panel">
+		<p>Shekar</p>
+		<p>1415</p>
+		<p>shekar4532@gmail.com</p>
+		<p>9876543210</p>
+		<p>Bangalore</p>
+		<p>Karnataka</p>
+		<p>454884</p>
+</div>
+		</accordion-content>
+		</accordion-item>
+		<accordion-item>
+		<accordion-title>3. declare,initialize and display 5 employees salares</accordion-title>
+		<accordion-content>
+@CODE_START@@HTML@<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		var empName = "sudheer";
+		var empSalary = 13233.84;
+		var empName1 = "Srikanth";
+		var empSalary1 = 9999.484;
+		var empName2 = "Raju";
+		var empSalary2 = 10933.484;
+		var empName3 = "Sandeep";
+		var empSalary3 = 15000;
+		var empName4 = "Mahesh";
+		var empSalary4 = 9090.89;
+		var empName5 = "Naveen";
+		var empSalary5 = 40000;
+		document.writeln(empName+" "+empSalary+"<br>");
+		document.writeln(empName1+" "+empSalary1+"<br>");
+		document.writeln(empName2+" "+empSalary2+"<br>");
+		document.writeln(empName3+" "+empSalary3+"<br>");
+		document.writeln(empName4+" "+empSalary4+"<br>");
+		document.writeln(empName5+" "+empSalary5+"<br>");
+	</script>
+</body>
+</html>@CODE_END@
+<div class="output-panel">
+		<p>
+			sudheer 13233.84<br>
+			Srikanth 9999.484<br>
+			Raju 10933.484<br>
+			Sandeep 15000<br>
+			Mahesh 9090.89<br>
+			Naveen 40000<br>
+		</p>	
+</div>
+		</accordion-content>
+		</accordion-item>
+			<accordion-item>
+		<accordion-title>4.add the above mentioned employees salaries and calculate average.</accordion-title>
+		<accordion-content>
+@CODE_START@@HTML@<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		var empName = "sudheer";
+		var empSalary = 13233.84;
+		var empName1 = "Srikanth";
+		var empSalary1 = 9999.484;
+		var empName2 = "Raju";
+		var empSalary2 = 10933.484;
+		var empName3 = "Sandeep";
+		var empSalary3 = 15000;
+		var empName4 = "Mahesh";
+		var empSalary4 = 9090.89;
+		var empName5 = "Naveen";
+		var empSalary5 = 40000;
+		var sum = empSalary+empSalary1+empSalary2+empSalary3+empSalary4+empSalary5;
+		document.writeln("sum ="+sum);
+		document.writeln("average ="+sum/5);
+	</script>
+</body>
+</html>@CODE_END@
+<div class="output-panel">
+	<p>sum =98257.698</p>
+	<p>average = 19651.5396</p>
+</div>
+		</accordion-content>
+		</accordion-item>
+				<accordion-item>
+		<accordion-title>5. proove how the Javascript variables are dynamic? </accordion-title>
+		<accordion-content>
+@CODE_START@@HTML@<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		var name = "kumar";
+		document.writeln(name);
+		name = "shiva";
+		document.writeln(name);
+		var mobileNo = 9876543210; // previous value will be replaced with new value
+		document.writeln(mobileNo);
+		 mobileNo = 9876543012;
+		document.writeln(mobileNo);
+	</script>
+</body>
+</html>@CODE_END@
+<div class="output-panel">
+	<p>kumar</p>
+	<p>shiva</p>
+	<p>9876543210</p>
+	<p>9876543012</p>
+</div>
+		</accordion-content>
+		</accordion-item>
+</pc-accordion>

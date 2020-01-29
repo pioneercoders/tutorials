@@ -1,0 +1,78 @@
+<!-- widget Quiz  -->	
+
+<div>
+	<form name="quizForm" ng-init="quizObj = {actAnswers : ['a','b','a','d','c','a','b','a','c','d'], selAnswers: []}">
+		<div>
+			<h6>1. Date in javascript is </h6>
+			<options values='{"values":["built in datatype object","built in datatype variable","built in datatype constructor","all the above"]}' 
+			bind-model='quizObj.selAnswers' id="0"></options>
+		</div>
+		<br>
+		
+		<div>
+			<h6>2. Which of the follwing are correct </h6>
+			<p>i). Date date=new Date()</p>
+			<p>ii). var date= new Date();</p>
+			<p>ii). var date = new date(today);</p>
+			<options values='{"values":["i,ii and iii","only ii","only i and ii","only iii"]}' 
+			bind-model='quizObj.selAnswers' id="1"></options>
+		</div>
+		<br>
+		
+		<div>
+			<h6>3. Which of the following wil print current date and time object? </h6>
+			<options values='{"values":["new Date()","new Date(today)","new Date(currentDate)","new Date(now)"]}' 
+			bind-model='quizObj.selAnswers' id="2"></options>
+		</div>
+		<br>
+		<div>
+			<h6>4. Which among the following are correct?</h6>
+			<options values='{"values":["the date can be String"," The date string should be in a format recognized by the Date.parse() method","date cannot be string","a and b","both b and c"]}' 
+			bind-model='quizObj.selAnswers' id="3"></options>
+		</div>
+		<br>
+		
+		<div>
+			<h6>5. If no arguments are provided to the string object. then what is the output of new Date();</h6>
+			<options values='{"values":["only current date will be displayed according to system settings","only current time will be displayed according to system settings","current date and time according to system settings.","Error"]}' 
+			bind-model='quizObj.selAnswers' id="4"></options>
+		</div>
+		<br>
+		
+		<div>
+			<h6>6. The JavaScript date is based on a time value that is milliseconds since </h6>
+			<options values='{"values":["midnight 01 January, 1970 UTC","midnight 10 January, 1979 UTC","01 January, 1971 UTC","midday 01 January, 1975 UTC"]}' 
+			bind-model='quizObj.selAnswers' id="5"></options>
+		</div>
+		<br>
+		<div>
+			<h6>7. What is the output of var date=Date();</h6>
+			<options values='{"values":["return a Object representing the current date and time.","return a string representing the current date and time.","return a string representing the current date","return a integer representing the current date and time."]}' 
+			bind-model='quizObj.selAnswers' id="6"></options>
+		</div>
+		<br>
+		<div>
+			<h6>8. How to print the year from Date object</h6>
+			<options values='{"values":["new Date().getFullYear()","new Date().getYear()","Date().getFullYear()","new Date().FullYear()"]}' 
+			bind-model='quizObj.selAnswers' id="7"></options>
+		</div>
+		<br>
+		
+		<div>
+			<h6>9. How print date from Date object</h6>
+			<options values='{"values":["new Date().date()","Date().date()","new Date().getDate()","new Date().getFullDate()"]}' 
+			bind-model='quizObj.selAnswers' id="8"></options>
+		</div>
+		<br>
+		
+		<div>
+			<h6>10. How to print the month from Date object</h6>
+			<options values='{"values":["new Date().getFullMonth()","new Date().month","Date().getmontn()","new Date().getMonth()"]}' 
+			bind-model='quizObj.selAnswers' id="9"></options>
+		</div>
+		<br>
+	</form>
+	<div id="results" ng-hide="true" ></div>
+</div>
+	
+<!-- widget Quiz post -->

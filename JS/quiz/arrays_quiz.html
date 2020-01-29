@@ -1,0 +1,79 @@
+<!-- widget Quiz  -->	
+
+<div>
+	<form name="quizForm" ng-init="quizObj = {actAnswers : ['d','b','a','b','a','a','b','b','b','b','d'], selAnswers: []}">
+		<div>
+			<h6>1. Array is a collections of</h6>
+			<options values='{"values":["Heterogenious elements","Homogenious elements","same type of elements","b and c"]}' 
+			bind-model='quizObj.selAnswers' id="0"></options>
+		</div>
+		<br>
+		
+		<div>
+			<h6>2. How to find the length of an array(array[10]).</h6>
+			<options values='{"values":["array.length();","array.length;","array.length()-1","length(array);"]}' 
+			bind-model='quizObj.selAnswers' id="1"></options>
+		</div>
+		<br>
+		
+		<div>
+			<h6>3. Given an array, var myArray=[3,4,5,3]; how to find the first element of the array?</h6>
+			<options values='{"values":["myArray[0]","myArray[1]","myArray","None of these"]}' 
+			bind-model='quizObj.selAnswers' id="2"></options>
+		</div>
+		<br>
+		<div>
+			<h6>4. Given an array, var myArray=[3,4,5,3]; how to find the last element of the array?</h6>
+			<options values='{"values":["myArray[10]","myArray[length-1]","lastElement(myArray)","None of these"]}' 
+			bind-model='quizObj.selAnswers' id="3"></options>
+		</div>
+		<br>
+		
+		<div>
+			<h6>5. var array=['2',"3",'3']; what is the value of array[0]</h6>
+			<options values='{"values":["2","Error","no error","3"]}' 
+			bind-model='quizObj.selAnswers' id="4"></options>
+		</div>
+		<br>
+		
+		<div>
+			<h6>6. var array=['2',"3",'s']; what is the value of array[2]</h6>
+			<options values='{"values":["s","3","Error","NO error"]}' 
+			bind-model='quizObj.selAnswers' id="5"></options>
+		</div>
+		<br>
+		<div>
+			<h6>7. var array=[2,3,s]; </h6>
+			<options values='{"values":["s","s is not defined","2","No error"]}' 
+			bind-model='quizObj.selAnswers' id="6"></options>
+		</div>
+		<br>
+		<div>
+			<h6>8.  var array=['a','e','i','o','u']; array[5]=?</h6>
+			<options values='{"values":["u","undefined","Error","None of these"]}' 
+			bind-model='quizObj.selAnswers' id="7"></options>
+		</div>
+		<br>
+		<div>
+			<h6>9. How to remove the last element of the array</h6>
+			<options values='{"values":["remove","pop","push","delete"]}' 
+			bind-model='quizObj.selAnswers' id="8"></options>
+		</div>
+		<br>
+		<div>
+			<h6>10.How to add element to the array</h6>
+			<options values='{"values":["insert","push","stack","append"]}' 
+			bind-model='quizObj.selAnswers' id="9"></options>
+		</div>
+		<br>
+		<div>
+			<h6>11.How do you delete an element from an options array?</h6>
+			<options values='{"values":["Set it to false.","Set it to undefined.","Set it to -1","Set it to null"]}' 
+			bind-model='quizObj.selAnswers' id="10"></options>
+		</div>
+		<br>
+	</form>
+	<div id="results" ng-hide="true" ></div>
+</div>
+	
+<!-- widget Quiz post -->

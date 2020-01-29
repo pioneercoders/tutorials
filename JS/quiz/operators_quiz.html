@@ -1,0 +1,119 @@
+<div>
+	<form name="quizForm" ng-init="quizObj = {actAnswers : ['a','c','b','d','a','b','c','d','d','d','c','a','c','d'], selAnswers: []}">
+		<div>
+			<h6>1.Arthematic Operators are________</h6>
+			<options values='{"values":["+ &#44; - &#44; * &#44; /",
+			"== &#44; != &#44; > &#44; < ",
+			"& &#44; | &#44; ^ &#44; ~",
+			"= &#44; += &#44; *= &#44; %="]}' 
+			bind-model='quizObj.selAnswers' id="0"></options>
+		</div>
+		<br>
+		<div>
+			<h6>2.Bitwise Operators are________</h6>
+			<options values='{"values":["+ &#44; - &#44; * &#44; /",
+			"== &#44; != &#44; > &#44; < ",
+			"& &#44; | &#44; ^ &#44; ~",
+			"= &#44; += &#44; *= &#44; %="]}' 
+			bind-model='quizObj.selAnswers' id="1"></options>
+		</div>
+		<br>
+		<div>
+			<h6>3.Comparision Operators are________</h6>
+			<options values='{"values":["+ &#44; - &#44; * &#44; /",
+			"== &#44; != &#44; > &#44; < ",
+			"& &#44; | &#44; ^ &#44; ~",
+			"= &#44; += &#44; *= &#44; %="]}' 
+			bind-model='quizObj.selAnswers' id="2"></options>
+		</div>
+		<br>
+		<div>
+			<h6>4.Assignment Operators are________</h6>
+			<options values='{"values":["+ &#44; - &#44; * &#44; /",
+			"== &#44; != &#44; > &#44; < ",
+			"& &#44; | &#44; ^ &#44; ~",
+			"= &#44; += &#44; *= &#44; %="]}' 
+			bind-model='quizObj.selAnswers' id="3"></options>
+		</div>
+		<br>
+		<div>
+			<h6>5.Assignment Operators is following type of operator</h6>
+			<options values='{"values":["Binary","Unary","Ternary","None"]}' 
+			bind-model='quizObj.selAnswers' id="4"></options>
+		</div>
+		<br>
+		<div>
+			<h6>6."Add and Assignment" operator is shown by this symbol.</h6>
+			<options values='{"values":["+==","+=","==+","=+"]}' 
+			bind-model='quizObj.selAnswers' id="5"></options>
+		</div>
+		<br>
+		<div>
+			<h6>7."===" Operator is _____</h6>
+			<options values='{"values":["Is equal to","None of these","Is identical (is equal to and is of the same type)","Is identical (is equal to and is of the different type)"]}' 
+			bind-model='quizObj.selAnswers' id="6"></options>
+		</div>
+		<br>
+		<div>
+			<h6>8."+=" operator can operate on following data values.</h6>
+			<options values='{"values":["Float","String","Integer","All  the above"]}' 
+			bind-model='quizObj.selAnswers' id="7"></options>
+		</div>
+		<br>
+		<div>
+			<h6>9.Which of the following is not an logical operator ?</h6>
+			<options values='{"values":["&&","||","!","|"]}' 
+			bind-model='quizObj.selAnswers' id="8"></options>
+		</div>
+		<br>
+		<div>
+			<h6>10.Which of the following operator is used to concatenate two strings.</h6>
+			<options values='{"values":["Dot","Arrow","Comma","plus"]}' 
+			bind-model='quizObj.selAnswers' id="9"></options>
+		</div>
+		<br>
+		<div>
+			<h6>11."++" is __________ type of operator.</h6>
+			<options values='{"values":["Ternary","Binary","Unary","None"]}' 
+			bind-model='quizObj.selAnswers' id="10"></options>
+		</div>
+		<br>
+		<div>
+			<h6>12.Integer Variable + Character Variable + Undefined Variable = ______________ Value</h6>
+			<options values='{"values":["Undefined Value","Integer","Character","String"]}' 
+			bind-model='quizObj.selAnswers' id="11"></options>
+		</div>
+		<br>
+		<div>
+			<h6>13.What will be the output of the following script?</h6>
+@CODE_START@@HTML@<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		var x = 5;
+        document.write(x == "5");
+    </script>
+</body>
+</html>@CODE_END@			
+			<options values='{"values":["false","5","true","Undefined"]}' 
+			bind-model='quizObj.selAnswers' id="12"></options>
+		</div>
+		<br>
+		<div>
+			<h6>14.What will be the output of the following script?</h6>
+@CODE_START@@HTML@<!DOCTYPE html>
+<html> 
+<body>
+	<script>
+		var x = 5;
+		document.write(x === "5");
+	</script>
+</body>
+</html>@CODE_END@			
+			<options values='{"values":["5","true","1","false"]}' 
+			bind-model='quizObj.selAnswers' id="13"></options>
+		</div>
+		<br>		
+	</form>
+	<div id="results" ng-hide="true" ></div>
+</div>

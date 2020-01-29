@@ -1,0 +1,75 @@
+<!-- widget Quiz  -->	
+
+<div>
+	<form name="quizForm" ng-init="quizObj = {actAnswers : ['a','b','c','a','a','c','a','c','c','b'], selAnswers: []}">
+		<div>
+			<h6>1. Document object represent?</h6>
+			<options values='{"values":["a web page loaded into the web browser","web application loaded into the web browser","both a and b","None of the above"]}' 
+			bind-model='quizObj.selAnswers' id="0"></options>
+		</div>
+		<br>
+		
+		<div>
+			<h6>2. document is the Object of______?</h6>
+			<options values='{"values":["root","window","browser","None of the above"]}' 
+			bind-model='quizObj.selAnswers' id="1"></options>
+		</div>
+		<br>
+		
+		<div>
+			<h6>3. window.document is equivalent to _______? </h6>
+			<options values='{"values":["root","window.browser","document","window.root"]}' 
+			bind-model='quizObj.selAnswers' id="2"></options>
+		</div>
+		<br>
+		<div>
+			<h6>4. What is the DOM syntax for displaying text in javascript</h6>
+			<options values='{"values":["document.write()","document.read","document.print","document.console"]}' 
+			bind-model='quizObj.selAnswers' id="3"></options>
+		</div>
+		<br>
+		
+		<div>
+			<h6>5. Syntax for creating DOM element?</h6>
+			<options values='{"values":["document.createElement(tagName)","document.Element(tagName)","document.createElement()","window.createElement(tagName)"]}' 
+			bind-model='quizObj.selAnswers' id="4"></options>
+		</div>
+		<br>
+		
+		<div>
+			<h6>6. How to access the DOM elements using Id</h6>
+			<options values='{"values":["document.getById","document.byId()","document.getElementById()","document.ElementById()"]}' 
+			bind-model='quizObj.selAnswers' id="5"></options>
+		</div>
+		<br>
+		<div>
+			<h6>7. How to access the DOM elements using className</h6>
+			<options values='{"values":["getElementsByClassName","document.getByClassName","document.ElementsByClassName","document.getElementsByClassName"]}' 
+			bind-model='quizObj.selAnswers' id="6"></options>
+		</div>
+		<br>
+		<div>
+			<h6>8. How to access the DOM elements using Name?</h6>
+			<options values='{"values":["getElementsByName","document.getElements","document.getElementsByName","document.getByName"]}' 
+			bind-model='quizObj.selAnswers' id="7"></options>
+		</div>
+		<br>
+		
+		<div>
+			<h6>9. How to access the DOM elements using tag name?</h6>
+			<options values='{"values":["document.querySelector(myclass);","document.getElementsByTagName(name);"," document.getByTagName(name);","All of the above"]}' 
+			bind-model='quizObj.selAnswers' id="8"></options>
+		</div>
+		<br>
+		
+		<div>
+			<h6>10. How to select the multiple elements?</h6>
+			<options values='{"values":["document.queryAll(&rdquodiv1&rdquo,&rdquodiv2&rdquo);","document.querySelector()","document.querySelectorAll()","document.querySelectorAll(&rdquodiv1&rdquo,&rdquodiv2&rdquo)"]}' 
+			bind-model='quizObj.selAnswers' id="9"></options>
+		</div>
+		<br>
+	</form>
+	<div id="results" ng-hide="true" ></div>
+</div>
+	
+<!-- widget Quiz post -->

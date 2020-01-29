@@ -1,0 +1,34 @@
+<div>
+	<form name="quizForm" ng-init="quizObj = {actAnswers : ['b','a','a','c','b'], selAnswers: []}">
+		<div>
+			<h6>1.Regular expressions can used with the _________methods</h6>
+			<options values='{"values":["Array","String","Number","All the above"]}' 
+			bind-model='quizObj.selAnswers' id="0"></options>
+		</div>
+		<br>
+		<div>
+			<h6>2.Regular Expression is used to get a specified pattern.</h6>
+			<options values='{"values":["True","false"]}' 
+			bind-model='quizObj.selAnswers' id="1"></options>
+		</div>
+		<br>
+		<div>
+			<h6>3.Is  the Regular expressions are patterns used to match character combinations in strings. In JavaScript, regular expressions are also objects.</h6>
+			<options values='{"values":["True ","False"]}' 
+			bind-model='quizObj.selAnswers' id="2"></options>
+		</div>
+		<br>
+		<div>
+			<h6>4.What does {n} describes in Regular expression?</h6>
+			<options values='{"values":["Matches x, or y (if there is no match for x).","Matches at least n occurrences of the preceding expression. N must be a positive integer.","Matches exactly n occurrences of the preceding expression. N must be a positive integer.","All the above"]}' 
+			bind-model='quizObj.selAnswers' id="3"></options>
+		</div>
+		<br>
+		<div>
+			<h6>5.What does x(?!y) describes in Regular expression?</h6>
+			<options values='{"values":["Matches x only if x is not followed by y. This is called a negated lookahead.","Matches x only if x is followed by y. This is called a lookahead.","Matches x and remembers the match, as the following example shows. The parentheses are called capturing parentheses","Where X is a character ranging from A to Z. Matches a control character in a string."]}' 
+			bind-model='quizObj.selAnswers' id="4"></options>
+		</div>		
+	</form>
+	<div id="results" ng-hide="true" ></div>
+</div>

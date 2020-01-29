@@ -1,0 +1,88 @@
+<!-- widget Quiz  -->	
+<div>
+	<form name="quizForm" ng-init="quizObj = {actAnswers : ['a','c','b','d','a','b','a','b','d','b'], selAnswers: []}">
+		<div>
+			<h6>1. Which of the following is(are) true about the Strings</h6>
+				<p>a. String is a sequence of characters</p>
+				<p>b. String is group of characters</p>
+			<options values='{"values":["both a and b","only b","only a","None"]}' 
+			bind-model='quizObj.selAnswers' id="0"></options>
+		</div>
+		<br>
+		
+		<div>
+			<h6>2. Which of the following method are used to create the strings</h6>
+			<options values='{"values":["using String Object","using Object literal","a and b","only a"]}' 
+			bind-model='quizObj.selAnswers' id="1"></options>
+		</div>
+		<br>
+		
+		<div>
+			<h6>3. Which of the following are correct</h6>
+				<p>i). var string = 'hello';</p>
+				<p>ii). var string = "Hello";<p>
+				<p>iii). var string = Hello;<p>
+			<options values='{"values":["only iii","i and ii","only i","only ii"]}' 
+			bind-model='quizObj.selAnswers' id="2"></options>
+		</div>
+		<br>
+		<div>
+			<h6>4. Which of the following is(are) true?</h6>
+			<p>i). var string = new String(""Hello");
+			<p>ii). String string="Hello";
+			<p> iii). String string= new String("Hellow");
+			<options values='{"values":["both i and ii","both i and iii","only ii","only i"]}' 
+			bind-model='quizObj.selAnswers' id="3"></options>
+		</div>
+		<br>
+		
+		<div>
+			<h6>5. javascript method which will return the character at given index</h6>
+			<options values='{"values":["chatAt[index]","string[index]","chatAt[0]","chatAt"]}' 
+			bind-model='quizObj.selAnswers' id="4"></options>
+		</div>
+		<br>
+		
+		<div>
+			<h6>6. Will arithmetic operators(+,-,* and /) apply to strings</h6>
+			<options values='{"values":["Yes","No"]}' 
+			bind-model='quizObj.selAnswers' id="5"></options>
+		</div>
+		<br>
+		<div>
+			<h6>7. What will be the output of following code</h6>
+				<p>var string="hello"</p>
+				<p>var world= "world";
+				console.log(string+string2);
+			<options values='{"values":["helloworld","hello world","Hellow World","hello"]}' 
+			bind-model='quizObj.selAnswers' id="6"></options>
+		</div>
+		<br>
+		<div>
+			<h6>8. What will be the output of following code</h6>
+			<p>var string = "33";</p>
+			<p>var n=1;</p>
+			console.log(string+n);
+			<options values='{"values":["34","331","332","333"]}' 
+			bind-model='quizObj.selAnswers' id="7"></options>
+		</div>
+		<br>
+		
+		<div>
+			<h6>9. What is the built in method for adding two string</h6>
+			<options values='{"values":["add()","addString()","append()","concat()"]}' 
+			bind-model='quizObj.selAnswers' id="8"></options>
+		</div>
+		<br>
+		
+		<div>
+			<h6>10. Javascript built in method for converting uppercase letters into lowercase.</h6>
+			<options values='{"values":["toLower()","toLowerCase()","lowercase()","None of these()"]}' 
+			bind-model='quizObj.selAnswers' id="9"></options>
+		</div>
+		<br>
+	</form>
+	<div id="results" ng-hide="true" ></div>
+</div>
+	
+<!-- widget Quiz post -->

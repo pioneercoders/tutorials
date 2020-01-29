@@ -1,0 +1,28 @@
+<div>
+	<form name="quizForm" ng-init="quizObj = {actAnswers : ['a','c','d','a'], selAnswers: []}">
+		<div>
+			<h6>1.How to declare function?</h6>
+			<options values='{"values":["Function A(){}","Function A{}()","Function A()","Function A{}"]}' 
+			bind-model='quizObj.selAnswers' id="0"></options>
+		</div>
+		<br>
+		<div>
+			<h6>2.What is function in javascript?</h6>
+			<options values='{"values":["It is a block of code designed to perform a particular task","It is executed when something invokes it ","Both a and b","None of the above"]}' 
+			bind-model='quizObj.selAnswers' id="1"></options>
+		</div>
+		<br>
+		<div>
+			<h6>3.When will the Function Invocation is called?</h6>
+			<options values='{"values":["When an event occurs (when a user clicks a button)","When it is invoked (called) from JavaScript code","Automatically (self invoked)","All the above"]}' 
+			bind-model='quizObj.selAnswers' id="2"></options>
+		</div>
+		<br>
+		<div>
+			<h6>4.The function within the function is called?</h6>
+			<options values='{"values":["Nested function","Round function","Sum function","Text function"]}' 
+			bind-model='quizObj.selAnswers' id="3"></options>
+		</div>
+	</form>
+	<div id="results" ng-hide="true" ></div>
+</div>

@@ -1,0 +1,107 @@
+<!-- widget Quiz  -->	
+
+<div>
+	<form name="quizForm" ng-init="quizObj = {actAnswers : ['b','a','a','c','b','b','a','d','c','a'], selAnswers: []}">
+		<div>
+			<h6>1. An object is a collection of variables</h6>
+			<options values='{"values":["true","false","none of the two"]}' 
+			bind-model='quizObj.selAnswers' id="0"></options>
+		</div>
+		<br>
+		
+		<div>
+			<h6>2. Can we store numbers and string in an Object? </h6>
+			<options values='{"values":["Yes","No"]}' 
+			bind-model='quizObj.selAnswers' id="1"></options>
+		</div>
+		<br>
+		
+		<div>
+			<h6>3. which of the following is(are)true</h6>
+				<p>i.Object is a collecion of unstructured data </p>
+				<p>ii). Object can store heterogenius data</p>
+				<p>iii). Object is a collection of key value pairs</p>
+			<options values='{"values":["i,ii and iii","only iii","only ii","both i and iii"]}' 
+			bind-model='quizObj.selAnswers' id="2"></options>
+		</div>
+		<br>
+		<div>
+			<h6>4. what is the Output of the following code?</h6>
+@CODE_START@@HTML@var obj=new Object();
+obj.id=383;
+console.log(object.id);@CODE_END@
+			<options values='{"values":["undefined","383","Error:obect is not defined","None of the above"]}' 
+			bind-model='quizObj.selAnswers' id="3"></options>
+		</div>
+		<br>
+		
+		<div>
+			<h6>5.  what is the Output of the following code?</h6>
+@CODE_START@@HTML@var employee = {
+	employee.id=1;
+	employee.name='John';
+}
+console.log(employee.name);@CODE_END@
+			<options values='{"values":["John","Error","Jo","None of above"]}' 
+			bind-model='quizObj.selAnswers' id="4"></options>
+		</div>
+		<br>
+		
+		<div>
+			<h6>6. what is the Output of the following code?</h6>
+@CODE_START@@HTML@var employee = {
+	id=1,
+	name='John'
+}
+console.log(employee.name);@CODE_END@
+			<options values='{"values":["John","Error","Jo","None of above"]}' 
+			bind-model='quizObj.selAnswers' id="5"></options>
+		</div>
+		<br>
+		<div>
+			<h6>7. what is the Output of the following code?</h6>
+@CODE_START@@HTML@var student = {
+	id:1,
+	name:'John'
+}
+console.log(student.name);@CODE_END@
+			<options values='{"values":["John","Error","undefined","None"]}' 
+			bind-model='quizObj.selAnswers' id="6"></options>
+		</div>
+		<br>
+		<div>
+			<h6>8. How to print the student marks at index=0</h6>
+@CODE_START@@HTML@var student = {
+id:1,
+name:'John',
+marks:[34,65,67]
+}@CODE_END@
+			<options values='{"values":["student[0].marks","student.marks","student[0].marks[0]","student.marks[0]"]}' 
+			bind-model='quizObj.selAnswers' id="7"></options>
+		</div>
+		<br>
+		
+		<div>
+			<h6>9. print student english marks</h6>
+@CODE_START@@HTML@var student = {
+id:1,
+name:'John',
+marks:[{"physics":99},{"sceince":87},{"english":90}],
+hobbies:{"reading":["books","news papers"]}
+}@CODE_END@
+			<options values='{"values":["student.marks.english","student.marks[2]","student.marks[2].english","student.marks"]}' 
+			bind-model='quizObj.selAnswers' id="8"></options>
+		</div>
+		<br>
+		
+		<div>
+			<h6>10. print student hobbie books  </h6>
+			<options values='{"values":["student.hobbies.reading[0]","student.hobbies[0].reading","student[0].hobbies.reading","None"]}' 
+			bind-model='quizObj.selAnswers' id="9"></options>
+		</div>
+		<br>
+	</form>
+	<div id="results" ng-hide="true" ></div>
+</div>
+	
+<!-- widget Quiz post -->
