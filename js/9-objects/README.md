@@ -18,24 +18,24 @@
 </ul>
 
 <h5>Creating the Object using Object literal</h5>
-@CODE_START@@HTML@ var objectName = {
+
+```javascript
+var objectName = {
 	property1:value1,
 	property2:value2,
 	property3:method1
 		.
 		.,
 	propertyN:valueN
-};@CODE_END@
+};
+```
 
-<section>  
-<div ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'html', previewId:'preview',
-	onLoad: htmlcssjsContentOnLoaded,
-	rendererOptions: { fontSize: 16 },
-	advanced: { highlightActiveLine: true}
-}" style="min-height:300px;"><xmp><html>
+```html
+<!DOCTYPE>
+<html>
 <head>
-<script language="javascript" type="text/javascript">
-	var employeeObject = { id: 1, name: "Coding Krishna", address: "Bangalore",
+<script>
+var employeeObject = { id: 1, name: "Coding Krishna", address: "Bangalore",
 		work : function(){
 			console.log("employee is working ...");
 		},
@@ -44,35 +44,35 @@
 			console.log("sleeping...");
 		}
 	};
-	console.log("Employee Id:: ", employeeObject.id)
-	employeeObject.work();
+console.log("Employee Id:: ", employeeObject.id)
+employeeObject.work();
 </script>
 </head>
 <body><h3>Please open the console and see the log </h3>
 	<h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
 </body>
-</html></xmp>
-</div>
+</html>
+```
+
 <div>
 	<iframe id="preview"></iframe>
 </div>
-</section>
+
 
 
 <h5>Creating the Object using Object keyword</h5>
 
 <h5>Syntax</h5>
-@CODE_START@@HTML@<script>var objectName = new Object();
+
+```javascript
+var objectName = new Object();
 	objectName.property1 = value1;
 	objectName.property2 = value2;
-</script>@CODE_END@
+```
 
-<section>  
-<div ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'html', previewId:'preview1',
-	onLoad: htmlcssjsContentOnLoaded,
-	rendererOptions: { fontSize: 16 },
-	advanced: { highlightActiveLine: true}
-}" style="min-height:250px;"><xmp><html>
+
+```html
+<html>
 <head>
 <script language="javascript" type="text/javascript">
 	var student = new Object();
@@ -87,12 +87,14 @@
 <body><h3>Please open the console and see the log </h3>
 	<h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
 </body>
-</html></xmp>
-</div>
+</html>
+```
+
 <div>
 	<iframe id="preview1"></iframe>
 </div>
-</section>
+
+
 
 <h3> JavaScript built-in Objects </h3>
 JavaScript has several built-in or native objects. These objects are accessible anywhere in your program and will work the same way in any browser running in any operating system. </p>
