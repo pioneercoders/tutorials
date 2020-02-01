@@ -5,7 +5,11 @@ console.log("Hellow World.")
 ```
 
 <p>Open text editor write the above code and save the file with <b>.js</b> extention.</p>
-<p><b>Syntax: </b> &lt;filename&gt;.js</p>
+<p><b>Syntax: 
+	
+```javascript
+&lt;filename&gt;.js 
+```
 @IMG_START@NODEJS/helloworld/png@IMG_END@
 
 <h4>Excuting node.js code</h4>
