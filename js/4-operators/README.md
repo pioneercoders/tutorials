@@ -191,6 +191,7 @@ console.log("(a>b) ="+(a>b));
 console.log("(a!=b) ="+(a!=b));
 console.log("(a<=b) ="+(a<=b));
 console.log("(a<=b) ="+(a<=b));
+```
 
 <div>
         <iframe id="preview2"></iframe>
@@ -238,6 +239,7 @@ var orresult = (a >= b) || (c <=	 d);
 console.log("(a >= b) || (c =< d) =", orresult);
 var result = !andresult; 
 console.log("!andresult ="+result);
+```
 
 <div>
         <iframe id="preview3"></iframe>
