@@ -22,7 +22,8 @@
 <p><b>Server-side validation</b> is validation that occurs on the server, after the data has been submitted server-side code is used to validate the data before it is put into the database, and if it is wrong a response is sent back to the client to tell the user what went wrong</p>
 <p>In the real world, developers tend to use a combination of client-side and server-side validation, to be on the safe side.</p>
 <h4>Example: 1</h4>
-@CODE_START@@HTML@<html>
+
+```html
 <body>
 <script>  
 function validateform(){  
@@ -47,10 +48,12 @@ Password: <input type="password" name="password"><br/>
 <input type="submit" value="register">  
 </form>  
 </body>
-</html>@CODE_END@
+</html>
+```
 <div class="min-height-50" id="jsval1"><button type="button"  class="cws-button border-radius bt-color-3 pull-right" ng-click="tryYourSelf('jsval1','js')">Try Yourself</button></div>
+
 <h4>Example: 2</h4>
-@CODE_START@@HTML@<html>
+```html
 <head>
 <title>Form Validation Example</title>
 <script type="text/javascript">
@@ -115,5 +118,6 @@ return( true );
 		</table>
 	</form>
 </body>
-</html>@CODE_END@
+</html>
+```
 <div class="min-height-50" id="jsval2"><button type="button"  class="cws-button border-radius bt-color-3 pull-right" ng-click="tryYourSelf('jsval2','js')">Try Yourself</button></div>
