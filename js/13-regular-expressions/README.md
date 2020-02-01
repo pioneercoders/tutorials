@@ -23,32 +23,40 @@
 	<li>search() method searches the given pattern in the given string and returns the position of pattern in the given string</li>
 	<li>replace() method replaces the provided pattern in the given string and returns the modified string where the pattern is replaced</li>
 </ul>
+
 <h4>Example</h4>
-@CODE_START@@HTML@<script>
-	var string = "Pioneer Coders is a training institute"
-	var index = string.search(/coders/i);
-	document.write(index);
-</script>@CODE_END@
+
+```javascript
+var string = "Pioneer Coders is a training institute"
+var index = string.search(/coders/i);
+document.write(index);
+```
 <div class="min-height-50" id="jsRegExCode1"><button type="button"  class="cws-button border-radius bt-color-3 pull-right" ng-click="tryYourSelf('jsRegExCode1','js')">Try Yourself</button></div>
 <div class="output-panel">
 	<p>8</p>
 </div>
+
 <h4>Example </h4>
-@CODE_START@@HTML@<script>
-	var string = "Welcome Pioneer Coders"
-	var index = string.replace(/Welcome/i,"Training Institute");
-		document.write(index);
-</script>@CODE_END@
+
+```javascript
+var string = "Welcome Pioneer Coders"
+var index = string.replace(/Welcome/i,"Training Institute");
+document.write(index);
+```
+
 <div class="min-height-50" id="jsRegExCode2"><button type="button"  class="cws-button border-radius bt-color-3 pull-right" ng-click="tryYourSelf('jsRegExCode2','js')">Try Yourself</button></div>
 <div class="output-panel">
 	<p>Training Institute Pioneer Coders</p>
 </div>
+
 <h4>Calling the constructor function of the RegExp object</h4>
-@CODE_START@@HTML@<script>
-	var re = new RegExp('Pioneer');
-		document.write(re);
-</script>@CODE_END@
+```javascript
+var re = new RegExp('Pioneer');
+document.write(re);
+```
+
 <div class="min-height-50" id="jsRegExCode3"><button type="button"  class="cws-button border-radius bt-color-3 pull-right" ng-click="tryYourSelf('jsRegExCode3','js')">Try Yourself</button></div>
+
 <h4>Writing a regular expression pattern</h4>
 <p>Brackets: brackets are used to find the range characters.</p>
 <h4>A few Special Characters meaning in Regular Expressions</h4>
@@ -96,7 +104,8 @@
 <table>
 
 <h4>Name Validation Using Regular Expression</h4>
-@CODE_START@@HTML@<html>
+
+```html
 	<head>
 		<style>
 			#errormsg {
@@ -134,7 +143,8 @@
 			}
 		</script>
 	</body>
-</html>@CODE_END@
+```
+
 <div class="min-height-50" id="jsRegExCode5"><button type="button"  class="cws-button border-radius bt-color-3 pull-right" ng-click="tryYourSelf('jsRegExCode5','js')">Try Yourself</button></div>
 <!-- @PROJECT_START@JS/regex@PROJECT_END@
 @PROJECT_START@JS/JS_Validations@PROJECT_END@
