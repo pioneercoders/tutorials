@@ -9,7 +9,7 @@ p = 3;
 function area(r) {
 	var a =  pi * r * r;
 	area = a;
-	return a;
+	return a; 
 }
 var ar = area(3);
 console.log("area of circle from variable ar", ar);
