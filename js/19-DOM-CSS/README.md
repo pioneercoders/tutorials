@@ -1,5 +1,5 @@
-
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/ll3mjjrS2lI" frameborder="0" allowfullscreen></iframe><br>
+[](https://www.youtube.com/embed/ll3mjjrS2lI ':include :type=iframe width=100% height=650px frameborder="0" allowfullscreen')
+	
 
 <h4>DOM CSS</h4>
 <p>adding styles to HTML page  Syntax: element.style = new style </p>
