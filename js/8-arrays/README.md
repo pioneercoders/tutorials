@@ -16,15 +16,13 @@ frameborder="0" allowfullscreen></iframe>
 <h4>Why arrays?</h4>
 <p>For example if we want to store the ten students total marks. We will declare ten variables and we will store the marks.</p>
 
-```html 
-<script>
+```javascript
 	var firstStudentMarks =300;
 	var secondStudentMarks =346;
 	var thirdStudentMarks =321;
 		.
 		.
 	var tenthstudentMarks =432;
-</script>
 ```
 
 <p> for storing ten students total marks above code fine. Now if we want to store the 100 students total marks above mentioned process is bad way of storing 100 students total marks. We can store using above process but it consumes lot of memory and also increases the processing time.
@@ -45,6 +43,7 @@ var myArray2 = [5] // an array with 1 element
 
 
 <h5>Accessing array elemets</h5>
+
 ```javascript
 var firstElement = courses[0]; // JavaScript
 var lastElement = courses[courses.length - 1]; // jQuery
@@ -78,7 +77,7 @@ var lastElement = courses[courses.length - 1]; // jQuery
 	<button type="button" onclick="displayCourseList();">Click Me for Display Course</button>
 </body>
 </html>
-``
+```
 
 <div>
 	<iframe id="preview"></iframe>
@@ -140,7 +139,6 @@ document.write(item+"<br>");
 ```html
 <html>
 <head>
-```javascript
 	var courses = new Array("JavaScript", "jQuery", "AngularJs", "React JS","Node");// array declaration
 	var newLength = courses.push("ES6"); //Add to the end of an Array
 	console.log("newLength ",newLength);
@@ -161,7 +159,6 @@ document.write(item+"<br>");
 		console.log("index ", index, "item ", item);
 		});
 	}	
-```
 </head>
 <body>
 	<button type="button" onclick="displayCourseList();">Click Me for Display Course</button>
