@@ -50,6 +50,7 @@ document.write(index);
 </div>
 
 <h4>Calling the constructor function of the RegExp object</h4>
+
 ```javascript
 var re = new RegExp('Pioneer');
 document.write(re);
