@@ -7,7 +7,11 @@
 		<li><b>require()</b> is used for including url module.</li>
 	</ul>
 <h4>Syntax</h4>
-<b>var url = require('url');</b>
+
+```javascript
+var url = require('url');
+```
+
 <table class="pc-table">
 	<tr>
 		<th>Method</th>
@@ -28,10 +32,6 @@
 </table>
 <h4>Example: Splitting URL into defferent parts.</h4>
 
-
-<section>  
-    <div  ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'javascript', previewId:'preview1',rendererOptions: { fontSize: 16 },advanced: { highlightActiveLine: true}}" style="min-height:150px;"><!-- Try change href value and see -->
-
 ```javascript
 var url = require('url');
 var webAddress = 'http://localhost:9090/home.html?id=1234&name=pc';
@@ -41,8 +41,7 @@ console.log(q.host); //returns 'localhost:9090'
 console.log(q.pathname); //returns '/home.html'
 console.log(q.search); //returns '?id=1234&name=pc'
 ```
-</div>
-</section>
+
 <h4>Example </h4>
 <p>Create two files <b>index.html</b> and <b>home.html</b></p>
 <p><b>index.html</b></p>
