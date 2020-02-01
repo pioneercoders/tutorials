@@ -16,4 +16,7 @@
 <p><b>Open source: </b> Node.js is free</p>
 <p><b>No buffering: </b>Node.js applications never buffer any data.</p>
 <h4>Node.js Concepts</h4>
+
+![nodejsConcepts](../images/nodejsConcepts.PNG)
+
 @IMG_START@NODEJS/nodejsConcepts/png@IMG_END@
