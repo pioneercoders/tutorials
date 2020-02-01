@@ -21,7 +21,9 @@ fs.readFile(fileName [,options], callback)
 <p><b>callback:</b> A function with two parameters err and fd. This will get called when readFile operation completes.</p>
 <h4>Example Reading File.</h4>
 <p>screenshot of <b>myFile.txt</b></p>
-<p>@IMG_START@NODEJS/myFiletxt/png@IMG_END@</p>
+
+![myFiletxt](https://github.com/pioneercoders/pc-tutorials/blob/master/node-js/images/myFiletxt.PNG)
+
 <p><b>Code for reading File</b></p>
 
 ```javascript
@@ -35,7 +37,9 @@ fs = require('fs')
 ```
 
 <h4>Output</h4>
-<p>@IMG_START@NODEJS/readFileOutput/png@IMG_END@</p>
+
+![readFileOutput](https://github.com/pioneercoders/pc-tutorials/blob/master/node-js/images/readFileOutput.PNG)
+
 <h4>Create Files</h4>
 <p>Files can be created using three methods.</p>
 <ul>
