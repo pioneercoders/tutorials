@@ -1,33 +1,23 @@
 
-<pc-accordion>
-	<accordion-item>
-	<accordion-title>1.Write a program to print elements in array?</accordion-title>
-</accordion-content>
-	
-@CODE_START@@JS@var 
-	
+##### 1.Write a program to print elements in array?
+```javascript
 	inputData = [3 , 6, 2, 56];
 	function printArrayElements(numbersArray){
     	for (i=0; i<numbersArray.length;i++){
         console.log(numbersArray[i]);
     	}
 	}
-	printArrayElements(inputData);
-@CODE_END@
-
-<div class="output-panel">
-	<p>3<br>6<br>2<br>56</p>
-	</div>
-	</accordion-content>
-	</accordion-item>
-	<accordion-item>
-	<accordion-title>2.Write a program to find largest element in array?</accordion-title>
-<accordion-content>
+	printArrayElements(inputData);'
+	Outout:
+	3  
+	6  
+	2  
+	5  
+	6
+```
+#### 2.Write a program to find largest element in array?
 		
-	
-	
-@CODE_START@@JS@var 
-		
+```javascript
 	array = [3 , 6, 2, 56, 32, 5, 89, 32];
 	var largest= 0;
 
@@ -41,19 +31,10 @@
 
 	findLargestNumber(array);
 	console.log(largest);
-@CODE_END@
+	Outout: 83
+```
+#### 3.Write a program to find the smallestNumber in array?
 
-
-<div class="output-panel">
-	<p>89</p>
-	</div>
-	</accordion-content>
-	</accordion-item>
-	<accordion-item>
-	<accordion-title>3.Write a program to find the smallestNumber in array?</accordion-title>
-<accordion-content>
-	
-	
 @CODE_START@@JS@var 
 		
 	inputArray = [3, 6, 2, 56, 32, 5, 89, 32];
