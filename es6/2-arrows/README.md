@@ -13,7 +13,7 @@ nums.forEach(v => {
     fives.push(v);
 });
 
-// Lexical this
+// Lexical this  
 var bob = {
   _name: "Bob",
   _friends: [],
