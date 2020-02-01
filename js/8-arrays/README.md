@@ -136,9 +136,11 @@ document.write(item+"<br>");
 
 
 <h4>Important methods in array</h4>
+
 ```html
 <html>
 <head>
+	<script>
 	var courses = new Array("JavaScript", "jQuery", "AngularJs", "React JS","Node");// array declaration
 	var newLength = courses.push("ES6"); //Add to the end of an Array
 	console.log("newLength ",newLength);
@@ -158,7 +160,8 @@ document.write(item+"<br>");
 		courses.forEach(function (item, index, array) {
 		console.log("index ", index, "item ", item);
 		});
-	}	
+	}
+	</script>
 </head>
 <body>
 	<button type="button" onclick="displayCourseList();">Click Me for Display Course</button>
