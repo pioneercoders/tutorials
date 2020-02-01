@@ -57,8 +57,11 @@ http.createServer(function (req, res) {
 ```
 
 <h4>Output</h4>
-@IMG_START@NODEJS/nodeurl/png@IMG_END@
-@IMG_START@NODEJS/nodeurl2/png@IMG_END@
+
+![nodeurl](https://github.com/pioneercoders/pc-tutorials/blob/master/node-js/images/nodeurl.PNG)
+
+![nodeurl2](https://github.com/pioneercoders/pc-tutorials/blob/master/node-js/images/nodeurl2.PNG)
+
 <p>we can observe from above output that after domain name we have urls <b>users and list</b></p>
 <h4>Split the Query String</h4>
 <h4>Example</h4>
@@ -74,4 +77,7 @@ http.createServer(function (req, res) {
 ```
 
 <h4>URL</h4>
-@CODE_START@@HTML@http://localhost:8080/?studentname=pc&studentid=234@CODE_END@	
+
+```html
+http://localhost:8080/?studentname=pc&studentid=234
+```
