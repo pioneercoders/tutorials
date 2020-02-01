@@ -27,8 +27,10 @@
 	</tr>
 </table>
 <h4>Example: Splitting URL into defferent parts.</h4>
-<section>  
-    <div  ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'javascript', previewId:'preview1',
+
+
+	<section>  
+    	<div  ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'javascript', previewId:'preview1',
 		rendererOptions: { fontSize: 16 },
 		advanced: { highlightActiveLine: true}
 	}" style="min-height:150px;"><!-- Try change href value and see -->
@@ -40,7 +42,7 @@
 	console.log(q.pathname); //returns '/home.html'
 	console.log(q.search); //returns '?id=1234&name=pc'
 	</div>
-</section>
+	</section>
 <h4>Example </h4>
 <p>Create two files <b>index.html</b> and <b>home.html</b></p>
 <p><b>index.html</b></p>
@@ -51,8 +53,9 @@
 <p>
 	@IMG_START@NODEJS/homepage/png@IMG_END@
 </p>
-<section>  
-    <div  ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'javascript', previewId:'preview2',
+
+	<section>  
+    	<div  ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'javascript', previewId:'preview2',
 		rendererOptions: { fontSize: 16 },
 		advanced: { highlightActiveLine: true}
 	}" style="min-height:250px;"><!-- Try change href value and see -->
@@ -74,7 +77,7 @@
 	  });
 	}).listen(8080);
 	</div>
-</section>
+	</section>
 <p>save above code with file name <b>url.js</b> and start the node server</p>
 <h4>Run url.js</h4>
 @CODE_START@ node url.js
