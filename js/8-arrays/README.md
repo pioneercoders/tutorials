@@ -15,36 +15,44 @@ frameborder="0" allowfullscreen></iframe>
 
 <h4>Why arrays?</h4>
 <p>For example if we want to store the ten students total marks. We will declare ten variables and we will store the marks.</p>
-@CODE_START@@HTML@<script>
+
+```html 
+<script>
 	var firstStudentMarks =300;
 	var secondStudentMarks =346;
 	var thirdStudentMarks =321;
 		.
 		.
 	var tenthstudentMarks =432;
-</script>@CODE_END@
+</script>
+```
 
 <p> for storing ten students total marks above code fine. Now if we want to store the 100 students total marks above mentioned process is bad way of storing 100 students total marks. We can store using above process but it consumes lot of memory and also increases the processing time.
 To over come these problems Array concept is introduced.</p>
 
 <h5>Syntax for declaring Arrays</h5>
-@CODE_START@@HTML@var arrayName = [" "," "," ".....];@CODE_END@
+
+```javascript
+var arrayName = [" "," "," ".....];
+```
 
 <h5>Array Intialization</h5>
-@CODE_START@@HTML@var myArray1 = [1,3,5,7,9] // an array with 5 elements
-var myArray2 = [5] // an array with 1 element@CODE_END@
+
+```javscript
+var myArray1 = [1,3,5,7,9] // an array with 5 elements
+var myArray2 = [5] // an array with 1 element
+```
+
 
 <h5>Accessing array elemets</h5>
-@CODE_START@@HTML@var firstElement = courses[0]; // JavaScript
+```javascript
+var firstElement = courses[0]; // JavaScript
 var lastElement = courses[courses.length - 1]; // jQuery
-@CODE_END@
+```
 
-<section>  
-<div ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'html', previewId:'preview',
-	onLoad: htmlcssjsContentOnLoaded,
-	rendererOptions: { fontSize: 16 },
-	advanced: { highlightActiveLine: true}
-}" style="min-height:450px;"><xmp><html>
+
+```html
+<html>
 <head>
 <script language="javascript" type="text/javascript">
 	var courses = ["JavaScript", "jQuery", "AngularJs", "React JS","Node"];// array declaration
@@ -69,38 +77,41 @@ var lastElement = courses[courses.length - 1]; // jQuery
 <body>
 	<button type="button" onclick="displayCourseList();">Click Me for Display Course</button>
 </body>
-</html></xmp>
-</div>
+</html>
+``
+
 <div>
 	<iframe id="preview"></iframe>
 </div>
-</section>
+
 
 	
 <h5>Syntax for declaring Arrays using Array keyword</h5>
-@CODE_START@@HTML@var arrayName =new Array();@CODE_END@	
+	
+```javascript
+var arrayName =new Array();
+```
 
 <h5>Array Creation</h5>
-@CODE_START@@HTML@var courses = ["JavaScript", "jQuery"]; (or)
+
+```javascript 
+var courses = ["JavaScript", "jQuery"]; (or)
 var courses = new Array("JavaScript", "jQuery");
-console.log(courses.length); // 2@CODE_END@
+console.log(courses.length); // 2
+```
+
 
 <h5>Loop over an Array</h5>
-@CODE_START@@HTML@
-<script>
+
+```javascript
 var courses = new Array("JavaScript", "jQuery");
 courses.forEach(function (item, index, array) {
 document.write(item+"<br>");
 });
-</script>
-@CODE_END@
+```
 
-<section>  
-<div ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'html', previewId:'preview1',
-	onLoad: htmlcssjsContentOnLoaded,
-	rendererOptions: { fontSize: 16 },
-	advanced: { highlightActiveLine: true}
-}" style="min-height:350px;"><xmp><html>
+```html
+<html>
 <head>
 <script language="javascript" type="text/javascript">
 	var courses = new Array("JavaScript", "jQuery", "AngularJs", "React JS","Node");// array declaration
@@ -115,23 +126,21 @@ document.write(item+"<br>");
 <body>
 	<button type="button" onclick="displayCourseList();">Click Me for Display Course</button>
 </body>
-</html></xmp>
-</div>
+</html>
+```
+
+
 <div>
 	<iframe id="preview1"></iframe>
 </div>
-</section>
+
 
 
 <h4>Important methods in array</h4>
-<section>  
-<div ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'html', previewId:'preview2',
-	onLoad: htmlcssjsContentOnLoaded,
-	rendererOptions: { fontSize: 16 },
-	advanced: { highlightActiveLine: true}
-}" style="min-height:450px;"><xmp><html>
+```html
+<html>
 <head>
-<script language="javascript" type="text/javascript">
+```javascript
 	var courses = new Array("JavaScript", "jQuery", "AngularJs", "React JS","Node");// array declaration
 	var newLength = courses.push("ES6"); //Add to the end of an Array
 	console.log("newLength ",newLength);
@@ -152,17 +161,19 @@ document.write(item+"<br>");
 		console.log("index ", index, "item ", item);
 		});
 	}	
-</script>
+```
 </head>
 <body>
 	<button type="button" onclick="displayCourseList();">Click Me for Display Course</button>
 </body>
-</html></xmp>
-</div>
+</html>
+```
+
+
 <div>
 	<iframe id="preview2"></iframe>
 </div>
-</section>
+
 
 <h5>Array Properties</h5>
 <table class="pc-table">
