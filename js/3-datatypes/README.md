@@ -50,6 +50,7 @@ Expriment 2:  x=6 , y=6 then a = 12
 <h3>Please open the console and see the log </h3>
 <h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
 <!-- Try to change value and see -->
+
 ```javascript
 var carName = "Benz"; // Using Double Quotes
 var carName = 'Benz'; // Using Single Quotes
@@ -93,6 +94,7 @@ console.log("userName empty::",userName);
 <h3>Please open the console and see the log </h3>
 <h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
 <!-- Try to change value and see -->
+
 ```javascript
 var courses = ["Java", "UI", "DB"]; // array
 var student = {firstName : "Coding", lastName : "Krishna", age : "24"};
@@ -111,6 +113,7 @@ console.log("student ::",student);
 <h3>Please open the console and see the log </h3>
 <h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
 <!-- Try to change value and see -->
+
 ```javascript
 var name = "Brendan Eich";
 typeof name; // Returns String
