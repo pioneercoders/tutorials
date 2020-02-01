@@ -71,6 +71,7 @@ http.createServer(function(req,res){
 
 <h4>Creating custom module</h4>
 <p>we will create a module which will return the string("Hellow World!")</p>
+
 ```javascript
 exports.myString = function(){
 		return "Hellow World!";
