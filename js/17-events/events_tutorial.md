@@ -11,12 +11,7 @@
 <h4>Examples on Events</h4>
 <p><b>1.onclick Event:</b>This is the most frequently used event which fires when a user clicks the button in below example. </p>
 
-<section>  
-<div ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'html', previewId:'preview',
-	onLoad: htmlcssjsContentOnLoaded,
-	rendererOptions: { fontSize: 16 },
-	advanced: { highlightActiveLine: true}
-}" style="min-height:250px;"><xmp><html>
+```html
 <head>
 <script language="javascript" type="text/javascript">
 	function sayHello() {
@@ -28,21 +23,17 @@
 	<p>Click the following button to see the result</p>
 	<button onclick="sayHello()" > Say Hello </button>
 </body>
-</html></xmp>
-</div>
+</html>
+```
+
 <div>
 	<iframe id="preview"></iframe>
 </div>
-</section>
+
 
 <p><b>2.onfocus/onblur Events:</b>These event's are fires when cursor focus on given element like input,button ect. </p>
 
-<section>  
-<div ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'html', previewId:'preview1',
-	onLoad: htmlcssjsContentOnLoaded,
-	rendererOptions: { fontSize: 16 },
-	advanced: { highlightActiveLine: true}
-}" style="min-height:250px;"><xmp><html>
+```html
 <head>
 <script language="javascript" type="text/javascript">
 	// Focus = Changes the background color of input to yellow
@@ -58,22 +49,16 @@
 <body>
 	Enter your name: <input type="text" id="myInput" onfocus="focusFunction()" onblur="blurFunction()">
 </body>
-</html></xmp>
-</div>
+```
+
+
 <div>
 	<iframe id="preview1"></iframe>
 </div>
-</section>
-
 
 <p><b>3.onselect Event:</b>This event fires when ever select the data of html element in the html page. </p>
 
-<section>  
-<div ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'html', previewId:'preview2',
-	onLoad: htmlcssjsContentOnLoaded,
-	rendererOptions: { fontSize: 16 },
-	advanced: { highlightActiveLine: true}
-}" style="min-height:250px;"><xmp><html>
+```html
 <head>
 <script language="javascript" type="text/javascript">
 	function myFunction() {
@@ -85,10 +70,9 @@
 	Some text: <input type="text" value="Please Select me!" onselect="myFunction()">
 	<p id="demo"></p>
 </body>
-</html></xmp>
-</div>
+```
+
+
 <div>
 	<iframe id="preview2"></iframe>
 </div>
-</section>
-
