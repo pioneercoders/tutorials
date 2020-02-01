@@ -29,7 +29,7 @@ network traffic and it  interacts with data base for every users's input to vali
 
 <h4>Client-side JavaScript</h4>
 <p>Client-side JavaScript is the most common form of the language. The script should be included in or referenced by an HTML document for the code to be interpreted by the browser.</p>
-<p>It means that a web page need not be a static HTML, but can include programs that interact with the user, control the browser, and dynamically create HTML content.</p>
+<p>It means that a web page need not be a static HTML, but can include programs that interact with the user, control the browser, and dynamically create HTML content.</p> 
 
 <p>The JavaScript client-side mechanism provides many advantages over traditional CGI server-side scripts. For example, you might use JavaScript to check if the user has entered a valid e-mail address in a form field.</p>
 
