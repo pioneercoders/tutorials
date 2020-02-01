@@ -10,6 +10,7 @@
 </ul>
 <h4>Read Files</h4>
 <h5>Syntax</h5>
+
 ```javascript
 fs.readFile(fileName [,options], callback)
 ```
@@ -22,6 +23,7 @@ fs.readFile(fileName [,options], callback)
 <p>screenshot of <b>myFile.txt</b></p>
 <p>@IMG_START@NODEJS/myFiletxt/png@IMG_END@</p>
 <p><b>Code for reading File</b></p>
+
 ```javascript
 fs = require('fs')
     fs.readFile(fileName.txt, 'utf8', function (err,data) {
@@ -60,6 +62,7 @@ fs = require('fs')
 	</tr>
 </table>
 <h4>fs.append() example</h4>
+
 ```javascript
 var fs = require('fs');
 //append content at the end of the file:
@@ -72,6 +75,7 @@ function (err) {
 
 <p>In the above example  we are appending text called <b>Pioneer Coders</b>. to file <b>pcFile</b>. if <b>pcFile doesnot exist it will create the file</b> with file name 'pcFile'</p>
 <h4>fs.writeFile() example</h4>
+
 ```javascript
 fs = require('fs');
 fs.writeFile('writeContent.txt', 'write the content to file using this function',
@@ -82,6 +86,7 @@ function (err) {
 ```
 
 <h4>Example: creating file using fs.open();</h4>
+
 ```javascript
 var fs = require('fs');
 //create an empty file named mynewfile2.txt:
@@ -99,6 +104,7 @@ fs.open('DirectoryName\\mynewfile2.txt', 'w', function (err, file) {
 </ul>
 <p><b>fs.appendFile()</b> method updates the existing file. It will appends the content at end file that specified</p>
 <h4>Example</h4>
+
 ```javascript
 var fs = require('fs');
 //append content at the end of the file:
@@ -111,6 +117,7 @@ fs.appendFile('DirectoryName\\mynewfile1.txt', ' This is my text.', function (er
 <h4>fs.writeFile()</h4>
 <p><b>fs.writeFile()</b> method replaces the specified file and content:</p>
 <h4>Example</h4>
+
 ```javascript
 var fs = require('fs');
 fs.writeFile('DirectoryName\\writeContent.txt', 'write the content to file using this function', 
@@ -123,6 +130,7 @@ function (err) {
 <h4>Delete File()</h4>
 <p><b>fs.unlinkFile()</b> method used to delete the specified file.</p>
 <h4>Example</h4>
+
 ```javascript
 var fs = require('fs');
 fs.unlink('DirectoryName\\mynewfile2.txt', function (err) {
