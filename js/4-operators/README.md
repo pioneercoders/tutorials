@@ -1,4 +1,3 @@
-
 <p>JavaScript operators are symbols that are used to perform operations on operands.</p>
 <p>Javasript operators are categorized into following types.</p>
 <ul>
@@ -55,33 +54,27 @@
 	</tr>
 </table>
 
-<section >  
-    <div ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'html', previewId:'preview',
-		onLoad: htmlcssjsContentOnLoaded,
-		rendererOptions: { fontSize: 16 },
-		advanced: { highlightActiveLine: true}
-	}" style="min-height:400px;"><xmp><h3>Please open the console and see the log </h3>
+<h3>Please open the console and see the log </h3>
 <h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
 <!--try with different assignment operators like a ^= b, a |= b, a &= b etc. -->
-<script language="javascript" type="text/javascript">
-	var a = 100, b = 200; 
-	var result = a += b; 
-	console.log("(a += b) ="+result);
-	var result = a-=b; 
-	console.log("(a-=b) ="+result);
-	var result = a*=b; 
-	console.log("(a*=b) ="+result);
-	var result = a/=b; 
-	console.log("(a/=b) ="+result);
-	var result = a%=b; 
-	console.log("(a%=b) ="+result);
- </script>
-</xmp>
-	</div>
-	<div>
+
+```javascript
+var a = 100, b = 200; 
+var result = a += b; 
+console.log("(a += b) ="+result);
+var result = a-=b; 
+console.log("(a-=b) ="+result);
+var result = a*=b; 
+console.log("(a*=b) ="+result);
+var result = a/=b; 
+console.log("(a/=b) ="+result);
+var result = a%=b; 
+console.log("(a%=b) ="+result);
+```
+<div>
         <iframe id="preview"></iframe>
-    </div>
-</section>
+</div>
+
 
 <h4>Arithmetic Operators</h4>
 <p>Arithmetic operators take numaric operands and returns single numaric operand.</p>
@@ -128,28 +121,22 @@
 	</tr>
 </table>
 
-<section >  
-    <div ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'html', previewId:'preview1',
-		onLoad: htmlcssjsContentOnLoaded,
-		rendererOptions: { fontSize: 16 },
-		advanced: { highlightActiveLine: true}
-	}" style="min-height:400px;"><xmp><h3>Please open the console and see the log </h3>
+<h3>Please open the console and see the log </h3>
 <h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
 <!--try with different values... . -->
-<script language="javascript" type="text/javascript">
-	var a = 40, b = 20, c = "PC"; 
-	console.log("a + b =", a + b);
-	console.log("a - b =", a - b);
-	console.log("a/b =", a/b);
-	console.log("a%b =", a%b);
-	console.log("a + b + c =", a + b + c);
-	console.log("a++ =", a++);
-	console.log("b-- =", b--);
-	console.log("Pioneer"+"Coders"); 
- </script>
-</xmp>
-	</div>
-	<div>
+
+```javascript
+var a = 40, b = 20, c = "PC"; 
+console.log("a + b =", a + b);
+console.log("a - b =", a - b);
+console.log("a/b =", a/b);
+console.log("a%b =", a%b);
+console.log("a + b + c =", a + b + c);
+console.log("a++ =", a++);
+console.log("b-- =", b--);
+console.log("Pioneer"+"Coders"); 
+```
+<div>
         <iframe id="preview1"></iframe>
     </div>
 </section>
@@ -192,30 +179,22 @@
 	</tr>
 </table>
 
-<section >  
-    <div ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'html', previewId:'preview2',
-		onLoad: htmlcssjsContentOnLoaded,
-		rendererOptions: { fontSize: 16 },
-		advanced: { highlightActiveLine: true}
-	}" style="min-height:400px;"><xmp><h3>Please open the console and see the log </h3>
+<h3>Please open the console and see the log </h3>
 <h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
 <!--try with different values... . -->
-<script language="javascript" type="text/javascript">
-	var a = 14, b = 15; 
-	console.log("(a == b) ="+(a==b));
-	console.log("(a < b) ="+(a<b));
-	console.log("(a>b) ="+(a>b));
-	console.log("(a!=b) ="+(a!=b));
-	console.log("(a<=b) ="+(a<=b));
-	console.log("(a<=b) ="+(a<=b));
- </script>
-</xmp>
-	</div>
-	<div>
-        <iframe id="preview2"></iframe>
-    </div>
-</section>
 
+```javascript
+var a = 14, b = 15; 
+console.log("(a == b) ="+(a==b));
+console.log("(a < b) ="+(a<b));
+console.log("(a>b) ="+(a>b));
+console.log("(a!=b) ="+(a!=b));
+console.log("(a<=b) ="+(a<=b));
+console.log("(a<=b) ="+(a<=b));
+
+<div>
+        <iframe id="preview2"></iframe>
+</div>
 
 <h4>Logical Operators :</h4>
 <p>Logincal operators are three types</p>
@@ -247,29 +226,23 @@
 	</tr>
 </table>
 
-<section >  
-    <div ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'html', previewId:'preview3',
-		onLoad: htmlcssjsContentOnLoaded,
-		rendererOptions: { fontSize: 16 },
-		advanced: { highlightActiveLine: true}
-	}" style="min-height:400px;"><xmp><h3>Please open the console and see the log </h3>
+<h3>Please open the console and see the log </h3>
 <h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
 <!--try with different values... -->
-<script language="javascript" type="text/javascript">
-	var a = 14, b = 15, c=23, d=53; 
-	var andresult = (a == b) && (c == d); 
-	console.log("(a == b) && (c == d) =", andresult);
-	var orresult = (a >= b) || (c <=	 d);
-	console.log("(a >= b) || (c =< d) =", orresult);
-	var result = !andresult; 
-	console.log("!andresult ="+result);
- </script>
-</xmp>
-	</div>
-	<div>
+
+```javascript
+var a = 14, b = 15, c=23, d=53; 
+var andresult = (a == b) && (c == d); 
+console.log("(a == b) && (c == d) =", andresult);
+var orresult = (a >= b) || (c <=	 d);
+console.log("(a >= b) || (c =< d) =", orresult);
+var result = !andresult; 
+console.log("!andresult ="+result);
+
+<div>
         <iframe id="preview3"></iframe>
-    </div>
-</section>
+</div>
+
 
 
 <h4>Bitwise Operators :</h4>
@@ -303,57 +276,48 @@ the system automatically converts decimal values into binary representation. To 
 	</tr>
 </table>
 
-<section >  
-    <div ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'html', previewId:'preview4',
-		onLoad: htmlcssjsContentOnLoaded,
-		rendererOptions: { fontSize: 16 },
-		advanced: { highlightActiveLine: true}
-	}" style="min-height:400px;"><xmp><h3>Please open the console and see the log </h3>
+<h3>Please open the console and see the log </h3>
 <h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
 <!--try with different values... -->
-<script language="javascript" type="text/javascript">
-	var a = 2, b = 3;  
-	console.log("(a & b) =", (a & b) );
-	console.log("(a | b) =", (a | b) );
-	console.log("(~b) =", (~b) );
-	console.log("(a<<b) =", (a<<b) ); 
-	console.log("(a>>b) =", (a>>b) );
- </script>
-</xmp>
-	</div>
-	<div>
+
+```javascript
+var a = 2, b = 3;  
+console.log("(a & b) =", (a & b) );
+console.log("(a | b) =", (a | b) );
+console.log("(~b) =", (~b) );
+console.log("(a<<b) =", (a<<b) ); 
+console.log("(a>>b) =", (a>>b) );
+```
+<div>
         <iframe id="preview4"></iframe>
-    </div>
-</section>
+</div>
+
 
 
 <h4>Ternary Operators(conditional Operators)</h4>
 <p>Ternary operator requires three operators</p>
-@CODE_START@@HTML@condition? result1: result2@CODE_END@
+
+```javscript
+condition? result1: result2
+```
+
 <p>If the condition is true it returns the results1, Otherwise it returns result2.</p>
 <h4>Finding the given number is even or odd using Ternary Operators</h4>
 
-<section >  
-    <div ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'html', previewId:'preview5',
-		onLoad: htmlcssjsContentOnLoaded,
-		rendererOptions: { fontSize: 16 },
-		advanced: { highlightActiveLine: true}
-	}" style="min-height:400px;"><xmp><h3>Please open the console and see the log </h3>
+<h3>Please open the console and see the log </h3>
 <h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
 <!--try with different values... -->
-<script language="javascript" type="text/javascript">
-	var number = 10;
-	(number%2==0)?console.log("number is even"):console.log("number is odd");
+
+```javscript
+var number = 10;
+(number%2==0)?console.log("number is even"):console.log("number is odd");
 	
-	var number1 = 10, number2 = 20;
-	(number1>number2)?console.log(number1+" is big"):(number1<number2)?console.log(number2+" is big"):console.log("number1 and number2 are equal");
- </script>
-</xmp>
-	</div>
-	<div>
+var number1 = 10, number2 = 20;
+(number1>number2)?console.log(number1+" is big"):(number1<number2)?console.log(number2+" is big"):console.log("number1 and number2 are equal");
+```
+<div>
         <iframe id="preview5"></iframe>
-    </div>
-</section>
+</div>
 
 
 <h4>Other Operator</h4>
@@ -405,31 +369,23 @@ the system automatically converts decimal values into binary representation. To 
 	</tr>
 </table>
 
-<section >  
-    <div ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'html', previewId:'preview6',
-		onLoad: htmlcssjsContentOnLoaded,
-		rendererOptions: { fontSize: 16 },
-		advanced: { highlightActiveLine: true}
-	}" style="min-height:400px;"><xmp><h3>Please open the console and see the log </h3>
+<h3>Please open the console and see the log </h3>
 <h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
 <!--try with different values... -->
-<script language="javascript" type="text/javascript">
-	var myArray = [1,2,3,4,5];
-	delete myArray[2]; //deletes element at index 2 in myArray.
-	console.log(myArray);
-	var InstituteName = "PioneerCoders";
-	console.log(typeof(InstituteName)); // prints string
-	var date = new Date() // create date object with today's date and time. 
-	delete date; // deletes the date object;
-	
-	for(var i=0,j=3;i<3,j>0;i++,j--){
-		console.log(i+" "+" "+j);
-	}
-	</script>
-</xmp>
-	</div>
-	<div>
-        <iframe id="preview6"></iframe>
-    </div>
-</section>
 
+```javscript
+var myArray = [1,2,3,4,5];
+delete myArray[2]; //deletes element at index 2 in myArray.
+console.log(myArray);
+var InstituteName = "PioneerCoders";
+console.log(typeof(InstituteName)); // prints string
+var date = new Date() // create date object with today's date and time. 
+delete date; // deletes the date object;
+	
+for(var i=0,j=3;i<3,j>0;i++,j--){
+	console.log(i+" "+" "+j);
+	}
+```
+<div>
+        <iframe id="preview6"></iframe>
+</div>
