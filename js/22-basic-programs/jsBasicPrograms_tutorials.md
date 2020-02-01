@@ -15,6 +15,8 @@ Output:
 2  
 56  
 
+<h4>2.Write a program to print largest Number in array?</h4>
+
 ```javascript
 var array = [3 , 6, 2, 56, 32, 5, 89, 32];
 var largest= 0;
@@ -29,6 +31,7 @@ console.log(largest);
 Output:
 89  
 
+<h4>3.Write a program to print Least Number in array?</h4>
 ```javascript
 var array = [3 , 6, 2, 56, 32, 5, 89, 32];
 var min = array[0];
@@ -42,6 +45,7 @@ console.log(min);
 
 Output:
 2  
+<h4>4.Write a program to print duplicate element in array?</h4>
 
 ```javascript
 var oldArray = [3 , 6, 2, 56, 32, 5, 89, 32];
