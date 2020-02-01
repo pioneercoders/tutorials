@@ -45,6 +45,7 @@ console.log(min);
 
 Output:
 2  
+
 <h4>4.Write a program to print duplicate element in array?</h4>
 
 ```javascript
