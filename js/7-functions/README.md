@@ -6,10 +6,13 @@
 <h4> What is function ?</h4>
 <p> In programming, the concept of functions came from the idea of functions in mathematics. </p>
 <p> In mathematics, a function is a relation between a set of inputs and a set of permissible outputs with the property that each input is related to exactly one output. Ex</p>
-@CODE_START@@JAVA@f(x) = x*2;
+
+```javascript
+f(x) = x*2;
 f(1) = 2;
 f(2) = 4;
-@CODE_END@
+```
+![function_maths]()
 @IMG_START@JAVA/function_maths/png@IMG_END@
 	
 <p><b>Similarly in JS function is a collection of statements that are grouped together to perform a perticular task.</b></p>
@@ -32,22 +35,24 @@ f(2) = 4;
 	<p>Function declarations are most familiar and oldest way of defining the functions</p>
 	<h5>Syntax:</h5>
 	
-	@CODE_START@@HTML@function function_name(parameters){
+```javascript
+function function_name(parameters){
 		statement  1
 		statement  2 
 		etc..
-	}@CODE_END@
+	}
+```
+
 	<p>A JavaScript function is defined with the <b>function</b> keyword, followed by a name and parentheses<b>()</b>. Function names can contain letters, digits, underscores, and dollar signs(same rules as variables). functions may contains parameters(inputs) its optional<br> </p>
 	
 	<h4>Function Calling</h4>
-	@CODE_START@@HTML@function_name(parameters)@CODE_END@
-	
-<section >  
-<div ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'html', previewId:'preview',
-	onLoad: htmlcssjsContentOnLoaded,
-	rendererOptions: { fontSize: 16 },
-	advanced: { highlightActiveLine: true}
-}" style="min-height:350px;"><xmp><html>
+
+```javascript
+function_name(parameters);
+```
+
+```html
+<html>
 <head>
 <script language="javascript" type="text/javascript">
 	// Function Declaration
@@ -61,23 +66,20 @@ f(2) = 4;
 <body>
 	<button type="button" onclick="display();">Click Me</button>
 </body>
-</html></xmp>
-</div>
+</html>
+```
+
 <div>
 	<iframe id="preview"></iframe>
 </div>
-</section>
+
 
 	
-	<h5>Example: function with parameters</h5>
-	<h6>Javascript code to swap the two variables using functions</h6>
+<h5>Example: function with parameters</h5>
+<h6>Javascript code to swap the two variables using functions</h6>
 	
-<section >  
-<div ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'html', previewId:'preview1',
-	onLoad: htmlcssjsContentOnLoaded,
-	rendererOptions: { fontSize: 16 },
-	advanced: { highlightActiveLine: true}
-}" style="min-height:450px;"><xmp><html>
+```html
+<html>
 <head>
 <script language="javascript" type="text/javascript">
 	// Function Declaration
@@ -96,22 +98,19 @@ f(2) = 4;
 <body>
 	<button type="button" onclick="swap(30,40);">Clicl me Swap</button>
 </body>
-</html></xmp>
-</div>
+</html>
+```
+
 <div>
 	<iframe id="preview1"></iframe>
 </div>
-</section>
+
 
 
 <h5>Example: function returning a value</h5>
 
-<section >  
-<div ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'html', previewId:'preview2',
-	onLoad: htmlcssjsContentOnLoaded,
-	rendererOptions: { fontSize: 16 },
-	advanced: { highlightActiveLine: true}
-}" style="min-height:400px;"><xmp><html>
+```html
+<html>
 	<head>
 	<script language="javascript" type="text/javascript">
 	// Function Declaration
@@ -128,12 +127,13 @@ f(2) = 4;
 	<body>
 	
 	</body>
-</html></xmp>
-</div>
+</html>
+```
+
 <div>
 	<iframe id="preview2"></iframe>
 </div>
-</section>
+
 
 
 <!--
