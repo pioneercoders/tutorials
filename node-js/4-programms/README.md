@@ -24,7 +24,8 @@
 	<accordion-title>2.Write a program to find largest element in array?</accordion-title>
 <accordion-content>
 		
-		
+	
+	
 @CODE_START@@JS@var 
 		
 	array = [3 , 6, 2, 56, 32, 5, 89, 32];
@@ -52,6 +53,7 @@
 	<accordion-title>3.Write a program to find the smallestNumber in array?</accordion-title>
 <accordion-content>
 	
+	
 @CODE_START@@JS@var 
 		
 	inputArray = [3, 6, 2, 56, 32, 5, 89, 32];
@@ -67,6 +69,7 @@
 	findSmallestNumberInArray(inputArray);
 	console.log(min);
 @CODE_END@
+
 
 <div class="output-panel">
 	<p>2</p>
