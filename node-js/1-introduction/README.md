@@ -17,6 +17,6 @@
 <p><b>No buffering: </b>Node.js applications never buffer any data.</p>
 <h4>Node.js Concepts</h4>
 
-![nodejsConcepts](../images/nodejsConcepts.PNG)
+![nodejsConcepts](https://github.com/pioneercoders/pc-tutorials/blob/master/node-js/images/nodejsConcepts.png)
 
 @IMG_START@NODEJS/nodejsConcepts/png@IMG_END@
