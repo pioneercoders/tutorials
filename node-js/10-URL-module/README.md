@@ -45,8 +45,11 @@ console.log(q.search); //returns '?id=1234&name=pc'
 <h4>Example </h4>  
 <p>Create two files <b>index.html</b> and <b>home.html</b></p>  
 <p><b>index.html</b></p>  
+
 ![indexpage](../images/indexpage.PNG)
+
 <p><b>home.html</b></p>
+
 ![indexpage](../images/homepage.PNG)
 
 ```javascript
