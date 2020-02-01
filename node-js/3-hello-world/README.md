@@ -8,7 +8,7 @@ console.log("Hellow World.")
 <p><b>Syntax: 
 	
 ```javascript
-&lt;filename&gt;.js 
+filename.js 
 ```
 @IMG_START@NODEJS/helloworld/png@IMG_END@
 
