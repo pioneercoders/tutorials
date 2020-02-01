@@ -1,4 +1,6 @@
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TGEaMf0etTg" frameborder="0" allowfullscreen></iframe><br>
+
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/TGEaMf0etTg" frameborder="0" allowfullscreen></iframe><br>
+
 <h4>What is the DOM?</h4>
 <ul>
 	<li>Abbrievated DOM as <b>Document Object Model</b>.</li>
@@ -8,7 +10,8 @@
 	<li>DOM provides <b>structured representation</b> of the document(observe the bellow diagram) as object that have properties and methods.</li>
 </ul>
 <h4>HTML DOM structure</h4>
-@IMG_START@JS/html_dom/jpg@IMG_END@
+
+![html_dom](https://github.com/pioneercoders/pc-tutorials/blob/master/js/images/html_dom.jpg)
 
 <ul>
 	<li>Javascript has ability to access and modify all the HTML elements present in the HTML page using document object.</li>
@@ -67,12 +70,8 @@ The following are the DOM methods to access the HTML elements.</p>
 
 
 <h4>Changing HTML element content by its id</h4>
-<section >  
-    <div ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'html', previewId:'preview',
-		onLoad: htmlcssjsContentOnLoaded,
-		rendererOptions: { fontSize: 16 },
-		advanced: { highlightActiveLine: true}
-	}" style="min-height:250px;"><xmp><html>
+
+```html
 	<body>
 		<p id="pc">Hello Pioneer Coders.</p>
 		<button type="button" onclick="changeContent();">Click here to change the text</button>
@@ -83,65 +82,46 @@ The following are the DOM methods to access the HTML elements.</p>
 			pcElement.innerHTML = "Welcome to Pioneer Coders." //
 		}
 	</script>
-</html>
-</xmp>
-	</div>
-	<div>
+```
+
         <iframe id="preview"></iframe>
-    </div>
-</section>
+
 
 <h4>Changing HTML element content by its className</h4>
-<section >  
-    <div ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'html', previewId:'preview1',
-		onLoad: htmlcssjsContentOnLoaded,
-		rendererOptions: { fontSize: 16 },
-		advanced: { highlightActiveLine: true}
-	}" style="min-height:250px;"><xmp><html>
-		<body>
-		<div class="pc">Pioneer Coders provides training.</p>
-		<div class="pc">Pioneer Coders provides placements</p>
-		<p id="one"></p>
-		<button type="button" onclick="changeContent();">Click here to change the text</button>
-	</body>
-	<script>
-		function changeContent(){
-			var pcElements = document.getElementsByClassName("pc");
-			document.getElementById("one").innerHTML = (pcElements[0].innerHTML)+" "+(pcElements[1].innerHTML);
-		}
-	</script>
-</html></xmp>
-	</div>
-	<div>
-        <iframe id="preview1"></iframe>
-    </div>
-</section>
 
-
+```html
+<body>
+	<div class="pc">Pioneer Coders provides training.</p>
+	<div class="pc">Pioneer Coders provides placements</p>
+	<p id="one"></p>
+	<button type="button" onclick="changeContent();">Click here to change the text</button>
+</body>
+<script>
+	function changeContent(){
+	var pcElements = document.getElementsByClassName("pc");
+	document.getElementById("one").innerHTML = (pcElements[0].innerHTML)+" "+(pcElements[1].innerHTML);
+	}
+</script>
+```
+	<iframe id="preview1"></iframe>
+ 
+ 
 <h4>Changing HTML element content by its TagName</h4>
-<section >  
-    <div ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'html', previewId:'preview2',
-		onLoad: htmlcssjsContentOnLoaded,
-		rendererOptions: { fontSize: 16 },
-		advanced: { highlightActiveLine: true}
-	}" style="min-height:250px;"><xmp><html>
-	<body>
-		<p class="hello">Pioneer Coders</p>
-		<p id="second"></p>
-		<button type="button" onclick="changeContent();">Click here to change the text</button>
-	</body>
-	<script>
-		function changeContent(){
-			var p= document.getElementsByTagName("p");
-			document.getElementById("second").innerHTML = (p[0].innerHTML)+"text is from above paragraph";
-		}
-	</script>
-</html></xmp>
-	</div>
-	<div>
-        <iframe id="preview2"></iframe>
-    </div>
-</section>
+
+```html
+<body>
+	<p class="hello">Pioneer Coders</p>
+	<p id="second"></p>
+	<button type="button" onclick="changeContent();">Click here to change the text</button>
+</body>
+<script>
+	function changeContent(){
+	var p= document.getElementsByTagName("p");
+	document.getElementById("second").innerHTML = (p[0].innerHTML)+"text is from above paragraph";
+	}
+</script>
+```
+		<iframe id="preview2"></iframe>
 
 <a href="project/download/JS/dom" class="cws-button bt-color-3 border-radius alt icon-right">Exercise 1</a>
 <a href="project/download/JS/JS_DOM" class="cws-button bt-color-3 border-radius alt icon-right">Exercise 2</a>
