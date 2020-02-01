@@ -54,27 +54,26 @@ console.log(q.search); //returns '?id=1234&name=pc'
 	@IMG_START@NODEJS/homepage/png@IMG_END@
 </p>
 
-	<section>  
-  	<div  ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'javascript',previewId:'preview2',rendererOptions: { fontSize: 16 },advanced: { highlightActiveLine: true}}" style="min-height:250px;"><!-- Try change href value and see -->
-	var http = require('http');
-	var url = require('url');
-	var fs = require('fs');
+```javascript
+var http = require('http');
+var url = require('url');
+var fs = require('fs');
 
-	http.createServer(function (req, res) {
-	  var q = url.parse(req.url, true);
-	  var filename = "." + q.pathname;
-	  fs.readFile(filename, function(err, data) {
-	    if (err) {
-	      res.writeHead(404, {'Content-Type': 'text/html'});
-	      return res.end("404 Not Found");
-	    }  
-	    res.writeHead(200, {'Content-Type': 'text/html'});
-	    res.write(data);
-	    return res.end();
-	  });
+http.createServer(function (req, res) {
+var q = url.parse(req.url, true);
+var filename = "." + q.pathname;
+fs.readFile(filename, function(err, data) {
+    if (err) {
+	 res.writeHead(404, {'Content-Type': 'text/html'});
+	 return res.end("404 Not Found");
+	}  
+	res.writeHead(200, {'Content-Type': 'text/html'});
+	res.write(data);
+	return res.end();
+	  	});
 	}).listen(8080);
-	</div>
-	</section>
+```
+
 <p>save above code with file name <b>url.js</b> and start the node server</p>
 <h4>Run url.js</h4>
 @CODE_START@ node url.js
