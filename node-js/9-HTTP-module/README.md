@@ -4,7 +4,7 @@
 <p><b>require()</b> function is to include the modules in node.js</p>
 
 ```javascript
-	var http = require('http');
+var http = require('http');
 ```
 
 <h4>Create the Server</h4>
