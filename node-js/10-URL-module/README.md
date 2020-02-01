@@ -42,13 +42,14 @@ console.log(q.pathname); //returns '/home.html'
 console.log(q.search); //returns '?id=1234&name=pc'
 ```
 
+![indexpage](../images/indexpage.PNG)
+
 <h4>Example </h4>
 <p>Create two files <b>index.html</b> and <b>home.html</b></p>
 <p><b>index.html</b></p>
 <p>
 	@IMG_START@NODEJS/indexpage/png@IMG_END@  
-	![indexpage](../images/indexpage.PNG)
-
+	
 </p>
 <p><b>home.html</b></p>
 <p>
