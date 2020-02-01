@@ -5,26 +5,20 @@
 	<li>By string object (using new keyword)</li>
 </ul>
 
-<section >  
-    <div ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'html', previewId:'preview',
-		onLoad: htmlcssjsContentOnLoaded,
-		rendererOptions: { fontSize: 16 },
-		advanced: { highlightActiveLine: true}
-	}" style="min-height:250px;"><xmp><h3>Please open the console and see the log </h3>
+
 <h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
 <!--try with different assignment operators like a ^= b, a |= b, a &= b etc. -->
-<script language="javascript" type="text/javascript">
-	var str="Pioneercoders";   // string literal
-	var str1=new String("hello javascript string"); // string object using new keyword
-	console.log("String ", str);
-	console.log("String1 ", str1);
- </script>
-</xmp>
-	</div>
-	<div>
-        <iframe id="preview"></iframe>
-    </div>
-</section>
+
+```javascript
+var str="Pioneercoders";   // string literal
+var str1=new String("hello javascript string"); // string object using new keyword
+console.log("String ", str);
+console.log("String1 ", str1);
+```
+
+```html
+<iframe id="preview"></iframe>
+```
 
 <h4>Methods</h4>
 <table class="pc-table">
@@ -66,49 +60,37 @@
 	</tr>
 </table>
 
-<section >  
-    <div ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'html', previewId:'preview1',
-		onLoad: htmlcssjsContentOnLoaded,
-		rendererOptions: { fontSize: 16 },
-		advanced: { highlightActiveLine: true}
-	}" style="min-height:500px;"><xmp><h3>Please open the console and see the log </h3>
-<h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
-<!--try with different assignment operators like a ^= b, a |= b, a &= b etc. -->
-<script language="javascript" type="text/javascript">
-	var str="Pioneer Coders";  
-	console.log(str.charAt(4));
- 
-	var tutorial="tutorial";  
-	var pcTutorial = str.concat(tutorial);  
-	console.log("Concat string ", pcTutorial);
-	 
-	var index = pcTutorial.indexOf("Coders");  
-	console.log("index of coders", index); 
-	  
-	var lastIndex=pcTutorial.lastIndexOf("Coders");  
-	console.log("lastIndex of coders ", lastIndex);
-	  
-	var pcTutorialLower =pcTutorial.toLowerCase();  
-	console.log("pctutorial in lower case ", pcTutorialLower);
-	 
-	var pcTutorialUpper=pcTutorial.toUpperCase();  
-	console.log("pctutorial in upper case ", pcTutorialUpper);
-	 
-	var sli = pcTutorial.slice(2,5);  
-	console.log("after slice ", sli);  
-	
-	var s1="     javascript trim    ";  
-	var s2=s1.trim();  
-	console.log("after trim of s1 ",s2); 
-	
- </script>
-</xmp>
-	</div>
-	<div>
-        <iframe id="preview1"></iframe>
-    </div>
-</section>
+```javascript
+var str="Pioneer Coders";  
+console.log(str.charAt(4));
 
+var tutorial="tutorial";  
+var pcTutorial = str.concat(tutorial);  
+console.log("Concat string ", pcTutorial);
+	 
+var index = pcTutorial.indexOf("Coders");  
+console.log("index of coders", index); 
+	  
+var lastIndex=pcTutorial.lastIndexOf("Coders");  
+console.log("lastIndex of coders ", lastIndex);
+	  
+var pcTutorialLower =pcTutorial.toLowerCase();  
+console.log("pctutorial in lower case ", pcTutorialLower);
+	 
+var pcTutorialUpper=pcTutorial.toUpperCase();  
+console.log("pctutorial in upper case ", pcTutorialUpper);
+	 
+var sli = pcTutorial.slice(2,5);  
+console.log("after slice ", sli);  
+	
+var s1="     javascript trim    ";  
+var s2=s1.trim();  
+console.log("after trim of s1 ",s2); 
+``` 
+
+ ```html
+<iframe id="preview1"></iframe>
+```
 
 <!--
 <h4>charAt(index) Method</h4>
