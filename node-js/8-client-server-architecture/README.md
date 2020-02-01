@@ -2,7 +2,8 @@
 
 <p> A client (usually a Web browser) sends a request to a server (most of the time a web server like Apache, Nginx, IIS, Tomcat, etc.), using the HTTP protocol. The server answers the request using the same protocol. </p>
 
-@IMG_START@NODEJS/client-server/png@IMG_END@
+![client-server](https://github.com/pioneercoders/pc-tutorials/blob/master/node-js/images/client-server.png)
+
 
 <p> the server contains set of files(html, css, js, img and videos etc) and data(data from db) to server the client request.</p>
 
@@ -37,6 +38,3 @@ The request itself comprises</p>
 <p> Request Formate: /AppName/createUser</p>
 
 <p>So essentially GET is used to retrieve remote data, and POST is used to insert/update remote data.</p>
-
-
-
