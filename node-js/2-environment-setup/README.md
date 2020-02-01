@@ -15,4 +15,7 @@
 </ol>
 <h4>Node.js Software</h4>
 <p>Node.js software can be downloaded from the <a href="https://nodejs.org/en/" target="_blank">official  website</a></p>
+
+![nodejsdownload](https://github.com/pioneercoders/pc-tutorials/blob/master/node-js/images/nodejsdownload.PNG)
+
 @IMG_START@NODEJS/nodejsdownload/png@IMG_END@
