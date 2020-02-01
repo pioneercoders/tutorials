@@ -10,7 +10,7 @@ console.log("Hellow World.")
 ```javascript
 filename.js 
 ```
-@IMG_START@NODEJS/helloworld/png@IMG_END@
+![helloworld](https://github.com/pioneercoders/pc-tutorials/blob/master/node-js/images/helloworld.PNG)
 
 <h4>Excuting node.js code</h4>
 <p>To execute the node js code follow the bellow steps</p>
@@ -18,5 +18,7 @@ filename.js
 <p><b>node helloworld.js</b></p>
 
 <h4>Output</h4>
-<p>@IMG_START@NODEJS/helloworldoutput/png@IMG_END@</p>
+
+![helloworldoutput](https://github.com/pioneercoders/pc-tutorials/blob/master/node-js/images/helloworldoutput.PNG)
+
 <p>In the above screenshot <b>cd D*</b> command  is used for changing directory to desktop.</p>
