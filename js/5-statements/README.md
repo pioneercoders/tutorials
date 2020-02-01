@@ -53,7 +53,7 @@
 </table>
 	<p>The flow chart below shows how if-else statement works</p>
 	
-	![jsif](https://github.com/pioneercoders/pc-tutorials/blob/master/js/images/jsif.jpg)
+![jsif](https://github.com/pioneercoders/pc-tutorials/blob/master/js/images/jsif.jpg)
 	
 <p>The condition inside the 'if' statement is true then the block of code is executed after the 'if' :</p>	
 <p><b>Syntax:</b></p>
