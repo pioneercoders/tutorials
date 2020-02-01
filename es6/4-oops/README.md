@@ -31,15 +31,8 @@
 
 <h5>Creating the Object using Object literal</h5>
 
-<section>  
-<div ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'html', previewId:'preview',
-	onLoad: htmlcssjsContentOnLoaded,
-	rendererOptions: { fontSize: 16 },
-	advanced: { highlightActiveLine: true}
-}" style="min-height:300px;"><xmp><html>
-<head>
-<script language="javascript" type="text/javascript">
-	var employeeObject = { id: 1, name: "Coding Krishna", address: "Bangalore",
+```javascript
+var employeeObject = { id: 1, name: "Coding Krishna", address: "Bangalore",
 		work : function(){
 			console.log("employee is working ...");
 		},
@@ -47,31 +40,22 @@
 			console.log("sleeping...");
 		}
 	};
-	console.log("Employee Id:: ", employeeObject.id)
-	employeeObject.work();
-</script>
-</head>
-<body><h3>Please open the console and see the log </h3>
-	<h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
-</body>
-</html></xmp>
-</div>
-<div>
-	<iframe id="preview"></iframe>
-</div>
-</section>
+console.log("Employee Id:: ", employeeObject.id)
+employeeObject.work();
+```
+<h3>Please open the console and see the log </h3>
+<h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
+
+```html
+<iframe id="preview"></iframe>
+```
+
 <p>employeeObject is a perfectly nice for one employee why because id, name and address are hardcoded, it would be helpful if we could define a pattern for any employee.</p>
 
 <h5>Creating the Object using new keyword</h5>
-<section>  
-<div ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'html', previewId:'preview1',
-	onLoad: htmlcssjsContentOnLoaded,
-	rendererOptions: { fontSize: 16 },
-	advanced: { highlightActiveLine: true}
-}" style="min-height:350px;"><xmp><html>
-<head>
-<script language="javascript" type="text/javascript">
-	var employee = function(id,name, address){
+
+```javascript
+var employee = function(id,name, address){
 		this.id = id; 
 		this.name = name; 
 		this.address = address;
@@ -82,21 +66,16 @@
 			console.log("employee ", this.name,"sleeping...");
 		}
 	};
-	var emp1 = new employee(1,"Krishna", "Bangalore");
-	var emp2 = new employee(2,"Hari", "hyd");
-	console.log("Employee 1:: ", emp1.id,emp1.name);
-	console.log("Employee 2:: ", emp2.id, emp2.name);
-	
-</script>
-</head>
-<body><h3>Please open the console and see the log </h3>
-	<h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
-</body>
-</html></xmp>
-</div>
-<div>
-	<iframe id="preview1"></iframe>
-</div>
-</section>
-<p> In above approch we can create n number of employee objects and we can provide the employee data. the new keyword is used to create object of the employee.</p>
+var emp1 = new employee(1,"Krishna", "Bangalore");
+var emp2 = new employee(2,"Hari", "hyd");
+console.log("Employee 1:: ", emp1.id,emp1.name);
+console.log("Employee 2:: ", emp2.id, emp2.name);
+```				
 
+<h3>Please open the console and see the log </h3>
+<h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
+
+```html
+<iframe id="preview1"></iframe>
+```
+<p> In above approch we can create n number of employee objects and we can provide the employee data. the new keyword is used to create object of the employee.</p>
