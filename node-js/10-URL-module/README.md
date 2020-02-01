@@ -30,10 +30,8 @@
 
 
 	<section>  
-    	<div  ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'javascript', previewId:'preview1',
-		rendererOptions: { fontSize: 16 },
-		advanced: { highlightActiveLine: true}
-	}" style="min-height:150px;"><!-- Try change href value and see -->
+    <div  ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'javascript', previewId:'preview1',rendererOptions: { fontSize: 16 },advanced: { highlightActiveLine: true}}" style="min-height:150px;"><!-- Try change href value and see -->
+	
 	var url = require('url');
 	var webAddress = 'http://localhost:9090/home.html?id=1234&name=pc';
 	var q = url.parse(webAddress, true);
