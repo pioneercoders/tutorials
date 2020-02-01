@@ -53,10 +53,7 @@
 </p>
 
 	<section>  
-    	<div  ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'javascript', previewId:'preview2',
-		rendererOptions: { fontSize: 16 },
-		advanced: { highlightActiveLine: true}
-	}" style="min-height:250px;"><!-- Try change href value and see -->
+    	<div  ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'javascript', previewId:'preview2', rendererOptions: { fontSize: 16 },advanced: { highlightActiveLine: true}}" style="min-height:250px;"><!-- Try change href value and see -->
 	var http = require('http');
 	var url = require('url');
 	var fs = require('fs');
