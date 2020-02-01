@@ -47,6 +47,8 @@ console.log(q.search); //returns '?id=1234&name=pc'
 <p><b>index.html</b></p>
 <p>
 	@IMG_START@NODEJS/indexpage/png@IMG_END@
+	![indexpage](../images/indexpage.png)
+
 </p>
 <p><b>home.html</b></p>
 <p>
