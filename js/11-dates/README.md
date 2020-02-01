@@ -1,9 +1,13 @@
 <p>Creates a JavaScript Date instance that represents a single moment in time. Date objects are based on a time value that is the number of milliseconds since 1 January, 1970 UTC.</p>
 <h5>Syntax</h5>
-@CODE_START@@HTML@new Date();
+
+```javascript
+new Date();
 new Date(value);
 new Date(dateString);
-new Date(year, month[, date[, hours[, minutes[, seconds[, milliseconds]]]]]);@CODE_END@
+new Date(year, month[, date[, hours[, minutes[, seconds[, milliseconds]]]]]);
+```
+
 <h5>value</h5>
 <p>Integer value representing the number of milliseconds since 1 January 1970 00:00:00 UTC, with leap seconds ignored (Unix Epoch; but consider that most Unix time stamp functions count in seconds).</p>
 <h5>dateString</h5>
@@ -31,30 +35,21 @@ new Date(year, month[, date[, hours[, minutes[, seconds[, milliseconds]]]]]);@CO
 
 <h5>Example on Date()</h5>
 
-<section >  
-    <div ui-ace ="{useWrapMode: 'true', showGutter : 'true', theme:'monokai', mode: 'html', previewId:'preview',
-		onLoad: htmlcssjsContentOnLoaded,
-		rendererOptions: { fontSize: 16 },
-		advanced: { highlightActiveLine: true}
-	}" style="min-height:300px;"><xmp><h3>Please open the console and see the log </h3>
 <h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
 <!--try with different assignment operators like a ^= b, a |= b, a &= b etc. -->
-<script language="javascript" type="text/javascript">
-	var dat = Date();
-	console.log("Date and Time : " + dat );
-	
-	var dt = new Date("December 25, 1995 23:15:00");
-	console.log("getDate() : " + dt.getDate() );
-	console.log("getDay() : " + dt.getDay() );
-	console.log("getFullYear() : " + dt.getFullYear() ); 
- </script>
-</xmp>
-	</div>
-	<div>
-        <iframe id="preview"></iframe>
-    </div>
-</section>
 
+```javascript
+var dat = Date();
+console.log("Date and Time : " + dat );
+	
+var dt = new Date("December 25, 1995 23:15:00");
+console.log("getDate() : " + dt.getDate() );
+console.log("getDay() : " + dt.getDay() );
+console.log("getFullYear() : " + dt.getFullYear() ); 
+```
+```html
+<iframe id="preview"></iframe>
+```
 <!--
 @CODE_START@@HTML@<script type="text/javascript">
 var dt = Date();
