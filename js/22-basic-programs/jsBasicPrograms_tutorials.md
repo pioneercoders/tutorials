@@ -42,9 +42,9 @@ for (var i = 1; i < array.length; i++) {
 
 console.log(min);
 ```
-
 Output:
 2  
+
 
 <h4>4.Write a program to print duplicate element in array?</h4>
 
