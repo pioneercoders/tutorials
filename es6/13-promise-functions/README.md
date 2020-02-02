@@ -26,9 +26,6 @@ console.log("End");
 <h3>Please open the console and see the log </h3>
 <h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
 
-```html
-<iframe id="preview"></iframe>
-```
 
 <p>A Promise object is created using the new keyword and its constructor. This constructor takes as its argument a function, called the "executor function". This function should take two functions as parameters. The first of these functions (resolve) is called when the asynchronous task completes successfully and returns the results of the task as a value. The second (reject) is called when the task fails, and returns the reason for failure, which is typically an error object.
 </p>
