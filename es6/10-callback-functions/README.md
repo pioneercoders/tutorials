@@ -3,7 +3,7 @@
 
 ```javascript
 var success = function(){
-	console.log("getcities success show results to user ...");
+	console.log("getcities success show results to user ...");  
 	}
 	
 var failure = function(){
@@ -24,8 +24,5 @@ getCities(success,failure);
 
 ```
 
-```html
-<iframe id="preview"></iframe>
-```
 
 <p>In above example, success and failure are the functions which passed as parameter to getCities function. On succesfull retrival of the cities wer are calling successCallback and if any failure we are calling failureCallback functions. </p>
