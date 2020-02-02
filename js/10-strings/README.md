@@ -16,10 +16,6 @@ console.log("String ", str);
 console.log("String1 ", str1);
 ```
 
-```html
-<iframe id="preview"></iframe>
-```
-
 <h4>Methods</h4>
 <table class="pc-table">
 	<tr>
@@ -88,9 +84,6 @@ var s2=s1.trim();
 console.log("after trim of s1 ",s2); 
 ``` 
 
- ```html
-<iframe id="preview1"></iframe>
-```
 
 <!--
 <h4>charAt(index) Method</h4>
