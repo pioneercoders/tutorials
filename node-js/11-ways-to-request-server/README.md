@@ -24,13 +24,11 @@
 	Mobile  :<input type="text" name="mobile" /><br>	
 	<input type="submit"/>
 </form>
-<iframe id="preview"></iframe>
 ```
 
 <h4>Sending request throught Anchore tag </h4>
 
 ```html
 <a href="http://pioneercoders.com/retrieveUser?id=1&method=get"> Retrive user data</a>
-<iframe id="preview1"></iframe>
 ```
 
