@@ -74,10 +74,15 @@ fs.readFile(filename, function(err, data) {
 
 <p>save above code with file name <b>url.js</b> and start the node server</p>
 <h4>Run url.js</h4>
-@CODE_START@ node url.js
-@HTML@@CODE_END@
-@IMG_START@NODEJS/cmdurlRun/png@IMG_END@
+
+```javascript 
+node url.js
+```
+
+![cmdurlRun](https://github.com/pioneercoders/pc-tutorials/blob/master/node-js/images/cmdurlRun.PNG)
 
 <h4>Output</h4>
-<p>@IMG_START@NODEJS/homeOutput/png@IMG_END@</p>
-<p>@IMG_START@NODEJS/indexOutput/png@IMG_END@</p>
+
+![homeOutput](https://github.com/pioneercoders/pc-tutorials/blob/master/node-js/images/homeOutput.PNG)
+
+![indexOutput](https://github.com/pioneercoders/pc-tutorials/blob/master/node-js/images/indexOutput.PNG)
