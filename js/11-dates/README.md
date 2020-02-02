@@ -47,9 +47,7 @@ console.log("getDate() : " + dt.getDate() );
 console.log("getDay() : " + dt.getDay() );
 console.log("getFullYear() : " + dt.getFullYear() ); 
 ```
-```html
-<iframe id="preview"></iframe>
-```
+
 <!--
 @CODE_START@@HTML@<script type="text/javascript">
 var dt = Date();
