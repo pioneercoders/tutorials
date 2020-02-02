@@ -1,7 +1,3 @@
-```html
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TGEaMf0etTg" frameborder="0" allowfullscreen></iframe><br>
-```
-
 <h4>What is the DOM?</h4>
 <ul>
 	<li>Abbrievated DOM as <b>Document Object Model</b>.</li>
@@ -85,8 +81,6 @@ The following are the DOM methods to access the HTML elements.</p>
 	</script>
 ```
 
-        <iframe id="preview"></iframe>
-
 
 <h4>Changing HTML element content by its className</h4>
 
@@ -104,8 +98,6 @@ The following are the DOM methods to access the HTML elements.</p>
 	}
 </script>
 ```
-	<iframe id="preview1"></iframe>
- 
  
 <h4>Changing HTML element content by its TagName</h4>
 
@@ -122,7 +114,6 @@ The following are the DOM methods to access the HTML elements.</p>
 	}
 </script>
 ```
-		<iframe id="preview2"></iframe>
 
 <a href="project/download/JS/dom" class="cws-button bt-color-3 border-radius alt icon-right">Exercise 1</a>
 <a href="project/download/JS/JS_DOM" class="cws-button bt-color-3 border-radius alt icon-right">Exercise 2</a>
