@@ -14,16 +14,9 @@ var http = require('http');
 var http = require('http');
 const server = http.createServer(function(request, response){
 	  // write your code here
-	});
+}).listen(8080);
 ```
 <p>The function that's passed in to createServer is called once for every HTTP request that's made against that server, so it's called the request handler.</p>
-
-```javascript
-var http = require('http');
-const server = http.createServer(function(request, response){
-	  // write your code here
-	}).listen(8080);
-```
 
 <p>In order to actually serve requests, the <b>listen()</b> method needs to be called on the server object. In most cases, all you'll need to pass to listen is the port number you want the server to listen on.</p>
 
@@ -36,7 +29,7 @@ http.createServer(function (req, res) {
 	res.writeHead(200, {'Content-Type': 'text/html'});
 	res.write('Hello World!');
 	res.end();
-	}).listen(8080);
+}).listen(8080);
 ```
 
 <p><b>req</b> represents request from the client and <b>res</b> is the response from the server.</p>
@@ -50,10 +43,10 @@ http.createServer(function (req, res) {
 ```javascript
 var http = require('http');
 http.createServer(function (req, res) {
-	  res.writeHead(200, {'Content-Type': 'text/html'});
-	  res.write(req.url);
-	  res.end();
-	}).listen(8080);
+	res.writeHead(200, {'Content-Type': 'text/html'});
+	res.write(req.url);
+	res.end();
+}).listen(8080);
 ```
 
 <h4>Output</h4>
@@ -69,11 +62,11 @@ http.createServer(function (req, res) {
 ```javascript
 var http = require('http');
 http.createServer(function (req, res) {
-	  res.writeHead(200, {'Content-Type': 'text/html'});
-	   var qùeryString = url.parse(req.url, true).query;
-  		var txt = qùeryString.studentname + " " + qùeryString.studentid;
-	 	 res.end(txt);
-	}).listen(8080);
+	res.writeHead(200, {'Content-Type': 'text/html'});
+	var qùeryString = url.parse(req.url, true).query;
+  	var txt = qùeryString.studentname + " " + qùeryString.studentid;
+	res.end(txt);
+}).listen(8080);
 ```
 
 <h4>URL</h4>
