@@ -1,5 +1,5 @@
 <h4>Local Environment Setup</h4>
-<p>To setup the Node.js locally. we need to have two softwares in our local computer.</p>
+<p>To setup and run the Node.js locally. we need to have two softwares in our local computer.</p>
 <ol type="1">
 	<li>Text Editor.</li>
 	<li>Node js software.</li>
@@ -11,7 +11,7 @@
 	<li>Notepad++</li>
 	<li>Sublime</li>
 	<li>vim or vi</li>
-	<li>Epsilon etc.</li>
+	<li>VS Code etc.</li>
 </ol>
 <h4>Node.js Software</h4>
 <p>Node.js software can be downloaded from the <a href="https://nodejs.org/en/" target="_blank">official  website</a></p>

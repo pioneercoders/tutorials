@@ -1,6 +1,5 @@
-<h4>NodeJS</h4>
-<p>Node.js is an <b>open-source, cross-platform</b> JavaScript run-time environment for executing JavaScript code server-side.</p>
-<p>previously javascript was used for <b>client side scripting</b> in which scripts written in JavaScript are embedded in a webpage's HTML, to be run client-side by a JavaScript engine in the user's web browser</p>
+<h4>What is NodeJS</h4>
+<p>Node.js is an JavaScript run-time environment for executing JavaScript code server-side.</p>
 <h4>Official Definition</h4>
 <p>Node.js a JavaScript runtime built on <b>Chrome's V8 JavaScript engine</b>. Node.js uses an <b>event-driven, non-blocking I/O model</b> that makes it lightweight and efficient. </p>
 <p><b>What is Non-blocking</b></p>
