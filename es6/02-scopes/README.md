@@ -1,6 +1,6 @@
 <h3>What is Scope?</h3>
 <p>"scope" refers to where a variable is accessible, based on where and how the variable was declared. </p>
-<p>Global variables have, unsurprisingly, global scope - they can be accessed (set or read) anywhere in your script.</p>
+<p>Global variables have, they can be accessed (set or read) anywhere in your script.</p>
 <p>Variables defined with the var keyword in function have "function scope" that is more limited; these are variables that might be accessed only within a function (often the function in which they are defined).</p>
 
 ``` javascript
