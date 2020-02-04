@@ -31,5 +31,3 @@ console.log(pet.name + ' says "' + pet.speak() + '"');
 var fido = new Dog('Fido');
 console.log(fido.name + ' says "' + fido.speak() + '"');
 ```
-<h3>Please open the console and see the log </h3>
-<h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>

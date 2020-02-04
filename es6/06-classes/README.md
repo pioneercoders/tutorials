@@ -24,10 +24,6 @@ console.log("Employee 1:: ", emp1.id, emp1.name);
 console.log("Employee 2:: ", emp2.id, emp2.name);
 ```
 
-<h3>Please open the console and see the log </h3>
-<h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
-
-
 <h4>Constructor</h4>
 <p> The constructor method is a special method for creating and initializing an object created with a class. There can only be one special method with the name "constructor" in a class. A SyntaxError will be thrown if the class contains more than one occurrence of a constructor method.</p>
 
@@ -52,5 +48,3 @@ const square = new Rectangle(10, 10);
 var area = square.getArea();
 console.log(area);
 ```
-<h3>Please open the console and see the log </h3>
-<h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
