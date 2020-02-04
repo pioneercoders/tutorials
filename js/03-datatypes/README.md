@@ -1,7 +1,7 @@
 <h4>What is DataType?</h4>
 In maths, When we declare variables, we also specify the type of data and range of the data to that variable.
 
-```java
+```javascript
 Ex: a = x+y; x,y &#8364; Z(integers) and 1<x<10 and 30<y<50 
 	numbers for each and every expriment of addition should be with the range.
 Expriment 1:  x=4 , y=5 then a = 9
