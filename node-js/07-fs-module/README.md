@@ -28,12 +28,12 @@ fs.readFile(fileName [,options], callback)
 
 ```javascript
 fs = require('fs')
-    fs.readFile(fileName.txt, 'utf8', function (err,data) {
-      if (err) {
-        return console.log(err);
-      }
-      console.log(data);
-    });
+fs.readFile(fileName.txt, 'utf8', function (err,data) {
+	if (err) {
+		return console.log(err);
+	}
+	console.log(data);
+});
 ```
 
 <h4>Output</h4>
@@ -74,7 +74,7 @@ fs.appendFile('DirectoryName\\mynewfile1.txt', ' This is my text.',
 function (err) {
 	  if (err) throw err;
 	  console.log('Updated!');
-	});
+});
 ```
 
 <p>In the above example  we are appending text called <b>Pioneer Coders</b>. to file <b>pcFile</b>. if <b>pcFile doesnot exist it will create the file</b> with file name 'pcFile'</p>
@@ -85,8 +85,8 @@ fs = require('fs');
 fs.writeFile('writeContent.txt', 'write the content to file using this function',
 function (err) {
   if (err) return console.log(err);
-  console.log('Desktop > writeContent.txt');
-	});
+  	console.log('Desktop > writeContent.txt');
+});
 ```
 
 <h4>Example: creating file using fs.open();</h4>
@@ -96,8 +96,8 @@ var fs = require('fs');
 //create an empty file named mynewfile2.txt:
 fs.open('DirectoryName\\mynewfile2.txt', 'w', function (err, file) {
   if (err) throw err;
-  console.log('Saved!');
-	});
+  	console.log('Saved!');
+});
 ```
 
 <h4>Update Files</h4>
@@ -115,7 +115,7 @@ var fs = require('fs');
 fs.appendFile('DirectoryName\\mynewfile1.txt', ' This is my text.', function (err) {
   if (err) throw err;
   console.log('Updated!');
-	});
+});
 ```
 
 <h4>fs.writeFile()</h4>
@@ -128,7 +128,7 @@ fs.writeFile('DirectoryName\\writeContent.txt', 'write the content to file using
 function (err) {
   if (err) return console.log(err);
   console.log('Desktop > writeContent.txt');
-	});
+});
 ```
 
 <h4>Delete File()</h4>
@@ -140,7 +140,7 @@ var fs = require('fs');
 fs.unlink('DirectoryName\\mynewfile2.txt', function (err) {
   if (err) throw err;
   console.log('File deleted!');
-	});
+});
 ```
 
 <p>Above example deletes the file <b>pcFile.txt</b>
