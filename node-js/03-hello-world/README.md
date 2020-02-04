@@ -1,8 +1,5 @@
 <h4>Hello World Example</h4>
-```javascript
-console.log("Hellow World.")
-```
-<p>Open text editor write the above code and save the file with <b>.js</b> extention.</p>
+<p>Open text editor write the below code and save the file with <b>.js</b> extention.</p>
 	
 ```javascript
 filename.js 
