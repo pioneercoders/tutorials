@@ -119,7 +119,7 @@ class App{
 </section>
 
 
-
+Ace wrapper::  
 <ace style="width: 100%; height: 25vh;" [config]="config" [value]="'Some example content'"></ace>
 
 
