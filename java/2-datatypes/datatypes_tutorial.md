@@ -123,8 +123,3 @@ class App{
 	<iframe id="preview1"></iframe>
 </div>
 </section>
-
-
-
-
-
