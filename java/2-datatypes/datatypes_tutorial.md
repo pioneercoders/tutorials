@@ -1,7 +1,8 @@
 
-Ace wrapper::  
-<div style="width: 100%; height: 25vh;" [ace]="config">
-  Some example content
+Ace wrapper latest::  
+<div ace-editor
+       style="min-height: 200px; width:100%; overflow: auto;">
+    console.log('hii');
 </div>
 
 ### Why we need data types?  
