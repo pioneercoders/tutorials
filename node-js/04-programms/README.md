@@ -1,4 +1,3 @@
-
 ##### 1.Write a program to print elements in array?
 
 ```javascript
