@@ -6,7 +6,7 @@
 <p>functions in Node.js are designed to be non-blocking (commands execute in parallel, and use callbacks to signal completion or failure)
 <p> Node.js allows the creation of Web servers and networking tools using JavaScript and a collection of modules that handle various core functionality.</p>
 <p class="card" style="background-color: #151515;color: white;padding: 10px;">
-	<b>Node.js</b> = Runtime Environment + JavaScript Library 
+	Node.js = Runtime Environment + JavaScript Library 
 </p>
 <h4>Node.js Features</h4>
 <p><b>Very Fast: </b> Since Node is built on Google Chrome's V8 JavaScript Engine, Node.js library very fast in code execution.   </p>
