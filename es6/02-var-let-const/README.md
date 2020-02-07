@@ -5,13 +5,12 @@
 
 ``` javascript
 var pi = 3.45;
-p = 3;
-function area(r) {
+function areaOfCircle(r) {
 	var a =  pi * r * r;
-	area = a;
+	var area = a; // dummy assignment to area for testing this variable out side function
 	return a; 
 }
-var ar = area(3);
+var ar = areaOfCircle(3);
 console.log("area of circle from variable ar", ar);
 console.log("variable area value outside function", area);
 
@@ -30,11 +29,11 @@ console.log("X value outside for loop:"+x);
 
 ```javascript
 const pi = 3.45;
-function area(r) {
+function areaOfCircle(r) {
 	var a =  pi * r * r;
 	return a;
 }
-var ar = area(3);
+var ar = areaOfCircle(3);
 console.log("area of circle from variable ar", ar);
 
 for(let x=0;x<2;x++){
