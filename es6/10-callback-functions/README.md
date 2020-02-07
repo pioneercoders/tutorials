@@ -23,6 +23,4 @@ var getCities = function(successCallback,failureCallback) {
 getCities(success,failure);
 
 ```
-
-
 <p>In above example, success and failure are the functions which passed as parameter to getCities function. On succesfull retrival of the cities wer are calling successCallback and if any failure we are calling failureCallback functions. </p>

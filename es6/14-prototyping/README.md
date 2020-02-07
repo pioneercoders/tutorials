@@ -15,10 +15,6 @@ console.log("Employee Id:: ", employeeObject.id)
 employeeObject.work();
 ```
 
-<h3>Please open the console and see the log </h3>
-<h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
-
-
 <p>employeeObject is a perfectly nice for one employee why because id, name and address are hardcoded, it would be helpful if we could define a pattern for any employee.</p>
 
 ```javascript
@@ -39,9 +35,6 @@ console.log("Employee 1:: ", emp1.id,emp1.name);
 console.log("Employee 2:: ", emp2.id, emp2.name);
 emp1.work();
 ```
-
-<h3>Please open the console and see the log </h3>
-<h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
 
 <p> In above approch we can create n number of employee objects and we can provide the employee data. the new keyword is used to create object of the employee.</p>
 <h5> Now if i want to add mobile number to all my employees? </h5>
@@ -69,5 +62,3 @@ emp2.mobile="987654321"
 console.log("Employee 1:: ", emp1.id,emp1.name,emp1.mobile);
 console.log("Employee 2:: ", emp2.id, emp2.name,emp2.mobile);
 ```
-<h3>Please open the console and see the log </h3>
-<h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
