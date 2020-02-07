@@ -71,10 +71,6 @@ console.log("(a/=b) ="+result);
 var result = a%=b; 
 console.log("(a%=b) ="+result);
 ```
-<div>
-        <iframe id="preview"></iframe>
-</div>
-
 
 <h4>Arithmetic Operators</h4>
 <p>Arithmetic operators take numaric operands and returns single numaric operand.</p>
@@ -136,10 +132,7 @@ console.log("a++ =", a++);
 console.log("b-- =", b--);
 console.log("Pioneer"+"Coders"); 
 ```
-<div>
-        <iframe id="preview1"></iframe>
-    </div>
-</section>
+
 <p>The string operator(+) cancatenates(adds) two strings, returning another string.</p>
 
 
@@ -193,10 +186,6 @@ console.log("(a<=b) ="+(a<=b));
 console.log("(a<=b) ="+(a<=b));
 ```
 
-<div>
-        <iframe id="preview2"></iframe>
-</div>
-
 <h4>Logical Operators :</h4>
 <p>Logincal operators are three types</p>
 	<ul>
@@ -241,12 +230,6 @@ var result = !andresult;
 console.log("!andresult ="+result);
 ```
 
-<div>
-        <iframe id="preview3"></iframe>
-</div>
-
-
-
 <h4>Bitwise Operators :</h4>
 <p>The name itself indicates that it performs operations using bits(1 byte = 8 bits). Even if we enter decimal values like 10 or 20, 
 the system automatically converts decimal values into binary representation. To understand go through following example</p>
@@ -290,10 +273,6 @@ console.log("(~b) =", (~b) );
 console.log("(a<<b) =", (a<<b) ); 
 console.log("(a>>b) =", (a>>b) );
 ```
-<div>
-        <iframe id="preview4"></iframe>
-</div>
-
 
 
 <h4>Ternary Operators(conditional Operators)</h4>
@@ -317,10 +296,6 @@ var number = 10;
 var number1 = 10, number2 = 20;
 (number1>number2)?console.log(number1+" is big"):(number1<number2)?console.log(number2+" is big"):console.log("number1 and number2 are equal");
 ```
-<div>
-        <iframe id="preview5"></iframe>
-</div>
-
 
 <h4>Other Operator</h4>
 <table class="pc-table">
@@ -388,6 +363,3 @@ for(var i=0,j=3;i<3,j>0;i++,j--){
 	console.log(i+" "+" "+j);
 	}
 ```
-<div>
-        <iframe id="preview6"></iframe>
-</div>
