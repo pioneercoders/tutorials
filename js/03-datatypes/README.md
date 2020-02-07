@@ -70,9 +70,6 @@ console.log("person undefined::",person);
 var userName = ""; // value is "", type is String
 console.log("userName empty::",userName);
 ```
-<div>
-       <iframe id="preview"></iframe>
-</div>
 
 <h4>Non-Primitive Datatypes :</h3>
 <p>The non-primitive data types are as follows:</p>
@@ -102,11 +99,6 @@ console.log("courses ::",courses);
 console.log("student ::",student);
 ```
 
-<div>
-        <iframe id="preview1"></iframe>
-</div>
-
-
 <h4>Typeof Operator :</h3>
 <p>You can use the JavaScript typeof operator to find the type of a JavaScript variable</p>
 
@@ -122,9 +114,5 @@ typeof false; // Returns Boolean
 typeof [1, 2, 3, 4]; // Returns Object (not array)
 typeof {name : "Krishna", age : "24"}; // Returns Object
 ```
-
-<div>
-        <iframe id="preview2"></iframe>
-</div>
 
 <p>The typeof operator returns "object" for arrays because in JavaScript arrays are objects.</p>
