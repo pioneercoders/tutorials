@@ -1,1 +1,1 @@
-es6 introduction
+ES6 or ECMAScript6 or ECMAScript(2015) is trademarked specification standardized by European Computer Manufacturers Association (ECMA). As JavaScript popularity was rising and it has to be run on most of the browsers there was a need for a single platform where all new JavaScript features could be standardized thus ECMAScript was formed.
