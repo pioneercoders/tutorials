@@ -5,7 +5,6 @@
 	<li>IDE like VS Code.</li>
 </ol>
 <p>Node.js software can be downloaded from the <a href="https://nodejs.org/en/" target="_blank">Node official  website</a></p>
-<h4>Please install VS Code.</h4>
 <p>VS Code software can be downloaded from the <a href="https://code.visualstudio.com/download" target="_blank">VS code download</a></p>
 
 <h4>Hello World Example</h4>
