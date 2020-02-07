@@ -14,7 +14,7 @@
 var str = 'welcome to pioneer coders.';
 console.log(str);
 ```
-<p>save file with test.js by clicking ctrl+s </p>
+<p>save file with test.js by tryping ctrl+s </p>
 <h4>Excuting node.js code</h4>
 <p>Open command promt and by click Terminal->new terminal option in menu and type below command.</p>
 <p><b>node test.js</b></p>
