@@ -1,13 +1,14 @@
-##### 1.Write a program to print elements in array?
 
-```javascript
-inputData = [3 , 6, 2, 56];
-function printArrayElements(numbersArray) {
-	for (i=0; i<numbersArray.length;i++) {
-		console.log(numbersArray[i]);
+<details>
+  <summary>1.Write a program to print elements in array?</summary>
+ ```javascript
+function printArrayElements(arr) {
+	for (i=0; i<arr.length;i++) {
+		console.log(arr[i]);
 	}
 }
-printArrayElements(inputData);'
+var userIds = [3 , 6, 2, 56];
+printArrayElements(inputData);
 Outout:
 3  
 6  
@@ -15,24 +16,27 @@ Outout:
 5  
 6
 ```
-#### 2.Write a program to find largest element in array?
-		
-```javascript
-array = [3 , 6, 2, 56, 32, 5, 89, 32];
-var largest= 0;
+</details>
 
-function findLargestNumber(numbersArray){
-	for (i=0; i<=largest;i++){
-		if (numbersArray[i]>largest) {
-			largest=numbersArray[i];
+<details>
+  <summary>2.Write a program to find largest element in array?</summary>	
+```javascript
+function findLargestNumber(arr){
+	var largest= 0;
+	for (i=0; i<=arr.length;i++){
+		if (arr[i]>largest) {
+			largest=arr[i];
 		}
 	}
+	return largest;
 }
-
-findLargestNumber(array);
-console.log(largest);
+var data = [3 , 6, 2, 56, 32, 5, 89, 32];
+var largetNumber = findLargestNumber(data);
+console.log(largetNumber);
 Outout: 83
 ```
+</details>
+
 #### 3.Write a program to find the smallestNumber in array?
 
 ```javascript
