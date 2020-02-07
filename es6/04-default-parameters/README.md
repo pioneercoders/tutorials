@@ -1,4 +1,4 @@
-<h4>What happen with out default parameters </4>
+<h4>What happen with out default parameters </h4>
 
 ```javascript
 function add(x,y) {
