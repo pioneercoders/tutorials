@@ -1,8 +1,3 @@
-<section>
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/ZcY_eP2B8VI"
-	frameborder="0" allowfullscreen></iframe>
-</section>
-
 <h4> What is function ?</h4>
 <p> In programming, the concept of functions came from the idea of functions in mathematics. </p>
 <p> In mathematics, a function is a relation between a set of inputs and a set of permissible outputs with the property that each input is related to exactly one output. Ex</p>
@@ -69,11 +64,6 @@ function_name(parameters);
 </html>
 ```
 
-<div>
-	<iframe id="preview"></iframe>
-</div>
-
-
 	
 <h5>Example: function with parameters</h5>
 <h6>Javascript code to swap the two variables using functions</h6>
@@ -101,11 +91,6 @@ function_name(parameters);
 </html>
 ```
 
-<div>
-	<iframe id="preview1"></iframe>
-</div>
-
-
 
 <h5>Example: function returning a value</h5>
 
@@ -129,12 +114,6 @@ function_name(parameters);
 	</body>
 </html>
 ```
-
-<div>
-	<iframe id="preview2"></iframe>
-</div>
-
-
 
 <!--
 <h4>Function Expression</h4>
