@@ -27,13 +27,13 @@ Outout:
 
 ```javascript
 function findLargestNumber(arr){
-	var largest= 0;
+	var max= arr[0];
 	for (i=0; i<=arr.length;i++){
-		if (arr[i]>largest) {
-			largest=arr[i];
+		if (arr[i]>max) {
+			max=arr[i];
 		}
 	}
-	return largest;
+	return max;
 }
 var data = [3 , 6, 2, 56, 32, 5, 89, 32];
 var largetNumber = findLargestNumber(data);
@@ -43,28 +43,35 @@ Outout: 83
 		</p>
 </details>
 
-#### 3.Write a program to find the smallestNumber in array?
-
+<details>
+	<summary>3.Write a program to find the smallestNumber in array?</summary>
+	<p>
+		
 ```javascript
-inputArray = [3, 6, 2, 56, 32, 5, 89, 32];
-var min = inputArray[0];
-function findSmallestNumberInArray(numbersArray){
-for (var i = 1; i < numbersArray.length; i++) {
-       if (min > numbersArray[i]){
-           min = numbersArray[i];
-        	}
-    	     }
-	}
-findSmallestNumberInArray(inputArray);
+function findSmallestNumber(numbersArray) {
+	var min = inputArray[0];
+	for (var i = 1; i < numbersArray.length; i++) {
+		if (min > numbersArray[i]){
+			min = numbersArray[i];
+		}
+    	}
+}
+var inputArray = [3, 6, 2, 56, 32, 5, 89, 32];	
+var min = findSmallestNumber(inputArray);
 console.log(min);
 Output:
 2  
 ```
+		</p>
+</details>
 
-#### 4.Write a program to find the duplicates in array?
+
+<details>
+	<summary>4.Write a program to find the duplicates in array?</summary>
+	<p>
 	
 ```javascript
-inputArray = [3 , 6, 2, 56, 32, 5, 89, 32];
+
 function findDuplicates(arrayData){
     for (var i = 0; i < arrayData.length; i++) {
         for (var j = i + 1 ; j < arrayData.length; j++) {
@@ -75,9 +82,12 @@ function findDuplicates(arrayData){
        			}
   	 	}
  	}
-
+inputArray = [3 , 6, 2, 56, 32, 5, 89, 32];
 findDuplicates(inputArray);
 
 Output:
 32  
 ```
+
+		</p>
+</details>
