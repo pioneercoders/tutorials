@@ -27,10 +27,6 @@ var x=9,y=10;
 console.log("sum of numbers:",x+y);
 ```
 
-<div>
-        <iframe id="preview"></iframe>
-    </div>
-
 
 <!--
 
