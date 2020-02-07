@@ -29,20 +29,21 @@ var mul = function (a, b) {return a * b};
 var result = mul(10,20);
 console.log(result);
 ```
+
 After a function expression has been stored in a variable, the variable can be used as a function. Functions stored in variables do not need function names. They are always invoked (called) using the variable name.
 
-<h4>Anonymous Functions<h4>
+<h4>Anonymous Functions</h4>
 function with of name we call it as anonymous function.  
 There are three main anonymous function declarations you will run into:  
 
-IIFE (Immediately Invoked Function Expression)
+<h6> IIFE (Immediately Invoked Function Expression) </h6>
 
 ```javascript
 ( function (x) { 
     return x * 2; 
     } )(2);
 ```
-Assignment to Variable
+<h6>Assignment to Variable</h6>
 
 ```javascript
 var multiplyByTwo = function (x) { 
@@ -50,7 +51,7 @@ var multiplyByTwo = function (x) {
 };
 ```
 
-Anonymous Functions used as a parameter passed to another function
+<h6>Anonymous Functions used as a parameter passed to another function</h6>
 
 ```javascript
 [1, 2, 3, 4, 5].map( function(x) { 
