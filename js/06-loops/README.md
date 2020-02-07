@@ -36,11 +36,6 @@ Statements to be executed if test condition is true
 		console.log("i value in for loop " + i);
 	}
  ```
- 
- <div>
-        <iframe id="preview"></iframe>
-    </div>
-
 
 
 <h4>While Loop</h4>
@@ -70,10 +65,6 @@ while (i<=3){
 	i = i + 1;
 	}
 ```
-
-<div>
-        <iframe id="preview1"></iframe>
-</div>
 		
 <h4>do..while Loop</h4>
 <p>The flow chart of a do-while loop in JavaScript would be as follows -</p>
@@ -104,7 +95,3 @@ do{
 	}
 	while (i<=3);
 ```
-
-<div>
-        <iframe id="preview2"></iframe>
-</div>
