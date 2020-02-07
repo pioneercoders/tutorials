@@ -1,7 +1,3 @@
-<iframe width="560" height="315" src="https://www.youtube.com/embed/U4z-DKIfe8I" 
-frameborder="0" allowfullscreen></iframe><br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0mlhZ6yAtVo" 
-frameborder="0" allowfullscreen></iframe>
 <h4> What is Array</h4>
 <p>In Maths, An arrangement of objects, pictures, or numbers in columns and rows is called an array. </p>
 <p>Similarly in JS, An array is group of memory locations allocated in side by side to store similar type of data.</p>
@@ -79,11 +75,6 @@ var lastElement = courses[courses.length - 1]; // jQuery
 </html>
 ```
 
-<div>
-	<iframe id="preview"></iframe>
-</div>
-
-
 	
 <h5>Syntax for declaring Arrays using Array keyword</h5>
 	
@@ -128,13 +119,6 @@ document.write(item+"<br>");
 </html>
 ```
 
-
-<div>
-	<iframe id="preview1"></iframe>
-</div>
-
-
-
 <h4>Important methods in array</h4>
 
 ```html
@@ -168,11 +152,6 @@ document.write(item+"<br>");
 </body>
 </html>
 ```
-
-
-<div>
-	<iframe id="preview2"></iframe>
-</div>
 
 
 <h5>Array Properties</h5>
