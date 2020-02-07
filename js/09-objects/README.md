@@ -1,5 +1,3 @@
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1nuhemrfnjw" frameborder="0" allowfullscreen></iframe>
-
 <h4>What is Object?</h4>
 <p>JavaScript is not a full-blown object-oriented programming language, such as Java, but it is designed on a simple object-based model. An object is a construct with properties that contain JavaScript variables or other objects.</p>
 
@@ -54,11 +52,6 @@ employeeObject.work();
 </html>
 ```
 
-<div>
-	<iframe id="preview"></iframe>
-</div>
-
-
 
 <h5>Creating the Object using Object keyword</h5>
 
@@ -89,11 +82,6 @@ var objectName = new Object();
 </body>
 </html>
 ```
-
-<div>
-	<iframe id="preview1"></iframe>
-</div>
-
 
 
 <h3> JavaScript built-in Objects </h3>
@@ -132,7 +120,10 @@ JavaScript has several built-in or native objects. These objects are accessible 
 <h4>Object Constructor</h4>
 <p>Here are two common patterns for creating objects.</p>
 	<h5>1.Constructor Pattern for Creating Objects</h5>
-@CODE_START@@HTML@function Topic (01PC, Java, 8, 60){
+
+
+```java
+function Topic (01PC, Java, 8, 60){
 	this.topicId = "01PC";
 	this.topicName = "Java";
 	this.totalTopics = 8;
@@ -140,9 +131,12 @@ JavaScript has several built-in or native objects. These objects are accessible 
 	this.showName = function () {
 		console.log("This is a " + this.topicName);
 	}
-}@CODE_END@
-	<h5>2.Prototype Pattern for Creating Objects</h5>
-@CODE_START@@HTML@function Topic () {
+}
+```
+<h5>2.Prototype Pattern for Creating Objects</h5>
+
+```java 
+function Topic () {
 	Topic.prototype.topicId = "01PC";
 	Topic.prototype.topicName = "Java";
 	Topic.prototype.totalTopics = 8;
@@ -150,7 +144,8 @@ JavaScript has several built-in or native objects. These objects are accessible 
 	Topic.prototype.showName = function () {
 		console.log("This is a " + this.topicName);
 	}
-}@CODE_END@ -->
+}
+```
 
 <!-- @PROJECT_START@JS/objects@PROJECT_END@
 @PROJECT_START@JS/JS_Objects1@PROJECT_END@
