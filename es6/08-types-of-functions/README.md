@@ -3,7 +3,6 @@
     <li>Function Declarations/Named function</li>
     <li>Function Expressions</li>
     <li>Anonymous function</li>
-    <li>Immediately invoked function expression.</li>
     <li>Call back function</li>
     <li>Closer Function</li>
     <li>Higher order functions</li>
@@ -22,3 +21,41 @@ function add(x,y) {
 var result = add(20,30);
 console.log(result);
 ```
+<h4>What is a Function Expression?</h4>
+A function can be stored/assigned to a variable:
+
+```javascript
+var mul = function (a, b) {return a * b};
+var result = mul(10,20);
+console.log(result);
+```
+After a function expression has been stored in a variable, the variable can be used as a function. Functions stored in variables do not need function names. They are always invoked (called) using the variable name.
+
+<h4>Anonymous Functions<h4>
+function with of name we call it as anonymous function.  
+There are three main anonymous function declarations you will run into:  
+
+IIFE (Immediately Invoked Function Expression)
+
+```javascript
+( function (x) { 
+    return x * 2; 
+    } )(2);
+```
+Assignment to Variable
+
+```javascript
+var multiplyByTwo = function (x) { 
+    return x * 2; 
+};
+```
+
+Anonymous Functions used as a parameter passed to another function
+
+```javascript
+[1, 2, 3, 4, 5].map( function(x) { 
+    return x * 2;
+    } );
+```
+
+
