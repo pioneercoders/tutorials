@@ -26,10 +26,6 @@
 </html>
 ```
 
-<div>
-	<iframe id="preview"></iframe>
-</div>
-
 
 <p><b>2.onfocus/onblur Events:</b>These event's are fires when cursor focus on given element like input,button ect. </p>
 
@@ -52,10 +48,6 @@
 ```
 
 
-<div>
-	<iframe id="preview1"></iframe>
-</div>
-
 <p><b>3.onselect Event:</b>This event fires when ever select the data of html element in the html page. </p>
 
 ```html
@@ -71,8 +63,3 @@
 	<p id="demo"></p>
 </body>
 ```
-
-
-<div>
-	<iframe id="preview2"></iframe>
-</div>
