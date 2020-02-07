@@ -2,6 +2,7 @@
 <details>
   <summary>1.Write a program to print elements in array?</summary>
 	<p>
+ 
  ```javascript
 function printArrayElements(arr) {
 	for (i=0; i<arr.length;i++) {
@@ -23,6 +24,7 @@ Outout:
 <details>
 	<summary>2.Write a program to find largest element in array?</summary>
 	<p>
+
 ```javascript
 function findLargestNumber(arr){
 	var largest= 0;
