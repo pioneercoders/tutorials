@@ -1,9 +1,3 @@
-
-
-
-<iframe width=100% height=650px src="https://www.youtube.com/embed/ll3mjjrS2lI">
-	
-
 <h4>DOM CSS</h4>
 <p>adding styles to HTML page  Syntax: element.style = new style </p>
 
@@ -22,10 +16,6 @@
 	</script>
 </html>
 ```
-<div>
-        <iframe id="preview3"></iframe>
-</div>
-
 
 <a href="project/download/JS/dom" class="cws-button bt-color-3 border-radius alt icon-right">Exercise 1</a>
 <a href="project/download/JS/JS_DOM" class="cws-button bt-color-3 border-radius alt icon-right">Exercise 2</a>
