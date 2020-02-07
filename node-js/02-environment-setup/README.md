@@ -1,28 +1,21 @@
 <h4>Local Environment Setup</h4>
 <p>To setup and run the Node.js locally. we need to have two softwares in our local computer.</p>
 <ol type="1">
-	<li>Node js software.</li>
-	<li>Text Editor.</li>
+	<li>Node js VM.</li>
+	<li>IDE like VS Code.</li>
 </ol>
-<p>Node.js software can be downloaded from the <a href="https://nodejs.org/en/" target="_blank">official  website</a></p>
-![nodejsdownload](https://github.com/pioneercoders/tutorials/blob/master/node-js/images/nodejsdownload.PNG)
-
+<p>Node.js software can be downloaded from the <a href="https://nodejs.org/en/" target="_blank">Node official  website</a></p>
 <h4>Please install VS Code.</h4>
+<p>VS Code software can be downloaded from the <a href="https://code.visualstudio.com/download" target="_blank">VS code download</a></p>
 
 <h4>Hello World Example</h4>
-<p>Open text editor write the below code and save the file with <b>.js</b> extention.</p>
+<p>Open VS code and clickin on menu File->New File and write bellow code.</p>
 	
 ```javascript
-filename.js 
+var str = 'welcome to pioneer coders.';
+console.log(str);
 ```
-![helloworld](https://github.com/pioneercoders/tutorials/blob/master/node-js/images/helloworld.PNG)
-
+<p>save file with test.js by clicking ctrl+s </p>
 <h4>Excuting node.js code</h4>
-<p>Open command promt and change the directory to current working directory and enter the following command</p>
-<p><b>node helloworld.js</b></p>
-
-<h4>Output</h4>
-
-![helloworldoutput](https://github.com/pioneercoders/tutorials/blob/master/node-js/images/helloworldoutput.PNG)
-
-<p>In the above screenshot <b>cd D*</b> command  is used for changing directory to desktop.</p>
+<p>Open command promt and by click Terminal->new terminal option in menu and type below command.</p>
+<p><b>node test.js</b></p>
