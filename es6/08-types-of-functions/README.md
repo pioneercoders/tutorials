@@ -1,4 +1,4 @@
-<h4>What are the function types are available?</h4>
+<h4>What are the types of functions available?</h4>
 <ul>
     <li>Function Declarations/Named function</li>
     <li>Function Expressions</li>
