@@ -15,8 +15,5 @@ function area(r) {
 	var ar = area(3);
 	console.log("area of circle ", ar);
 ```
-<div>
-	<iframe id="preview"></iframe>
-</div>
 
 <p> in above example pi and ar are gobal variables and area function is global function. variable a inside fuction is local variable, it will create everytime function executed and destoried after completion execution of function.</p>
