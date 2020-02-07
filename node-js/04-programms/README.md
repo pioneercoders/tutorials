@@ -1,6 +1,7 @@
 
 <details>
   <summary>1.Write a program to print elements in array?</summary>
+	<p>
  ```javascript
 function printArrayElements(arr) {
 	for (i=0; i<arr.length;i++) {
@@ -16,10 +17,12 @@ Outout:
 5  
 6
 ```
+</p>
 </details>
 
 <details>
-  <summary>2.Write a program to find largest element in array?</summary>	
+	<summary>2.Write a program to find largest element in array?</summary>
+	<p>
 ```javascript
 function findLargestNumber(arr){
 	var largest= 0;
@@ -35,6 +38,7 @@ var largetNumber = findLargestNumber(data);
 console.log(largetNumber);
 Outout: 83
 ```
+		</p>
 </details>
 
 #### 3.Write a program to find the smallestNumber in array?
