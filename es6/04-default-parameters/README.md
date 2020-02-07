@@ -1,5 +1,5 @@
 <h4>What is default parameters?</h4>
-<p>We can assign default values to function paramters, which is used as default value when function caller missed passing parameter value . 
+<p>We can assign default values to function paramaters, which is used when caller not provide the parameter value .
 </p>
 
 ```javascript
