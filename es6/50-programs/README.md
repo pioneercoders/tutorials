@@ -1,6 +1,7 @@
 <details>
     <summary> Write a program to filter the products based on property and value.</summary>
     <p>
+        
 ```javascript
 var products = [
     {
