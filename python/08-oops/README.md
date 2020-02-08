@@ -21,8 +21,9 @@ class Dog:
 # The value for `age` can vary in your solution
 philo = Dog("Philo", 5, "brown")
 print(f"{philo.name}'s coat is {philo.coat_color}.")
+```
 
-
+```python
 # Exercise 2
 class Car:
     def __init__(self, color, mileage):
