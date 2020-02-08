@@ -1,13 +1,5 @@
 <h4> Functions</h4>
 
-```python
-def greet():
-	print("Hello, Welcome to Pioneer Coders!")
-
-greet() // funciton calling.
-```
-
-<h4> input params and out in function?</h4>
 
 ```python
 def greet(name):
@@ -20,6 +12,17 @@ def add(x,y):
   return result;
 sum = add(10,20)
 printf(sum)
+```
+
+```python
+def cube(num):
+    """Return the cube of the input number."""
+    cube_num = num ** 3  # Could also use pow(num, 3)
+    return cube_num
+
+
+print(f"0 cubed is {cube(0)}")
+print(f"2 cubed is {cube(2)}")
 ```
 
 <h4> Scope and Lifetime of variables</h4>
