@@ -33,7 +33,7 @@ print(mystring)
 There are two Boolean values, True and False.
 
 ```python
-isProcessing = false;
+isProcessing = False
 print(isProcessing)
 ```
 
