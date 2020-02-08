@@ -14,7 +14,7 @@ if num > 0:
 print("This is also always printed.")
 ```
 
-<h4>if...elif...else Statement</h4>
+<h4>if...else Statement</h4>
 
 ```python
 # Program checks if the number is positive or negative
