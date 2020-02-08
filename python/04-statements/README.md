@@ -1,48 +1,68 @@
-# If, else and elif
-
-## Using if statements
-
-Now we know what True and False are.
-
+<h4>if</h4>
 ```python
->>> 1 == 1
-True
->>> 1 == 2
-False
->>>
->>> its_raining = True
->>> its_raining
-True
->>>
+# If the number is positive, we print an appropriate message
+
+num = 3
+if num > 0:
+    print(num, "is a positive number.")
+print("This is always printed.")
+
+num = -1
+if num > 0:
+    print(num, "is a positive number.")
+print("This is also always printed.")
 ```
 
-But what if we want to execute different code depending on something?
-That's when `if` comes in.
-
+<h4>if...elif...else Statement</h4>
 ```python
->>> its_raining = True
->>> if its_raining:
-...     print("It's raining!")
-...
-It's raining!
->>> its_raining = False
->>> if its_raining:
-...     print("It's raining!")        # nothing happens
-...
->>>
+# Program checks if the number is positive or negative
+# And displays an appropriate message
+
+num = 3
+
+# Try these two variations as well. 
+# num = -5
+# num = 0
+
+if num >= 0:
+    print("Positive or Zero")
+else:
+    print("Negative number")
 ```
 
-## Using else
-
-What if we want to print a different message if it's not raining? We
-could do something like this:
-
+<h4>if...elif...else</h4>
 ```python
-its_raining = True                  # you can change this to False
-its_not_raining = not its_raining   # False if its_raining, True otherwise
+# In this program, 
+# we check if the number is positive or
+# negative or zero and 
+# display an appropriate message
 
-if its_raining:
-    print("It's raining!")
-if its_not_raining:
-    print("It's not raining.")
+num = 3.4
+
+# Try these two variations as well:
+# num = 0
+# num = -4.5
+
+if num > 0:
+    print("Positive number")
+elif num == 0:
+    print("Zero")
+else:
+    print("Negative number")
+```
+<h4>Nested if statements</h4>
+```python
+# In this program, we input a number
+# check if the number is positive or
+# negative or zero and display
+# an appropriate message
+# This time we use nested if
+num = float(input("Enter a number: "))
+if num >= 0:
+    if num == 0:
+        print("Zero")
+    else:
+        print("Positive number")
+else:
+    print("Negative number")
 ```
