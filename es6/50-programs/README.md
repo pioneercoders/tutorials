@@ -1,3 +1,6 @@
+<details>
+    <summary> Write a program to filter the products based on property and value.</summary>
+    <p>
 ```javascript
 var products = [
     {
@@ -65,3 +68,5 @@ function filter(arr, prop, val) {
 var filteredProducts = filter(products, "brand", "Honda");
 console.log(filteredProducts);
 ```
+</p>
+</details>
