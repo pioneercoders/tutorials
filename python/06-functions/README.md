@@ -63,3 +63,21 @@ temp_far = convert_cel_to_far(float(temp_cel))
 # Display the converted temperature
 print(f"{temp_cel} degrees C = {temp_far:.2f} degrees F")
 ```
+
+<h4> Write a program to calculate interest to track the growth of an investment.<h4>
+	
+```python
+def invest(amount, rate, years):
+    for year in range(1, years + 1):
+        amount = amount * (1 + rate)
+        print(f"year {year}: ${amount:,.2f}")
+
+
+amount = float(input("Enter a principal amount: "))
+rate = float(input("Enter an anual rate of return: "))
+years = int(input("Enter a number of years: "))
+
+invest(amount, rate, years)
+```
+
+
