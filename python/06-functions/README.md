@@ -25,7 +25,7 @@ printf(sum)
 <h4> Scope and Lifetime of variables</h4>
 The lifetime of variables inside a function is as long as the function executes. They are destroyed once we return from the function.
 
-<h4> Convert temperatures </h4>
+<h4> Write a function for converting temperatures from Celsius to Fahrenheit and vice versa. </h4>
 
 ```python
 def convert_cel_to_far(temp_cel):
