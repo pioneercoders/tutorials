@@ -44,6 +44,13 @@ var products = [
     },
     {
         "id":7,
+        "name":"Swift",
+        "brand":"Maruthi Suziki",
+        "price":800000,
+        "category":"cars"
+    },
+    {
+        "id":8,
         "name":"Hornet 160R",
         "brand":"Honda",
         "price":120000,
