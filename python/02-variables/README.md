@@ -1,4 +1,4 @@
-## Variables
+<h4> Variables </h4>
 
 A variable is a reserved memory location to store values.
 
@@ -28,7 +28,7 @@ mystring = 'Welcome to pioneer coders'
 print(mystring)
 ```
 
-## Booleans
+<h4> Booleans</h4>
 
 There are two Boolean values, True and False.
 
@@ -37,7 +37,7 @@ isProcessing = false;
 print(isProcessing)
 ```
 
-## None
+<h4> None </h4>
 
 None is Python's "nothing" value. It behaves just like any other value,
 and it's often used as a default value for different kinds of things.
