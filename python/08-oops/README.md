@@ -1,4 +1,4 @@
-<h4>class</h4
+<h4>Class</h4
 
 ```python
 # Exercise 1
