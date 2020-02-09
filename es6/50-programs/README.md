@@ -31,7 +31,7 @@ console.log(filteredProducts);
 
 
 <details>
-    <summary> Write a program to find the buses list based on source and dest locations.</summary>
+    <summary> Write a program to find the bus list based on source and dest locations.</summary>
     <p>
         
 ```javascript
