@@ -148,3 +148,60 @@ calculateTax(1000000);
 ```
 </p>
 </details>
+
+
+
+<details>
+    <summary> Write a program to find the tax calculation.</summary>
+    <p>
+        
+```javascript
+/**
+ *  Square of side a : Area = a2(asqure)
+    Rectangle of length 'I' and width ‘w’: Area = w x I
+    Circle of radius ‘r’: Area = Pi x r2 (rsquare)
+    Triangle of base ‘b’ and height ‘h’: Area = 0.5 x b x h
+ * @param {*} shape 
+ * @param {*} values 
+ */
+var calculateArea = function(shape, values){
+      let area;
+      switch(shape) {
+        case 'square':
+          console.log("It's a square with a=" +values[0]);
+          area =values[0]*values[0];
+          break;
+        case 'rectangle':
+          console.log("It's a rectangle with a=" + values[0] + " and b=" + values[1]);
+          area = values[0] * values[1];
+          break;
+        case 'circle':
+          console.log("It's a circle with r=" + values[0]);
+          area = values[0]*values[0] * 3.14;
+          break;
+        case 'triangle':
+          console.log("It's a triangle with b=" + values[0]+ " and h=" + values[1] )
+          area = 0.5 * values[0]*values[1];
+          break;
+        default:
+            area = -1
+          break;
+      }
+      return area;
+  }
+
+  let getAreas = (shapes, values_arr) => {
+    for(let i= 0; i < shapes.length; i++) {
+        let area = calculateArea(shapes[i], values_arr[i]);
+        console.log(`area of ${shapes[i]} is ${area}`);
+    }
+  };
+
+
+  let shapes = ["square", "rectangle", "circle", "triangle"];
+  let values_arr = [[2], [3, 4], [5], [2, 4]];
+  getAreas(shapes, values_arr)
+
+```
+    </p>
+</details>
