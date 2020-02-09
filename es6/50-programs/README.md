@@ -152,7 +152,7 @@ calculateTax(1000000);
 
 
 <details>
-    <summary> Write a program to find the tax calculation.</summary>
+    <summary> Write a program to calculate the areas of various geometrical shapes.</summary>
     <p>
         
 ```javascript
