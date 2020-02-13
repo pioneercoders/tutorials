@@ -3,16 +3,19 @@
 in another words a closure is an inner function that has access to the outer (enclosing) function's variables, paramaters and global variables. </p>
 
 ```javascript
-function getIncrementCounterFun() {
-  let count = 0;
+userService = (function () {
+    var doLogin = function () {
+        alert('hello');
+        // do some critial logic like encript pwd and other stuff.
+    }
 
-  return function() {
-    console.log(count++);
-  };
-}
-
-let incFun = makeCounter();
-incFun();
+    return {
+        login : function () {
+            doLogin();
+        }
+    }
+})();
+userService.login();
 ```
 <p>In above example, say is inner function which is able to access outer function variable text. </p>
 <p>Closures have access to the outer function’s variable even after the outer function returns</p>  
