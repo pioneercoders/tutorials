@@ -13,7 +13,7 @@
 </ul>
 
 <h4>What is function?</h4>
-A function is a block of code which deals with some specific funcanality defined once and called once/multiple times later. Generally functions will take input, do business logic/computational logc and return output. Input and output are optional.
+A function is a block of code which deals with some specific functionality defined once and called once/multiple times later just like mathematical functions. Generally functions will take input, do business logic/computational logc and return output. Input and output are optional.
 
 ```javascript
 // function defination syntax.
