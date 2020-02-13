@@ -11,8 +11,6 @@ var add = (x,y) =>  x + y;
 var sum = add(2,4);
 console.log("sum of 2+4 = " sum);
 ```
-<h3>Please open the console and see the log </h3>
-<h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
 
 ### Arrows
 Arrows are a function shorthand using the `=>` syntax.  They are syntactically similar to the related feature in C#, Java 8 and CoffeeScript.  They support both statement block bodies as well as expression bodies which return the value of the expression.  Unlike functions, arrows share the same lexical `this` as their surrounding code.
