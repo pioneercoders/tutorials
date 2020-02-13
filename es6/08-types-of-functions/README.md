@@ -12,11 +12,27 @@
     <li>Generator Function</li>
 </ul>
 
+<h4>What is function?</h4>
+A function is a block of code which deals with some specific funcanality defined once and called once/multiple times later. Generally functions will take input, do business logic/computational logc and return output. Input and output are optional.
+
+```javascript
+// function defination syntax.
+function function_name( arguments/inputs ) {
+    // set of statements to do some logic.
+    return output; // optional
+}
+// function calling.
+take out put value in to varialbe if present = function_name(provide input values);
+```
+<h4> Why do we need functions?</h4>
+We can avoid the code redundancy, we need not to write same set of line multiple times.
+
 <h4>Function Declarations/Named function</h4>
+Defining A function with function keyword, followed by an obligatory function name, a list of parameters in a pair of parenthesis and block of code is called function declaration.
 
 ```javascript
 function add(x,y) {
-
+    return x + y;
 }
 var result = add(20,30);
 console.log(result);
