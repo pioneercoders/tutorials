@@ -17,6 +17,6 @@ incFun();
 <p>In above example, say is inner function which is able to access outer function variable text. </p>
 <p>Closures have access to the outer function’s variable even after the outer function returns</p>  
 
-<h5>Recommended to gothrough below tutorials also to get more knowledge.</h5>
+<h6>Recommended to gothrough below tutorials also to get more knowledge.</h6>
 <a href="https://javascript.info/closure" target="_blank"> Referral Lexical Environment more in detailed.</a>  <br>
 <a href="https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36" target="_blank">More detailed interview point of view.</a>
