@@ -28,7 +28,7 @@ take out put value in to varialbe if present = function_name(provide input value
 We can avoid the code redundancy, we need not to write same set of line multiple times.
 
 <h4>Function Declarations/Named function</h4>
-Defining A function with function keyword, followed by an obligatory function name, a list of parameters in a pair of parenthesis and block of code is called function declaration.
+Defining a function with function keyword, followed by an obligatory function name, a list of parameters in a pair of parenthesis and block of code is called function declaration.
 
 ```javascript
 function add(x,y) {
@@ -49,7 +49,7 @@ console.log(result);
 After a function expression has been stored in a variable, the variable can be used as a function. Functions stored in variables do not need function names. They are always invoked (called) using the variable name.
 
 <h4>Anonymous Functions</h4>
-function with of name we call it as anonymous function.  
+function with out name we call it as anonymous function.  
 There are three main anonymous function declarations you will run into:  
 
 <h6> IIFE (Immediately Invoked Function Expression) </h6>
