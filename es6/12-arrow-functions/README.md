@@ -83,3 +83,6 @@ document.body.addEventListener('click', function (evt) {
 // In ES6
 document.body.addEventListener('click', evt=>console.log(evt, this)); // EventObject, BodyElement
 ```
+
+<h6>Recommended to gothrough below tutorials also to get more knowledge.</h6>
+<a href="https://javascript.info/bind" target="_blank">Binding this to a function</a>
