@@ -54,10 +54,6 @@
 	</tr>
 </table>
 
-<h3>Please open the console and see the log </h3>
-<h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
-<!--try with different assignment operators like a ^= b, a |= b, a &= b etc. -->
-
 ```javascript
 var a = 100, b = 200; 
 var result = a += b; 
@@ -117,10 +113,6 @@ console.log("(a%=b) ="+result);
 	</tr>
 </table>
 
-<h3>Please open the console and see the log </h3>
-<h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
-<!--try with different values... . -->
-
 ```javascript
 var a = 40, b = 20, c = "PC"; 
 console.log("a + b =", a + b);
@@ -134,7 +126,6 @@ console.log("Pioneer"+"Coders");
 ```
 
 <p>The string operator(+) cancatenates(adds) two strings, returning another string.</p>
-
 
 <h4>Relational(Comparison) Operators </h4>
 <p>A comparison operator compares both left and right operands and returns a logical(true or false) value. The oprands can be numarical values or strings or objects.</p>
@@ -171,10 +162,6 @@ console.log("Pioneer"+"Coders");
 		<td>(5>1), (10>3)</td>
 	</tr>
 </table>
-
-<h3>Please open the console and see the log </h3>
-<h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
-<!--try with different values... . -->
 
 ```javascript
 var a = 14, b = 15; 
@@ -215,10 +202,6 @@ console.log("(a<=b) ="+(a<=b));
 		<td>!(14==15) = true</td>
 	</tr>
 </table>
-
-<h3>Please open the console and see the log </h3>
-<h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
-<!--try with different values... -->
 
 ```javascript
 var a = 14, b = 15, c=23, d=53; 
@@ -261,10 +244,6 @@ the system automatically converts decimal values into binary representation. To 
 	</tr>
 </table>
 
-<h3>Please open the console and see the log </h3>
-<h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
-<!--try with different values... -->
-
 ```javascript
 var a = 2, b = 3;  
 console.log("(a & b) =", (a & b) );
@@ -284,10 +263,6 @@ condition? result1: result2
 
 <p>If the condition is true it returns the results1, Otherwise it returns result2.</p>
 <h4>Finding the given number is even or odd using Ternary Operators</h4>
-
-<h3>Please open the console and see the log </h3>
-<h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
-<!--try with different values... -->
 
 ```javscript
 var number = 10;
@@ -345,10 +320,6 @@ var number1 = 10, number2 = 20;
 		<td>creates an instance (object)</td>
 	</tr>
 </table>
-
-<h3>Please open the console and see the log </h3>
-<h4 style="color:green;">Press Ctrl + Shift + J (Windows / Linux) or Cmd + Opt + J (Mac) to open console. </h4>
-<!--try with different values... -->
 
 ```javscript
 var myArray = [1,2,3,4,5];
