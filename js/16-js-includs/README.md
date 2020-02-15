@@ -21,7 +21,7 @@
 ```
 
 <h4>Embedded JS</h4>
-Write the js code inside `<script>` tag and with in `<head>` tag.
+Write the js code inside `script` tag and with in `head` tag.
 
 ```html
 <!DOCTYPE html>
