@@ -1,13 +1,13 @@
 <h4> Variables </h4>
 
-A variable is a reserved memory location to store values.
+A variable is a reserved memory location to store values, usually it stores in RAM. We can change as we compute.
 
 ```python
 data = 1   # create a variable called data that points to 1
 print(data)
 sum = 10 + 20;
 print(sum)
-```
+``` 
 
 When assigning something to a variable using a `=`, the right side of
 the `=` is always executed before the left side. This means that we can
