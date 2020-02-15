@@ -4,8 +4,8 @@
 <div ace-editor
        style="min-height: 200px; width:50%; overflow: auto;">
        
-       ```html
-    console.log('hii welcome..')
-    ```
-    
+       ```javascript
+       console.log('hii welcome..');
+      ```
+
     </div>
