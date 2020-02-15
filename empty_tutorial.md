@@ -6,3 +6,5 @@ test
   ```
   
   </div>
+  
+  <div class="ace" [ace]="config">text</div>
