@@ -8,10 +8,10 @@ Expriment 1:  x=4 , y=5 then a = 9
 Expriment 2:  x=6 , y=6 then a = 12
 ```
 
-<p>In Javascript also it is similar, variable is name of reserved area allocated in memory locations to store values. Variables are used to store information to be referenced and manipulated in a program.</p>
+<p>In Javascript also it is similar, variable is name of reserved area allocated in memory to store values. Variables are used to store information to be referenced and manipulated in a program.</p>
 
 <h4>Declaring the variables</h4>
-<p>Variables are declared using <b>var</b> keyword. You can refer to a variable by name to see its value or to change its value. At a time single variable declaration and multiple variable declaration is possible.</p>
+<p>Variables are declared using `var` keyword. You can refer to a variable by name to see its value or to change its value. At a time single variable declaration and multiple variable declaration is possible.</p>
 
 <p><b><i>JavaScript is a loosely typed or a dynamic language. That means you don't have to declare the type of a variable ahead of time. The type will get determined automatically while the program is being processed. </i></b> It can hold any type of values such as numbers, strings etc.</p>
 
