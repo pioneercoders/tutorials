@@ -1,6 +1,6 @@
 # modified
 
-<div ace-editor style="min-height: 200px; width:50%;>
+<div ace-editor style="height:200px; width:50px;>
        
        ```javascript
               console.log('hii welcome pc..');
