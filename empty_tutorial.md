@@ -19,7 +19,7 @@
  
 </div>
 
-<div id="editor" style="height: 200px; width: 500px"> 
+<div id="editor" style="height: 300px; width: 80%"> 
 
 ```javascript
 var name;  // variable declaration
