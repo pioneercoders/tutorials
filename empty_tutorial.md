@@ -5,8 +5,16 @@
   ```
 
  Hi welcome 
-<div id="editor" style="height: 200px; width: 300px">
+<div id="editor" style="height: 200px; width: 500px">
        
      Hi welcome to PC.  
     
  </div>
+
+<div id="editor" style="height: 200px; width: 500px"> 
+ 
+ ```javascript
+ console.log("welcome to pc .. ")
+ ```
+ 
+</div>
