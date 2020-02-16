@@ -5,7 +5,7 @@
   ```
 
  Hi welcome 
-<div ace-editor>
+<div id="editor" style="height: 100px; width: 100px">
        
      Hi welcome to PC.  
     
