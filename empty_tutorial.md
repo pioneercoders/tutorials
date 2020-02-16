@@ -11,10 +11,28 @@
     
  </div>
 
-<div id="editor" style="height: 200px; width: 500px"> 
+<div id="editor345" style="height: 200px; width: 500px"> 
  
  ```javascript
  console.log("welcome to pc .. ")
  ```
  
+</div>
+
+<div id="editor" style="height: 200px; width: 500px"> 
+
+```javascript
+var name;  // variable declaration
+console.log("User Name::", name);
+var email="hr@pioneercoders.com"; // declaration and initialization
+var mobileNo; // variable declaration
+mobileNo = "8296488477"; // variable initialization
+console.log("Email::", email);
+console.log("Mobile::", mobileNo);
+var x=9,y=10;
+console.log("sum of numbers:",x+y);
+var isSuccess=true;
+console.log(isSuccess);
+```
+
 </div>
