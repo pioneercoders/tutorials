@@ -1,57 +1,38 @@
 <h4>if</h4>
 
 ```python
-# If the number is positive, we print an appropriate message
-
-num = 3
+# Program to check number is positive.
+num = 10
 if num > 0:
-    print(num, "is a positive number.")
-print("This is always printed.")
-
-num = -1
-if num > 0:
-    print(num, "is a positive number.")
-print("This is also always printed.")
+    print("Positive number")
 ```
 
 <h4>if...else Statement</h4>
 
 ```python
-# Program checks if the number is positive or negative
-# And displays an appropriate message
+# Program to check eligibility for voting.
+user_age = 25
 
-num = 3
-
-# Try these two variations as well. 
-# num = -5
-# num = 0
-
-if num >= 0:
-    print("Positive or Zero")
+if user_age >= 18:
+    print("user is eligible for voting")
 else:
-    print("Negative number")
+    print("user is not eligible for voting")
 ```
 
 <h4>if...elif...else</h4>
 
 ```python
-# In this program, 
-# we check if the number is positive or
-# negative or zero and 
-# display an appropriate message
+# Program to dispay grade of student.
+marks = 100
 
-num = 3.4
-
-# Try these two variations as well:
-# num = 0
-# num = -4.5
-
-if num > 0:
-    print("Positive number")
-elif num == 0:
-    print("Zero")
+if marks >= 80 and marks <=100:
+    print("Destination")
+elif marks 60>= 80 and marks <80:
+    print("First calss")
+elif marks 60>= 35 and marks <60:
+    print("Second class")
 else:
-    print("Negative number")
+    print("Fail")
 ```
 <h4>Nested if statements</h4>
 
