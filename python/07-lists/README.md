@@ -1,23 +1,11 @@
-<h4>Tuples </h4>
-Tuples are Immutable Sequences
-
-```python
-# Create a tuple "cardinal_numbers" with "first", "second" and "third"
-cardinal_numbers = ("first", "second", "third")
-
-# Display the second object in the tuple
-print(cardinal_numbers[1])
-
-```
-
-<h4>Lists</h4>
+<h4>What is list ?</h4>
+Sequence of elements are called list.
 
 ```python
 
 # Exercise 1
 # Create a list named food with two elements "rice" and "beans".
 food = ["rice", "beans"]
-
 
 # Exercise 2
 # Append the string "broccolo" to the food list using .append()
