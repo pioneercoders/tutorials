@@ -71,7 +71,7 @@ print(f"{temp_cel} degrees C = {temp_far:.2f} degrees F")
 </details>
 
 <details>
-    <summary>Write a program to calculate interest to track the growth of an investment.</summary>
+    <summary>Write a program to calculate simple interest.</summary>
     <p>
 	
 ```python
@@ -88,3 +88,23 @@ print("Simple interest : {}".format(interest_amount))
 </p>
 </details>
 
+<details>
+    <summary>Write a program to calculate Compound Interest.</summary>
+    <p>
+	
+```python
+def compound_interest(principle, rate, no_of_years):
+    result = principle * (pow((1 + rate / 100), no_of_years))
+    return result
+
+p = float(input("Enter the principal amount: "))
+r = float(input("Enter the interest rate: "))
+t = float(input("Enter the time in years: "))
+
+amount = compound_interest(p, r, t)
+interest = amount - p
+print("Compound amount is %.2f" % amount)
+print("Compound interest is %.2f" % interest)
+```
+</p>
+</details>
