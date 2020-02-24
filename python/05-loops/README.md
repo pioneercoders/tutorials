@@ -5,8 +5,15 @@ In programming, a **loop** means repeating something multiple times.
 <h4>For loop</h4>
     
 ```python
-# Program to find the sum of all numbers stored in a list
+# Program to print 5 numbers.
+for num in range(5):
+	print(num)
+```
+<details>
+<summary>Program to find the sum of all numbers stored in a list</summary>
+<p>
 
+```python
 # List of numbers
 numbers = [6, 5, 3, 8, 4, 2, 5, 4, 11]
 
@@ -19,8 +26,14 @@ for val in numbers:
 
 # Output: The sum is 48
 print("The sum is", sum)
+
 ```
-<h4>The range() </h4>
+
+</p>
+</details>
+
+<h4>The range() function </h4>
+The range() function is used to generate the numbers.
 
 ```python
 print(range(10))
