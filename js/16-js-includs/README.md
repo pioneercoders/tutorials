@@ -1,50 +1,57 @@
-<h4>How can we include the Javascript into the web page ?</h4>
+<h4>How to include JS in HTML document? </h4>
 <p>There are three ways to include the javascript code into the webpage</p>
+
 <ul>
-	<li>Inline<li>
-	<li>Inside the head tag<li>
-	<li>External file<li>
+	<li>Inline</li>
+	<li>Embedded</li>
+	<li>External file</li>
 </ul>
 
-<h4>Inline Style</h4>
-<p>javascript code can be included into the web page using &lt;script&gt; tag</p>
+<h4>Inline JS</h4>
+<p>javascript code can be included inside html tag</p>
 
 ```html
-	<head></head>
-	<body>
-		<script>
-			JavaScript Code
-		</script>
-	</body>
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+	<a href="#" onclick="(function(){alert(this);})()">Click Me</a>
+</body>
+</html>
 ```
 
-<h4>Inside the &lt;head&gt;</h4>	
+<h4>Embedded JS</h4>
+Write the js code inside `script` tag and with in `head` tag.
 
 ```html
-	<head>
-		<script>
-			JavaScript Code
-		</script>
-	</head>
-	<body>
-	</body>
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function hello(){
+			console.log('Welcome to pioneer coders.');
+		}
+	</script>
+</head>
+<body>
+	<a href="#" onclick="hello()">Click Me</a>
+</body>
+</html>
 ```
 
 <h4>External JS file</h4>
-<p>code can be written  and save the file with the .js extension</p>
+<p>Write JS code in seperate file and save with .js extension and include with script tag.</p>
 
 ```html
+<!DOCTYPE html>
+<html>
 <head>
-	<script language="javascript" type="text/javascript" src="myjavascript.js"></script>
+	<script language="javascript" type="text/javascript" src="main.js"></script>
 </head>
-	<body>
-	</body>
+<body>
+	<a href="#" onclick="hello()">Click Me</a>
+</body>
+</html>
 ```
 
 <p>the external javascript file can be included in the head tag or at the end of the body tag. It is recomended to include the js file at the end of body tag.</p>
-		
-<p>The script tag takes two important attributes -</p>
-	
-<p><b>Language </b>This attribute specifies what scripting language you are using. Typically, its value will be javascript.</p>
-		
-<p><b>Type </b>This attribute is what is now recommended to indicate the scripting language in use and its value should be set to "text/javascript".</p>

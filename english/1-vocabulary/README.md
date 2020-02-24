@@ -1,5 +1,6 @@
 
-English vocabulary
+### English vocabulary
 
-indulging in petty politics
-mercy
+indulging in petty politics  
+mercy  
+legitimate - conforming to the law or to rules.  

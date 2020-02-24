@@ -27,8 +27,8 @@ var result1 = add(10);
 var result2 = add(10,20);
 console.log(result);
 output: 
-undefined
-undefined
+Nan
+Nan
 30
 ```
 <p>
