@@ -1,6 +1,6 @@
 <h4> Loops </h4>
 
-In programming, a **loop** means repeating something multiple times.
+In programming, **loop** are used to do repeating based on condition.
 
 <h4>For loop</h4>
     
@@ -9,29 +9,6 @@ In programming, a **loop** means repeating something multiple times.
 for num in range(5):
 	print(num)
 ```
-<details>
-<summary>Program to find the sum of all numbers stored in a list</summary>
-<p>
-
-```python
-# List of numbers
-numbers = [6, 5, 3, 8, 4, 2, 5, 4, 11]
-
-# variable to store the sum
-sum = 0
-
-# iterate over the list
-for val in numbers:
-	sum = sum+val
-
-# Output: The sum is 48
-print("The sum is", sum)
-
-```
-
-</p>
-</details>
-
 <h4>The range() function </h4>
 The range() function is used to generate the numbers.
 
@@ -61,3 +38,24 @@ while i < 11:
     i = i + 1
  ```
  
+<details>
+<summary>Program to find the sum of all numbers stored in a list</summary>
+<p>
+
+```python
+# List of numbers
+numbers = [6, 5, 3, 8, 4, 2, 5, 4, 11]
+
+# variable to store the sum
+sum = 0
+
+# iterate over the list
+for val in numbers:
+	sum = sum+val
+
+# Output: The sum is 48
+print("The sum is", sum)
+
+```
+</p>
+</details>
