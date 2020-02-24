@@ -1,5 +1,5 @@
 <h4> Functions</h4>
-
+A function is a block of code which deals with some specific functionality defined once and called once/multiple times.
 
 ```python
 def greet(name):
@@ -20,7 +20,6 @@ def cube(num):
     cube_num = num ** 3  # Could also use pow(num, 3)
     return cube_num
 
-
 print(f"0 cubed is {cube(0)}")
 print(f"2 cubed is {cube(2)}")
 ```
@@ -28,7 +27,9 @@ print(f"2 cubed is {cube(2)}")
 <h4> Scope and Lifetime of variables</h4>
 The lifetime of variables inside a function is as long as the function executes. They are destroyed once we return from the function.
 
-<h4> Write a function for converting temperatures from Celsius to Fahrenheit and vice versa. </h4>
+<details>
+    <summary>Write a function for converting temperatures from Celsius to Fahrenheit and vice versa </summary>
+    <p>
 
 ```python
 def convert_cel_to_far(temp_cel):
@@ -66,21 +67,24 @@ temp_far = convert_cel_to_far(float(temp_cel))
 # Display the converted temperature
 print(f"{temp_cel} degrees C = {temp_far:.2f} degrees F")
 ```
+</p>
+</details>
 
-<h4> Write a program to calculate interest to track the growth of an investment.</h4>
+<details>
+    <summary>Write a program to calculate interest to track the growth of an investment.</summary>
+    <p>
 	
 ```python
-def invest(amount, rate, years):
-    for year in range(1, years + 1):
-        amount = amount * (1 + rate)
-        print(f"year {year}: ${amount:,.2f}")
+def simple_interest(principal, no_of_years, rate_of_interest):
+    si = (principal * no_of_years * rate_of_interest) / 100
+    return si
 
-
-amount = float(input("Enter a principal amount: "))
-rate = float(input("Enter an anual rate of return: "))
-years = int(input("Enter a number of years: "))
-
-invest(amount, rate, years)
+P = float(input("Enter the principal amount : "))
+N = float(input("Enter the number of years : "))
+R = float(input("Enter the rate of interest : "))
+interest_amount = simple_interest(P, N, R)
+print("Simple interest : {}".format(interest_amount))
 ```
-
+</p>
+</details>
 
