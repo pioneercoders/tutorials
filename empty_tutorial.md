@@ -42,3 +42,19 @@ console.log(isSuccess);
 </div>
 
 
+
+
+<pre 
+  style="min-height: 300px"
+  [ace]="{
+    mode: 'html',
+    theme: 'github',
+    readOnly : false
+  }"
+  >
+  &lt;html>
+    I am html contents
+  &lt;/html>
+</pre>
+
+
