@@ -46,11 +46,7 @@ console.log(isSuccess);
 
 <pre 
   style="min-height: 300px"
-  [ace]="{
-    mode: 'html',
-    theme: 'github',
-    readOnly : false
-  }"
+  ace-editor
   >
   &lt;html>
     I am html contents
