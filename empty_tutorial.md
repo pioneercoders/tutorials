@@ -42,7 +42,14 @@ console.log(isSuccess);
 </div>
 
 
-
+<div style="min-height: 300px"
+  ace-editor>
+  
+  ```python
+  x = 10
+  ```
+  
+ </div>
 
 <pre 
   style="min-height: 300px"
