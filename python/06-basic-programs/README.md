@@ -1,5 +1,5 @@
 <details>
-    <summary>Write a function check given number is prime or not.</summary>
+    <summary>Write a program to check given number is prime or not.</summary>
     <p>
 
 ```python
