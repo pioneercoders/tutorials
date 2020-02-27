@@ -40,5 +40,5 @@ if __name__ == '__main__':
     assert_prime(is_prime_number(5), True)
  ```
 
-    </p>
+  </p>
 </details>
