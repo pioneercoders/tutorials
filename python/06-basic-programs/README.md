@@ -4,8 +4,8 @@
 
     ```python
         # primes numbers are integers greater than one with no positive divisors besides one and itself.
-# Negative numbers are excluded.
-# this function is used to check given number is prime number or not.
+        # Negative numbers are excluded.
+        # this function is used to check given number is prime number or not.
 def is_prime_number(number):
         if number < 1:
             print("Invalid input.")
@@ -20,7 +20,7 @@ def is_prime_number(number):
         else:
             return False
 
-# test function
+    # test function
 def assert_prime(actual, expected):
     if actual == expected:
         print("Test passed.")
