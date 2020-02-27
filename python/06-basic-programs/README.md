@@ -49,7 +49,7 @@ if __name__ == '__main__':
     <p>
 
 ```python
-
+# fibonacci series: 0 1 1 2 3 5 8 etc
 def fibonacci_using_loop(number):
     if number == 0: return 0
     fibonacci0, fibonacci1 = 0, 1
