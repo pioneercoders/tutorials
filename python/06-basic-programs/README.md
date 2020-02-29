@@ -67,3 +67,39 @@ if __name__ == '__main__':
 
   </p>
 </details>
+
+<details>
+    <summary>Write a program to check palindrome.</summary>
+    <p>
+
+```python
+def is_palindrome(num):
+    temp = num
+    rev = 0
+    while num > 0:
+        digit = num % 10
+        rev = rev * 10 + digit
+        num = num // 10
+    return temp == rev
+
+def assert_equals(expected,actual):
+    if expected == actual:
+        print("test passed.")
+    else:
+        print("test failed.")
+
+if __name__ == '__main__':
+    userInput = int(input('Enter a number to check: '))
+    is_prime = is_palindrome(userInput)
+    if is_prime:
+        print(userInput, 'is a palindrome Number')
+    else:
+        print(userInput, 'is not a palindrome Number')
+
+    assert_equals(is_palindrome(121), True)
+    assert_equals(is_palindrome(56), False)
+    
+```
+
+ </p>
+</details>
