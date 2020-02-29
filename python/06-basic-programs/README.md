@@ -10,7 +10,7 @@
 def is_prime_number(number):
     if number < 1:
         print("Invalid input.")
-        return False
+        raise ValueError("Value must be greater than 1.")
     count = 0;
     for i in range(1, number+1):
         if number % i == 0:
@@ -102,4 +102,40 @@ if __name__ == '__main__':
 ```
 
  </p>
+</details>
+
+<details>
+    <summary>Write a program to find second max element in list.</summary>
+    <p>
+```python 
+    
+def second_max_ele(li):
+    length = len(li)
+    if length <= 1:
+        print("only one or zero element is present, no second max.")
+        raise ValueError("list must contains two values.")
+    if len(li) == 2:
+        if li[0] > li[1] :
+            return li[1]
+        else:
+            return li[0]
+
+    first_max = li[0]
+    second_max = li[1]
+
+    for index in range(2,length):
+        if first_max < li[index]:
+            second_max = first_max
+            first_max = li[index]
+        elif (second_max < li[index]) and (li[index] != first_max):
+            second_max = li[index]
+
+    return second_max
+
+lis = [30,50,-10,-20,11,24,32,45,90,56,70]
+print(second_max_ele(lis))
+    ```
+
+
+</p>
 </details>
