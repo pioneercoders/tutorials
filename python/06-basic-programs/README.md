@@ -108,13 +108,13 @@ if __name__ == '__main__':
     <summary>Write a program to find second max element in list.</summary>
     <p>
 
+
 ```python 
-    
 def second_max_ele(li):
     length = len(li)
     if length <= 1:
-        print("only one or zero element is present, no second max.")
-        raise ValueError("list must contains two values.")
+        print("only one or zero element is present, no second max")
+        raise ValueError("atlest input list must contains two values.")
     if len(li) == 2:
         if li[0] > li[1] :
             return li[1]
