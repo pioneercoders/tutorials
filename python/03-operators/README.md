@@ -1,8 +1,15 @@
-<h4> Assignment operators </h4>
+<h4> Assignment operator </h4>
 Assignment operators is used to assign values to variable.
+<p>
+When we assigning something to a variable using `=`, the right side of
+the `=` is always executed before the left side. This means that we can
+do some computation like expression evaluation or function call in the right side, then assign the result
+back to the variable on the left side.
+</p>
 
 ```python
-data = 10;
+data = 10
+data = (30 + 40) * 2
 ```
 
 <h4> Arithmetic operators </h4>
