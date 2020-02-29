@@ -107,6 +107,7 @@ if __name__ == '__main__':
 <details>
     <summary>Write a program to find second max element in list.</summary>
     <p>
+
 ```python 
     
 def second_max_ele(li):
@@ -134,7 +135,8 @@ def second_max_ele(li):
 
 lis = [30,50,-10,-20,11,24,32,45,90,56,70]
 print(second_max_ele(lis))
-    ```
+
+```
 
 
 </p>
