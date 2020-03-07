@@ -22,7 +22,7 @@
  
 </div>
 
-<div id="editor968" style="height: 300px; width: 80%; margin-top:10px"> 
+<div id="editor968"> 
 
 ```javascript
 var name;  // variable declaration
