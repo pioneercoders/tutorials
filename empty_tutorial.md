@@ -8,7 +8,6 @@
               console.log('hii welcome pc..');
   ```
 
- Hi welcome 
 <div id="editor123" style="height: 200px; width: 500px">
        
      Hi welcome to PC.  
