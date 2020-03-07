@@ -52,12 +52,3 @@ console.log(isSuccess);
   
  </div>
 
-<pre 
-  style="min-height: 300px"
-  ace-editor
-  >
-  &lt;html>
-    I am html contents
-  &lt;/html>
-</pre>
-
