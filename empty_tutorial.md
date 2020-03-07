@@ -8,13 +8,13 @@
               console.log('hii welcome pc..');
   ```
 
-<div id="editor123" style="height: 200px; width: 500px">
+<div id="editor123" style="height: 200px; width: 500px; margin-top:10px">
        
      Hi welcome to PC.  
     
  </div>
 
-<div id="editor345" style="height: 200px; width: 500px"> 
+<div id="editor345" style="height: 200px; width: 500px; margin-top:10px"> 
  
  ```javascript
  console.log("welcome to pc .. ")
@@ -22,7 +22,7 @@
  
 </div>
 
-<div id="editor968" style="height: 300px; width: 80%"> 
+<div id="editor968" style="height: 300px; width: 80%; margin-top:10px"> 
 
 ```javascript
 var name;  // variable declaration
