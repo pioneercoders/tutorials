@@ -45,6 +45,8 @@ console.log(isSuccess);
   
   ```python
   x = 10
+  def abc():
+  print('welcome to pc in python')
   ```
   
  </div>
