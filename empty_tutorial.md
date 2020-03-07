@@ -16,7 +16,7 @@
     
  </div>
 
-<div id="editor345" style="height: 200px; width: 500px"> 
+<div id="editor" style="height: 200px; width: 500px"> 
  
  ```javascript
  console.log("welcome to pc .. ")
