@@ -49,5 +49,3 @@ console.log(isSuccess);
   ```
   
  </div>
-
-test end.
