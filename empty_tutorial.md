@@ -16,7 +16,7 @@
     
  </div>
 
-<div id="editor" style="height: 200px; width: 500px"> 
+<div id="editor345" style="height: 200px; width: 500px"> 
  
  ```javascript
  console.log("welcome to pc .. ")
@@ -24,7 +24,7 @@
  
 </div>
 
-<div id="editor" style="height: 300px; width: 80%"> 
+<div id="editor968" style="height: 300px; width: 80%"> 
 
 ```javascript
 var name;  // variable declaration
