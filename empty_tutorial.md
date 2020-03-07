@@ -41,8 +41,7 @@ console.log(isSuccess);
 </div>
 
 
-<div style="min-height: 300px"
-  ace-editor>
+<div id="editor099">
   
   ```python
   x = 10
