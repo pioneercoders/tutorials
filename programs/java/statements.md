@@ -40,6 +40,26 @@ public class CompoundIntrest {
 </details>
 
 <details>
+<summary>Write a program to find Max between two numbers.</summary>
+<p>
+
+```java
+public class MaxNumber {
+	public static void main(String[] args) {
+		int a = 10, b = 20;
+		if (a > b) {
+			System.out.println(a);
+		} else {
+			System.out.println(b);
+		}
+	}
+}
+```
+
+</p>
+</details>
+
+<details>
 <summary>Write a program to print given number is even or odd.</summary>
 <p>
 
