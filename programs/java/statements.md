@@ -4,7 +4,6 @@
 
 ```java
 public class SimpleIntrest {
-
 	public static void main(String[] args) {
 		int principle = 20000;
 		float rate = 2;
@@ -23,9 +22,7 @@ public class SimpleIntrest {
 <p>
 
 ```java
-import java.util.Scanner;
-public class SimpleIntrest {
-
+public class CompoundIntrest {
 	public static void main(String[] args) {
 		int p=2000;
 		int t = 5;
