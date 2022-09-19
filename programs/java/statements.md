@@ -1,4 +1,27 @@
 <details open>
+<summary>Write a program to find Simple Interst.</summary>
+<p>
+
+```java
+import java.util.Scanner;
+public class SimpleIntrest {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int p = sc.nextInt();
+		float r = sc.nextFloat();
+		float t = sc.nextFloat();
+		float SI = p*r*t/100 ;
+		System.out.println("The Simple Interst Is "+SI);
+	}
+
+}
+```
+
+</p>
+</details>
+
+<details>
 <summary>Write a program to print given number is even or odd.</summary>
 <p>
 
@@ -80,25 +103,4 @@ public class App{
 </p>
 </details> 
 
-<details>
-<summary>Write a program to find Simple Interst.</summary>
-<p>
 
-```java
-import java.util.Scanner;
-public class SimpleIntrest {
-
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int p = sc.nextInt();
-		float r = sc.nextFloat();
-		float t = sc.nextFloat();
-		float SI = p*r*t/100 ;
-		System.out.println("The Simple Interst Is "+SI);
-	}
-
-}
-```
-
-</p>
-</details> 
