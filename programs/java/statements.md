@@ -8,11 +8,36 @@ public class SimpleIntrest {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int p = sc.nextInt();
-		float r = sc.nextFloat();
-		float t = sc.nextFloat();
-		float SI = p*r*t/100 ;
+		int principle = sc.nextInt();
+		float rate = sc.nextFloat();
+		float time = sc.nextFloat();
+		float SI = principle*rate*time/100 ;
 		System.out.println("The Simple Interst Is "+SI);
+	}
+
+}
+```
+
+</p>
+</details>
+
+<details open>
+<summary>Write a program to find Compound Interst.</summary>
+<p>
+
+```java
+import java.util.Scanner;
+public class SimpleIntrest {
+
+	public static void main(String[] args) {
+		int p=2000;
+		int t = 5;
+		double r=0.08; 
+		int n = 12;
+		double amount = p * Math.pow(1 + (r / n), n * t);
+		double cinterest = amount - p;
+		System.out.println("Compound Interest after " + t + " years: "+cinterest);
+		System.out.println("Amount after " + t + " years: "+amount);
 	}
 
 }
