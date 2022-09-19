@@ -3,7 +3,7 @@
 <p>
 
 ```java
-class App{  
+public class App{  
     public static void main(String args[]){  
         int n = 10;
         if(n % 2 == 0){
@@ -23,7 +23,7 @@ class App{
 <p>
 
 ```java
-class App{  
+public class App{  
     public static void main(String args[]){  
         int n = 6;
         if(n % 2 == 0 && n % 3 == 0){
@@ -44,7 +44,7 @@ class App{
 <p>
 
 ```java
-class App{  
+public class App{  
     public static void main(String args[]){  
         int n = 14;
         if(n % 3 == 0 || n % 7 == 0){
@@ -65,7 +65,7 @@ class App{
 <p>
 
 ```java
-class App{  
+public class App{  
     public static void main(String args[]){  
         int n = 14;
         if(n % 2 == 0 && n % 5 != 0){
@@ -75,6 +75,29 @@ class App{
         } 
     }  
 }  
+```
+
+</p>
+</details> 
+
+<details>
+<summary>Write a program to find Simple Interst.</summary>
+<p>
+
+```java
+import java.util.Scanner;
+public class SimpleIntrest {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int p = sc.nextInt();
+		float r = sc.nextFloat();
+		float t = sc.nextFloat();
+		float SI = p*r*t/100 ;
+		System.out.println("The Simple Interst Is "+SI);
+	}
+
+}
 ```
 
 </p>
