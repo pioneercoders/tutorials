@@ -14,14 +14,13 @@ public class SimpleIntrest {
 		float SI = principle*rate*time/100 ;
 		System.out.println("The Simple Interst Is "+SI);
 	}
-
 }
 ```
 
 </p>
 </details>
 
-<details open>
+<details>
 <summary>Write a program to find Compound Interst.</summary>
 <p>
 
@@ -39,7 +38,6 @@ public class SimpleIntrest {
 		System.out.println("Compound Interest after " + t + " years: "+cinterest);
 		System.out.println("Amount after " + t + " years: "+amount);
 	}
-
 }
 ```
 
