@@ -3,14 +3,12 @@
 <p>
 
 ```java
-import java.util.Scanner;
 public class SimpleIntrest {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int principle = sc.nextInt();
-		float rate = sc.nextFloat();
-		float time = sc.nextFloat();
+		int principle = 20000;
+		float rate = 2;
+		float time = 5;
 		float SI = principle*rate*time/100 ;
 		System.out.println("The Simple Interst Is "+SI);
 	}
