@@ -1,4 +1,3 @@
-### Sample Programs
 <details open>
 <summary>Write a program to print given number is even or odd.</summary>
 <p>
