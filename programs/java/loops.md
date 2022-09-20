@@ -4,7 +4,7 @@
 <p>
 
 ```java
-class App{  
+public class App{  
     public static void main(String args[]){  
         int num=5;// assume given number is 5
         for(int i=1; i <= 10; i++){//loop for iterating an list upto 10 numbers
@@ -23,7 +23,7 @@ class App{
 <p>
 
 ```java
-class App{  
+public class App{  
     public static void main(String args[]){  
         int m, n, sum = 0;
         m = 456;//stroing the number in m variable
@@ -46,7 +46,7 @@ class App{
 <p>
 
 ```java
-class App{  
+public class App{  
     public static void main(String args[]){  
         int number , originalNumber= 371, remainder, result = 0;
 
