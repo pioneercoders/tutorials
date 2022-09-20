@@ -59,6 +59,28 @@ public class MaxNumber {
 </p>
 </details>
 
+
+<details>
+<summary>Write a program to Swap two numbers.</summary>
+<p>
+
+```java
+public class App{  
+    public static void main(String args[]){  
+        int x = 14,y=20;
+	int temp=0;
+	temp = x;
+	x =y;
+	y=temp
+       	System.out.println("X:"+x+" Y:" +y);
+    }  
+}  
+```
+
+</p>
+</details> 
+
+
 <details>
 <summary>Write a program to print given number is even or odd.</summary>
 <p>
@@ -140,5 +162,4 @@ public class App{
 
 </p>
 </details> 
-
 
