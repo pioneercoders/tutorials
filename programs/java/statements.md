@@ -57,6 +57,25 @@ public class App{
 </p>
 </details> 
 
+
+<details>
+<summary>Write a program to find average of three numbers.</summary>
+<p>
+
+```java
+public class App{  
+    public static void main(String args[]){  
+        int num1=10, num2=20, num3=30, average;//declaration of variables
+	average = ( num1 + num2 + num3 ) / 3;//fromula for calculating the average of given numbers
+	System.out.println(" Average : "+average);//printing the average of given numbers
+    }  
+}  
+```
+
+</p>
+</details> 
+
+
 <details>
 <summary>Write a program to find Max between two numbers.</summary>
 <p>
