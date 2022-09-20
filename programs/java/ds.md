@@ -1,4 +1,4 @@
-<details open>
+<details>
 <summary>Print program for Stack implementation.</summary>
 <p>
 
@@ -61,7 +61,7 @@ public class StackArrays {
 
 
 	
-<details open>
+<details>
 <summary>Print program for Queue implementation.</summary>
 <p>
 
