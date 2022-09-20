@@ -40,6 +40,24 @@ public class CompoundIntrest {
 </details>
 
 <details>
+<summary>Write a program to find area of circle.</summary>
+<p>
+
+```java
+public class App{  
+    public static void main(String args[]){  
+        int radius = 4;
+	double pi = 3.14, area;
+	area = pi * radius * radius; //formula for calculating radius
+	System.out.println("Area of circle:"+area); //printing the value 
+    }  
+}  
+```
+
+</p>
+</details> 
+
+<details>
 <summary>Write a program to find Max between two numbers.</summary>
 <p>
 
