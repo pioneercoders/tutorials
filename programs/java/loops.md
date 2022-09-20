@@ -1,5 +1,5 @@
-### Sample Programs
-<details>
+
+<details open>
 <summary>Write a program to print multiplication table for given number.</summary>
 <p>
 
