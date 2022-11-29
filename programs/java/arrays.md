@@ -1,4 +1,3 @@
-### Programs
 <details open>
 <summary open>Write a program to print all the elements in array.</summary>
 <p>
