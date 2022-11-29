@@ -1,4 +1,3 @@
-### Sample Programs
 <details open>
 <summary>Write function to find given number is even or odd.</summary>
 <p>
