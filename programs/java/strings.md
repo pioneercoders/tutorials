@@ -33,13 +33,16 @@ public class CountWordsinString {
 <p>
     
 ```java
-class App{  
-    public static void main(String args[]){  
-     System.out.print("Welcome to PC.");  
-    }  
-}  
+public class RemoveAllSpaces {
+	 
+	    public static void main(String[] args) {  
+	        String strg = "India     Is My    Country";   
+	        String Str = strg.replaceAll("\\s", ""); 
+	        System.out.println(Str);
+	    }  
+	}  
 ```
-    
+ 
 </p>
 </details> 
 
@@ -48,9 +51,49 @@ class App{
 <p>
 
 ```java
-class App{  
-    public static void main(String args[]){  
-     System.out.print("Welcome to PC.");  
+package com.string.programs;
+import java.util.HashMap;  
+import java.util.Map;  
+import java.util.Set;  
+
+public class DuplicateCharFinder {  
+	
+	/*method to find delicate */
+    public void findIt(String str) {  
+    	
+        Map<Character, Integer> baseMap = new HashMap<Character, Integer>(); 
+        
+        /*converting to character Array*/
+        
+        char[] charArray = str.toCharArray(); 
+        
+         /*looping the each char in array*/
+        
+        for (Character ch : charArray) {  
+            if (baseMap.containsKey(ch)) {  
+                baseMap.put(ch, baseMap.get(ch) + 1);  
+            }
+            else {  
+                baseMap.put(ch, 1);  
+            }  
+        }  
+        
+        
+        Set<Character> keys = baseMap.keySet();  
+        
+        for (Character ch : keys) {  
+            if (baseMap.get(ch) > 1) {  
+                System.out.println(ch + "  is " + baseMap.get(ch) + " times");  
+            }  
+        }  
+    }  
+   
+    public static void main(String a[]) {  
+    	
+    	/*creating the object of Duplicate Array*/
+    	
+        DuplicateCharFinder dcf = new DuplicateCharFinder();  
+        dcf.findIt("India is my country");  
     }  
 }  
 ```
@@ -63,11 +106,24 @@ class App{
 <p>
     
 ```java
-class App{  
-    public static void main(String args[]){  
-     System.out.print("Welcome to PC.");  
-    }  
-}  
+public class StringToIntegerandIntegerToString {
+	
+	public static void main(String args[]){  
+		
+		String str="200";  
+		int i=300; 
+		/*converting string to int using valueofmethod()*/
+		
+		Integer a=Integer.valueOf(str); 
+		
+		/*converting intiger to string to*/
+		
+		String st=String.format("%d",i);    
+		
+		System.out.println(a);  
+		System.out.println(st);
+	}
+}
 ```
     
 </p>
