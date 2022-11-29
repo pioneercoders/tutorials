@@ -1,5 +1,4 @@
-### Sample Programs
-<details>
+<details open>
 <summary>Print Hellow World Program.</summary>
 <p>
 
