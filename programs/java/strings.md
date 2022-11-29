@@ -1,4 +1,3 @@
-### Write Programs
 <details open>
 <summary>1) Write a program to count number of words in a string.</summary>
 <p>
