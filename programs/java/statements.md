@@ -252,3 +252,70 @@ public class App{
 </p>
 </details> 
 
+<details>
+<summary>Write a program to print LCM - Least Common Multiple.</summary>
+<p>
+
+```java
+public class LCM {
+	public static void main(String[] args) {
+		int a = 5;
+		int b = 7;
+		
+		int lcm = (a > b) ? a : b;
+		
+		while(true){
+			if(lcm % a == 0 && lcm % b == 0){
+				System.out.println("LCM of "+a+" & "+b+" is "+lcm);
+				break;
+			}
+			lcm++;
+		}
+	}
+}
+```
+
+</p>
+</details> 
+
+<details>
+<summary>Write a program to check Perfect Number.</summary>
+<p>
+
+```java
+/** Following are the examples of perfect number.
+ * 6 = 1+2+3
+ * 28= 1+2+4+7+14 
+ * 496= 1+2+4+8+16+31+62+124+248
+ *  
+ **/
+public class PerfectNumber {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter any positive integer :: ");
+		int num = Integer.parseInt(scanner.nextLine().trim());
+		
+		if(isPerfectNumber(num))
+			System.out.println("Given number : "+num+" is a Perfect Number");
+		else
+			System.out.println("Given number : "+num+" is NOT a Perfect Number");
+		scanner.close();
+	}
+
+	private static boolean isPerfectNumber(int num) {
+		int tempNum = num;
+		int divisorSum = 1;
+		for (int i = 2; i <= num / 2; i++)
+			if (num % i == 0)
+				divisorSum += i;
+
+		if(tempNum == divisorSum)
+			return true;
+		return false;
+	}
+}
+```
+
+</p>
+</details>
