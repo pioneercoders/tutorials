@@ -27,9 +27,3 @@ class App{
 
 </p>
 </details> 
-
-# [Tab1](#tab/id1/condition1)
-Foo
-# [Tab2](#tab/id2)
-Bar
----
