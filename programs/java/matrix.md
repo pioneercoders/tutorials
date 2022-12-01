@@ -30,6 +30,6 @@ class App{
 
 # [Tab1](#tab/id1/condition1)
 Foo
-# [Tab1](#tab/id2)
+# [Tab2](#tab/id2)
 Bar
 ---
