@@ -240,3 +240,104 @@ public class SortAnArray {
 
 </p>
 </details>
+
+<details>
+<summary>Write a program to find the Missing Number in 1 to N.</summary>
+<p>
+
+```java
+public class FindMissingNo {
+	public static void main(String[] args) {
+//		int array[] = {2, 4, 1, 6, 7, 5, 3, 9};
+		int array[] = {2, 4, 1, 6, 3};
+		int n = array.length;
+
+		//calculate the sum of array
+		int arraySum = 0;
+		for(int v : array)
+			arraySum += v;
+
+		//array length is 8
+		//one no is missing, then n should be n+1
+		// here 8+1
+		n = n+1;
+		
+		//this calculates the sum from 1 to (n).
+		//1+2+3+....n
+		int expectedSum = (n * (n+1)) / 2;
+		
+		System.out.println("The Given Array is : ");
+		for(int v : array)
+			System.out.print(v+" ");
+		
+		int missingNo = expectedSum - arraySum;
+		System.out.println("\nMissing Number is : "+missingNo);
+	}
+}
+```
+
+</p>
+</details>
+
+<details>
+<summary>Write a program to Move All the Zeros to end of the Array.</summary>
+<p>
+
+```java
+public class MoveAllZerosToEnd {
+	public static void main(String[] args) {
+		int array[] = {1, 0, 4, 3, 0, 0, 2, 0, 1, 0};
+		System.out.println("The Given Array is :: ");
+		for(int v : array)
+			System.out.print(v+" ");
+		
+		int count = 0;
+		for(int i=0;i<array.length;i++)
+			if(array[i] != 0)
+				array[count++] = array[i];
+		
+		while(count < array.length)
+			array[count++] = 0;
+		
+		System.out.println("\nAfter moving all zeros to end of array :: ");
+		for(int v : array)
+			System.out.print(v+" ");
+		
+	}
+}
+```
+
+</p>
+</details>
+	
+<details>
+<summary>Write a program to Rotate the Given array d times.</summary>
+<p>
+
+```java
+public class ArrayRotation {
+	public static void main(String[] args) {
+		int arr[] = {1, 2, 3, 4, 5, 6};
+		int d = 6;
+		int n = arr.length;
+		
+		if(d > n)
+			d = d-n;
+		int new_arr[] = new int[n];
+		int new_index = 0;
+		for(int i=(n-d);i<n;i++,new_index++)
+			new_arr[new_index] = arr[i];
+		for(int i=0;i<(n-d);i++,new_index++)
+			new_arr[new_index] = arr[i];
+		
+		System.out.println("Original Array ");
+		System.out.println(Arrays.toString(arr));
+		
+		System.out.println("Array after rotation");
+		System.out.println(Arrays.toString(new_arr));
+	}
+}
+```
+
+</p>
+</details>
