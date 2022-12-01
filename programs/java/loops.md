@@ -94,8 +94,6 @@ public class App{
 </p>
 </details> 
 
-
-
 <details>
 <summary>Write a program to print Pascal Triangle.</summary>
 <p>
@@ -161,3 +159,69 @@ public class App{
 
 </p>
 </details>
+
+<details>
+<summary>Write the program to print the following series 3 33 333 3333 33333 333333.</summary>
+<p>
+
+```java
+public class PatternSeries {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter the N value for the series : ");
+		int N = scanner.nextInt();
+		
+		int baseValue = 3;
+		int result = 0;
+		for(int i=0;i<N;i++){
+			result = result + baseValue * (int)Math.pow(10, i);
+			System.out.print(result+" ");
+		}
+		
+		System.out.print("\nUsing String approach: ");
+		//Alternate approach
+		String s = "";
+		for(int i=0;i<N;i++){
+			s += "3";
+			System.out.print(s+" ");
+		}
+		
+		scanner.close();
+	}
+} 
+```
+
+</p>
+</details> 
+	
+<details>
+<summary>Write the program to print Arithmetic Progression.</summary>
+<p>
+
+```java
+public class ArithmeticProgression {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter the start value of the series : ");
+		int a = scanner.nextInt();
+		System.out.println("Enter the common ratio : ");
+		int d = scanner.nextInt();
+		System.out.println("Enter the value (N) for the series : ");
+		int N = scanner.nextInt();
+	
+		//printing the first value
+		System.out.print(a+" ");
+		for(int i=1;i<=N;i++){
+			//current a will denote the previous value
+			a = a + d;
+			//new value a is calculated for the i-th iteration
+			System.out.print(a+" ");
+		}
+		
+		scanner.close();
+	}
+} 
+```
+
+</p>
+</details> 
