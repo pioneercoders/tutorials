@@ -64,6 +64,29 @@ public class CallByValue {
 </p>
 </details> 
 
+<details>
+<summary>Write function to Print 1 to 10 without using loop.</summary>
+<p>
+
+```java
+public class RecursionFun {
+	
+	public static void main(String[] args) {
+		printWihtoutLoop(1);
+	}
+	
+	public static void printWihtoutLoop(int n){
+		if(n <= 10){
+			System.out.println(n);
+			printWihtoutLoop( n+1 );
+		}
+	}
+}
+```
+
+</p>
+</details> 
+
 
 <details>
 <summary>Write function to show call by reference.</summary>
