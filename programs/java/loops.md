@@ -4,7 +4,7 @@
 <p>
 
 ```java
-public class App{  
+public class MultiplicationTable{  
     public static void main(String args[]){  
         int num=5;// assume given number is 5
         for(int i=1; i <= 10; i++){//loop for iterating an list upto 10 numbers
@@ -46,7 +46,7 @@ public class App{
 <p>
 
 ```java
-public class App{  
+public class Amstrong{  
     public static void main(String args[]){  
         int number , originalNumber= 371, remainder, result = 0;
 
@@ -76,7 +76,7 @@ public class App{
 <p>
 
 ```java
-public class App{  
+public class FibnacciSeries{  
     public static void main(String args[]){  
         int n1=0,n2=1,n3,i,count=10;    
 	System.out.print(n1+" "+n2); //printing first two elements  
@@ -99,7 +99,7 @@ public class App{
 <p>
 
 ```java
-public class App{  
+public class PascalTriangle{  
     public static void main(String args[]){  
        	int r, i, k, number=1, j;
 	r = 4;//stroing the number of rows in r variable
@@ -128,7 +128,8 @@ public class App{
 <p>
 
 ```java
-public class App{  
+import java.util.Scanner;
+public class HCF{  
     public static void main(String args[]){  
        	int a, b, x, y, t, hcf, lcm;
         Scanner scan = new Scanner(System.in);
@@ -165,6 +166,7 @@ public class App{
 <p>
 
 ```java
+import java.util.Scanner;
 public class PatternSeries {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -199,6 +201,7 @@ public class PatternSeries {
 <p>
 
 ```java
+import java.util.Scanner;
 public class ArithmeticProgression {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -221,6 +224,39 @@ public class ArithmeticProgression {
 		scanner.close();
 	}
 } 
+```
+
+</p>
+</details> 
+
+<details>
+<summary>Write the program to print Geometric Progression.</summary>
+<p>
+
+```java
+import java.util.Scanner;
+public class GeometricProgression {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter the start value of the series : ");
+		int a = scanner.nextInt();
+		System.out.println("Enter the common ratio : ");
+		int r = scanner.nextInt();
+		System.out.println("Enter the value (N) for the series : ");
+		int N = scanner.nextInt();
+	
+		//printing the first value
+		System.out.print(a+" ");
+		for(int i=1;i<=N;i++){
+			//current a will denote the previous value
+			a = a * r;
+			//new value a is calculated for the i-th iteration
+			System.out.print(a+" ");
+		}
+		
+		scanner.close();
+	}
+}
 ```
 
 </p>
