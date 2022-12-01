@@ -96,6 +96,29 @@ public class MaxNumber {
 </p>
 </details>
 
+<details>
+<summary>Write a program to find Smallest number.</summary>
+<p>
+
+```java
+public class FindTheSmallest {
+	public static void main(String[] args) {
+		int a = 10;
+		int b = 5;
+		int c = 20;
+		
+		if(a/b == 0 && a/c == 0)
+			System.out.println("a is the smallest");
+		else if(b/a == 0 && b/c == 0)
+			System.out.println("b is the smallest");
+		else
+			System.out.println("c is the smallest");
+	}
+}
+```
+
+</p>
+</details>
 
 <details>
 <summary>Write a program to Swap two numbers.</summary>
@@ -116,6 +139,35 @@ public class App{
 
 </p>
 </details> 
+
+<details>
+<summary>Write a program to print Digits of a Given Number.</summary>
+<p>
+
+```java
+public class DigitsOfNumber {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter any positive integer :: ");
+		int num = scanner.nextInt();
+		
+		ArrayList<Integer> digitsList = new ArrayList<>();
+		while(num > 0){
+			int unitDigit = num % 10;
+			digitsList.add(0, unitDigit);
+			num = num/10;
+		}
+		
+		System.out.println("The digits of the Giver Number : ");
+		for(int digit : digitsList)
+			System.out.print(digit+" ");
+		scanner.close();
+	}
+}
+```
+
+</p>
+</details>
 
 
 <details>
