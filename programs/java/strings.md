@@ -1,13 +1,12 @@
 <details open>
-<summary>1) Write a program to count number of words in a string.</summary>
+<summary>Write a program to count number of words in a string.</summary>
 <p>
     
 ```java
 public class CountWordsinString {
-		/* static Method for Count*/ 
-	 static int wordCount(String str){  
-       int count=0;  
-   
+   /* static Method for Count*/ 
+   static int wordCount(String str){  
+       	 int count=0; 
          char ch[]= new char[str.length()];     
          for(int i=0;i<str.length();i++){  
             ch[i]= str.charAt(i);  
@@ -15,11 +14,11 @@ public class CountWordsinString {
             count++;  
          	}  
          return count;  
-     }  
+   }  
    public static void main(String[] args) {  
        String str ="    India Is My Country";  
-      System.out.println(wordCount(str) + " words.");	
-	}
+       System.out.println(wordCount(str) + " words.");	
+   }
 
 } 
 ```
@@ -28,7 +27,7 @@ public class CountWordsinString {
 </details> 
 
 <details>
-<summary>2) Write a program to remove all white spaces from a string.</summary>
+<summary>Write a program to remove all white spaces from a string.</summary>
 <p>
     
 ```java
