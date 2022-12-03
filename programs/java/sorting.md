@@ -1,4 +1,4 @@
-<details>
+<details open>
 <summary>Write a programs for BubbleSort.</summary>
 <p>
 
