@@ -45,7 +45,7 @@ public class RemoveAllSpaces {
 </details> 
 
 <details>
-<summary>3) Write a program to find duplicate characters in a string.</summary>
+<summary>Write a program to find duplicate characters in a string.</summary>
 <p>
 
 ```java
@@ -100,7 +100,7 @@ public class DuplicateCharFinder {
 </details> 
 
 <details>
-<summary>4) Write a program to convert string to integer and integer to string.</summary>
+<summary>Write a program to convert string to integer and integer to string.</summary>
 <p>
     
 ```java
@@ -128,7 +128,7 @@ public class StringToIntegerandIntegerToString {
 </details> 
 
 <details>
-<summary>5) Write a program to print first non repeated character from String.</summary>
+<summary>Write a program to print first non repeated character from String.</summary>
 <p>
     
 ```java
