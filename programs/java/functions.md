@@ -3,7 +3,7 @@
 <p>
 
 ```java
-public class App{  
+public class EvenOddFun {  
     public static void main(String args[]){
         boolean r = isEven(4);
         System.out.println(r);  
@@ -20,11 +20,11 @@ public class App{
 </details> 
 
 <details>
-<summary>Write function to return given string with uppercase.</summary>
+<summary>Write function to convert given string to uppercase.</summary>
 <p>
 
 ```java
-public class App{  
+public class ToUpperCaseFun {  
     public static void main(String args[]){
         String str = toUpper("welcome");
         System.out.println(str);  
@@ -134,7 +134,7 @@ public class CallByReferenceEx {
 </details>
 
 <details>
-<summary>Write function to show class type as argument and return type.</summary>
+<summary>Write function to return list of products.</summary>
 <p>
 
 ```java
@@ -194,6 +194,39 @@ public class ProductListEx {
 		for (int index = 0; index < products.length; index++) {
 			System.out.println(products[index].id + " " + products[index].name + " " + products[index].price);
 		}
+	}
+
+}
+```
+
+</p>
+</details> 
+
+<details>
+<summary>Write function to Reverse Given number.</summary>
+<p>
+
+```java
+import java.util.*;
+public class ReverseGivenNumber {
+
+	@SuppressWarnings("resource")
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		
+		
+		System.out.println(reverse);
+	}
+	
+	private static int reverse(int n) {
+		int reverse = 0;
+		while(n > 0) {
+			int last_digit = n % 10;
+			reverse = reverse*10 + last_digit;
+			n = n/10;
+		}
+		return reverse;
 	}
 
 }
