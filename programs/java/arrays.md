@@ -9,10 +9,13 @@ public class PrintElementsInArray {
             // TODO Auto-generated method stub
             int[] array = {1, 2, 3, 4, 5};//initialization of elements in an array
 
-            for (int i=0; i<= array.length-1;i++) {
+        }
+	
+	private void printArr(int arr[]) {
+            for (int i=0; i<= arr.length-1;i++) {
                 System.out.println(array[i]);//printing the array elements using for loop
             }
-        }
+	}
     } 
 ```
 
@@ -30,8 +33,12 @@ public class PrintAlternateElementsInArray {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
-
-        int i, count;
+	int arr[] = createArr();
+	printArr(arr);
+    }
+			     
+    private int[] createArr(){
+	int i, count;
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter the Length of Array");
         count = scan.nextInt();//stores the length of the array in count variable
@@ -41,14 +48,20 @@ public class PrintAlternateElementsInArray {
             a[i] = scan.nextInt();//entered elements are stored in an array
         }
         scan.close();//object closing
+			      
         System.out.print("\nOriginal array is :\t");
         for (i = 0; i < count; i++)
             System.out.print(a[i] + "\t");//printing the original array
-
-        System.out.print("\n\nAlternate elements :\t");
-        for (i = 0; i < count; i = i + 2)
-            System.out.print(a[i] + "\t");//printing the alternate elements in an array
+			      
+	return a;
     }
+    
+    private void printArr(int arr[]){
+	System.out.print("\n\nAlternate elements :\t");
+        for (i = 0; i < arr.length; i = i + 2)
+            System.out.print(a[i] + "\t");//printing the alternate elements in an array	      
+    }
+			      
 }
 ```
 
@@ -68,12 +81,16 @@ public class PrintEvenNums {
 
     public static void main(String[] args) {
         int arr[] = {1,2,3,4,5,6,7,8};//initialization of elements in an array
-
-        for (int i = 0; i<=arr.length-1; i++) {
+	printEven(arr);
+    }
+	
+    private void printEven(int arr[]){
+	for (int i = 0; i<=arr.length-1; i++) {
             if (arr[i] % 2 == 0)//condition to find out the even numbers in an array
                 System.out.println(arr[i]+"is Even Number");//printing the even numbers in the given array
         }
-    }
+   }
+					
 }
 ```
 
@@ -90,7 +107,11 @@ public class PrintOddNumsArray {
 
     public static void main(String[] args) {
         int arr[] = {1,2,3,4,5,6,7,8};//initialization of elements in an array
-        for (int i = 0; i<=arr.length-1; i++) {
+        printOdd(arr);
+    }
+	
+    private void printOdd(int arr[]){
+	for (int i = 0; i<=arr.length-1; i++) {
             if (arr[i] % 2 != 0)//condition for the odd numbers
                 System.out.println(arr[i]+"is Odd Number");//printing odd numbers in an array
         }
@@ -142,9 +163,8 @@ import java.util.Scanner;
 
 public class LargestNumInArray {
 
-	public static void main(String[] args) {
-		
-		int n, max;
+    public static void main(String[] args) {
+	int n, max;
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter number of elements in the array:");
         n = scan.nextInt();
@@ -177,7 +197,7 @@ public class LargestNumInArray {
 ```java
 public class DuplicateElementsInArray {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 		String[] strArray = {"ramu", "hari", "phani", "phani", "Aparna", "hari", "krishna"};
 		 
         for (int i = 0; i < strArray.length-1; i++)
