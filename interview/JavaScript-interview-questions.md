@@ -1,6 +1,3 @@
-
-# JavaScript Interview Questions & Answers
-
 1. ### What are the possible ways to create objects in JavaScript?
 
 There are many ways to create objects in javascript as below,
