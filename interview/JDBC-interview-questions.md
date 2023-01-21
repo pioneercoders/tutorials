@@ -1,5 +1,3 @@
-# JDBC
-
 #### 1. What is JDBC ? 
 JDBC is an abstraction layer that allows users to choose between databases. [JDBC enables developers to write database applications in Java](http://www.javacodegeeks.com/2014/03/java-8-friday-java-8-will-revolutionize-database-access.html), without having to concern themselves with the underlying details of a particular database.
 
