@@ -3,11 +3,11 @@
 <p>
 
 ```javascript
-    int principle = 20000;
-		float rate = 2;
-		float time = 5;
-		float SI = principle*rate*time/100 ;
-		System.out.println("The Simple Interst Is "+SI);
+    var principle = 20000;
+    var rate = 2;
+    var time = 5;
+    var SI = principle*rate*time/100 ;
+    console.log("The Simple Interst Is ", SI);
 ```
 
 </p>
@@ -17,16 +17,12 @@
 <summary>Write a program to find Simple Interst.</summary>
 <p>
 
-```java
-public class SimpleIntrest {
-	public static void main(String[] args) {
-		int principle = 20000;
-		float rate = 2;
-		float time = 5;
-		float SI = principle*rate*time/100 ;
-		System.out.println("The Simple Interst Is "+SI);
-	}
-}
+```javascript
+    var principle = 20000;
+    var rate = 2;
+    var time = 5;
+    var SI = principle*rate*time/100 ;
+    console.log("The Simple Interst Is "+SI);
 ```
 
 </p>
