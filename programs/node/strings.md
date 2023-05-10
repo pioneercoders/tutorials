@@ -14,7 +14,7 @@
 </p>
 </details>
 
-<details open>
+<details>
 <summary>Write a function to count number of words in a string.</summary>
 <p>
 
