@@ -1,7 +1,6 @@
 <details open>
 <summary open>Write a program to sum all the elements in array.</summary>
 <p>
-
 ```javascript
 
 function sumArray(arr){
@@ -15,6 +14,5 @@ function sumArray(arr){
  var finalSum = sumArray(data);
  console.log(finalSum);
 ```
-
 </p>
 </details> 
