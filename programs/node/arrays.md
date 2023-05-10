@@ -108,3 +108,28 @@ console.log(result);
 
 </p>
 </details> 
+
+<details>
+<summary open>Write a program to sort elements in array.</summary>
+<p>
+
+```javascript
+var sortArr = function (arr) {
+    for (var i = 0; i < arr.length; i++) {
+        for (var j = i + 1; j < arr.length; j++) {
+            if (arr[i] >= arr[j]) {
+                var temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+    return arr;
+}
+var data = [10, 34, 56, 78, 11, 9, 9, 11];
+var result = sortArr(data);
+console.log(result);
+```
+
+</p>
+</details> 
