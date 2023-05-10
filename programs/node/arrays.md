@@ -1,7 +1,7 @@
 <details open>
 <summary open>Write a program to sum all the elements in array.</summary>
 <p>
- 
+
 ```javascript
 function sumArray(arr) {
     let sum = 0;
@@ -13,6 +13,50 @@ function sumArray(arr) {
 var data = [10, 34, 56, 78];
 var finalSum = sumArray(data);
 console.log(finalSum);
+```
+
+</p>
+</details> 
+
+<details>
+<summary open>Write a program to get even elements in array.</summary>
+<p>
+
+```javascript
+function getEvenNum(arr) {
+    let evenNumbersArr = [];
+    for (index = 0; index < arr.length; index++) {
+        if (arr[index] % 2 == 0) {
+            evenNumbersArr.push(arr[index]);
+        }
+    }
+    return evenNumbersArr;
+}
+var data = [10, 34, 56, 78, 11, 9];
+var result = getEvenNum(data);
+console.log(result);
+```
+
+</p>
+</details> 
+
+<details>
+<summary open>Write a program to get elements at even index in array.</summary>
+<p>
+
+```javascript
+function getElementAtEvenIndex(arr) {
+    let numbersArr = [];
+    for (index = 0; index < arr.length; index++) {
+        if (index % 2 == 0) {
+            numbersArr.push(arr[index]);
+        }
+    }
+    return numbersArr;
+}
+var data = [10, 34, 56, 78, 11, 9];
+var result = getElementAtEvenIndex(data);
+console.log(result);
 ```
 
 </p>
