@@ -24,7 +24,7 @@
 </p>
 </details>
 
-<details open>
+<details>
 <summary>Write a program to print 1 to 10 numbers using while loop.</summary>
 <p>
 
@@ -39,7 +39,7 @@
 </p>
 </details>
 
-<details open>
+<details>
 <summary>Write a program to print alternatvie number between 1 to 10 numbers using for loop.</summary>
 <p>
 
