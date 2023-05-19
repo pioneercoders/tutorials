@@ -1,4 +1,4 @@
-<details>
+<details open>
 <summary>Print Welcome to PC Program.</summary>
 <p>
 
