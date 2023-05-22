@@ -46,3 +46,21 @@
 
 </p>
 </details>
+<details>
+<summary>Write a program to get min number between 2 numbers.</summary>
+<p>
+
+```javascript
+    let num1 = 20;
+    let num2 = 5;
+    var minNum = 0;
+    if (num1 > num2) {
+        minNum = num2;
+    } else {
+        minNum = num1;
+    }
+    console.log(minNum);
+```
+
+</p>
+</details>
