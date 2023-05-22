@@ -43,7 +43,8 @@
 
 ```javascript
     function display(x) {
-    if(let i<=x){
+    let i=0;
+    if(i<=x){
      return i; 
         i++;
              }
