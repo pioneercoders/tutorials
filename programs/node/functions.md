@@ -36,3 +36,22 @@
 
 </p>
 </details>
+
+<details >
+<summary>Write a function to print 1 to 10 numbers with out using loop.</summary>
+<p>
+
+```javascript
+    function display(x) {
+    if(let i<=x){
+     return i; 
+        i++;
+             }
+ }
+   let x=10;
+   let result=display(x);
+     console.log(result);
+```
+
+</p>
+</details>
