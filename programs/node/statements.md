@@ -47,19 +47,15 @@
 </p>
 </details>
 <details>
-<summary>Write a program to get min number between 2 numbers.</summary>
+<summary>Write a program to find the area of circle.</summary>
 <p>
 
 ```javascript
-    let num1 = 20;
-    let num2 = 5;
-    var minNum = 0;
-    if (num1 > num2) {
-        minNum = num2;
-    } else {
-        minNum = num1;
-    }
-    console.log(minNum);
+    let radious=4;
+    let pi=3.14;
+   var area=pi*radious*radious;
+
+    console.log("area of circle is:"area);
 ```
 
 </p>
