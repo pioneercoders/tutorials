@@ -133,3 +133,25 @@ console.log(result);
 
 </p>
 </details> 
+
+<details>
+<summary open>Write a program to count number of 0 in array.</summary>
+<p>
+
+```javascript
+function getNumberOfZeros(arr) {
+    let count = 0;
+    for (index = 0; index < arr.length; index++) {
+        if (arr[index] == 0) {
+            count++;
+        }
+    }
+    return count;
+}
+var data = [10, 34, 56, 78, 11, 9,0,30,0,5,0];
+var result = getNumberOfZeros(data);
+console.log(result);
+```
+
+</p>
+</details> 
