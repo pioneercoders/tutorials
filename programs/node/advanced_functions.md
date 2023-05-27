@@ -39,3 +39,35 @@ console.log(result1);
 
 </p>
 </details> 
+
+
+<details >
+<summary open>Write a program to return a function from another function.</summary>
+<p>
+
+```javascript
+var isEven = function(x,y) {
+    let sum = x + y;
+    return sum;
+}
+ function f1(){
+    console.log("inside f1 function");
+  return isEven;
+ }
+ function f2(){
+    console.log("inside f2 function");
+  return function(x,y) {
+        let sum = x + y;
+        return sum;
+    };
+ }
+var evenFun = f1();
+var r1 = evenFun(5);
+console.log(r1);
+var evenFu = f2();
+var r2 = evenFu(10);
+console.log(r2);
+```
+
+</p>
+</details> 
