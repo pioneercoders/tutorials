@@ -11,7 +11,7 @@
 </p>
 </details>
 
-<details open>
+<details>
 <summary>Write a program to print 10 to 1 numbers using for loop.</summary>
 <p>
 
@@ -53,6 +53,51 @@
 </details>
 
 <details>
+<summary>Write a program to print even number between 1 to 10 numbers using for loop.</summary>
+<p>
+
+```javascript
+  for (let i = 0; i < 10; i++) {
+      if(i%2 == 0){         
+          console.log(i);
+      }
+  }
+```
+
+</p>
+</details>
+
+<details>
+<summary>Write a program to print odd number between 1 to 10 numbers using for loop.</summary>
+<p>
+
+```javascript
+  for (let i = 0; i < 10; i++) {
+      if(i%2 != 0){         
+          console.log(i);
+      }
+  }
+```
+
+</p>
+</details>
+
+<details>
+<summary>Write a program to print number divisible by 7  between 1 to 100 numbers using for loop.</summary>
+<p>
+
+```javascript
+  for (let i = 0; i < 100; i++) {
+      if(i%7 == 0){         
+          console.log(i);
+      }
+  }
+```
+
+</p>
+</details>
+
+<details>
 <summary>Write a program to print Fibancci serious using for loop.</summary>
 <p>
 
@@ -67,9 +112,8 @@
      console.log(n3)  
        n1=n2;
        n2=n3;
-                             }
- 
+  }
 ```
-
+                            
 </p>
 </details>
