@@ -72,7 +72,7 @@ console.log(r2);
 </p>
 </details> 
 
-<details open>
+<details>
 <summary open>Write a arrow function.</summary>
 <p>
 
