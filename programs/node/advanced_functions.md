@@ -71,3 +71,19 @@ console.log(r2);
 
 </p>
 </details> 
+
+<details open>
+<summary open>Write a arrow function.</summary>
+<p>
+
+```javascript
+var add =(x,y) => {
+    let sum = x + y;
+    return sum;
+}
+var result = add(10,30);
+console.log(result);
+```
+
+</p>
+</details> 
