@@ -42,7 +42,6 @@ public class FunctionTest {
 </p>
 </details> 
 
-
 <details>
 <summary open>Write a program to pass function as argument to another function in java8.</summary>
 <p>
@@ -64,6 +63,32 @@ public class FunctionTest {
         System.out.println(result);
         int result1 = calc(mul,3, 4);
         System.out.println(result1);
+    }
+}
+```
+
+</p>
+</details> 
+
+<details>
+<summary open>Write a program to return a function from another function in java8.</summary>
+<p>
+
+```java
+import java.util.function.*;
+
+public class FunctionTest {
+    
+    public static BiFunction<Integer,Integer, Integer> getAddFun(){
+        BiFunction<Integer,Integer, Integer> addFun = (x, y) -> x + y;
+        System.out.println("Inside getAddFunction.");
+        return addFun;
+    };
+
+    public static void main(String[] args) {
+        BiFunction<Integer,Integer, Integer> fun = getAddFun();
+        int result = fun.apply(3, 4);
+        System.out.println(result);
     }
 }
 ```
