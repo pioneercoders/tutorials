@@ -63,7 +63,7 @@ public class FunctionTest {
         int result = calc(add,6, 5);
         System.out.println(result);
         int result1 = calc(mul,3, 4);
-        System.out.println(result);
+        System.out.println(result1);
     }
 }
 ```
