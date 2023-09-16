@@ -116,4 +116,9 @@ An interface in Java is a blueprint of a class. It has static constants and abst
 
 The equals() method compares two strings, and returns true if the strings are equal, and false if not.
 
+### 70 What are the two types of Exceptions in Java? Which are the differences between them?
+Java has two types of exceptions: checked exceptions and unchecked exceptions.
 
+Unchecked exceptions do not need to be declared in a method or a constructor’s throws clause, if they can be thrown by the execution of the method or the constructor, and propagate outside the method or constructor boundary.
+
+On the other hand, checked exceptions must be declared in a method or a constructor’s throws clause.
