@@ -285,7 +285,7 @@ In summary, CORS is a protocol that allows for secure cross-origin requests, giv
 
 
 
-
+```typescript
 function isPalindrome(s: string): boolean {
     // Remove non-alphanumeric characters and convert to lowercase
     const cleanedString = s.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
@@ -298,3 +298,4 @@ function isPalindrome(s: string): boolean {
 console.log(isPalindrome("A man, a plan, a canal, Panama!")); // true
 console.log(isPalindrome("racecar")); // true
 console.log(isPalindrome("hello"));   // false
+```
