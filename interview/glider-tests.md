@@ -282,6 +282,10 @@ Not all cross-origin requests require a preflight request. "Simple requests," li
 In summary, CORS is a protocol that allows for secure cross-origin requests, giving developers a way to bypass the same-origin policy under specific, controlled circumstances.
 
 #### wirte a typesction function to determine if a given string is a palindrome 
+
+
+
+
 function isPalindrome(s: string): boolean {
     // Remove non-alphanumeric characters and convert to lowercase
     const cleanedString = s.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
