@@ -1,6 +1,6 @@
 # Glider tests
 
-#### diagnose a site or page with poor performance
+#### (1)Diagnose a site or page with poor performance
 Diagnosing a website or page with poor performance entails a systematic approach to identify bottlenecks and issues affecting speed and usability. Here's a step-by-step guide to help you diagnose performance issues:
 
 Initial Assessment:
@@ -50,7 +50,7 @@ Use HTTP/2 or HTTP/3 if possible to reduce the overhead of multiple connections.
 Web Fonts: Limit the number of font weights and styles. Use font-display: swap to ensure text remains visible during web font loading.
 After identifying specific issues, focus on optimizing and rectifying each bottleneck. Monitor performance regularly and keep your site's components updated for best results.
 
-#### In Angular , How the structure of an HTML document impacts screen readers
+#### (2)In Angular , How the structure of an HTML document impacts screen readers
 In Angular applications, just like any web application, the structure of the HTML document significantly impacts how screen readers interpret and present content to users. Angular's dynamic nature adds some nuances to this:
 
 Semantic Elements: Just like with plain HTML, semantic tags in Angular help screen readers understand the structure and meaning of content.
@@ -91,7 +91,7 @@ Testing: Always test Angular apps with real screen readers (e.g., NVDA, JAWS, Vo
 
 Automated accessibility testing tools (like axe-core) can help catch issues, but manual testing is crucial.
 In summary, while Angular provides tools and methodologies for building dynamic web applications, developers must be diligent in ensuring that the resulting structure is logical, meaningful, and accessible for screen reader users. Properly structured HTML, combined with thoughtful application design, can lead to an inclusive user experience for everyone.
-#### Describe what occurs from the time you enter a URL into the browser and from when the page is presented ?
+#### (3)Describe what occurs from the time you enter a URL into the browser and from when the page is presented ?
 The process that unfolds from the moment you enter a URL into a browser until the page is fully presented is quite complex. Here's a step-by-step breakdown of this process:
 
 URL Input:
@@ -138,7 +138,7 @@ If the URL is using HTTPS, there's an added layer of SSL/TLS handshaking for a s
 Page Displayed:
 After all the steps mentioned, the browser finally displays the complete page to the user.
 Throughout this process, various optimizations like browser caching, content delivery networks (CDNs), protocol upgrades (like HTTP/2 or HTTP/3), and server-side optimizations can make the process faster and more efficient.
-#### Provide some othe available databse options in GCP and when you might use each
+#### (4)Provide some othe available databse options in GCP and when you might use each
 Google Cloud Platform (GCP) offers a variety of managed database services tailored to different use cases. Here are some of the primary database options available on GCP, along with scenarios for when you might use each:
 
 Cloud SQL:
@@ -177,7 +177,7 @@ Type: NoSQL database service (deprecated in favor of Firestore in Datastore mode
 Use Cases: Web and mobile applications with varying loads and requiring scalability without manual intervention.
 Choosing the right database often depends on several factors like data model, scalability requirements, access patterns, geographical distribution of users, consistency requirements, and more. With GCP's range of database options, businesses can pick the solution that best aligns with their use case.
 
-#### Angular what is eager and lazy loading? are there any advantages to one over the other ?
+#### (5)Angular what is eager and lazy loading? are there any advantages to one over the other ?
 n Angular, eager loading and lazy loading pertain to how Angular modules (and their associated components, directives, and services) are loaded. Both approaches have their own set of advantages.
 
 Eager Loading:
@@ -211,7 +211,7 @@ User Experience Considerations: If a smooth, immediate navigation experience is 
 
 In many modern Angular applications, a combination of both strategies is used: core and commonly used features are eagerly loaded for immediate use, while less-frequently used features are lazy-loaded. This hybrid approach provides a balance between initial load performance and seamless navigation afterwards.
 
-#### Difference between authentication and autherization.
+#### (6)Difference between authentication and autherization.
 
 Authentication and authorization are two fundamental concepts in security, but they serve different purposes. Let's break down their definitions and highlight the differences:
 
@@ -251,7 +251,7 @@ Authentication: Logging into an email service using your email and password.
 Authorization: Once logged in, you might have permissions to read, send, and delete emails but not to configure advanced server settings.
 In summary, while both authentication and authorization are closely related and often used in tandem, they address different security concerns: "Who are you?" versus "What are you allowed to do?" respectively.
 
-#### What is CORS ?
+#### (7)What is CORS ?
 the one from which the web page originates. Without CORS, web browsers restrict web pages from making requests to a different domain than the one that served the web page, a principle known as the "same-origin policy."
 
 The same-origin policy is important for security reasons. For example, without it, malicious scripts on Web Page A could request sensitive user data from Web Page B without the user's knowledge. However, there are legitimate scenarios where cross-domain requests are needed. CORS provides a controlled mechanism to allow web pages to make cross-domain requests, bypassing the same-origin policy in a secure manner.
@@ -281,7 +281,7 @@ Not all cross-origin requests require a preflight request. "Simple requests," li
 
 In summary, CORS is a protocol that allows for secure cross-origin requests, giving developers a way to bypass the same-origin policy under specific, controlled circumstances.
 
-#### wirte a typesction function to determine if a given string is a palindrome 
+#### (8)wirte a typesction function to determine if a given string is a palindrome 
 
 
 
