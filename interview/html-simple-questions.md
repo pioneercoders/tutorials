@@ -1,7 +1,4 @@
 # HTML Simple
-# HTML Interview Questions
-
-## Basic HTML Questions
 
 1. **What is HTML?**
    - HTML stands for HyperText Markup Language. It is the standard markup language for creating web pages.
