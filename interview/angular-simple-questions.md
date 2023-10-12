@@ -1,4 +1,4 @@
-# Simple Angular Interview Questions
+# Angular Simple
 
 1. **What is Angular?**
    - Angular is a popular open-source JavaScript framework for building web applications. It allows developers to create dynamic, single-page web applications with a modular and component-based architecture.
