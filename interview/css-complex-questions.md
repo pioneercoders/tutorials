@@ -1,7 +1,7 @@
 # CSS complex
 
 1. **What is CSS and what is its purpose?**
-   -CSS stands for Cascading Style Sheets. It is a style sheet language used for describing the presentation of a document written in HTML. CSS defines how elements on a web page should be displayed, including layout, colors, fonts, and other design aspects. Its primary purpose is to separate the content (HTML) from the presentation (CSS), making it easier to maintain and style web pages.
+   - CSS stands for Cascading Style Sheets. It is a style sheet language used for describing the presentation of a document written in HTML. CSS defines how elements on a web page should be displayed, including layout, colors, fonts, and other design aspects. Its primary purpose is to separate the content (HTML) from the presentation (CSS), making it easier to maintain and style web pages.
 
 2. **What is the difference between inline, internal, and external CSS?**
    - **`Inline CSS:`** Inline CSS is applied directly within an HTML element using the `style` attribute. It has the highest specificity and affects only the specific element it is applied to.
