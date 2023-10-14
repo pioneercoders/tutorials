@@ -1,4 +1,3 @@
-# CSS medium questions
 
 1. **What is CSS, and what is its purpose?**
    - CSS stands for Cascading Style Sheets. It is a stylesheet language used for describing the presentation of a document written in HTML. CSS is used to control the layout, design, and visual styling of web pages.
