@@ -1,4 +1,4 @@
-# Spring Boot Simple Questions
+
 
 1. **What is Spring Boot, and how does it differ from the core Spring Framework?**
    - Spring Boot is an extension of the Spring Framework that simplifies the setup and development of Spring-based applications. It provides default configurations and eliminates the need for a lot of boilerplate code.
