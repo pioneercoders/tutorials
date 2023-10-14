@@ -1,4 +1,4 @@
-# CSS simple
+
 1. **What is CSS, and what is its purpose in web development?**
    - CSS stands for Cascading Style Sheets. It is used to define the presentation and layout of web pages, including elements' colors, fonts, spacing, and positioning.
 
