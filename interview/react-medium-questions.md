@@ -38,7 +38,7 @@
 
 14. **What are arrow functions? How are they used?**
     - Arrow functions, also called ‘fat arrow‘ (=>), are brief syntax for writing the expression. These functions bind the context of the components because auto binding is not available by default in ES6. Arrow functions are useful if you are working with the higher-order functions.
-```javascrpit
+```javascript
     Example
         //General way
           render() {
@@ -53,7 +53,7 @@
             <MyInput onChange={ (e) => this.handleOnChange(e) } />
           );
           }
-```
+ ```
 15. **How to create a component in react js?**  
     -There are 3 ways to create a component in React:
      1)Using a depreciated variable function
