@@ -15,10 +15,10 @@
 
 3. **What are controlled and uncontrolled components?**
  - A Controlled Component is one that takes the current value through the props and notifies of any changes through callbacks such as onChange.
-
+```javascript
     *Example:*
     <input type="text" value={value} onChange={handleChange} />
-
+```
     An uncontrolled component is one storing its own state internally, and you can query the DOM via a ref to find its current value as and when needed. Uncontrolled components are a bit closer to traditional HTML.
 
     *Example*:
@@ -28,7 +28,7 @@
   - The best way to redirect a page in React.js depends on what is your use case. Let us get a bit in detail:
 
     If you want to protect your route from unauthorized access, use the component
-
+```javascript
     *Example*:
         import React from 'react'
         import { Redirect } from 'react-router-dom'
@@ -38,7 +38,7 @@
         }
         return <div> My Protected Component </div>
         }
-
+```
 5. **How to call one component from another component in reactjs?**
     - To render a component with another component in Reactjs, let us take an example:
 
@@ -158,7 +158,7 @@ Let us suppose there are 2 components as follows:
 
 15. **Explain the use of React hooks like useEffect and useState in functional components. Provide an example of how you would manage side effects with useEffect.**
     - React hooks like useEffect and useState allow functional components to manage side effects and state. 
-    ```react```
+   ```javascript
         import React, { useState, useEffect } from 'react';
 
         function ExampleComponent() {
@@ -175,9 +175,10 @@ Let us suppose there are 2 components as follows:
             </div>
         );
         }
+```
 16. **Explain the concept of higher-order components (HOCs) in React. Provide an example of how you would create and use an HOC.**
     - Higher-order components are functions that take a component and return a new component with additional props or behavior. They are often used for code reuse and abstraction. Here's an example of creating and using an HOC:
-    ``react``
+   ```javascript
     import React from 'react';
 
     function withLogger(WrappedComponent) {
@@ -193,3 +194,4 @@ Let us suppose there are 2 components as follows:
 
     const ComponentWithLogger = withLogger(MyComponent);
 
+```
