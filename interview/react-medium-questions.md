@@ -57,7 +57,7 @@
 15. **How to create a component in react js?**  
     -There are 3 ways to create a component in React:
      1)Using a depreciated variable function
-    ## 2)Using a Class
+    * 2)Using a Class
      3)Using a Stateless Functional Component
     1. Using a depreciated variable function
     In this, you need to declare a variable in your Javascript file/tag and use the React.createClass() function to create a component using this code.
