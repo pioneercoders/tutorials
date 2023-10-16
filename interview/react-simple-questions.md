@@ -11,25 +11,25 @@
    React components are the building blocks of a React application. They are reusable UI elements that can be composed together to create complex user interfaces. Components can be either class-based or functional of the user interface.
 
 #### 5. What is the Virtual DOM in React
-   - The Virtual DOM is a lightweight in-memory representation of the actual DOM. React uses the Virtual DOM to improve performance by reducing the number of direct manipulations to the real DOM. When changes are made in a React component, they are first applied to the Virtual DOM, and then React calculates the most efficient way to update the real DOM.
+   The Virtual DOM is a lightweight in-memory representation of the actual DOM. React uses the Virtual DOM to improve performance by reducing the number of direct manipulations to the real DOM. When changes are made in a React component, they are first applied to the Virtual DOM, and then React calculates the most efficient way to update the real DOM.
 
 #### 6. Explain the concept of state in React
-   - State in React is a data structure that represents the dynamic data that can change over time. It is used to store and manage component-specific data. When the state of a component changes, React automatically re-renders the component to reflect those changes.
+   State in React is a data structure that represents the dynamic data that can change over time. It is used to store and manage component-specific data. When the state of a component changes, React automatically re-renders the component to reflect those changes.
 
 #### 7. What is the difference between props and state in React?
-   - Props (short for properties) are used to pass data from a parent component to a child component. They are immutable and are set by the parent. State, on the other hand, is managed within a component and can change over time. It is used for the component's own data.
+   Props (short for properties) are used to pass data from a parent component to a child component. They are immutable and are set by the parent. State, on the other hand, is managed within a component and can change over time. It is used for the component's own data.
 
 #### 8. How can you handle events in React?
-   - In React, you can handle events by adding event handlers as props to JSX elements. For example, you can use `onClick` for handling click events and `onChange` for handling input changes.
+   In React, you can handle events by adding event handlers as props to JSX elements. For example, you can use `onClick` for handling click events and `onChange` for handling input changes.
 
 #### 9. **Explain the purpose of the `key` prop in React lists.
-   - The `key` prop is used to uniquely identify elements in a list of components. It helps React optimize rendering when the list changes by ensuring that it can efficiently update, add, or remove elements without re-rendering the entire list.
+   The `key` prop is used to uniquely identify elements in a list of components. It helps React optimize rendering when the list changes by ensuring that it can efficiently update, add, or remove elements without re-rendering the entire list.
 
-####### 10. What is a React component lifecycle?
-    - React component lifecycle refers to the various phases a component goes through, from initialization to unmounting. The key lifecycle methods include `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount`, which allow you to hook into different points in a component's lifecycle.
+#### 10. What is a React component lifecycle?
+   React component lifecycle refers to the various phases a component goes through, from initialization to unmounting. The key lifecycle methods include `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount`, which allow you to hook into different points in a component's lifecycle.
 
-####### 11. **Explain the difference between a functional component and a class component in React.**
-    - Functional components are stateless and defined as JavaScript functions, while class components can hold state and have additional features like lifecycle methods.
+#### 11. **Explain the difference between a functional component and a class component in React.**
+   Functional components are stateless and defined as JavaScript functions, while class components can hold state and have additional features like lifecycle methods.
 
 #### 12. **How do you create a functional component in React?**
    To create a functional component, you define a JavaScript function that returns JSX. For example:
@@ -38,8 +38,8 @@
             return <div>Hello, World!</div>;
         }
 ```
-13. **How do you create a class component in React?**
-    - To create a class component, you define a JavaScript class that extends `React.Component` and includes a `render` method that returns JSX. For example:
+#### 13. **How do you create a class component in React?**
+   To create a class component, you define a JavaScript class that extends `React.Component` and includes a `render` method that returns JSX. For example:
 ```javascript
     class MyClassComponent extends React.Component {
     render() {
@@ -47,14 +47,14 @@
         }
     }
 ```
-14. **What is the purpose of props in a React component?**
-    - Props (short for properties) are used to pass data from a parent component to a child component. They allow components to be dynamic and customizable.
+#### 14. **What is the purpose of props in a React component?**
+   Props (short for properties) are used to pass data from a parent component to a child component. They allow components to be dynamic and customizable.
 
-15. **What is the state in a React component**
-    - State is a built-in object in React that represents the mutable data specific to a component. It can be used to store and manage data that can change over time.
+#### 15. **What is the state in a React component**
+   State is a built-in object in React that represents the mutable data specific to a component. It can be used to store and manage data that can change over time.
 
-16. **What is a higher-order component (HOC) in React?**
-    - A higher-order component is a function that takes a component and returns a new component with additional props or behavior. It is a way to reuse component logic.
+#### 16. **What is a higher-order component (HOC) in React?**
+   A higher-order component is a function that takes a component and returns a new component with additional props or behavior. It is a way to reuse component logic.
 
-17. **How do you initialize and update the state of a React component?**
-    - State is initialized in the constructor of a class component using `this.state`. It can be updated using `this.setState()` to trigger re-renders and reflect changes in the UI.          
+#### 17. **How do you initialize and update the state of a React component?**
+   State is initialized in the constructor of a class component using `this.state`. It can be updated using `this.setState()` to trigger re-renders and reflect changes in the UI.          
