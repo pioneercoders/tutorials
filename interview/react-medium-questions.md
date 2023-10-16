@@ -3,7 +3,7 @@
 - The key prop is used to uniquely identify elements in a list of components. It is essential for React's virtual DOM reconciliation process. When the order or structure of a list changes, React uses keys to efficiently update, add, or remove elements. Keys should be unique among siblings in a list.
 
 **2. Explain the concept of "lifting state up" in React. When and why is it necessary?**
-    "Lifting state up" is a pattern in React where you move the state of a component higher in the component hierarchy to share it with other components. This is necessary when multiple components need access to the same data or when you want to maintain a single source of truth for shared state. It improves data consistency and reduces complexity.      
+- "Lifting state up" is a pattern in React where you move the state of a component higher in the component hierarchy to share it with other components. This is necessary when multiple components need access to the same data or when you want to maintain a single source of truth for shared state. It improves data consistency and reduces complexity.      
 
 3. **What are controlled and uncontrolled components in React forms?**
    - Controlled components are React components where the form elements (e.g., input, textarea) get their values and changes controlled by React's state. Uncontrolled components, on the other hand, allow the DOM to handle the form element's state. In controlled components, you have full control over the form input, making it easier to validate and manipulate data.   
