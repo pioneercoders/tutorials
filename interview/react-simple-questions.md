@@ -22,7 +22,7 @@
 #### 8. How can you handle events in React?
    In React, you can handle events by adding event handlers as props to JSX elements. For example, you can use `onClick` for handling click events and `onChange` for handling input changes.
 
-#### 9. **Explain the purpose of the `key` prop in React lists.
+#### 9. **Explain the purpose of the `key` prop in React lists.**
    The `key` prop is used to uniquely identify elements in a list of components. It helps React optimize rendering when the list changes by ensuring that it can efficiently update, add, or remove elements without re-rendering the entire list.
 
 #### 10. What is a React component lifecycle?
