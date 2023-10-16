@@ -52,12 +52,40 @@
 
 13. **What is the purpose of props in a React component?**
     - Props (short for properties) are used to pass data from a parent component to a child component. They allow components to be dynamic and customizable.
+      
+14. **What is the purpose of render() in React?**
+    - It is compulsory for each React component to have a render(). If more than one element needs to be rendered, they must be grouped inside one tag such as <form>, <group>,<div>.           This function goes back to the single react element which is the presentation of native DOM Component. This function must return the same result every time it is invoked.
 
-14. **What is the state in a React component**
+15. **What is the state in a React component**
     - State is a built-in object in React that represents the mutable data specific to a component. It can be used to store and manage data that can change over time.
 
-15. **What is a higher-order component (HOC) in React?**
+16. **What is a higher-order component (HOC) in React?**
     - A higher-order component is a function that takes a component and returns a new component with additional props or behavior. It is a way to reuse component logic.
 
-16. **How do you initialize and update the state of a React component?**
-    - State is initialized in the constructor of a class component using `this.state`. It can be updated using `this.setState()` to trigger re-renders and reflect changes in the UI.          
+17. **How do you initialize and update the state of a React component?**
+    - State is initialized in the constructor of a class component using `this.state`. It can be updated using `this.setState()` to trigger re-renders and reflect changes in the UI.
+
+18. **What are Class Based Component?**
+    - Class Based Component is the JavaScript Class. In these Components we extends the JavaScript predefined class into our component.
+
+   Example:
+        Import React,{Component} from ‘react’;
+
+        class ABC extends Component {
+
+        render(){
+
+        return(
+
+            <div>
+
+            <h1>Hello World</h1>
+
+        </div>
+
+        );
+
+        }}
+
+        export default ABC;       
+
