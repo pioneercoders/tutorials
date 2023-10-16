@@ -196,4 +196,5 @@ Let us suppose there are 2 components as follows:
     }
 
     const ComponentWithLogger = withLogger(MyComponent);
-    ```
+
+   ```
