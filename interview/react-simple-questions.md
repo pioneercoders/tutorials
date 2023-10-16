@@ -28,7 +28,7 @@
 
 ## React Components ##
 
-####10. What is a React component lifecycle?
+#### 10. What is a React component lifecycle?
     - React component lifecycle refers to the various phases a component goes through, from initialization to unmounting. The key lifecycle methods include `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount`, which allow you to hook into different points in a component's lifecycle.
 
 12. **Explain the difference between a functional component and a class component in React.**
