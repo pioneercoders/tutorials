@@ -50,25 +50,20 @@ Let us suppose there are 2 components as follows:
             Component 1
 
             class Header extends React.Component{
-
                 constructor(){
                     super();
                 }
-
                 checkClick(e, notyId){
                 alert(notyId);
                 }
             }
-
             export default Header;
 
     **Component 2**
         class PopupOver extends React.Component{
-
             constructor(){
                 super();        
             }
-
             render(){
                 return (
                     <div className="displayinline col-md-12 ">
@@ -77,7 +72,6 @@ Let us suppose there are 2 components as follows:
                 );
             }
         }
-
         export default PopupOver;
 
         *Now to call the Component 1 in Component 2, use this code:*
@@ -85,15 +79,12 @@ Let us suppose there are 2 components as follows:
         import React from 'react';
 
         class Header extends React.Component {
-
         constructor() {
             super();
         }
-
         checkClick(e, notyId) {
             alert(notyId);
         }
-
         render() {
             return (
                 <PopupOver func ={this.checkClick } />
@@ -102,12 +93,10 @@ Let us suppose there are 2 components as follows:
         };
 
         class PopupOver extends React.Component {
-
         constructor(props) {
             super(props);
             this.props.func(this, 1234);
         }
-
         render() {
             return (
                 <div className="displayinline col-md-12 ">
@@ -116,7 +105,6 @@ Let us suppose there are 2 components as follows:
             );
         }
         }
-
         export default Header;
 ```
 
