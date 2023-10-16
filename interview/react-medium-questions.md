@@ -47,13 +47,13 @@
           );
           }
 
-        *With Arrow Function*
+        //With Arrow Function//
           render() {
           return(
             <MyInput onChange={ (e) => this.handleOnChange(e) } />
           );
           }
- ```
+```
 15. **How to create a component in react js?**  
     -There are 3 ways to create a component in React:
      1)Using a depreciated variable function
