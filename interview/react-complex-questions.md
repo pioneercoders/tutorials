@@ -157,7 +157,8 @@ Let us suppose there are 2 components as follows:
     Avoid unnecessary prop drilling: Use context or state management solutions to share data without passing it through many components. 
 
 15. **Explain the use of React hooks like useEffect and useState in functional components. Provide an example of how you would manage side effects with useEffect.**
-    - React hooks like useEffect and useState allow functional components to manage side effects and state. 
+    - React hooks like useEffect and useState allow functional components to manage side effects and state.
+
    ```javascript
         import React, { useState, useEffect } from 'react';
 
@@ -175,9 +176,11 @@ Let us suppose there are 2 components as follows:
             </div>
         );
         }
-```
+   ```
+
 16. **Explain the concept of higher-order components (HOCs) in React. Provide an example of how you would create and use an HOC.**
     - Higher-order components are functions that take a component and return a new component with additional props or behavior. They are often used for code reuse and abstraction. Here's an example of creating and using an HOC:
+      
    ```javascript
     import React from 'react';
 
@@ -193,5 +196,4 @@ Let us suppose there are 2 components as follows:
     }
 
     const ComponentWithLogger = withLogger(MyComponent);
-
-```
+    ```
