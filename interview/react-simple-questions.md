@@ -26,7 +26,7 @@
 #### 9. **Explain the purpose of the `key` prop in React lists.**
    - The `key` prop is used to uniquely identify elements in a list of components. It helps React optimize rendering when the list changes by ensuring that it can efficiently update, add, or remove elements without re-rendering the entire list.
 
-## React Components
+## React Components ##
 
 ####10. What is a React component lifecycle?
     - React component lifecycle refers to the various phases a component goes through, from initialization to unmounting. The key lifecycle methods include `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount`, which allow you to hook into different points in a component's lifecycle.
