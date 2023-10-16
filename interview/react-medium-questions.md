@@ -61,7 +61,7 @@
      3)Using a Stateless Functional Component
     1. Using a depreciated variable function
     In this, you need to declare a variable in your Javascript file/tag and use the React.createClass() function to create a component using this code.
-
+```javascript
     var MyComponent = React.createClass({
     render() {
         return <div>
@@ -70,11 +70,11 @@
         </div>
     }
     })
-
+```
     Now, use the div element to create a unique ID for the specific page and then link the above script onto the HTML page.
-
+```javascript
     <div id=”react-component”></div>
-
+```
     Use ReactDOM.render() function to take 2 arguments, the react component variable and the targeted HTML page.
 
     ReactDOM.render(<MyComponent />, document.getElementById('react-component'))
