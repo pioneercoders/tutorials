@@ -1,7 +1,8 @@
 
 1. **Explain the concept of conditional rendering in React and provide an example.**
     - Conditional rendering in React involves showing or hiding components or elements based on specific conditions. Here's an example:
-   `react``
+
+```javascript
 
     function Greeting(props) {
     if (props.isLoggedIn) {
@@ -9,11 +10,12 @@
     }
     return <h1>Please sign up or log in.</h1>;
     }
+```
 
-2. **How do you handle events in React, and what is event delegation?**
+1. **How do you handle events in React, and what is event delegation?**
    - In React, you can handle events by defining event handlers as functions and attaching them to JSX elements. Event delegation is a technique in which a single event handler is placed on a common ancestor of multiple elements, allowing you to capture events from child elements efficiently.    
 
-3. **What are controlled and uncontrolled components?**
+2. **What are controlled and uncontrolled components?**
  - A Controlled Component is one that takes the current value through the props and notifies of any changes through callbacks such as onChange.
 ```javascript
     *Example:*
