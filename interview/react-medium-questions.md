@@ -61,7 +61,7 @@
     3)Using a Stateless Functional Component
     1. Using a depreciated variable function
     In this, you need to declare a variable in your Javascript file/tag and use the React.createClass() function to create a component using this code.
-```javascript
+```html
     var MyComponent = React.createClass({
     render() {
         return <div>
