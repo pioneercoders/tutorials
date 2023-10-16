@@ -30,8 +30,8 @@
 #### 11. Explain the differences between controlled and uncontrolled components in React forms.
    Controlled components are React components in which the form elements, such as input fields, are controlled by React state. Changes in the form elements are handled by React. Uncontrolled components allow the DOM to handle the form element's state, and React does not control their values. Controlled components provide more control over form data and allow for validation and manipulation.
 
-12. **What is the purpose of React Router, and how does it help with routing in a React application?**
-    - React Router is a library for handling client-side routing in single-page applications. It allows you to define routes and associate components with those routes. This enables navigation between different parts of the application without requiring full page reloads. React Router makes it possible to create a more dynamic and responsive user experience. 
+#### 12. What is the purpose of React Router, and how does it help with routing in a React application?
+   React Router is a library for handling client-side routing in single-page applications. It allows you to define routes and associate components with those routes. This enables navigation between different parts of the application without requiring full page reloads. React Router makes it possible to create a more dynamic and responsive user experience. 
 
 #### 13. What is the purpose of the shouldComponentUpdate method in class components?
    The shouldComponentUpdate method is used to control when a component should re-render. By implementing this method and returning true or false based on certain conditions, you can optimize performance by preventing unnecessary re-renders when the component's props or state haven't changed. This can be useful for improving performance in certain scenarios.  
