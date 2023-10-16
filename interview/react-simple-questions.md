@@ -31,7 +31,7 @@
 ####### 11. **Explain the difference between a functional component and a class component in React.**
     - Functional components are stateless and defined as JavaScript functions, while class components can hold state and have additional features like lifecycle methods.
 
-####### 12. **How do you create a functional component in React?**
+######## 12. **How do you create a functional component in React?**
     To create a functional component, you define a JavaScript function that returns JSX. For example:
     ``react
         function MyFunctionalComponent() {
