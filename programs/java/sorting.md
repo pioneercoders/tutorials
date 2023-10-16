@@ -87,3 +87,15 @@ public class MergeSort {
 
 </p>
 </details>
+
+
+<details>
+<summary>Write a programs for QuickSort.</summary>
+<p>
+
+```java
+
+```
+
+</p>
+</details>
