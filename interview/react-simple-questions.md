@@ -1,17 +1,17 @@
 
 1. #### What is React?
-React is a JavaScript library for building user interfaces.  It's an open-source, component-based library that's responsible for the view layer of an application. It allows developers to create reusable UI components and manage the state of those components efficiently.
+   React is a JavaScript library for building user interfaces.  It's an open-source, component-based library that's responsible for the view layer of an application. It allows developers to create reusable UI components and manage the state of those components efficiently.
 
-3. **What is JSX in React**
+2. **What is JSX in React**
    - JSX stands for JavaScript XML. It is a syntax extension for JavaScript that allows you to write HTML-like code within your JavaScript code. React uses JSX to define the structure of its components.   
           
-4. **Explain the difference between React and React Native.**
+3. **Explain the difference between React and React Native.**
    - React is a JavaScript library for building web applications. while React Native is a framework for building native mobile applications (iOS and Android) using React. React Native uses native components, while React focuses on web components.
 
-5. **What are React components**
+4. **What are React components**
    - React components are the building blocks of a React application. They are reusable UI elements that can be composed together to create complex user interfaces. Components can be either class-based or functional of the user interface.
 
-6. **What is the Virtual DOM in React**
+5. **What is the Virtual DOM in React**
    - The Virtual DOM is a lightweight in-memory representation of the actual DOM. React uses the Virtual DOM to improve performance by reducing the number of direct manipulations to the real DOM. When changes are made in a React component, they are first applied to the Virtual DOM, and then React calculates the most efficient way to update the real DOM.
 
 7. **Explain the concept of state in React**
