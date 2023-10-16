@@ -44,6 +44,7 @@
 
 Let us suppose there are 2 components as follows:
 
+```javascript
     *Example*
             Component 1
 
@@ -116,6 +117,7 @@ Let us suppose there are 2 components as follows:
         }
 
         export default Header;
+```
 
 6. **Question 3: How do you handle form submission in React?**
     - Form submission in React can be handled by attaching an event handler to the form's onSubmit event. In the event handler, you can prevent the default form submission behavior, access form field values from the component's state, and send the data to a server or perform any necessary actions.
