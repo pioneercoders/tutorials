@@ -40,14 +40,14 @@
     - Arrow functions, also called ‘fat arrow‘ (=>), are brief syntax for writing the expression. These functions bind the context of the components because auto binding is not available by default in ES6. Arrow functions are useful if you are working with the higher-order functions.
 ```javascript
     Example
-        //General way
+        General way
           render() {
           return(
               <MyInput onChange={this.handleChange.bind(this) } />
           );
           }
 
-        //With Arrow Function
+        With Arrow Function
           render() {
           return(
             <MyInput onChange={ (e) => this.handleOnChange(e) } />
