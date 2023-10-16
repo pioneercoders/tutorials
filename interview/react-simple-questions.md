@@ -40,13 +40,13 @@
 
 13. **How do you create a class component in React?**
     - To create a class component, you define a JavaScript class that extends `React.Component` and includes a `render` method that returns JSX. For example:
-    ``react
+```javascript
     class MyClassComponent extends React.Component {
     render() {
         return <div>Hello, World!</div>;
         }
     }
-
+```
 14. **What is the purpose of props in a React component?**
     - Props (short for properties) are used to pass data from a parent component to a child component. They allow components to be dynamic and customizable.
 
