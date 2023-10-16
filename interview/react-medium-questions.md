@@ -81,8 +81,8 @@
     3. Using a Stateless Functional Component
     It might sound a bit complex, but this basically means that a normal function will be used in place of a variable to return a react component.
     Create a const called MyComp and set it as equal to a () function. Use the arrow function, => to declare the logic of the function as follows:
-```javascript
        
+```javascript
     const MyComponent = () => {
     return <div>
     <h1>Hello!</h1>
