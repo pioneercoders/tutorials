@@ -1,7 +1,7 @@
 
 1. **Explain the concept of conditional rendering in React and provide an example.**
     - Conditional rendering in React involves showing or hiding components or elements based on specific conditions. Here's an example:
-   ```react```
+   `react``
 
     function Greeting(props) {
     if (props.isLoggedIn) {
