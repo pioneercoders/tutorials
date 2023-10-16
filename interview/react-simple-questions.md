@@ -1,5 +1,5 @@
 
-1. ###What is React?
+1. ####What is React?
 React is a JavaScript library for building user interfaces.  It's an open-source, component-based library that's responsible for the view layer of an application. It allows developers to create reusable UI components and manage the state of those components efficiently.
 
 3. **What is JSX in React**
