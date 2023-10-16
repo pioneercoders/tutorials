@@ -61,7 +61,7 @@
     3)Using a Stateless Functional Component
     1. Using a depreciated variable function
     In this, you need to declare a variable in your Javascript file/tag and use the React.createClass() function to create a component using this code.
-
+   ``react
     var MyComponent = React.createClass({
     render() {
         return <div>
@@ -70,27 +70,22 @@
         </div>
     }
     })
+    ``
     Now, use the div element to create a unique ID for the specific page and then link the above script onto the HTML page.
-```javascript <div id=”react-component”></div>
-```
-    
 
+<div id=”react-component”></div>
     Use ReactDOM.render() function to take 2 arguments, the react component variable and the targeted HTML page.
-
     ReactDOM.render(<MyComponent />, document.getElementById('react-component'))
-
     2. *Using a Class*
     Javascript has lately started supporting classes. Any React developer can easily create a class using the class extends (Inherits). Following is the code
-
     3. Using a Stateless Functional Component
     It might sound a bit complex, but this basically means that a normal function will be used in place of a variable to return a react component.
-
     Create a const called MyComp and set it as equal to a () function. Use the arrow function, => to declare the logic of the function as follows:
-````javascript
+```javascript
     const MyComponent = () => {
     return <div>
     <h1>Hello!</h1>
     <p>This is my first React Component.</p>
     </div>
     }
-````
+```
