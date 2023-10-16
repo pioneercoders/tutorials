@@ -72,8 +72,7 @@
     })
 ```    
    Now, use the div element to create a unique ID for the specific page and then link the above script onto the HTML page.
-
-<div id=”react-component”></div>
+<div id=”react-component”>j</div>
     Use ReactDOM.render() function to take 2 arguments, the react component variable and the targeted HTML page.
     ReactDOM.render(<MyComponent />, document.getElementById('react-component'))
     2. *Using a Class*
