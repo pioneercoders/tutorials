@@ -2,7 +2,7 @@
 **1.What is the purpose of the key prop in React lists, and why is it important?**
 - The key prop is used to uniquely identify elements in a list of components. It is essential for React's virtual DOM reconciliation process. When the order or structure of a list changes, React uses keys to efficiently update, add, or remove elements. Keys should be unique among siblings in a list.
 
-2. **Explain the concept of "lifting state up" in React. When and why is it necessary?**
+**2. Explain the concept of "lifting state up" in React. When and why is it necessary?**
     "Lifting state up" is a pattern in React where you move the state of a component higher in the component hierarchy to share it with other components. This is necessary when multiple components need access to the same data or when you want to maintain a single source of truth for shared state. It improves data consistency and reduces complexity.      
 
 3. **What are controlled and uncontrolled components in React forms?**
