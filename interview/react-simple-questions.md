@@ -1,6 +1,6 @@
 
-1. **What is React?**
-   - React is a JavaScript library for building user interfaces.  It's an open-source, component-based library that's responsible for the view layer of an application. It allows developers to create reusable UI components and manage the state of those components efficiently.
+1. ##What is React?
+   React is a JavaScript library for building user interfaces.  It's an open-source, component-based library that's responsible for the view layer of an application. It allows developers to create reusable UI components and manage the state of those components efficiently.
 
 2. **What is JSX in React**
    - JSX stands for JavaScript XML. It is a syntax extension for JavaScript that allows you to write HTML-like code within your JavaScript code. React uses JSX to define the structure of its components.   
