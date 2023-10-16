@@ -1,7 +1,6 @@
 
 1. **Explain the concept of conditional rendering in React and provide an example.**
     - Conditional rendering in React involves showing or hiding components or elements based on specific conditions. Here's an example:
-
 ```javascript
     function Greeting(props) {
     if (props.isLoggedIn) {
@@ -21,9 +20,10 @@
     <input type="text" value={value} onChange={handleChange} />
 ```
     An uncontrolled component is one storing its own state internally, and you can query the DOM via a ref to find its current value as and when needed. Uncontrolled components are a bit closer to traditional HTML.
-
+```javascript
     *Example*:
     <input type="text" defaultValue="foo" ref={inputRef} /> 
+```
 
 4. **How to redirect to another page in react js?**
   - The best way to redirect a page in React.js depends on what is your use case. Let us get a bit in detail:
