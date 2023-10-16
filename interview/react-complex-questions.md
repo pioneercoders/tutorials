@@ -3,7 +3,6 @@
     - Conditional rendering in React involves showing or hiding components or elements based on specific conditions. Here's an example:
 
 ```javascript
-
     function Greeting(props) {
     if (props.isLoggedIn) {
     return <h1>Welcome back!</h1>;
