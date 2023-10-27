@@ -1,15 +1,15 @@
 # Bootstrap Medium Interview Questions
 
-#### 1. What do you know about links and typography in Bootstrap?**
+#### 1. What do you know about links and typography in Bootstrap?
   Links are used to make HTML elements clickable whereas Typography is used for formatting and styling the content. Typography is used to create paragraphs, lists, inline elements and many other design-oriented styles of fonts.
 
-2. **What are button groups in Bootstrap?**
+#### 2. What are button groups in Bootstrap?
    - Button groups are very useful in the Bootstrap framework that allow developers to stack multiple buttons in a line together. Other than this, they can be used to place the alignment buttons together and optional JavaScript radio.
 
-3. **What are Labels and badges in Bootstrap?**
+#### 3. What are Labels and badges in Bootstrap?
    - Bootstrap “.label” is a predefined class that gives more details related to links and text on the web page. This can include warnings, counts, updates, etc. Badges are components that serve to display an indicator or count a number. They are similar to labels except that they have more rounded corners.  
 
-4. **What is the Bootstrap page header?**
+4. What is the Bootstrap page header?
    - The Bootstrap page header is a component that is used to add appropriate spacing between headings on a web page. This feature helps to demarcate the more important headings from the less important ones by adding visual hierarchy to the page. The page header can be customized using CSS to change the font size, color, and other properties of the text. Additionally, the page header can be used to add a background color or image to the header, making it a versatile tool for creating visually appealing and organized layouts in web applications. Overall, the Bootstrap page header is a useful component for creating visually appealing and well-organized web pages.
 
 5. **What do you know about pagination and its types?**
