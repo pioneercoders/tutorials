@@ -4,7 +4,7 @@
   Links are used to make HTML elements clickable whereas Typography is used for formatting and styling the content. Typography is used to create paragraphs, lists, inline elements and many other design-oriented styles of fonts.
 
 #### 2. What are button groups in Bootstrap?
-    Button groups are very useful in the Bootstrap framework that allow developers to stack multiple buttons in a line together. Other than this, they can be used to place the alignment buttons together and optional JavaScript radio.
+  Button groups are very useful in the Bootstrap framework that allow developers to stack multiple buttons in a line together. Other than this, they can be used to place the alignment buttons together and optional JavaScript radio.
 
 #### 3. What are Labels and badges in Bootstrap?
    - Bootstrap “.label” is a predefined class that gives more details related to links and text on the web page. This can include warnings, counts, updates, etc. Badges are components that serve to display an indicator or count a number. They are similar to labels except that they have more rounded corners.  
