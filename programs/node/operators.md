@@ -3,7 +3,7 @@
 <p>
 
 ```javascript
-      import js.util.Scanner;
+    import js.util.Scanner;
       
       let a = 10;
       let b = 5;
@@ -24,9 +24,10 @@
 <details>
 <summary>Write a program to print Comparsion Operators:</summary>
 <p>
-    ```javascript
+
+   ```javascript
     
-    	import js.util.Scanner;
+    import js.util.Scanner;
     
     	let x = 10;
     	let y = 5;
@@ -38,7 +39,7 @@
     	console.log(x < y);   // false
     	console.log(x >= y);  // true
     	console.log(x <= y);  // false
-    ```
+   ```
 </p>
 </details>
 
@@ -65,7 +66,7 @@
 
 ```javascript
 
-  import js.util.Scanner;
+import js.util.Scanner;
   
    var x=10;
    var y=5;
@@ -85,7 +86,7 @@
   
   ```javascript
   
-      import js.util.Scanner;
+    import js.util.Scanner;
       
       var x=30;
       var y=10;
@@ -115,7 +116,7 @@
 
   ```javascript
     
-    import js.util.Scanner;
+  import js.util.Scanner;
     
     let age = 18;
     let canVote = age >= 18 ? "Yes" : "No";
@@ -143,7 +144,7 @@
   
 ```javascript
   
-  import js.util.Scanner;
+import js.util.Scanner;
   
   let greeting = "Hello, ";
   let name = "John";
