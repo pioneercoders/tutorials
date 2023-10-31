@@ -74,7 +74,7 @@
         is_greater_equal = x >= y
         print(f"{x} >= {y}: {is_greater_equal}")  # Output: 10 >= 5: True
         
-  # Check if x is less than or equal to y
+# Check if x is less than or equal to y
         is_less_equal = x <= y
         print(f"{x} <= {y}: {is_less_equal}")  # Output: 10 <= 5: False
 
