@@ -4,41 +4,41 @@
   
 ```python
   
-        # Addition (+)
-    		  num1 = 10
-    		  num2 = 5
-    		  sum_result = num1 + num2
-    		  print("Sum:", sum_result)
+# Addition (+)
+    	num1 = 10
+    	num2 = 5
+    	sum_result = num1 + num2
+    	print("Sum:", sum_result)
     
-    		# Subtraction (-)
-    		  num3 = 8
-    		  num4 = 3
-    		  difference = num3 - num4
-    		  print("Difference:", difference)
+# Subtraction (-)
+    	num3 = 8
+    	num4 = 3
+    	difference = num3 - num4
+    	print("Difference:", difference)
     
-    		# Multiplication (*)
-    		  num5 = 6
-    		  num6 = 4
-    		  product = num5 * num6
-    		  print("Product:", product)
+# Multiplication (*)
+    	num5 = 6
+    	num6 = 4
+    	product = num5 * num6
+    	print("Product:", product)
     
-    		# Division (/)
-    		  num7 = 20
-    		  num8 = 4
-    		  quotient = num7 / num8
-    		  print("Quotient:", quotient)
+# Division (/)
+    	num7 = 20
+    	num8 = 4
+    	quotient = num7 / num8
+    	print("Quotient:", quotient)
     
-    		# Modulus (%)
-    		  num9 = 15
-    		  num10 = 7
-    		  remainder = num9 % num10
-    		  print("Remainder:", remainder)
+# Modulus (%)
+    	num9 = 15
+    	num10 = 7
+    	remainder = num9 % num10
+    	print("Remainder:", remainder)
     
-    		# Exponentiation (**)
-    		  base = 2
-    		  exponent = 3
-    		  result = base ** exponent
-    		  print("Result:", result) 
+# Exponentiation (**)
+	base = 2
+  	exponent = 3
+    	result = base ** exponent
+    	print("Result:", result) 
         
 ```
 </p>
@@ -50,31 +50,31 @@
   
 ```python
 
-        # Define two variables
+# Define two variables
         x = 10
         y = 5
         
-        # Check if x is equal to y
+# Check if x is equal to y
         is_equal = x == y
         print(f"{x} == {y}: {is_equal}")  # Output: 10 == 5: False
         
-        # Check if x is not equal to y
+# Check if x is not equal to y
         is_not_equal = x != y
         print(f"{x} != {y}: {is_not_equal}")  # Output: 10 != 5: True
         
-        # Check if x is greater than y
+# Check if x is greater than y
         is_greater = x > y
         print(f"{x} > {y}: {is_greater}")  # Output: 10 > 5: True
         
-        # Check if x is less than y
+# Check if x is less than y
         is_less = x < y
         print(f"{x} < {y}: {is_less}")  # Output: 10 < 5: False
         
-        # Check if x is greater than or equal to y
+# Check if x is greater than or equal to y
         is_greater_equal = x >= y
         print(f"{x} >= {y}: {is_greater_equal}")  # Output: 10 >= 5: True
         
-        # Check if x is less than or equal to y
+  # Check if x is less than or equal to y
         is_less_equal = x <= y
         print(f"{x} <= {y}: {is_less_equal}")  # Output: 10 <= 5: False
 
@@ -159,36 +159,36 @@
 
  "Note: a += 10. Here += is an assignment operator, and the result is stored in variable a. This is same as a = a + 10."
 
-		x = 10
-		x += 5
-		print(x)  # Output: 15
+	x = 10
+	x += 5
+	print(x)  # Output: 15
 
-		x -= 3
-		print(x)  # Output: 12
+	x -= 3
+	print(x)  # Output: 12
 
-		x *= 2
-		print(x)  # Output: 24
+	x *= 2
+	print(x)  # Output: 24
 
-		x /= 3
-		print(x)  # Output: 8.0
+	x /= 3
+	print(x)  # Output: 8.0
 
-		x //= 2
-		print(x)  # Output: 4.0
+	x //= 2
+	print(x)  # Output: 4.0
 
-		x **= 3
-		print(x)  # Output: 64.0
+	x **= 3
+	print(x)  # Output: 64.0
 
-		x %= 5
-		print(x)  # Output: 4.0
+	x %= 5
+	print(x)  # Output: 4.0
 
-		x &= 7
-		print(x)  # Output: 4
+	x &= 7
+	print(x)  # Output: 4
 
-		x |= 8
-		print(x)  # Output: 12
+	x |= 8
+	print(x)  # Output: 12
 
-		x ^= 6
-		print(x)  # Output: 10
+	x ^= 6
+	print(x)  # Output: 10
     
 ```
 </p>
@@ -200,11 +200,10 @@
   
 ```python
 
-       x = 10
-      		y = 20
-      
-      		result = "x is greater" if x > y else "y is greater"
-      		print(result)
+	x = 10
+	y = 20
+	result = "x is greater" if x > y else "y is greater"
+	print(result)
     
 ```
 </p>
