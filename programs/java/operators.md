@@ -31,7 +31,7 @@ public class ArithmeticOperators {
 </p>
 </details>
 
-<details open>
+<details>
 <summary>Write a program to print Relational Operators:</summary>
 <p>
 	
