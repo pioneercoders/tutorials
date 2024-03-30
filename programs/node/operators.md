@@ -3,7 +3,6 @@
 <p>
 
 ```javascript
-    import js.util.Scanner;
       
       let a = 10;
       let b = 5;
