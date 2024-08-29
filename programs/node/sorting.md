@@ -3,12 +3,12 @@
 <p>
 
 ```javascript
-   for (var i = 1; i < Arr.length; i++) {
+   for (var i = 1; i < arr.length; i++) {
     for (var j = 0; j < i; j++) {
-        if (Arr[i] < Arr[j]) {
-            var x = Arr[i];
-            Arr[i] = Arr[j];
-            Arr[j] = x;
+        if (arr[i] < arr[j]) {
+            var x = arr[i];
+            arr[i] = arr[j];
+            arr[j] = x;
         }
     }
   }
