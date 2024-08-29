@@ -43,9 +43,7 @@
 <summary>Write a program to print Logiacal Operators: </summary>
 <p>
   
-```javascript
-  import js.util.Scanner;
-         
+```javascript         
     let isTrue = true;
     let isFalse = false;
     console.log(isTrue && isFalse);
@@ -61,8 +59,6 @@
 <p>
 
 ```javascript
-
-import js.util.Scanner;
   
    var x=10;
    var y=5;
@@ -81,9 +77,7 @@ import js.util.Scanner;
 <p>
   
   ```javascript
-  
-    import js.util.Scanner;
-      
+        
       var x=30;
       var y=10;
       
@@ -111,9 +105,7 @@ import js.util.Scanner;
 <p>
 
   ```javascript
-    
-  import js.util.Scanner;
-    
+        
     let age = 18;
     let canVote = age >= 18 ? "Yes" : "No";
     console.log(canVote); // "Yes"
@@ -139,9 +131,7 @@ import js.util.Scanner;
 <p>
   
 ```javascript
-  
-import js.util.Scanner;
-  
+    
   let greeting = "Hello, ";
   let name = "John";
   let message = greeting + name;
