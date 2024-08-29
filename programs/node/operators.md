@@ -24,7 +24,6 @@
 <p>
 
    ```javascript
-   
     	let x = 10;
     	let y = 5;
     	console.log(x == y);  // false
@@ -59,7 +58,6 @@
 <p>
 
 ```javascript
-  
    var x=10;
    var y=5;
   
@@ -77,7 +75,6 @@
 <p>
   
   ```javascript
-        
       var x=30;
       var y=10;
       
@@ -105,7 +102,6 @@
 <p>
 
   ```javascript
-        
     let age = 18;
     let canVote = age >= 18 ? "Yes" : "No";
     console.log(canVote); // "Yes"
@@ -131,7 +127,6 @@
 <p>
   
 ```javascript
-    
   let greeting = "Hello, ";
   let name = "John";
   let message = greeting + name;
