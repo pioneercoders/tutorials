@@ -1,4 +1,4 @@
-<details>
+<details open>
 <summary>Write a program to print 1 to 10 numbers?</summary>
 <p>
 
@@ -10,6 +10,264 @@ public class PrintNumbers{
         }
     }  
 }  
+```
+
+</p>
+</details> 
+<details>
+<summary>Write a program to print odd numbers for given number.</summary>
+<p>
+
+```java
+public class PrintOddNumbers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input: Accepting a number from the user
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+
+        // Print odd numbers from 1 to the given number
+        System.out.println("Odd numbers up to " + number + ":");
+        for (int i = 1; i <= number; i++) {
+            if (i % 2 != 0) {
+                System.out.println(i);
+            }
+        }
+
+        scanner.close();
+    }
+}
+```
+
+</p>
+</details> 
+<details>
+<summary>Write a program to print even numbers for given number.</summary>
+<p>
+
+```java
+import java.util.Scanner;
+
+public class PrintEvenNumbers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input: Accepting a number from the user
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+
+        // Print even numbers from 1 to the given number
+        System.out.println("Even numbers up to " + number + ":");
+        for (int i = 1; i <= number; i++) {
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
+        }
+
+        scanner.close();
+    }
+}
+```
+
+</p>
+</details> 
+
+<details>
+<summary>Write a program to Print Numbers from 1 to a Given Number using while loop.</summary>
+<p>
+
+```java
+import java.util.Scanner;
+
+public class PrintNumbersWhile {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input: Accepting a number from the user
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+        int i = 1;
+
+        // Print numbers from 1 to the given number
+        System.out.println("Numbers from 1 to " + number + ":");
+        while (i <= number) {
+            System.out.println(i);
+            i++;
+        }
+
+        scanner.close();
+    }
+}
+```
+
+</p>
+</details> 
+
+<details>
+<summary>Write a program to Print Even Numbers to a Given Number using while loop.</summary>
+<p>
+
+```java
+import java.util.Scanner;
+
+public class PrintEvenNumbersWhile {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input: Accepting a number from the user
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+        int i = 1;
+
+        // Print even numbers from 1 to the given number
+        System.out.println("Even numbers up to " + number + ":");
+        while (i <= number) {
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
+            i++;
+        }
+
+        scanner.close();
+    }
+}
+
+```
+
+</p>
+</details> 
+
+<details>
+<summary>Write a program to Print Odd Numbers to a Given Number using while loop.</summary>
+<p>
+
+```java
+import java.util.Scanner;
+
+public class PrintOddNumbersWhile {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input: Accepting a number from the user
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+        int i = 1;
+
+        // Print odd numbers from 1 to the given number
+        System.out.println("Odd numbers up to " + number + ":");
+        while (i <= number) {
+            if (i % 2 != 0) {
+                System.out.println(i);
+            }
+            i++;
+        }
+
+        scanner.close();
+    }
+}
+
+```
+
+</p>
+</details> 
+<details>
+<summary>Write a program to Print Numbers from 1 to a Given Number using do-while loop.</summary>
+<p>
+
+```java
+import java.util.Scanner;
+
+public class PrintNumbersDoWhile {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input: Accepting a number from the user
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+        int i = 1;
+
+        // Print numbers from 1 to the given number
+        System.out.println("Numbers from 1 to " + number + ":");
+        do {
+            System.out.println(i);
+            i++;
+        } while (i <= number);
+
+        scanner.close();
+    }
+}
+
+```
+
+</p>
+</details> 
+
+<details>
+<summary>Write a program to Print Even Numbers to a Given Number using do-while loop.</summary>
+<p>
+
+```java
+import java.util.Scanner;
+
+public class PrintEvenNumbersDoWhile {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input: Accepting a number from the user
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+        int i = 1;
+
+        // Print even numbers from 1 to the given number
+        System.out.println("Even numbers up to " + number + ":");
+        do {
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
+            i++;
+        } while (i <= number);
+
+        scanner.close();
+    }
+}
+
+
+```
+
+</p>
+</details> 
+
+<details>
+<summary>Write a program to Print Odd Numbers to a Given Number using do-while loop.</summary>
+<p>
+
+```java
+import java.util.Scanner;
+
+public class PrintOddNumbersDoWhile {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input: Accepting a number from the user
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+        int i = 1;
+
+        // Print odd numbers from 1 to the given number
+        System.out.println("Odd numbers up to " + number + ":");
+        do {
+            if (i % 2 != 0) {
+                System.out.println(i);
+            }
+            i++;
+        } while (i <= number);
+
+        scanner.close();
+    }
+}
+
+
 ```
 
 </p>
