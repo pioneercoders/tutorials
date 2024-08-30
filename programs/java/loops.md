@@ -1,18 +1,20 @@
-<details open>
-<summary> How do you print numbers from 1 to 10 in Java?</summary>
+<details>
+<summary>Write a program to print 1 to 10 numbers?</summary>
 <p>
+
 ```java
-public class PrintNumbers {
-    public static void main(String[] args) {
-        // Print numbers from 1 to 10
-        for (int i = 1; i <= 10; i++) {
-            System.out.println(i);
+public class PrintNumbers{  
+    public static void main(String args[]){  
+        for(int i=1; i <= 10; i++){//loop for iterating an list upto 10 numbers
+            System.out.println("The numbers are :"+i);
         }
-    }
-}
+    }  
+}  
 ```
-</p>	
+
+</p>
 </details> 
+
 <details> 		
 <summary>Write a program to print given number is amstrong.</summary>
 <p>
