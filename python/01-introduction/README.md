@@ -19,7 +19,7 @@ It is used for:
 - Python can be used to handle big data and perform complex mathematics.
 - Python can be used for rapid prototyping, or for production-ready software development.
 
-## Why Python?
+## Why Python
 
 - Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).
 - Python has a simple syntax similar to the English language.
