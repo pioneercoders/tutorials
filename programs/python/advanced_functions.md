@@ -35,6 +35,7 @@ si = calculate_simple_interest(p, r, t)
 # Display result
 print(f"Simple Interest = {si}")
 
+```
 
 </p>
 </details> 
