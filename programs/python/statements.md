@@ -1,5 +1,5 @@
 <details open>
-<summary open>Write a program to find Simple Interst.</summary>
+<summary>Write a program to find Simple Interst.</summary>
 <p>
 
 ```python
