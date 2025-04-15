@@ -3,17 +3,21 @@
 <p>
 
 ```python
-def calculate_simple_interest(principal, rate, time):
-    simple_interest = (principal * rate * time) / 100
-    return simple_interest
+# Simple Interest Formula: (P × R × T) / 100
 
-p = float(input("Enter the Principal amount: "))
-r = float(input("Enter the Rate of interest (%): "))
-t = float(input("Enter the Time (in years): "))
+# Assigning values directly
+principal = 1000      # Principal amount in rupees
+rate = 5              # Rate of interest per year
+time = 2              # Time in years
 
-si = calculate_simple_interest(p, r, t)
+# Calculating simple interest
+simple_interest = (principal * rate * time) / 100
 
-print(f"Simple Interest = {si}")
+# Displaying the result
+print("Principal:", principal)
+print("Rate of Interest:", rate)
+print("Time (in years):", time)
+print("Simple Interest =", simple_interest)
 
 ```
 
