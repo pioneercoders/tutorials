@@ -238,3 +238,28 @@ else:
 ```
 </p>
 </details>
+
+<details>
+<summary open>Write a program to print LCM - Least Common Multiple.</summary>
+<p>
+
+```python
+a = 12
+b = 18
+
+if a > b:
+    greater = a
+else:
+    greater = b
+
+while True:
+    if greater % a == 0 and greater % b == 0:
+        lcm = greater
+        break
+    greater += 1
+
+print("LCM of", a, "and", b, "is", lcm)
+
+```
+</p>
+</details>
