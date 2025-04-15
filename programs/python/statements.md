@@ -205,3 +205,21 @@ else:
 ```
 </p>
 </details>
+
+
+<details>
+<summary open>Write a program to print given number divisible by 3 or 7.</summary>
+<p>
+
+```python
+
+number = 21
+
+if number % 3 == 0 or number % 7 == 0:
+    print("The number is divisible by 3 or 7")
+else:
+    print("The number is not divisible by 3 or 7")
+
+```
+</p>
+</details>
