@@ -111,3 +111,23 @@ else:
 ```
 </p>
 </details> 
+
+<details>
+<summary open>  Write a program to find Smallest number.</summary>
+<p>
+
+```python
+x = 12
+y = 7
+z = 15
+
+if x < y and x < z:
+    print("Smallest number is:", x)
+elif y < z:
+    print("Smallest number is:", y)
+else:
+    print("Smallest number is:", z)
+
+```
+</p>
+</details> 
