@@ -83,7 +83,7 @@ print("Area of the circle:", round(area, 2))
 
 
 <details>
-<summary open> Write a program to find area of circle.</summary>
+<summary open> Write a program to find average of three numbers.</summary>
 <p>
 
 ```python
