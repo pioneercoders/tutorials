@@ -5,7 +5,6 @@
 ```python
 # Simple Interest Formula: (P × R × T) / 100
 
-
 principal = 1000     
 rate = 5             
 time = 2
@@ -18,7 +17,6 @@ print("Time (in years):", time)
 print("Simple Interest =", simple_interest)
 
 ```
-
 </p>
 </details> 
 
@@ -98,4 +96,18 @@ print("Average of three numbers:", average)
 </p>
 </details> 
 
+<details>
+<summary open> Write a program to find Max between two numbers.</summary>
+<p>
 
+```python
+a = 15
+b = 25
+
+if a > b:
+    print("Maximum number is:", a)
+else:
+    print("Maximum number is:", b)
+```
+</p>
+</details> 
