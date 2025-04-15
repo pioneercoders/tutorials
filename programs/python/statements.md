@@ -32,7 +32,7 @@ print(f"Simple Interest = {si}")
 </details> 
 
 <details>
-<summary open>Write a program to find Simple Interst.</summary>
+<summary open> Write a program to find Compound Interst.</summary>
 <p>
 
 ```python
