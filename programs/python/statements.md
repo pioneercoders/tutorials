@@ -206,7 +206,6 @@ else:
 </p>
 </details>
 
-
 <details>
 <summary open>Write a program to print given number divisible by 3 or 7.</summary>
 <p>
@@ -219,6 +218,22 @@ if number % 3 == 0 or number % 7 == 0:
     print("The number is divisible by 3 or 7")
 else:
     print("The number is not divisible by 3 or 7")
+
+```
+</p>
+</details>
+
+<details>
+<summary open>Write a program to print given number divisible by 2 but not with 5.</summary>
+<p>
+
+```python
+number = 14
+
+if number % 2 == 0 and number % 5 != 0:
+    print("The number is divisible by 2 but not by 5")
+else:
+    print("The condition is not satisfied")
 
 ```
 </p>
