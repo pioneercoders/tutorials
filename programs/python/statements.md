@@ -29,21 +29,29 @@ print("Simple Interest =", simple_interest)
 <p>
 
 ```python
-def calculate_compound_interest(principal, rate, time):
-    amount = principal * (1 + rate / 100) ** time
-    compound_interest = amount - principal
-    return compound_interest
+# Compound Interest Calculator
 
-# Taking user input
-p = float(input("Enter the Principal amount: "))
-r = float(input("Enter the Rate of interest (%): "))
-t = float(input("Enter the Time (in years): "))
+principal = 5000        # Principal amount (P)
+rate = 5                # Annual interest rate in percent
+time = 3                # Time in years (T)
+n = 4                   # Number of times interest is compounded per year (n)
 
-# Calculating compound interest
-ci = calculate_compound_interest(p, r, t)
+# Convert rate to decimal
+rate = rate / 100
 
-# Display result
-print(f"Compound Interest = {ci:.2f}")
+# Calculate amount
+amount = principal * (1 + rate / n) ** (n * time)
+
+# Calculate compound interest
+compound_interest = amount - principal
+
+# Display results
+print("Principal (P):", principal)
+print("Rate of Interest (%):", rate * 100)
+print("Time (years):", time)
+print("Compounded:", n, "times/year")
+print("Total Amount (A):", round(amount, 2))
+print("Compound Interest:", round(compound_interest, 2))
 
 ```
 </p>
