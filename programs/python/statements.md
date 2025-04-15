@@ -284,3 +284,27 @@ else:
 ```
 </p>
 </details>
+
+
+<details>
+<summary open>Write a program to check Perfect Number.</summary>
+<p>
+
+```python
+
+temperature_in_celsius = 25  # Example Celsius value
+temperature_in_fahrenheit = 77  # Example Fahrenheit value
+
+# Convert Celsius to Fahrenheit
+fahrenheit = (temperature_in_celsius * 9/5) + 32
+print(f"{temperature_in_celsius}°C is equal to {fahrenheit}°F")
+
+# Convert Fahrenheit to Celsius
+celsius = (temperature_in_fahrenheit - 32) * 5/9
+print(f"{temperature_in_fahrenheit}°F is equal to {celsius:.2f}°C")
+
+
+
+```
+</p>
+</details>
