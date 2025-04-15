@@ -56,3 +56,28 @@ print("Compound Interest:", round(compound_interest, 2))
 ```
 </p>
 </details> 
+
+
+<details>
+<summary open> Write a program to find area of circle.</summary>
+<p>
+
+```python
+
+radius = 7  # Radius of the circle
+
+# Use value of pi
+pi = 3.14159
+
+# Calculate area
+area = pi * radius * radius
+
+# Display result
+print("Radius of the circle:", radius)
+print("Area of the circle:", round(area, 2))
+
+
+```
+</p>
+</details> 
+
