@@ -81,3 +81,25 @@ print("Area of the circle:", round(area, 2))
 </p>
 </details> 
 
+
+<details>
+<summary open> Write a program to find area of circle.</summary>
+<p>
+
+```python
+num1 = 10
+num2 = 20
+num3 = 30
+
+total = num1 + num2 + num3
+average = total / 3
+
+print("First number:", num1)
+print("Second number:", num2)
+print("Third number:", num3)
+print("Average of three numbers:", average)
+```
+</p>
+</details> 
+
+
