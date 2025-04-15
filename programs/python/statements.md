@@ -131,3 +131,26 @@ else:
 ```
 </p>
 </details> 
+
+
+<details>
+<summary open>Write a program to Swap two numbers. </summary>
+<p>
+
+```python
+a = 5
+b = 10
+
+print("Before swapping:")
+print("a =", a)
+print("b =", b)
+
+a, b = b, a
+
+print("After swapping:")
+print("a =", a)
+print("b =", b)
+
+```
+</p>
+</details> 
