@@ -287,7 +287,7 @@ else:
 
 
 <details>
-<summary open>Write a program to check Perfect Number.</summary>
+<summary open>Write a program for Temperature Converter.</summary>
 <p>
 
 ```python
