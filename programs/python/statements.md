@@ -173,7 +173,7 @@ while number > 0:
 </details>
 
 <details>
-<summary open>Write a program to print Digits of a Given Number.</summary>
+<summary open>Write a program to print given number is even or odd.</summary>
 <p>
 
 ```python
