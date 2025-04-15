@@ -154,7 +154,6 @@ print("b =", b)
 </p>
 </details> 
 
-
 <details>
 <summary open>Write a program to print Digits of a Given Number.</summary>
 <p>
@@ -168,6 +167,23 @@ while number > 0:
     digit = number % 10
     print(digit)
     number = number // 10
+
+```
+</p>
+</details>
+
+<details>
+<summary open>Write a program to print Digits of a Given Number.</summary>
+<p>
+
+```python
+
+number = 42
+
+if number % 2 == 0:
+    print("The number is Even")
+else:
+    print("The number is Odd")
 
 ```
 </p>
