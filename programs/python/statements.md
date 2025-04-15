@@ -132,7 +132,6 @@ else:
 </p>
 </details> 
 
-
 <details>
 <summary open>Write a program to Swap two numbers. </summary>
 <p>
@@ -154,3 +153,22 @@ print("b =", b)
 ```
 </p>
 </details> 
+
+
+<details>
+<summary open>Write a program to print Digits of a Given Number.</summary>
+<p>
+
+```python
+number = 12345
+
+print("Digits of the number:")
+
+while number > 0:
+    digit = number % 10
+    print(digit)
+    number = number // 10
+
+```
+</p>
+</details>
