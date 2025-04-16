@@ -166,3 +166,51 @@ while True:
 ```
 </p>
 </details>
+
+<details open>
+<summary>Write a program to print given number is amstrong.</summary>
+<p>
+
+```python
+# Input from user
+num = int(input("Enter a number: "))
+
+# Store the original number
+original = num
+
+# Count the number of digits
+n = len(str(num))
+
+# Calculate sum of the nth power of each digit
+sum_of_powers = 0
+temp = num
+while temp > 0:
+    digit = temp % 10
+    sum_of_powers += digit ** n
+    temp //= 10
+
+# Check if the number is an Armstrong number
+if original == sum_of_powers:
+    print(f"{original} is an Armstrong number.")
+else:
+    print(f"{original} is not an Armstrong number.")
+
+```
+</p>
+</details>
+
+<details open>
+<summary>Write a program to print multiplication table for given number.</summary>
+<p>
+
+```python
+# Input from user
+num = int(input("Enter a number: "))
+limit = int(input("Enter the limit for the multiplication table: "))
+
+# Loop to print the multiplication table
+for i in range(1, limit + 1):
+    print(f"{num} x {i} = {num * i}")
+```
+</p>
+</details>
