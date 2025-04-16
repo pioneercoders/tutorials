@@ -262,8 +262,6 @@ for _ in range(terms):
 <p>
 
 ```python
-# Program to print Pascal's Triangle up to a given number of rows
-
 # Input from user
 rows = int(input("Enter the number of rows: "))
 
