@@ -85,8 +85,6 @@ while i <= num:
 <p>
 
 ```python
-# Program to print odd numbers up to a given number using while loop
-
 # Input from user
 num = int(input("Enter a number: "))
 
@@ -98,6 +96,51 @@ while i <= num:
     if i % 2 != 0:
         print(i)
     i += 1
+```
+</p>
+</details>
+
+<details open>
+<summary>Write a program to Print Numbers from 1 to a Given Number using do-while loop. </summary>
+<p>
+
+```python
+# Input from user
+num = int(input("Enter a number: "))
+
+# Initialize counter
+i = 1
+
+# Simulated do-while loop
+while True:
+    print(i)
+    i += 1
+    if i > num:
+        break
+```
+</p>
+</details>
+
+<details open>
+<summary>Write a program to Print Even Numbers to a Given Number using do-while loop. </summary>
+<p>
+
+```python
+# Simulating a do-while loop to print even numbers up to a given number
+
+# Input from user
+num = int(input("Enter a number: "))
+
+# Initialize counter
+i = 1
+
+# Simulated do-while loop
+while True:
+    if i % 2 == 0:
+        print(i)
+    i += 1
+    if i > num:
+        break
 ```
 </p>
 </details>
