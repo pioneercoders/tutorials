@@ -315,11 +315,6 @@ print(f"The HCF of {num1} and {num2} is: {hcf}")
 </p>
 </details>
 
-t_pascals_triangle(rows)
-```
-</p>
-</details>
-
 <details open>
 <summary>Write the program to print the following series 3 33 333 3333 33333 333333.</summary>
 <p>
