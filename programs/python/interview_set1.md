@@ -27,8 +27,37 @@ print("Number of prime numbers less than", N, "is:", count_primes(N))
 </p>
 </details>
 
+<details>
+<summary>Given two binary strings a and b,Write a program to find their sum as a binary string and perform the binary addition operation on these values</summary>
+<p>
+
+```python
+def add_binary(a, b):
+    # Convert binary strings to integers
+    num1 = int(a, 2)
+    num2 = int(b, 2)
+    
+    # Add the integers
+    total = num1 + num2
+    
+    # Convert the result back to binary string and remove '0b' prefix
+    return bin(total)[2:]
+
+# Example usage
+a = input("Enter first binary number: ")  # e.g., 1010
+b = input("Enter second binary number: ") # e.g., 1101
+
+result = add_binary(a, b)
+print(f"Binary sum of {a} and {b} is: {result}")
+
+
+```
+
+</p>
+</details>
+
 <details open>
-<summary>write a program that can print the number of prime numbers less than N and you are given a non-negative integer N</summary>
+<summary>Given two binary strings a and b,Write a program to find their sum as a binary string and perform the binary addition operation on these values</summary>
 <p>
 
 ```python
