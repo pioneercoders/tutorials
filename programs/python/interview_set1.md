@@ -56,7 +56,7 @@ print(f"Binary sum of {a} and {b} is: {result}")
 </p>
 </details>
 
-<details open>
+<details >
 <summary>Write a Java program that moves all zeros to the end of an integer list while maintaining the relative order of the non-zero elements.</summary>
 <p>
 
@@ -84,6 +84,73 @@ arr = [0, 1, 0, 3, 12, 0, 5]
 print("Original Array:", arr)
 result = move_zeros_to_end(arr)
 print("After moving zeros to end:", result)
+
+```
+
+</p>
+</details>
+
+<details >
+<summary>Write a Java program that finds the size (number of cells occupied) of the largest contiguous cross-section consisting of a single element type in a 2D matrix A. The matrix A represents a cross-section of a nuclear reactor with different types of elements present in each cell.</summary>
+<p>
+
+```python
+def largest_contiguous_region(matrix):
+    if not matrix or not matrix[0]:
+        return 0
+
+    rows = len(matrix)
+    cols = len(matrix[0])
+    visited = [[False] * cols for _ in range(rows)]
+    max_size = 0
+
+    # Directions: up, down, left, right
+    directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
+
+    def dfs(r, c, value):
+        stack = [(r, c)]
+        size = 0
+
+        while stack:
+            x, y = stack.pop()
+            if 0 <= x < rows and 0 <= y < cols and not visited[x][y] and matrix[x][y] == value:
+                visited[x][y] = True
+                size += 1
+                for dx, dy in directions:
+                    stack.append((x + dx, y + dy))
+        return size
+
+    for i in range(rows):
+        for j in range(cols):
+            if not visited[i][j]:
+                region_size = dfs(i, j, matrix[i][j])
+                max_size = max(max_size, region_size)
+
+    return max_size
+
+# Example usage
+A = [
+    [1, 2, 2, 3],
+    [1, 2, 2, 3],
+    [4, 4, 2, 3],
+    [4, 4, 4, 3]
+]
+
+print("Size of the largest contiguous region:", largest_contiguous_region(A))
+
+
+```
+
+</p>
+</details>
+
+</details>
+
+<details >
+<summary>Write a Java program that finds the size (number of cells occupied) of the largest contiguous cross-section consisting of a single element type in a 2D matrix A. The matrix A represents a cross-section of a nuclear reactor with different types of elements present in each cell.</summary>
+<p>
+
+```python
 
 ```
 
