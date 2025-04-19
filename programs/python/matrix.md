@@ -110,10 +110,38 @@ print(result)
 </details>
 
 <details >
-<summary>Write a programs to Search an element in a matrix.</summary>
+<summary>Write a programs to Find row with maximum no. of 1's</summary>
 <p>
 
 ```python
+# Function to find the row with maximum number of 1's
+def row_with_max_ones(matrix):
+    max_count = -1
+    row_index = -1
+    
+    # Iterate through each row
+    for i in range(len(matrix)):
+        # Count the number of 1's in the current row
+        count = matrix[i].count(1)
+        
+        # Update the row with maximum number of 1's
+        if count > max_count:
+            max_count = count
+            row_index = i
+            
+    return row_index
+
+# Example matrix
+matrix = [
+    [0, 1, 1, 0],
+    [1, 1, 1, 0],
+    [1, 1, 0, 0],
+    [0, 1, 1, 1]
+]
+
+# Find the row with maximum number of 1's
+result = row_with_max_ones(matrix)
+print(f"The row with the maximum number of 1's is: Row {result}")
 
 ```
 
