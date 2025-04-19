@@ -78,7 +78,39 @@ print("Spiral Traversal:", result)
 </details>
 
 <details >
-<summary>Write a programs to print Spiral traversal on a Matrix.</summary>
+<summary>Write a programs to Search an element in a matrix.</summary>
+<p>
+
+```python
+# Function to search for an element in the matrix
+def search_matrix(matrix, target):
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+            if matrix[i][j] == target:
+                return f"Element {target} found at position ({i}, {j})"
+    return f"Element {target} not found in the matrix"
+
+# Example matrix
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+# Target element to search for
+target = 5
+
+# Print the result of the search
+result = search_matrix(matrix, target)
+print(result)
+
+```
+
+</p>
+</details>
+
+<details >
+<summary>Write a programs to Search an element in a matrix.</summary>
 <p>
 
 ```python
