@@ -67,7 +67,7 @@ print(f"Duplicate characters: {', '.join(duplicates)}")
 </p>
 </details>
 
-<details open>
+<details>
 <summary>Write a program to convert string to integer and integer to string.</summary>
 <p>
 
@@ -96,7 +96,7 @@ print(f"Integer to string: {string_result}")
 ```
 </p>
 </details>
-<details open>
+<details>
 <summary>Write a program to print first non repeated character from String.</summary>
 <p>
 
