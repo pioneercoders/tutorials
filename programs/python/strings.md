@@ -16,7 +16,7 @@ print(f"Number of words: {word_count}")
 
 </p>
 </details>
-<details open>
+<details>
 <summary>Write a program to remove all white spaces from a string.</summary>
 <p>
 
