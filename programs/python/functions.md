@@ -19,7 +19,7 @@ print(f"The number {num} is {result}.")
 </p>
 </details>
 
-<details open>
+<details>
 <summary>Write function to convert given string to uppercase.</summary>
 <p>
 
@@ -37,7 +37,7 @@ print(f"Uppercase version: {result}")
 
 </p>
 </details>
-<details open>
+<details>
 <summary>Write function to show call by value.</summary>
 <p>
 
@@ -59,7 +59,7 @@ print(f"After function call: num = {num}")
 </p>
 </details>
 
-<details open>
+<details>
 <summary>Write function to Print 1 to 10 without using loop.</summary>
 <p>
 
@@ -77,7 +77,7 @@ print_numbers()
 </p>
 </details>
 
-<details open>
+<details>
 <summary>Write function to show call by reference.</summary>
 <p>
 
@@ -123,7 +123,7 @@ for product in product_list:
 </details>
 
 
-<details open>
+<details>
 <summary>Write function to Reverse Given number.</summary>
 <p>
 
@@ -146,7 +146,7 @@ print(f"Reversed number: {result}")
 </p>
 </details>
 
-<details open>
+<details>
 <summary>Write a simple calculator.</summary>
 <p>
 
