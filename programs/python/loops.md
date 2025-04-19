@@ -9,7 +9,7 @@ for i in range(1, 11):
 </p>
 </details>
 
-<details open>
+<details>
 <summary>Write a program to print odd numbers for given number.</summary>
 <p>
 
@@ -25,7 +25,7 @@ for i in range(1, num + 1):
 </p>
 </details>
 
-<details open>
+<details>
 <summary>Write a program to print even numbers for given number.</summary>
 <p>
 
@@ -60,7 +60,7 @@ while i <= num:
 ```
 </p>
 </details>
-<details open>
+<details>
 <summary>Write a program to Print Even Numbers to a Given Number using while loop.</summary>
 <p>
 
@@ -80,7 +80,7 @@ while i <= num:
 </p>
 </details>
 
-<details open>
+<details>
 <summary>Write a program to Print Odd Numbers to a Given Number using while loop.</summary>
 <p>
 
@@ -100,7 +100,7 @@ while i <= num:
 </p>
 </details>
 
-<details open>
+<details>
 <summary>Write a program to Print Numbers from 1 to a Given Number using do-while loop. </summary>
 <p>
 
@@ -121,7 +121,7 @@ while True:
 </p>
 </details>
 
-<details open>
+<details>
 <summary>Write a program to Print Even Numbers to a Given Number using do-while loop. </summary>
 <p>
 
@@ -144,7 +144,7 @@ while True:
 </details>
 
 
-<details open>
+<details>
 <summary>Write a program to Print Odd Numbers to a Given Number using do-while loop.</summary>
 <p>
 
@@ -167,7 +167,7 @@ while True:
 </p>
 </details>
 
-<details open>
+<details>
 <summary>Write a program to print given number is amstrong.</summary>
 <p>
 
@@ -199,7 +199,7 @@ else:
 </p>
 </details>
 
-<details open>
+<details>
 <summary>Write a program to print multiplication table for given number.</summary>
 <p>
 
@@ -215,7 +215,7 @@ for i in range(1, limit + 1):
 </p>
 </details>
 
-<details open>
+<details>
 <summary>Write a program to print sum of individual digits for given number.</summary>
 <p>
 
@@ -237,7 +237,7 @@ print(f"The sum of the digits is: {sum_of_digits}")
 ```
 </p>
 </details>
-<details open>
+<details>
 <summary>Write a program to print Fibnacci Series.</summary>
 <p>
 
@@ -257,7 +257,7 @@ for _ in range(terms):
 </p>
 </details>
 
-<details open>
+<details>
 <summary>Write a program to print Pascal Triangle.</summary>
 <p>
 
@@ -287,7 +287,7 @@ print_pascals_triangle(rows)
 </p>
 </details>
 
-<details open>
+<details>
 <summary>Write a program to find HCF..</summary>
 <p>
 
@@ -313,7 +313,7 @@ print(f"The HCF of {num1} and {num2} is: {hcf}")
 </p>
 </details>
 
-<details open>
+<details>
 <summary>Write the program to print the following series 3 33 333 3333 33333 333333.</summary>
 <p>
 
@@ -333,7 +333,7 @@ for i in range(terms):
 </p>
 </details>
 
-<details open>
+<details>
 <summary>Write the program to print Arithmetic Progression.</summary>
 <p>
 
@@ -353,7 +353,7 @@ for i in range(n):
 </p>
 </details>
 
-<details open>
+<details>
 <summary>Write the program to print Geometric Progression.</summary>
 <p>
 
