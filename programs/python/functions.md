@@ -145,3 +145,36 @@ print(f"Reversed number: {result}")
 
 </p>
 </details>
+
+<details open>
+<summary>Write a simple calculator.</summary>
+<p>
+
+```python
+def calculator(a, b, operation):
+    if operation == "+":
+        return a + b
+    elif operation == "-":
+        return a - b
+    elif operation == "*":
+        return a * b
+    elif operation == "/":
+        if b == 0:
+            return "Error: Division by zero"
+        return a / b
+    else:
+        return "Invalid operation"
+
+# Example usage:
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+op = input("Enter operation (+, -, *, /): ")
+
+result = calculator(num1, num2, op)
+print("Result:", result)
+
+
+```
+
+</p>
+</details>
