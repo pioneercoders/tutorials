@@ -34,7 +34,7 @@ print(f"String without spaces: {result}")
 </p>
 </details>
 
-<details open>
+<details>
 <summary>Write a program to find duplicate characters in a string.</summary>
 <p>
 
