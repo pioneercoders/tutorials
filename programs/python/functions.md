@@ -98,7 +98,7 @@ print(f"After function call: {numbers}")
 </p>
 </details>
 
-<details open>
+<details>
 <summary>Write function to return list of products.</summary>
 <p>
 
