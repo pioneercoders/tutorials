@@ -41,7 +41,7 @@ for i in range(1, num + 1):
 </p>
 </details>
 
-<details open>
+<details>
 <summary>Write a program to Print Numbers from 1 to a Given Number using while loop.</summary>
 <p>
 
