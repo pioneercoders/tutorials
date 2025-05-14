@@ -10,3 +10,5 @@ Transformer models (e.g., GPT, BERT, T5)
 GANs (Generative Adversarial Networks) for images and video  
 
 VAEs (Variational Autoencoders)  
+
+![ML AI GenAI](img/ml-ai-gen-ai.png)
