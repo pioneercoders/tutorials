@@ -11,4 +11,4 @@ GANs (Generative Adversarial Networks) for images and video
 
 VAEs (Variational Autoencoders)  
 
-![ML AI GenAI](img/ml-ai-gen-ai.png)
+![ML AI GenAI](../img/ml-ai-gen-ai.png)
