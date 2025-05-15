@@ -41,7 +41,7 @@ AI-powered search tools (like Sourcegraph or even enhanced IDE search) help you 
 🗣️ 9. Communication & Collaboration  
 AI can help write or summarize tickets, generate changelogs, or provide clearer commit messages.
 
-![ML AI GenAI](https://github.com/pioneercoders/tutorials/blob/master/img/SE-Day-to-Day-Work.png)
+![ML AI GenAI](https://raw.githubusercontent.com/pioneercoders/tutorials/master/img/SE-Day-to-Day-Work.png)
 
 🔄 Real-Life Example Workflow 
 You're building a React app:
