@@ -38,4 +38,4 @@ High impact: Your work can lead to real-world breakthroughs in various domains.
 Innovation: These fields are driving innovation across industries.
 
 ### ML vs AI vs GenAI
-![ML AI GenAI](https://github.com/pioneercoders/tutorials/blob/master/img/ml-ai-gen-ai.png)
+![ML AI GenAI](https://learninganddevelopmenthub.com/home/main/img/ml-ai-gen-ai.png)
