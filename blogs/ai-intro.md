@@ -12,7 +12,7 @@ GANs (Generative Adversarial Networks) for images and video
 VAEs (Variational Autoencoders)  
 
 ### ML vs AI vs GenAI
-![ML AI GenAI](https://github.com/pioneercoders/tutorials/blob/master/img/ML-AI-GenAI.png)
+![ML AI GenAI](https://raw.githubusercontent.com/pioneercoders/tutorials/master/img/ML-AI-GenAI.png)
 
 🔹 Artificial Intelligence (AI)
 Definition: A broad field of computer science aimed at building systems capable of performing tasks that would normally require human intelligence.
