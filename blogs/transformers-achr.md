@@ -92,6 +92,8 @@ Conclusion
 
 The Transformers architecture has fundamentally changed the landscape of artificial intelligence, enabling more sophisticated models that excel in understanding and generating human language. Its innovative use of self-attention and parallel processing has paved the way for advancements in various AI applications, making it a cornerstone of modern AI research and development. As the field continues to evolve, the impact of Transformers will likely expand into new areas, further enhancing the capabilities of artificial intelligence.
 
+![TR](https://raw.githubusercontent.com/pioneercoders/tutorials/master/img/Transformers-Architecture-AI.png)
+
 
 
 
