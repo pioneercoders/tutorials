@@ -25,9 +25,9 @@
       var result = x%2 == 0;
       return result;
     }
-    let r1 = add(5, 8);
+    let r1 = isEven(5);
     console.log(r1);
-    let r2 = add(9, 10);
+    let r2 = isEven(9);
     console.log(r2);
 ```
 
