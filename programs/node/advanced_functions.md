@@ -87,3 +87,39 @@ console.log(result);
 
 </p>
 </details> 
+
+<details>
+<summary open>Write a Immediately Invoked Function Expression.</summary>
+<p>
+
+```javascript
+(function() {
+  console.log("This function runs itself!");
+})();
+
+```
+
+</p>
+</details> 
+
+<details>
+<summary open>Write a Callback function example.</summary>
+<p>
+
+```javascript
+function greet(name, callback) {
+  console.log("Hello, " + name + "!");
+  callback();
+}
+
+function sayGoodbye() {
+  console.log("Goodbye!");
+}
+
+// Call greet and pass sayGoodbye as a callback
+greet("Alice", sayGoodbye);
+
+```
+
+</p>
+</details> 
