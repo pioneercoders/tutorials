@@ -46,6 +46,7 @@
 
 </p>
 </details>
+
 <details>
 <summary>Write a program to find the area of circle.</summary>
 <p>
@@ -53,9 +54,64 @@
 ```javascript
     let radious=4;
     let pi=3.14;
-   var area=pi*radious*radious;
-
+    var area=pi*radious*radious;
     console.log("area of circle is:"+area);
+```
+
+</p>
+</details>
+
+<details>
+<summary>Write a program to Check if a person is eligible to vote.</summary>
+<p>
+
+```javascript
+    let age = 17;
+
+    if (age >= 18) {
+        console.log("You are eligible to vote.");
+    } else {
+        console.log("You are not eligible to vote.");
+    }
+
+```
+
+</p>
+</details>
+
+<details>
+<summary>Write a program to Check if a number is positive or negative.</summary>
+<p>
+
+```javascript
+   let number = -5;
+
+    if (number > 0) {
+        console.log("The number is positive.");
+    } else {
+        console.log("The number is negative.");
+    }
+```
+
+</p>
+</details>
+
+<details>
+<summary>Write a program for Simple grade checker.</summary>
+<p>
+
+```javascript
+   let score = 75;
+
+    if (score >= 90) {
+        console.log("Grade: A");
+    } else if (score >= 75) {
+        console.log("Grade: B");
+    } else if (score >= 60) {
+        console.log("Grade: C");
+    } else {
+        console.log("Grade: F");
+    }
 ```
 
 </p>
