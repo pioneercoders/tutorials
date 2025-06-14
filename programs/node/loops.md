@@ -1,119 +1,199 @@
 <details open>
-<summary>Write a program to print 1 to 10 numbers using for loop.</summary>
+<summary>Print numbers from 1 to 10 using a for loop</summary>
 <p>
 
 ```javascript
-  for (let i = 0; i < 10; i++) {
-      console.log(i);
-  }
-```
-
-</p>
-</details>
-
-<details>
-<summary>Write a program to print 10 to 1 numbers using for loop.</summary>
-<p>
-
-```javascript
-  for (let i = 10; i > 0; i--) {
+for (let i = 1; i <= 10; i++) {
     console.log(i);
-  }
+}
 ```
 
 </p>
 </details>
 
 <details>
-<summary>Write a program to print 1 to 10 numbers using while loop.</summary>
+<summary>Print numbers from 10 to 1 using a for loop</summary>
 <p>
 
 ```javascript
-  var i = 0
-  while (i < 10) {
-      console.log(i);
-      i++;
-  }
+for (let i = 10; i >= 1; i--) {
+    console.log(i);
+}
 ```
 
 </p>
 </details>
 
 <details>
-<summary>Write a program to print alternatvie number between 1 to 10 numbers using for loop.</summary>
+<summary>Print numbers from 1 to 10 using a while loop</summary>
 <p>
 
 ```javascript
-  for (let i = 0; i < 10; i = i + 2) {
-      console.log(i);
-  }
+let i = 1;
+while (i <= 10) {
+    console.log(i);
+    i++;
+}
 ```
 
 </p>
 </details>
 
 <details>
-<summary>Write a program to print even number between 1 to 10 numbers using for loop.</summary>
+<summary>Print alternate numbers from 1 to 10 using a for loop</summary>
 <p>
 
 ```javascript
-  for (let i = 0; i < 10; i++) {
-      if(i%2 == 0){         
-          console.log(i);
-      }
-  }
+for (let i = 1; i <= 10; i += 2) {
+    console.log(i);
+}
 ```
 
 </p>
 </details>
 
 <details>
-<summary>Write a program to print odd number between 1 to 10 numbers using for loop.</summary>
+<summary>Print even numbers from 1 to 10 using a for loop</summary>
 <p>
 
 ```javascript
-  for (let i = 0; i < 10; i++) {
-      if(i%2 != 0){         
-          console.log(i);
-      }
-  }
+for (let i = 1; i <= 10; i++) {
+    if (i % 2 === 0) {
+        console.log(i);
+    }
+}
 ```
 
 </p>
 </details>
 
 <details>
-<summary>Write a program to print number divisible by 7  between 1 to 100 numbers using for loop.</summary>
+<summary>Print odd numbers from 1 to 10 using a for loop</summary>
 <p>
 
 ```javascript
-  for (let i = 0; i < 100; i++) {
-      if(i%7 == 0){         
-          console.log(i);
-      }
-  }
+for (let i = 1; i <= 10; i++) {
+    if (i % 2 !== 0) {
+        console.log(i);
+    }
+}
 ```
 
 </p>
 </details>
 
 <details>
-<summary>Write a program to print Fibancci serious using for loop.</summary>
+<summary>Print numbers divisible by 7 between 1 and 100 using a for loop</summary>
 <p>
 
 ```javascript
-  let n1=0;
-  let n2=1;
-  let n3=0;
-  var count=10;
-  console.log(n1,n2);
-  for( let i=1;i<=count;i++){
-    n3=n1+n2;
-    console.log(n3)  
-    n1=n2;
-    n2=n3;
-  }
+for (let i = 1; i <= 100; i++) {
+    if (i % 7 === 0) {
+        console.log(i);
+    }
+}
 ```
-                            
+
+</p>
+</details>
+
+<details>
+<summary>Print Fibonacci series using a for loop</summary>
+<p>
+
+```javascript
+let n1 = 0, n2 = 1, nextTerm;
+let count = 10;
+
+console.log(n1);
+console.log(n2);
+
+for (let i = 2; i < count; i++) {
+    nextTerm = n1 + n2;
+    console.log(nextTerm);
+    n1 = n2;
+    n2 = nextTerm;
+}
+```
+
+</p>
+</details>
+
+<details>
+<summary>Print the sum of numbers from 1 to 10 using a for loop</summary>
+<p>
+
+```javascript
+let sum = 0;
+for (let i = 1; i <= 10; i++) {
+    sum += i;
+}
+console.log("Sum:", sum);
+```
+
+</p>
+</details>
+
+<details>
+<summary>Print the multiplication table of 5 using a for loop</summary>
+<p>
+
+```javascript
+let num = 5;
+for (let i = 1; i <= 10; i++) {
+    console.log(`${num} x ${i} = ${num * i}`);
+}
+```
+
+</p>
+</details>
+
+<details>
+<summary>Print the factorial of a number using a for loop</summary>
+<p>
+
+```javascript
+let number = 5;
+let factorial = 1;
+for (let i = 1; i <= number; i++) {
+    factorial *= i;
+}
+console.log("Factorial:", factorial);
+```
+
+</p>
+</details>
+
+<details>
+<summary>Print numbers from 1 to 10 using a while loop with condition check</summary>
+<p>
+
+```javascript
+let j = 1;
+while (j <= 10) {
+    if (j % 2 === 0) {
+        console.log("Even:", j);
+    } else {
+        console.log("Odd:", j);
+    }
+    j++;
+}
+```
+
+</p>
+</details>
+
+<details>
+<summary>Print countdown using while loop</summary>
+<p>
+
+```javascript
+let countdown = 5;
+while (countdown > 0) {
+    console.log("Countdown:", countdown);
+    countdown--;
+}
+```
+
 </p>
 </details>
