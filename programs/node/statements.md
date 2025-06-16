@@ -1,117 +1,102 @@
-<details open>
-<summary>Write a program to find Simple Interst.</summary>
-<p>
+# JavaScript Basic Programs
+
+<details>
+<summary>1️⃣ Write a program to find Simple Interest.</summary>
 
 ```javascript
-    let p = 1000;
-    let n = 12;
-    let r = 10;
-    var intrest = (p * n * r) / 100;
-    console.log(intrest);
+let principal = 1000;
+let time = 12;
+let rate = 10;
+let interest = (principal * time * rate) / 100;
+console.log("Simple Interest is: " + interest);
 ```
 
-</p>
 </details>
 
 <details>
-<summary>Write a program to print average of 3 numbers.</summary>
-<p>
+<summary>2️⃣ Write a program to print average of 3 numbers.</summary>
 
 ```javascript
-    let num1 = 9;
-    let num2 = 10;
-    let num3 = 8;
-    let average = ( num1 + num2 + num3 ) / 3;
-    console.log(average)
+let num1 = 9;
+let num2 = 10;
+let num3 = 8;
+let average = (num1 + num2 + num3) / 3;
+console.log("Average is: " + average);
 ```
 
-</p>
 </details>
 
 <details>
-<summary>Write a program to get max number between 2 numbers.</summary>
-<p>
+<summary>3️⃣ Write a program to get max number between 2 numbers.</summary>
 
 ```javascript
-    let num1 = 20;
-    let num2 = 5;
-    var maxNum = 0;
-    if (num1 < num2) {
-        maxNum = num2;
-    } else {
-        maxNum = num1;
-    }
-    console.log(maxNum);
+let num1 = 20;
+let num2 = 5;
+let maxNum = (num1 > num2) ? num1 : num2;
+console.log("Maximum number is: " + maxNum);
 ```
 
-</p>
 </details>
 
 <details>
-<summary>Write a program to find the area of circle.</summary>
-<p>
+<summary>4️⃣ Write a program to find the area of a circle.</summary>
 
 ```javascript
-    let radious=4;
-    let pi=3.14;
-    var area=pi*radious*radious;
-    console.log("area of circle is:"+area);
+let radius = 4;
+const PI = 3.14;
+let area = PI * radius * radius;
+console.log("Area of circle is: " + area);
 ```
 
-</p>
 </details>
 
 <details>
-<summary>Write a program to Check if a person is eligible to vote.</summary>
-<p>
+<summary>5️⃣ Write a program to check if a person is eligible to vote.</summary>
 
 ```javascript
-    let age = 17;
+let age = 17;
 
-    if (age >= 18) {
-        console.log("You are eligible to vote.");
-    } else {
-        console.log("You are not eligible to vote.");
-    }
+if (age >= 18) {
+    console.log("You are eligible to vote.");
+} else {
+    console.log("You are not eligible to vote.");
+}
 ```
 
-</p>
 </details>
 
 <details>
-<summary>Write a program to Check if a number is positive or negative.</summary>
-<p>
+<summary>6️⃣ Write a program to check if a number is positive or negative.</summary>
 
 ```javascript
-   let number = -5;
+let number = -5;
 
-    if (number > 0) {
-        console.log("The number is positive.");
-    } else {
-        console.log("The number is negative.");
-    }
+if (number > 0) {
+    console.log("The number is positive.");
+} else if (number < 0) {
+    console.log("The number is negative.");
+} else {
+    console.log("The number is zero.");
+}
 ```
 
-</p>
 </details>
 
 <details>
-<summary>Write a program for Simple grade checker.</summary>
-<p>
+<summary>7️⃣ Write a program for a simple grade checker.</summary>
 
 ```javascript
-   let score = 75;
+let score = 75;
 
-    if (score >= 90) {
-        console.log("Grade: A");
-    } else if (score >= 75) {
-        console.log("Grade: B");
-    } else if (score >= 60) {
-        console.log("Grade: C");
-    } else {
-        console.log("Grade: F");
-    }
+if (score >= 90) {
+    console.log("Grade: A");
+} else if (score >= 75) {
+    console.log("Grade: B");
+} else if (score >= 60) {
+    console.log("Grade: C");
+} else {
+    console.log("Grade: F");
+}
 ```
 
-</p>
 </details>
