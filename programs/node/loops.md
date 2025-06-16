@@ -1,4 +1,3 @@
-
 <details open>
 <summary>1️⃣ Print numbers from 1 to 10 using a for loop</summary>
 <p>
