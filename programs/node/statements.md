@@ -1,5 +1,5 @@
 
-<details>
+<details open>
 <summary>1️⃣ Write a program to find Simple Interest.</summary>
 
 ```javascript
