@@ -99,3 +99,117 @@ if (score >= 90) {
 ```
 
 </details>
+
+<details>
+<summary>8️⃣ Write a program to check if a number is even or odd.</summary>
+
+```javascript
+let number = 7;
+
+if (number % 2 === 0) {
+    console.log(number + " is Even");
+} else {
+    console.log(number + " is Odd");
+}
+```
+
+</details>
+
+<details>
+<summary>9️⃣ Write a program to print the largest of three numbers.</summary>
+
+```javascript
+let a = 5;
+let b = 12;
+let c = 9;
+
+if (a >= b && a >= c) {
+    console.log(a + " is the largest number.");
+} else if (b >= a && b >= c) {
+    console.log(b + " is the largest number.");
+} else {
+    console.log(c + " is the largest number.");
+}
+```
+
+</details>
+
+<details>
+<summary>🔟 Write a program to check whether a year is a leap year or not.</summary>
+
+```javascript
+let year = 2024;
+
+if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+    console.log(year + " is a Leap Year");
+} else {
+    console.log(year + " is Not a Leap Year");
+}
+```
+
+</details>
+
+<details>
+<summary>1️⃣1️⃣ Write a program to assign grade based on marks using switch case.</summary>
+
+```javascript
+let marks = 85;
+let grade;
+
+switch (true) {
+    case (marks >= 90):
+        grade = "A";
+        break;
+    case (marks >= 75):
+        grade = "B";
+        break;
+    case (marks >= 60):
+        grade = "C";
+        break;
+    default:
+        grade = "F";
+}
+console.log("Grade: " + grade);
+```
+
+</details>
+
+<details>
+<summary>1️⃣2️⃣ Write a program to print numbers from 1 to 5 using a for loop.</summary>
+
+```javascript
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+```
+
+</details>
+
+<details>
+<summary>1️⃣3️⃣ Write a program to print multiplication table of a number.</summary>
+
+```javascript
+let num = 3;
+
+for (let i = 1; i <= 10; i++) {
+    console.log(num + " x " + i + " = " + (num * i));
+}
+```
+
+</details>
+
+<details>
+<summary>1️⃣4️⃣ Write a program to calculate factorial of a number.</summary>
+
+```javascript
+let number = 5;
+let factorial = 1;
+
+for (let i = 1; i <= number; i++) {
+    factorial *= i;
+}
+
+console.log("Factorial of " + number + " is " + factorial);
+```
+
+</details>
