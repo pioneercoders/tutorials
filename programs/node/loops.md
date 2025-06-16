@@ -1,5 +1,6 @@
+
 <details open>
-<summary>Print numbers from 1 to 10 using a for loop</summary>
+<summary>1️⃣ Print numbers from 1 to 10 using a for loop</summary>
 <p>
 
 ```javascript
@@ -12,7 +13,7 @@ for (let i = 1; i <= 10; i++) {
 </details>
 
 <details>
-<summary>Print numbers from 10 to 1 using a for loop</summary>
+<summary>2️⃣ Print numbers from 10 to 1 using a for loop</summary>
 <p>
 
 ```javascript
@@ -25,7 +26,7 @@ for (let i = 10; i >= 1; i--) {
 </details>
 
 <details>
-<summary>Print numbers from 1 to 10 using a while loop</summary>
+<summary>3️⃣ Print numbers from 1 to 10 using a while loop</summary>
 <p>
 
 ```javascript
@@ -40,7 +41,7 @@ while (i <= 10) {
 </details>
 
 <details>
-<summary>Print alternate numbers from 1 to 10 using a for loop</summary>
+<summary>4️⃣ Print alternate numbers from 1 to 10 using a for loop</summary>
 <p>
 
 ```javascript
@@ -53,7 +54,7 @@ for (let i = 1; i <= 10; i += 2) {
 </details>
 
 <details>
-<summary>Print even numbers from 1 to 10 using a for loop</summary>
+<summary>5️⃣ Print even numbers from 1 to 10 using a for loop</summary>
 <p>
 
 ```javascript
@@ -68,7 +69,7 @@ for (let i = 1; i <= 10; i++) {
 </details>
 
 <details>
-<summary>Print odd numbers from 1 to 10 using a for loop</summary>
+<summary>6️⃣ Print odd numbers from 1 to 10 using a for loop</summary>
 <p>
 
 ```javascript
@@ -83,7 +84,7 @@ for (let i = 1; i <= 10; i++) {
 </details>
 
 <details>
-<summary>Print numbers divisible by 7 between 1 and 100 using a for loop</summary>
+<summary>7️⃣ Print numbers divisible by 7 between 1 and 100 using a for loop</summary>
 <p>
 
 ```javascript
@@ -98,7 +99,7 @@ for (let i = 1; i <= 100; i++) {
 </details>
 
 <details>
-<summary>Print Fibonacci series using a for loop</summary>
+<summary>8️⃣ Print Fibonacci series using a for loop</summary>
 <p>
 
 ```javascript
@@ -120,7 +121,7 @@ for (let i = 2; i < count; i++) {
 </details>
 
 <details>
-<summary>Print the sum of numbers from 1 to 10 using a for loop</summary>
+<summary>9️⃣ Print the sum of numbers from 1 to 10 using a for loop</summary>
 <p>
 
 ```javascript
@@ -135,7 +136,7 @@ console.log("Sum:", sum);
 </details>
 
 <details>
-<summary>Print the multiplication table of 5 using a for loop</summary>
+<summary>🔟 Print the multiplication table of 5 using a for loop</summary>
 <p>
 
 ```javascript
@@ -149,7 +150,7 @@ for (let i = 1; i <= 10; i++) {
 </details>
 
 <details>
-<summary>Print the factorial of a number using a for loop</summary>
+<summary>1️⃣1️⃣ Print the factorial of a number using a for loop</summary>
 <p>
 
 ```javascript
@@ -165,7 +166,7 @@ console.log("Factorial:", factorial);
 </details>
 
 <details>
-<summary>Print numbers from 1 to 10 using a while loop with condition check</summary>
+<summary>1️⃣2️⃣ Print numbers from 1 to 10 using a while loop with condition check</summary>
 <p>
 
 ```javascript
@@ -184,7 +185,7 @@ while (j <= 10) {
 </details>
 
 <details>
-<summary>Print countdown using while loop</summary>
+<summary>1️⃣3️⃣ Print countdown using while loop</summary>
 <p>
 
 ```javascript
