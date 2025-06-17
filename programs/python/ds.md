@@ -1,9 +1,8 @@
 <details open>
-<summary>Print program for Stack implementation.</summary>
-<p>
+<summary>1️⃣ Stack Implementation</summary>
 
 ```python
-   class Stack:
+class Stack:
     def __init__(self):
         self.stack = []
 
@@ -18,7 +17,9 @@
         if self.is_empty():
             print("Stack is empty. Cannot pop.")
             return None
-        return self.stack.pop()
+        popped = self.stack.pop()
+        print(f"Popped: {popped}")
+        return popped
 
     def peek(self):
         if self.is_empty():
@@ -32,7 +33,6 @@
     def display(self):
         print("Stack:", self.stack)
 
-# Example usage
 if __name__ == "__main__":
     s = Stack()
     s.push(10)
@@ -40,18 +40,15 @@ if __name__ == "__main__":
     s.push(30)
     s.display()
     print("Top element is:", s.peek())
-    print("Popped element is:", s.pop())
+    s.pop()
     s.display()
     print("Stack size:", s.size())
-
 ```
 
-</p>
 </details>
 
 <details>
-<summary>Print program for Queue implementation.</summary>
-<p>
+<summary>2️⃣ Queue Implementation</summary>
 
 ```python
 class Queue:
@@ -69,7 +66,9 @@ class Queue:
         if self.is_empty():
             print("Queue is empty. Cannot dequeue.")
             return None
-        return self.queue.pop(0)
+        dequeued = self.queue.pop(0)
+        print(f"Dequeued: {dequeued}")
+        return dequeued
 
     def peek(self):
         if self.is_empty():
@@ -83,7 +82,6 @@ class Queue:
     def display(self):
         print("Queue:", self.queue)
 
-# Example usage
 if __name__ == "__main__":
     q = Queue()
     q.enqueue(10)
@@ -91,18 +89,15 @@ if __name__ == "__main__":
     q.enqueue(30)
     q.display()
     print("Front element is:", q.peek())
-    print("Dequeued element is:", q.dequeue())
+    q.dequeue()
     q.display()
     print("Queue size:", q.size())
-
 ```
 
-</p>
 </details>
 
 <details>
-<summary>Print program for Linked List implementation.</summary>
-<p>
+<summary>3️⃣ Linked List Implementation</summary>
 
 ```python
 class Node:
@@ -114,10 +109,9 @@ class LinkedList:
     def __init__(self):
         self.head = None
 
-    # Insert at the end
     def append(self, data):
         new_node = Node(data)
-        if self.head is None:
+        if not self.head:
             self.head = new_node
             print(f"Appended: {data} as head")
             return
@@ -127,14 +121,12 @@ class LinkedList:
         current.next = new_node
         print(f"Appended: {data}")
 
-    # Insert at the beginning
     def prepend(self, data):
         new_node = Node(data)
         new_node.next = self.head
         self.head = new_node
         print(f"Prepended: {data}")
 
-    # Delete by value
     def delete(self, key):
         current = self.head
 
@@ -148,17 +140,16 @@ class LinkedList:
             prev = current
             current = current.next
 
-        if current is None:
+        if not current:
             print(f"Value {key} not found in the list.")
             return
 
         prev.next = current.next
         print(f"Deleted: {key}")
 
-    # Display the list
     def display(self):
         current = self.head
-        if current is None:
+        if not current:
             print("Linked list is empty.")
             return
         print("Linked List:", end=" ")
@@ -167,7 +158,6 @@ class LinkedList:
             current = current.next
         print("None")
 
-# Example usage
 if __name__ == "__main__":
     ll = LinkedList()
     ll.append(10)
@@ -178,8 +168,6 @@ if __name__ == "__main__":
     ll.display()
     ll.delete(20)
     ll.display()
-
 ```
 
-</p>
 </details>
