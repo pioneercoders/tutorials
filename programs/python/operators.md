@@ -1,250 +1,200 @@
 <details open>
-<summary>Write a program to print Arithmetic Operators </summary>
+<summary>1️⃣ Arithmetic Operators</summary>
 <p>
-  
+
 ```python
-  
-# Addition (+)
-    	num1 = 10
-    	num2 = 5
-    	sum_result = num1 + num2
-    	print("Sum:", sum_result)
-    
-# Subtraction (-)
-    	num3 = 8
-    	num4 = 3
-    	difference = num3 - num4
-    	print("Difference:", difference)
-    
-# Multiplication (*)
-    	num5 = 6
-    	num6 = 4
-    	product = num5 * num6
-    	print("Product:", product)
-    
-# Division (/)
-    	num7 = 20
-    	num8 = 4
-    	quotient = num7 / num8
-    	print("Quotient:", quotient)
-    
-# Modulus (%)
-    	num9 = 15
-    	num10 = 7
-    	remainder = num9 % num10
-    	print("Remainder:", remainder)
-    
-# Exponentiation (**)
-	base = 2
-  	exponent = 3
-    	result = base ** exponent
-    	print("Result:", result) 
-        
+# ➕ Addition
+print("10 + 5 =", 10 + 5)
+
+# ➖ Subtraction
+print("8 - 3 =", 8 - 3)
+
+# ✖️ Multiplication
+print("6 * 4 =", 6 * 4)
+
+# ➗ Division
+print("20 / 4 =", 20 / 4)
+
+# 🧮 Modulus
+print("15 % 7 =", 15 % 7)
+
+# 🔢 Exponentiation
+print("2 ** 3 =", 2 ** 3)
+
+# // Floor Division
+print("17 // 3 =", 17 // 3)
 ```
+
 </p>
 </details>
 
-<details open>
-<summary>Write a program to print Relational Operators </summary>
+<details>
+<summary>2️⃣ Relational (Comparison) Operators</summary>
 <p>
-  
+
 ```python
+x = 10
+y = 5
 
-# Define two variables
-        x = 10
-        y = 5
-        
-# Check if x is equal to y
-        is_equal = x == y
-        print(f"{x} == {y}: {is_equal}")  # Output: 10 == 5: False
-        
-# Check if x is not equal to y
-        is_not_equal = x != y
-        print(f"{x} != {y}: {is_not_equal}")  # Output: 10 != 5: True
-        
-# Check if x is greater than y
-        is_greater = x > y
-        print(f"{x} > {y}: {is_greater}")  # Output: 10 > 5: True
-        
-# Check if x is less than y
-        is_less = x < y
-        print(f"{x} < {y}: {is_less}")  # Output: 10 < 5: False
-        
-# Check if x is greater than or equal to y
-        is_greater_equal = x >= y
-        print(f"{x} >= {y}: {is_greater_equal}")  # Output: 10 >= 5: True
-        
-# Check if x is less than or equal to y
-        is_less_equal = x <= y
-        print(f"{x} <= {y}: {is_less_equal}")  # Output: 10 <= 5: False
-
-        
+print("x == y:", x == y)
+print("x != y:", x != y)
+print("x > y:", x > y)
+print("x < y:", x < y)
+print("x >= y:", x >= y)
+print("x <= y:", x <= y)
 ```
+
 </p>
 </details>
 
-<details open>
-<summary>Write a program to print Logiacal Operators </summary>
+<details>
+<summary>3️⃣ Logical Operators</summary>
 <p>
-  
+
 ```python
+x = True
+y = False
 
-# Logical AND Operator (and)
-		# Returns True if both operands are True
-
-		x = True
-		y = False
-
-		result = x and y
-		print(f"{x} and {y} = {result}")  # Output: True and False = False
-
-# Logical OR Operator (or)
-		# Returns True if at least one operand is True
-
-		result = x or y
-		print(f"{x} or {y} = {result}")  # Output: True or False = True
-
-# Logical NOT Operator (not)
-		# Returns the opposite of the operands value
-
-		result = not x
-		print(f"not {x} = {result}")  # Output: not True = False
-
-        
+print("x and y:", x and y)
+print("x or y:", x or y)
+print("not x:", not x)
 ```
+
 </p>
 </details>
 
-<details open>
-<summary>Write a program to print Bitwise Operators </summary>
+<details>
+<summary>4️⃣ Bitwise Operators</summary>
 <p>
-  
+
 ```python
+a = 5  # 101
+b = 3  # 011
 
-# Bitwise AND (&)
-		a = 5  # 101 in binary
-		b = 3  # 011 in binary
-		result_and = a & b  # 001 in binary
-		print(result_and)  # Output: 1
-
-# Bitwise OR (|)
-		result_or = a | b  # 111 in binary
-		print(result_or)  # Output: 7
-
-# Bitwise XOR (^)
-		result_xor = a ^ b  # 110 in binary
-		print(result_xor)  # Output: 6
-
-# Bitwise NOT (~)
-		result_not_a = ~a  # -6 
-		print(result_not_a)
-
-# Left Shift (<<)
-		left_shifted = a << 2  # 10100 in binary, which is 20 in decimal
-		print(left_shifted)
-
-# Right Shift (>>)
-		right_shifted = a >> 1  # 10 in binary, which is 2 in decimal
-		print(right_shifted)
-    
+print("a & b:", a & b)
+print("a | b:", a | b)
+print("a ^ b:", a ^ b)
+print("~a:", ~a)
+print("a << 2:", a << 2)
+print("a >> 1:", a >> 1)
 ```
+
 </p>
 </details>
 
-<details open>
-<summary>Write a program to print Assignment Operators </summary>
+<details>
+<summary>5️⃣ Assignment Operators</summary>
 <p>
-  
+
 ```python
+x = 10
 
- "Note: a += 10. Here += is an assignment operator, and the result is stored in variable a. This is same as a = a + 10."
+x += 5
+print("x += 5:", x)
 
-	x = 10
-	x += 5
-	print(x)  # Output: 15
+x -= 3
+print("x -= 3:", x)
 
-	x -= 3
-	print(x)  # Output: 12
+x *= 2
+print("x *= 2:", x)
 
-	x *= 2
-	print(x)  # Output: 24
+x /= 3
+print("x /= 3:", x)
 
-	x /= 3
-	print(x)  # Output: 8.0
+x //= 2
+print("x //= 2:", x)
 
-	x //= 2
-	print(x)  # Output: 4.0
+x **= 2
+print("x **= 2:", x)
 
-	x **= 3
-	print(x)  # Output: 64.0
+x %= 5
+print("x %= 5:", x)
 
-	x %= 5
-	print(x)  # Output: 4.0
+x &= 3
+print("x &= 3:", x)
 
-	x &= 7
-	print(x)  # Output: 4
+x |= 2
+print("x |= 2:", x)
 
-	x |= 8
-	print(x)  # Output: 12
+x ^= 1
+print("x ^= 1:", x)
 
-	x ^= 6
-	print(x)  # Output: 10
-    
+x <<= 1
+print("x <<= 1:", x)
+
+x >>= 1
+print("x >>= 1:", x)
 ```
+
 </p>
 </details>
 
-<details open>
-<summary>Write a program to print Ternary Operators </summary>
+<details>
+<summary>6️⃣ Membership Operators</summary>
 <p>
-  
-```python
 
-	x = 10
-	y = 20
-	result = "x is greater" if x > y else "y is greater"
-	print(result)
-    
+```python
+my_list = [1, 2, 3, 4, 5]
+
+print("2 in my_list:", 2 in my_list)
+print("10 in my_list:", 10 in my_list)
+print("10 not in my_list:", 10 not in my_list)
 ```
+
 </p>
 </details>
 
-<details open>
-<summary>Write a program to print Ternary Operators </summary>
+<details>
+<summary>7️⃣ Identity Operators</summary>
 <p>
-  
+
 ```python
+a = [1, 2, 3]
+b = a
+c = [1, 2, 3]
 
-# Create two variables
-		x = [1, 2, 3]
-		y = x  # y references the same object as x
-
-# Check if x and y refer to the same object
-		if x is y:
-			print("x and y refer to the same object")
-		else:
-			print("x and y do not refer to the same object")
-
-# Create a new list with the same values as x
-		z = [1, 2, 3]
-
-# Check if x and z refer to the same object
-		if x is z:
-			print("x and z refer to the same object")
-		else:
-			print("x and z do not refer to the same object")
-
-# Check if x and z do not refer to the same object
-		if x is not z:
-			print("x and z do not refer to the same object")
-		else:
-			print("x and z refer to the same object")
-    
+print("a is b:", a is b)
+print("a is c:", a is c)
+print("a is not c:", a is not c)
 ```
+
 </p>
 </details>
 
+<details>
+<summary>8️⃣ Ternary Operator</summary>
+<p>
 
-		
+```python
+age = 18
+vote_status = "Can vote" if age >= 18 else "Cannot vote"
+print(vote_status)
+```
 
+</p>
+</details>
 
+<details>
+<summary>9️⃣ Operator Precedence (Reference Table)</summary>
+<p>
+
+| Precedence | Operators | Description |
+|------------|-----------|-------------|
+| 1 (highest) | `()` | Parentheses |
+| 2 | `**` | Exponentiation |
+| 3 | `+x`, `-x`, `~x` | Unary plus, minus, bitwise NOT |
+| 4 | `*`, `/`, `//`, `%` | Multiplication, division, modulus |
+| 5 | `+`, `-` | Addition, subtraction |
+| 6 | `<<`, `>>` | Bitwise shifts |
+| 7 | `&` | Bitwise AND |
+| 8 | `^` | Bitwise XOR |
+| 9 | `|` | Bitwise OR |
+| 10 | `==`, `!=`, `>`, `<`, `>=`, `<=`, `is`, `is not`, `in`, `not in` | Comparisons |
+| 11 | `not` | Logical NOT |
+| 12 | `and` | Logical AND |
+| 13 | `or` | Logical OR |
+| 14 (lowest) | `=`, `+=`, `-=`, etc. | Assignment |
+```
+
+</p>
+</details>
