@@ -1,4 +1,4 @@
-<details>
+<details open>
 <summary>1️⃣ Write a program to print all the elements in array.</summary>
 
 ```python
