@@ -1,5 +1,3 @@
-# JavaScript Programs - Functions Examples
-
 <details open>
 <summary>1️⃣ Write a function to add two numbers.</summary>
 <p>
