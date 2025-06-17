@@ -1,23 +1,19 @@
-<details open>
-<summary>Write a program to print all the elements in array.</summary>
-<p>
+<details>
+<summary>1️⃣ Write a program to print all the elements in array.</summary>
 
 ```python
-   # Define the array
+# Define the array
 arr = [10, 20, 30, 40, 50]
 
 # Print all elements using a loop
 print("The elements in the array are:")
 for element in arr:
     print(element)
-
 ```
-
-</p>
 </details>
+
 <details>
-<summary>Write a program to print alternate elements in array.</summary>
-<p>
+<summary>2️⃣ Write a program to print alternate elements in array.</summary>
 
 ```python
 # Define the array
@@ -25,17 +21,13 @@ arr = [10, 20, 30, 40, 50, 60, 70]
 
 # Print alternate elements
 print("Alternate elements in the array are:")
-for i in range(0, len(arr), 2):  # step by 2
+for i in range(0, len(arr), 2):
     print(arr[i])
-
 ```
-
-</p>
 </details>
 
 <details>
-<summary>Write a program to print even numbers in array.</summary>
-<p>
+<summary>3️⃣ Write a program to print even numbers in array.</summary>
 
 ```python
 # Define the array
@@ -46,15 +38,11 @@ print("Even numbers in the array are:")
 for num in arr:
     if num % 2 == 0:
         print(num)
-
-
 ```
-
-</p>
 </details>
+
 <details>
-<summary>Write a program to print all the odd numbers in array.</summary>
-<p>
+<summary>4️⃣ Write a program to print all the odd numbers in array.</summary>
 
 ```python
 # Define the array
@@ -65,153 +53,144 @@ print("Odd numbers in the array are:")
 for num in arr:
     if num % 2 != 0:
         print(num)
-
 ```
-</p>
 </details>
+
 <details>
-<summary>Write a program to print sum of all the elements in array.</summary>
-<p>
+<summary>5️⃣ Write a program to print sum of all the elements in array.</summary>
 
 ```python
 # Define the array
 arr = [10, 20, 30, 40, 50]
 
-# Calculate the sum of all elements
-total_sum = sum(arr)
+# Calculate the sum
+total = 0
+for num in arr:
+    total += num
 
-# Print the sum
-print("The sum of all the elements in the array is:", total_sum)
+print("Sum of all the elements is:", total)
 ```
-</p>
 </details>
 
 <details>
-<summary>Write a program to print largest element in array.</summary>
-<p>
+<summary>6️⃣ Write a program to print largest element in array.</summary>
 
 ```python
-
 # Define the array
 arr = [10, 20, 30, 50, 40]
 
 # Find the largest element
-largest_element = max(arr)
+largest = arr[0]
+for num in arr:
+    if num > largest:
+        largest = num
 
-# Print the largest element
-print("The largest element in the array is:", largest_element)
-
+print("The largest element in the array is:", largest)
 ```
-</p>
 </details>
 
 <details>
-<summary>Write a program to print duplicate elements in array.</summary>
-<p>
+<summary>7️⃣ Write a program to print duplicate elements in array.</summary>
 
 ```python
-
 # Define the array
 arr = [10, 20, 30, 40, 20, 50, 30]
 
-# Use a set to track duplicates
-duplicates = set()
+# Track duplicates using a dictionary
+seen = {}
+duplicates = []
+
 for num in arr:
-    if arr.count(num) > 1:  # If the element appears more than once
-        duplicates.add(num)
+    if num in seen:
+        if seen[num] == 1:
+            duplicates.append(num)
+        seen[num] += 1
+    else:
+        seen[num] = 1
 
-# Print the duplicate elements
+# Print duplicates
 print("Duplicate elements in the array are:")
-for duplicate in duplicates:
-    print(duplicate)
-
+for dup in duplicates:
+    print(dup)
 ```
-</p>
 </details>
 
-
 <details>
-<summary>Write a program to sort elements in array.</summary>
-<p>
+<summary>8️⃣ Write a program to sort elements in array.</summary>
 
 ```python
 # Define the array
 arr = [50, 20, 40, 10, 30]
 
-# Sort the array in ascending order
-arr.sort()
+# Sort using bubble sort
+n = len(arr)
+for i in range(n):
+    for j in range(0, n - i - 1):
+        if arr[j] > arr[j + 1]:
+            arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
-# Print the sorted array
-print("Sorted array in ascending order:", arr)
-
+print("Sorted array:", arr)
 ```
-</p>
 </details>
 
 <details>
-<summary>Write a program to find the Missing Number in 1 to N. </summary>
-<p>
+<summary>9️⃣ Write a program to find the Missing Number in 1 to N.</summary>
 
 ```python
 # Define the array
-arr = [1, 2, 4, 5, 6]  # Example array with one missing number
+arr = [1, 2, 4, 5, 6]
 
-# Calculate the expected sum of numbers from 1 to N
-n = len(arr) + 1  # Since one number is missing
-expected_sum = n * (n + 1) // 2  # Formula for sum of first N natural numbers
+# Calculate expected sum
+n = len(arr) + 1
+expected_sum = n * (n + 1) // 2
 
-# Calculate the actual sum of the given array
-actual_sum = sum(arr)
+# Actual sum
+actual_sum = 0
+for num in arr:
+    actual_sum += num
 
-# Find the missing number
-missing_number = expected_sum - actual_sum
-
-# Print the missing number
-print("The missing number is:", missing_number)
-
+# Missing number
+missing = expected_sum - actual_sum
+print("The missing number is:", missing)
 ```
-</p>
 </details>
 
-
 <details>
-<summary>Write a program to Move All the Zeros to end of the Array. </summary>
-<p>
+<summary>🔟 Write a program to Move All the Zeros to end of the Array.</summary>
 
 ```python
 # Define the array
 arr = [0, 1, 0, 3, 12]
 
-# Create a new index to place non-zero elements
+# Move non-zero elements to the front
 non_zero_index = 0
-
-# Move non-zero elements forward
 for i in range(len(arr)):
     if arr[i] != 0:
-        arr[non_zero_index] =
+        arr[non_zero_index] = arr[i]
+        non_zero_index += 1
 
+# Fill remaining positions with zero
+for i in range(non_zero_index, len(arr)):
+    arr[i] = 0
+
+print("Array after moving zeros:", arr)
 ```
-</p>
 </details>
 
 <details>
-<summary>Write a program to Rotate the Given array d times.</summary>
-<p>
+<summary>1️⃣1️⃣ Write a program to Rotate the Given array d times.</summary>
 
 ```python
-# Function to rotate array to the left d times
-def left_rotate_array(arr, d):
+# Function to left rotate array d times
+def rotate_left(arr, d):
     n = len(arr)
-    d = d % n  # To handle if d > n
+    d = d % n
     return arr[d:] + arr[:d]
 
-# Example usage
+# Example
 arr = [1, 2, 3, 4, 5, 6, 7]
-d = 2  # Number of times to rotate
-
-rotated_array = left_rotate_array(arr, d)
-print("Array after", d, "left rotations:", rotated_array)
-
+d = 2
+rotated = rotate_left(arr, d)
+print("Array after rotating left", d, "times:", rotated)
 ```
-</p>
 </details>
