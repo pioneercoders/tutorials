@@ -1,125 +1,132 @@
 <details open>
-<summary open>Write a program to assign a function to variable.</summary>
+<summary>1️⃣ Assign a function to a variable - Calculate bill total.</summary>
 <p>
 
 ```javascript
-var add = function(x,y) {
-    let sum = x + y;
-    return sum;
-}
-var result = add(10,30);
-console.log(result);
+// Function to calculate total bill (including tax)
+var calculateBill = function(price, taxRate) {
+    var total = price + (price * taxRate);
+    return total;
+};
+
+var finalAmount = calculateBill(100, 0.05);
+console.log("Total Bill: $" + finalAmount); // $105
 ```
 
 </p>
-</details> 
+</details>
 
-<details >
-<summary open>Write a program to pass a function to another function as argument.</summary>
+<details>
+<summary>2️⃣ Pass a function to another function - Apply discount or tax.</summary>
 <p>
 
 ```javascript
- function f1(fun, x, y){
-  let result = fun(x,y);
-  return result;
- }
-var add = function(x,y) {
-    let sum = x + y;
-    return sum;
+// Higher-order function that applies pricing logic
+function applyCalculation(amount, calculationFunction) {
+    var result = calculationFunction(amount);
+    return result;
 }
-var sub = function(x,y) {
-    let sum = x - y;
-    return sum;
-}
-var result = f1(add, 4, 5);
-console.log(result);
-var result1 = f1(sub, 9, 2);
-console.log(result1);
+
+var addTax = function(amount) {
+    return amount + (amount * 0.18); // 18% tax
+};
+
+var applyDiscount = function(amount) {
+    return amount - (amount * 0.1); // 10% discount
+};
+
+var taxed = applyCalculation(500, addTax);
+console.log("Price with Tax: " + taxed); // 590
+
+var discounted = applyCalculation(500, applyDiscount);
+console.log("Price after Discount: " + discounted); // 450
 ```
 
 </p>
-</details> 
+</details>
 
-
-<details >
-<summary open>Write a program to return a function from another function.</summary>
+<details>
+<summary>3️⃣ Return a function from another function - Create multipliers.</summary>
 <p>
 
 ```javascript
-var isEven = function(x,y) {
-    let sum = x + y;
-    return sum;
-}
- function f1(){
-    console.log("inside f1 function");
-  return isEven;
- }
- function f2(){
-    console.log("inside f2 function");
-  return function(x,y) {
-        let sum = x + y;
-        return sum;
+// Function returns another function that multiplies
+function createMultiplier(multiplier) {
+    return function(amount) {
+        return amount * multiplier;
     };
- }
-var evenFun = f1();
-var r1 = evenFun(5);
-console.log(r1);
-var evenFu = f2();
-var r2 = evenFu(10);
-console.log(r2);
-```
-
-</p>
-</details> 
-
-<details>
-<summary open>Write a arrow function.</summary>
-<p>
-
-```javascript
-var add =(x,y) => {
-    let sum = x + y;
-    return sum;
 }
-var result = add(10,30);
-console.log(result);
+
+var double = createMultiplier(2);
+var triple = createMultiplier(3);
+
+console.log("Double of 5:", double(5));   // 10
+console.log("Triple of 5:", triple(5));   // 15
 ```
 
 </p>
-</details> 
+</details>
 
 <details>
-<summary open>Write a Immediately Invoked Function Expression.</summary>
+<summary>4️⃣ Arrow function - Calculate area of rectangle.</summary>
 <p>
 
 ```javascript
-(function() {
-  console.log("This function runs itself!");
+// Arrow function for area
+var getArea = (length, width) => {
+    var area = length * width;
+    return area;
+};
+
+console.log("Area:", getArea(10, 5)); // 50
+```
+
+</p>
+</details>
+
+<details>
+<summary>5️⃣ IIFE - Initialize configuration settings.</summary>
+<p>
+
+```javascript
+// Immediately invoked function to initialize settings
+var settings = (function() {
+    var config = {
+        theme: "dark",
+        layout: "grid"
+    };
+    console.log("App initialized with settings");
+    return config;
 })();
 
+console.log(settings.theme); // dark
 ```
 
 </p>
-</details> 
+</details>
 
 <details>
-<summary open>Write a Callback function example.</summary>
+<summary>6️⃣ Callback Function - User registration flow.</summary>
 <p>
 
 ```javascript
-function greet(name, callback) {
-  console.log("Hello, " + name + "!");
-  callback();
+// Simulate user registration with a callback
+function registerUser(username, callback) {
+    console.log("Registering user:", username);
+    // pretend registration is done
+    callback();
 }
 
-function sayGoodbye() {
-  console.log("Goodbye!");
+function showWelcomeMessage() {
+    console.log("Welcome! Registration successful.");
 }
 
-// Call greet and pass sayGoodbye as a callback
-greet("Alice", sayGoodbye);
+registerUser("john_doe", showWelcomeMessage);
 
+// Output:
+// Registering user: john_doe
+// Welcome! Registration successful.
 ```
 
 </p>
-</details> 
+</details>
