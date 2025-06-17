@@ -1,45 +1,36 @@
 <details open>
-<summary>Write function to find given number is even or odd.</summary>
-<p>
+<summary>1️⃣ Write a function to check whether a number is even or odd.</summary>
 
 ```python
-   def check_even_odd(number):
+def check_even_odd(number):
     if number % 2 == 0:
         return "Even"
     else:
         return "Odd"
 
-# Example usage:
+# Example usage
 num = int(input("Enter a number: "))
 result = check_even_odd(num)
 print(f"The number {num} is {result}.")
-
 ```
-
-</p>
 </details>
 
 <details>
-<summary>Write function to convert given string to uppercase.</summary>
-<p>
+<summary>2️⃣ Write a function to convert a given string to uppercase.</summary>
 
 ```python
 def convert_to_uppercase(text):
     return text.upper()
 
-# Example usage:
+# Example usage
 input_text = input("Enter a string: ")
 result = convert_to_uppercase(input_text)
 print(f"Uppercase version: {result}")
-
-
 ```
-
-</p>
 </details>
+
 <details>
-<summary>Write function to show call by value.</summary>
-<p>
+<summary>3️⃣ Write a function to demonstrate call by value behavior in Python.</summary>
 
 ```python
 def modify_value(x):
@@ -52,16 +43,11 @@ num = 20
 print(f"Before function call: num = {num}")
 modify_value(num)
 print(f"After function call: num = {num}")
-
-
 ```
-
-</p>
 </details>
 
 <details>
-<summary>Write function to Print 1 to 10 without using loop.</summary>
-<p>
+<summary>4️⃣ Write a recursive function to print numbers from 1 to 10 without using a loop.</summary>
 
 ```python
 def print_numbers(n=1):
@@ -71,15 +57,11 @@ def print_numbers(n=1):
 
 # Call the function
 print_numbers()
-
 ```
-
-</p>
 </details>
 
 <details>
-<summary>Write function to show call by reference.</summary>
-<p>
+<summary>5️⃣ Write a function to demonstrate call by reference behavior in Python.</summary>
 
 ```python
 def modify_list(my_list):
@@ -92,15 +74,11 @@ numbers = [1, 2, 3]
 print(f"Before function call: {numbers}")
 modify_list(numbers)
 print(f"After function call: {numbers}")
-
 ```
-
-</p>
 </details>
 
 <details>
-<summary>Write function to return list of products.</summary>
-<p>
+<summary>6️⃣ Write a function to return a list of products.</summary>
 
 ```python
 def get_products():
@@ -112,20 +90,15 @@ def get_products():
     ]
     return products
 
-# Example usage:
+# Example usage
 product_list = get_products()
 for product in product_list:
     print(product)
-
 ```
-
-</p>
 </details>
 
-
 <details>
-<summary>Write function to Reverse Given number.</summary>
-<p>
+<summary>7️⃣ Write a function to reverse a given number.</summary>
 
 ```python
 def reverse_number(n):
@@ -136,19 +109,15 @@ def reverse_number(n):
         n = n // 10
     return reversed_num
 
-# Example usage:
+# Example usage
 num = int(input("Enter a number: "))
 result = reverse_number(num)
 print(f"Reversed number: {result}")
-
 ```
-
-</p>
 </details>
 
 <details>
-<summary>Write a simple calculator.</summary>
-<p>
+<summary>8️⃣ Write a function to implement a simple calculator.</summary>
 
 ```python
 def calculator(a, b, operation):
@@ -165,16 +134,73 @@ def calculator(a, b, operation):
     else:
         return "Invalid operation"
 
-# Example usage:
+# Example usage
 num1 = float(input("Enter first number: "))
 num2 = float(input("Enter second number: "))
 op = input("Enter operation (+, -, *, /): ")
-
 result = calculator(num1, num2, op)
 print("Result:", result)
-
-
 ```
+</details>
 
-</p>
+<details>
+<summary>9️⃣ Write a function to check if a number is prime.</summary>
+
+```python
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+# Example usage
+num = int(input("Enter a number: "))
+if is_prime(num):
+    print(f"{num} is a prime number.")
+else:
+    print(f"{num} is not a prime number.")
+```
+</details>
+
+<details>
+<summary>🔟 Write a function to find the factorial of a number using recursion.</summary>
+
+```python
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n - 1)
+
+# Example usage
+num = int(input("Enter a number: "))
+print(f"Factorial of {num} is: {factorial(num)}")
+```
+</details>
+
+<details>
+<summary>1️⃣1️⃣ Write a function to return square of a number.</summary>
+
+```python
+def square(n):
+    return n * n
+
+# Example usage
+num = int(input("Enter a number: "))
+print(f"Square of {num} is {square(num)}")
+```
+</details>
+
+<details>
+<summary>1️⃣2️⃣ Write a function to return cube of a number.</summary>
+
+```python
+def cube(n):
+    return n * n * n
+
+# Example usage
+num = int(input("Enter a number: "))
+print(f"Cube of {num} is {cube(num)}")
+```
 </details>
