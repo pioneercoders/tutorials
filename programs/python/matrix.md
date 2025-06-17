@@ -1,137 +1,102 @@
 <details open>
-<summary>Write a program to print ChessBoard.</summary>
-<p>
+<summary>1️⃣ Print a Chessboard Pattern</summary>
 
 ```python
-  # Function to print chessboard pattern
+# Function to print chessboard pattern
 def print_chessboard(size=8):
     for i in range(size):
         row = ""
         for j in range(size):
-            # Alternate between black (B) and white (W)
             if (i + j) % 2 == 0:
-                row += "B "  # Black square
+                row += "B "
             else:
-                row += "W "  # White square
-        print(row)
+                row += "W "
+        print(row.strip())
 
-# Call the function to print the chessboard
 print_chessboard()
- 
 ```
-
-</p>
 </details>
-<details >
-<summary>Write a programs to print Spiral traversal on a Matrix.</summary>
-<p>
+
+<details>
+<summary>2️⃣ Spiral Traversal of a Matrix</summary>
 
 ```python
-# Function to print spiral traversal of matrix
 def spiral_traversal(matrix):
-    if not matrix:
-        return
-    
-    top, bottom, left, right = 0, len(matrix) - 1, 0, len(matrix[0]) - 1
+    if not matrix or not matrix[0]:
+        return []
+
     result = []
+    top, bottom = 0, len(matrix) - 1
+    left, right = 0, len(matrix[0]) - 1
 
     while top <= bottom and left <= right:
-        # Traverse from left to right along the top row
         for i in range(left, right + 1):
             result.append(matrix[top][i])
         top += 1
 
-        # Traverse from top to bottom along the right column
         for i in range(top, bottom + 1):
             result.append(matrix[i][right])
         right -= 1
 
         if top <= bottom:
-            # Traverse from right to left along the bottom row
             for i in range(right, left - 1, -1):
                 result.append(matrix[bottom][i])
             bottom -= 1
 
         if left <= right:
-            # Traverse from bottom to top along the left column
             for i in range(bottom, top - 1, -1):
                 result.append(matrix[i][left])
             left += 1
 
     return result
 
-# Example matrix
 matrix = [
-    [1, 2, 3, 4],
-    [5, 6, 7, 8],
+    [1,  2,  3,  4],
+    [5,  6,  7,  8],
     [9, 10, 11, 12],
-    [13, 14, 15, 16]
+    [13,14, 15, 16]
 ]
 
-# Print the result of spiral traversal
-result = spiral_traversal(matrix)
-print("Spiral Traversal:", result)
-
+print("Spiral Traversal:", spiral_traversal(matrix))
 ```
-
-</p>
 </details>
 
-<details >
-<summary>Write a programs to Search an element in a matrix.</summary>
-<p>
+<details>
+<summary>3️⃣ Search an Element in a Matrix</summary>
 
 ```python
-# Function to search for an element in the matrix
 def search_matrix(matrix, target):
     for i in range(len(matrix)):
         for j in range(len(matrix[i])):
             if matrix[i][j] == target:
                 return f"Element {target} found at position ({i}, {j})"
-    return f"Element {target} not found in the matrix"
+    return f"Element {target} not found"
 
-# Example matrix
 matrix = [
     [1, 2, 3],
     [4, 5, 6],
     [7, 8, 9]
 ]
 
-# Target element to search for
 target = 5
-
-# Print the result of the search
-result = search_matrix(matrix, target)
-print(result)
-
+print(search_matrix(matrix, target))
 ```
-
-</p>
 </details>
 
-<details >
-<summary>Write a programs to Find row with maximum no. of 1's</summary>
-<p>
+<details>
+<summary>4️⃣ Find Row with Maximum Number of 1's</summary>
 
 ```python
-# Function to find the row with maximum number of 1's
 def row_with_max_ones(matrix):
-    max_count = -1
+    max_count = 0
     row_index = -1
-    
-    # Iterate through each row
     for i in range(len(matrix)):
-        # Count the number of 1's in the current row
         count = matrix[i].count(1)
-        
-        # Update the row with maximum number of 1's
         if count > max_count:
             max_count = count
             row_index = i
-            
-    return row_index
+    return row_index if row_index != -1 else "No 1's found"
 
-# Example matrix
 matrix = [
     [0, 1, 1, 0],
     [1, 1, 1, 0],
@@ -139,11 +104,68 @@ matrix = [
     [0, 1, 1, 1]
 ]
 
-# Find the row with maximum number of 1's
-result = row_with_max_ones(matrix)
-print(f"The row with the maximum number of 1's is: Row {result}")
-
+print(f"Row with the maximum number of 1's: Row {row_with_max_ones(matrix)}")
 ```
+</details>
 
-</p>
+<details>
+<summary>5️⃣ Sum of Primary and Secondary Diagonals</summary>
+
+```python
+def diagonal_sums(matrix):
+    n = len(matrix)
+    primary = 0
+    secondary = 0
+    for i in range(n):
+        primary += matrix[i][i]
+        secondary += matrix[i][n - i - 1]
+    return primary, secondary
+
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+primary, secondary = diagonal_sums(matrix)
+print("Primary diagonal sum:", primary)
+print("Secondary diagonal sum:", secondary)
+```
+</details>
+
+<details>
+<summary>6️⃣ Matrix Multiplication</summary>
+
+```python
+def multiply_matrices(A, B):
+    result = []
+    rows_A = len(A)
+    cols_A = len(A[0])
+    cols_B = len(B[0])
+
+    for i in range(rows_A):
+        row = []
+        for j in range(cols_B):
+            val = 0
+            for k in range(cols_A):
+                val += A[i][k] * B[k][j]
+            row.append(val)
+        result.append(row)
+    return result
+
+A = [
+    [1, 2],
+    [3, 4]
+]
+
+B = [
+    [5, 6],
+    [7, 8]
+]
+
+product = multiply_matrices(A, B)
+print("Matrix multiplication result:")
+for row in product:
+    print(row)
+```
 </details>
