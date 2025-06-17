@@ -1,146 +1,151 @@
 <details open>
-<summary>Write a program to print Arithmetic Operators:</summary>
+<summary>1️⃣ Arithmetic Operators (Addition, Subtraction, etc.)</summary>
 <p>
 
 ```javascript
-      let a = 10;
-      let b = 5;
-      let addition = a + b;
-      let subtraction = a - b;
-      let multiplication = a * b;
-      let division = a / b;
-      let modulo = a % b;
-      console.log(addition);
-      console.log(subtraction);
-      console.log(multiplication);
-      console.log(division);      
-      console.log(modulo);  
-```
-</p>
-</details>
+let a = 10;
+let b = 5;
 
-<details>
-<summary>Write a program to print Comparsion Operators:</summary>
-<p>
-
-   ```javascript
-    	let x = 10;
-    	let y = 5;
-    	console.log(x == y);  // false
-    	console.log(x != y);  // true
-    	console.log(x === y); // false
-    	console.log(x !== y); // true
-    	console.log(x > y);   // true
-    	console.log(x < y);   // false
-    	console.log(x >= y);  // true
-    	console.log(x <= y);  // false
-   ```
-</p>
-</details>
-
-<details>
-<summary>Write a program to print Logiacal Operators: </summary>
-<p>
-  
-```javascript         
-    let isTrue = true;
-    let isFalse = false;
-    console.log(isTrue && isFalse);
-    console.log(isTrue || isFalse); 
-    console.log(!isTrue);
+console.log("Addition:", a + b);           // 15
+console.log("Subtraction:", a - b);        // 5
+console.log("Multiplication:", a * b);     // 50
+console.log("Division:", a / b);           // 2
+console.log("Modulo (Remainder):", a % b); // 0
 ```
 
 </p>
 </details>
 
 <details>
-<summary>Write a program to print Bitwise Operators: </summary>
+<summary>2️⃣ Comparison Operators (==, ===, !=, >, <, etc.)</summary>
 <p>
 
 ```javascript
-   var x=10;
-   var y=5;
-  
-  console.log(x & y); // 0
-  console.log(x | y); // 15
-  console.log(x ^ y); // 15
-  console.log(x << y); // 100
-  console.log(x >> y);
+let x = 10;
+let y = "10";
+
+console.log("== :", x == y);    // true  (loose equality)
+console.log("!= :", x != y);    // false
+console.log("=== :", x === y);  // false (strict equality)
+console.log("!== :", x !== y);  // true
+
+let a = 8;
+let b = 5;
+console.log("> :", a > b);      // true
+console.log("< :", a < b);      // false
+console.log(">= :", a >= b);    // true
+console.log("<= :", a <= b);    // false
 ```
-</p>
-</details>
-
-<details>
-<summary>Write a program to print Assignment Operators: </summary>
-<p>
-  
-  ```javascript
-      var x=30;
-      var y=10;
-      
-      x += y; // x = x + y
-      console.log(x); // 15
-      
-      x -= y; // x = x - y
-      console.log(x); // 10
-      
-      x *= y; // x = x * y
-      console.log(x); // 50
-      
-      x /= y; // x = x / y
-      console.log(x); // 10
-      
-      x %= y; // x = x % y
-      console.log(x); // 0
-  ```
 
 </p>
 </details>
 
 <details>
-<summary>Write a program to print Ternary Operators</summary>
-<p>
-
-  ```javascript
-    let age = 18;
-    let canVote = age >= 18 ? "Yes" : "No";
-    console.log(canVote); // "Yes"
-        
-  ```
-    
-</p>
-</details>
-
-<details>
-<summary>Write a program to print Types of operators: </summary>
+<summary>3️⃣ Logical Operators (AND, OR, NOT)</summary>
 <p>
 
 ```javascript
-    let variable = 42;
-    console.log(typeof variable); // "number"
+let hasPermission = true;
+let isLoggedIn = false;
+
+console.log("AND (&&):", hasPermission && isLoggedIn); // false
+console.log("OR (||):", hasPermission || isLoggedIn);  // true
+console.log("NOT (!):", !hasPermission);               // false
 ```
+
 </p>
 </details>
 
 <details>
-<summary>Write a program to print String Concatenation operators</summary>
+<summary>4️⃣ Bitwise Operators (&, |, ^, <<, >>)</summary>
 <p>
-  
+
 ```javascript
-  let greeting = "Hello, ";
-  let name = "John";
-  let message = greeting + name;
-  console.log(message); // "Hello, John"
+let x = 10; // 1010
+let y = 5;  // 0101
+
+console.log("AND (&):", x & y);     // 0
+console.log("OR (|):", x | y);      // 15
+console.log("XOR (^):", x ^ y);     // 15
+console.log("Left Shift (<<):", x << 1); // 20
+console.log("Right Shift (>>):", x >> 1); // 5
 ```
+
 </p>
 </details>
 
+<details>
+<summary>5️⃣ Assignment Operators (=, +=, -=, etc.)</summary>
+<p>
 
+```javascript
+let x = 10;
 
+x += 5;  // x = x + 5
+console.log("x += 5:", x); // 15
 
+x -= 3;  // x = x - 3
+console.log("x -= 3:", x); // 12
 
+x *= 2;  // x = x * 2
+console.log("x *= 2:", x); // 24
 
+x /= 4;  // x = x / 4
+console.log("x /= 4:", x); // 6
 
+x %= 4;  // x = x % 4
+console.log("x %= 4:", x); // 2
+```
 
+</p>
+</details>
 
+<details>
+<summary>6️⃣ Ternary Operator (Conditional Expression)</summary>
+<p>
 
+```javascript
+let age = 17;
+let result = (age >= 18) ? "Eligible to vote" : "Not eligible";
+console.log(result); // "Not eligible"
+```
+
+</p>
+</details>
+
+<details>
+<summary>7️⃣ typeof Operator (Check data types)</summary>
+<p>
+
+```javascript
+let num = 42;
+let str = "Hello";
+let isActive = true;
+
+console.log(typeof num);      // "number"
+console.log(typeof str);      // "string"
+console.log(typeof isActive); // "boolean"
+console.log(typeof null);     // "object" (special case)
+console.log(typeof undefined); // "undefined"
+```
+
+</p>
+</details>
+
+<details>
+<summary>8️⃣ String Concatenation (+ operator)</summary>
+<p>
+
+```javascript
+let firstName = "John";
+let lastName = "Doe";
+
+let fullName = firstName + " " + lastName;
+console.log(fullName); // "John Doe"
+
+let greet = "Hello " + firstName + "!";
+console.log(greet); // "Hello John!"
+```
+
+</p>
+</details>
