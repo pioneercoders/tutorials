@@ -1,131 +1,148 @@
 <details open>
-<summary>Write a program to print Arithmetic Operators:</summary>
+<summary>1️⃣ Program to Demonstrate Arithmetic Operators</summary>
 <p>
 
 ```java
 import java.util.Scanner;
 
 public class ArithmeticOperators {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-		System.out.print("Enter the first number: ");
-		double num1 = sc.nextDouble();
+        System.out.print("Enter the first number: ");
+        double num1 = scanner.nextDouble();
 
-		System.out.print("Enter the second number: ");
-		double num2 = sc.nextDouble();
+        System.out.print("Enter the second number: ");
+        double num2 = scanner.nextDouble();
+        scanner.close();
 
-		double sum = num1 + num2;
-		double difference = num1 - num2;
-		double product = num1 * num2;
-		double quotient = num1 / num2;
-
-		System.out.println("The sum of the two numbers is: " + sum);
-		System.out.println("The difference of the two numbers is: " + difference);
-		System.out.println("The product of the two numbers is: " + product);
-		System.out.println("The quotient of the two numbers is: " + quotient);
-	}
-} 
+        System.out.println("\n🔢 Arithmetic Operations:");
+        System.out.println("Addition        : " + (num1 + num2));
+        System.out.println("Subtraction     : " + (num1 - num2));
+        System.out.println("Multiplication  : " + (num1 * num2));
+        System.out.println("Division        : " + (num2 != 0 ? (num1 / num2) : "Undefined (division by zero)"));
+        System.out.println("Modulus         : " + (num2 != 0 ? (num1 % num2) : "Undefined (mod by zero)"));
+    }
+}
 ```
 
 </p>
 </details>
 
+
 <details>
-<summary>Write a program to print Relational Operators:</summary>
+<summary>2️⃣ Program to Demonstrate Relational Operators</summary>
 <p>
-	
+
 ```java
 import java.util.Scanner;
 
 public class RelationalOperators {
-  public static void main(String[] args) {
-   Scanner scan = new Scanner(System.in);
-     
-   //System.out.println("Enter first number: ");
-   // int num1 = scan.nextInt();
-     
-   // System.out.println("Enter second number: ");
-   // int num2 = scan.nextInt();
-     
-   int num1 =1;
-   int num2 = 2;
-     
-     
-   System.out.println("num1 > num2 is " + (num1 > num2));
-   System.out.println("num1 < num2 is " + (num1 < num2));
-   System.out.println("num1 >= num2 is " + (num1 >= num2));
-   System.out.println("num1 <= num2 is " + (num1 <= num2));
-   System.out.println("num1 == num2 is " + (num1 == num2));
-   System.out.println("num1 != num2 is " + (num1 != num2));
-  }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter first integer: ");
+        int num1 = scanner.nextInt();
+
+        System.out.print("Enter second integer: ");
+        int num2 = scanner.nextInt();
+        scanner.close();
+
+        System.out.println("\n📏 Relational Operations:");
+        System.out.println("num1 > num2   : " + (num1 > num2));
+        System.out.println("num1 < num2   : " + (num1 < num2));
+        System.out.println("num1 >= num2  : " + (num1 >= num2));
+        System.out.println("num1 <= num2  : " + (num1 <= num2));
+        System.out.println("num1 == num2  : " + (num1 == num2));
+        System.out.println("num1 != num2  : " + (num1 != num2));
+    }
 }
 ```
+
 </p>
 </details>
 
+
 <details>
-<summary>Write a program to print Logiacal Operators</summary>
+<summary>3️⃣ Program to Demonstrate Logical Operators</summary>
 <p>
-	
+
 ```java
-import java.io.*;
-
 public class LogicalOperators {
-  public static void main(String[] args) {
-	boolean a = true;
-	boolean b = false;
+    public static void main(String[] args) {
+        boolean a = true;
+        boolean b = false;
 
-	System.out.println("a: " + a);
-	System.out.println("b: " + b);
-	System.out.println("a && b: " + (a && b));
-	System.out.println("a || b: " + (a || b));
-	System.out.println("!a: " + !a);
-	System.out.println("!b: " + !b);
-	}
+        System.out.println("🔁 Logical Operations:");
+        System.out.println("a         : " + a);
+        System.out.println("b         : " + b);
+        System.out.println("a && b    : " + (a && b));
+        System.out.println("a || b    : " + (a || b));
+        System.out.println("!a        : " + (!a));
+        System.out.println("!b        : " + (!b));
+    }
 }
 ```
+
+</p>
+</details>
+
+
+<details>
+<summary>4️⃣ Program to Demonstrate Bitwise Operators</summary>
+<p>
+
+```java
+public class BitwiseOperators {
+    public static void main(String[] args) {
+        int a = 5;  // 0101
+        int b = 7;  // 0111
+
+        System.out.println("🔧 Bitwise Operations:");
+        System.out.println("a & b      : " + (a & b));  // 0101 & 0111 = 0101 (5)
+        System.out.println("a | b      : " + (a | b));  // 0101 | 0111 = 0111 (7)
+        System.out.println("a ^ b      : " + (a ^ b));  // 0101 ^ 0111 = 0010 (2)
+        System.out.println("~a         : " + (~a));     // Inverts all bits
+
+        a &= b; // a = a & b
+        System.out.println("a &= b     : " + a);        // Compound AND assignment
+    }
+}
+```
+
 </p>
 </details>
 
 <details>
-<summary>Write a program to print Bitwise Operators</summary>
+<summary>5️⃣ Program to Demonstrate Ternary Operator</summary>
 <p>
-	
+
 ```java
 import java.util.Scanner;
-   public class operators {
-     public static void main(String[] args)
-	{
-	// Initial values
-	int a = 5;
-	int b = 7;
 
-	// bitwise and
-	// 0101 & 0111=0101 = 5
-	System.out.println("a&b = " + (a & b));
+public class TernaryOperator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-	// bitwise or
-	// 0101 | 0111=0111 = 7
-	System.out.println("a|b = " + (a | b));
+        System.out.print("Enter first number: ");
+        int num1 = scanner.nextInt();
 
-	// bitwise xor
-	// 0101 ^ 0111=0010 = 2
-	System.out.println("a^b = " + (a ^ b));
+        System.out.print("Enter second number: ");
+        int num2 = scanner.nextInt();
+        scanner.close();
 
-	// bitwise not
-	// ~00000000 00000000 00000000 00000101=11111111 11111111 11111111 11111010
-	// will give 2's complement (32 bit) of 5 = -6
-	System.out.println("~a = " + ~a);
+        // Ternary operator to find the maximum
+        int max = (num1 > num2) ? num1 : num2;
 
-	// can also be combined with
-	// assignment operator to provide shorthand
-	// assignment
-	// a=a&b
-	a &= b;
-		System.out.println("a= " + a);
-	}
+        System.out.println("\n📌 Using Ternary Operator:");
+        System.out.println("The greater number is: " + max);
+
+        // Example with boolean condition
+        String result = (num1 == num2) ? "Both numbers are equal" : "Numbers are not equal";
+        System.out.println(result);
+    }
 }
 ```
+
 </p>
 </details>
