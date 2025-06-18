@@ -1,14 +1,15 @@
 <details open>
-<summary>Write a program for leaner search implementation.</summary>
+<summary>1️⃣ Linear Search Implementation</summary>
 <p>
 
 ```java
+import java.util.Scanner;
+
 public class LinearSearch {
 
-    public static int search(int[] list, int search) {
-        int length = list.length;
-        for (int index = 0; index < length; index++) {
-            if (list[index] == search) {
+    public static int search(int[] array, int key) {
+        for (int index = 0; index < array.length; index++) {
+            if (array[index] == key) {
                 return index;
             }
         }
@@ -16,24 +17,30 @@ public class LinearSearch {
     }
 
     public static void main(String[] args) {
-        System.out.print("Enter length of list : ");
         Scanner scanner = new Scanner(System.in);
 
+        System.out.print("Enter the number of elements: ");
         int length = scanner.nextInt();
-        int[] list = new int[length];
 
-        for (int index = 0; index < length; index++) {
-            list[index] = scanner.nextInt();
+        int[] array = new int[length];
+        System.out.println("Enter " + length + " integers:");
+
+        for (int i = 0; i < length; i++) {
+            array[i] = scanner.nextInt();
         }
 
-        System.out.print("Enter element to search : ");
-        int search = scanner.nextInt();
-        int elementAt = search(list, search);
+        System.out.print("Enter element to search: ");
+        int key = scanner.nextInt();
+        scanner.close();
 
-        String result = elementAt == -1 ? "Element not found." : "Element is at index " + elementAt;
-        System.out.println(result);
+        int result = search(array, key);
+        if (result == -1) {
+            System.out.println("Element not found.");
+        } else {
+            System.out.println("Element found at index: " + result);
+        }
     }
-} 
+}
 ```
 
 </p>
@@ -41,66 +48,62 @@ public class LinearSearch {
 
 
 <details>
-<summary>Write a programs for Binary Search.</summary>
+<summary>2️⃣ Binary Search Implementation (Recursive & Iterative)</summary>
 <p>
 
 ```java
+import java.util.Arrays;
+
+public class BinarySearch {
+
     public static boolean binarySearchRecursive(int[] array, int key, int start, int end) {
-        int middle = (start + end) / 2;
+        if (start > end) return false;
 
-        if (end < start) {
-            return false;
+        int mid = (start + end) / 2;
+
+        if (array[mid] == key) return true;
+        if (key < array[mid]) {
+            return binarySearchRecursive(array, key, start, mid - 1);
+        } else {
+            return binarySearchRecursive(array, key, mid + 1, end);
         }
-
-        if (key < array[middle]) {
-            return binarySearchRecursive(array, key, start, middle - 1);
-        } else if (key > array[middle]) {
-            return binarySearchRecursive(array, key, middle + 1, end);
-        } else if (key == array[middle]) {
-            return true;
-        }
-
-        return false;
     }
 
     public static boolean binarySearchIterative(int[] array, int key) {
-        int start = 0;
-        int end = array.length - 1;
+        int start = 0, end = array.length - 1;
 
         while (start <= end) {
-            int middle = (start + end) / 2;
+            int mid = (start + end) / 2;
 
-            if (key < array[middle]) {
-                end = middle - 1;
-            } else if (key > array[middle]) {
-                start = middle + 1;
-            } else if (key == array[middle]) {
-                return true;
+            if (array[mid] == key) return true;
+            if (key < array[mid]) {
+                end = mid - 1;
+            } else {
+                start = mid + 1;
             }
         }
+
         return false;
     }
 
     public static void main(String[] args) {
         int[] array = { 1, 8, 34, 67, 9, 6, 78, 12, 56, 41, 90 };
         int key1 = 12, key2 = 91;
+
         Arrays.sort(array);
 
-        System.out.println("Array :");
+        System.out.println("Sorted Array:");
         System.out.println(Arrays.toString(array));
 
-        System.out.println();
-        System.out.println("Using binary search iterative : ");
-        System.out.println(binarySearchIterative(array, key1) ? key1 + " Found" : key1 + " Not found");
-        System.out.println(binarySearchIterative(array, key2) ? key2 + " Found" : key2 + " Not found");
+        System.out.println("\n🔁 Iterative Binary Search:");
+        System.out.println(key1 + (binarySearchIterative(array, key1) ? " Found" : " Not Found"));
+        System.out.println(key2 + (binarySearchIterative(array, key2) ? " Found" : " Not Found"));
 
-        System.out.println();
-        System.out.println("Using binary search recursive : ");
-        System.out.println(
-                binarySearchRecursive(array, key1, 0, array.length - 1) ? key1 + " Found" : key1 + " Not found");
-        System.out.println(
-                binarySearchRecursive(array, key2, 0, array.length - 1) ? key2 + " Found" : key2 + " Not found");
-    } 
+        System.out.println("\n🔁 Recursive Binary Search:");
+        System.out.println(key1 + (binarySearchRecursive(array, key1, 0, array.length - 1) ? " Found" : " Not Found"));
+        System.out.println(key2 + (binarySearchRecursive(array, key2, 0, array.length - 1) ? " Found" : " Not Found"));
+    }
+}
 ```
 
 </p>
