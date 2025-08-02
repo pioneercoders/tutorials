@@ -164,9 +164,16 @@ public class DeleteElement {
 ```
 
 
-2️⃣ Add Element to Array (By Copying and Creating New Array)
+2️⃣ ➕ Add Element to Array (By Copying and Creating New Array)
 
+### 🧱 Problem
+In Java, arrays are fixed in size. To "add" an element to an array:
 
+### 🧠 Logic
+1. You create a **new array** of size `original.length + 1`.
+2. **Copy** all elements from the original array.
+3. Add the new element at the end.
+  
 ```java
 public class AddElement {
     public static int[] addElement(int[] arr, int newElement) {
