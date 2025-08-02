@@ -100,4 +100,150 @@ Given a fixed-size array, delete the element at a specified index and maintain t
 - Shift all elements one position to the left after the deletion index.
 - Optionally set the last position to a default value (`0`, `null`, etc.).
 
+# 🔢 Java Programs for Array Manipulation and Matrix Traversal
 
+This document includes Java examples for:
+
+1. Deleting an element from an array by copying to a new array
+2. Adding elements to an array by creating a new array
+3. Matrix edge traversal and cross (diagonal) traversal
+
+---
+
+## 1️⃣ Delete Element from Array (Using New Array)
+
+```java
+public class DeleteElement {
+    public static int[] deleteElement(int[] arr, int indexToDelete) {
+        if (indexToDelete < 0 || indexToDelete >= arr.length) {
+            throw new IllegalArgumentException("Invalid index");
+        }
+
+        int[] newArray = new int[arr.length - 1];
+        for (int i = 0, j = 0; i < arr.length; i++) {
+            if (i != indexToDelete) {
+                newArray[j++] = arr[i];
+            }
+        }
+
+        return newArray;
+    }
+
+    public static void main(String[] args) {
+        int[] original = {10, 20, 30, 40, 50};
+        int index = 2;
+
+        int[] result = deleteElement(original, index);
+
+        System.out.print("After deletion: ");
+        for (int num : result) {
+            System.out.print(num + " ");
+        }
+    }
+}
+```
+
+
+2️⃣ Add Element to Array (By Copying and Creating New Array)
+```java
+public class AddElement {
+    public static int[] addElement(int[] arr, int newElement) {
+        int[] newArray = new int[arr.length + 1];
+
+        for (int i = 0; i < arr.length; i++) {
+            newArray[i] = arr[i];
+        }
+
+        newArray[arr.length] = newElement;
+
+        return newArray;
+    }
+
+    public static void main(String[] args) {
+        int[] original = {1, 2, 3, 4};
+        int newValue = 5;
+
+        int[] result = addElement(original, newValue);
+
+        System.out.print("After addition: ");
+        for (int num : result) {
+            System.out.print(num + " ");
+        }
+    }
+}
+```
+
+3️⃣ Matrix Edge Traversal and Cross (Diagonal) Traversal
+🔹 Edge Traversal (Top Row → Right Col → Bottom Row → Left Col)
+
+```java
+public class MatrixEdgeTraversal {
+    public static void edgeTraversal(int[][] matrix) {
+        int rows = matrix.length;
+        int cols = matrix[0].length;
+
+        System.out.println("Edge Traversal:");
+
+        // Top row
+        for (int j = 0; j < cols; j++) {
+            System.out.print(matrix[0][j] + " ");
+        }
+
+        // Right column
+        for (int i = 1; i < rows - 1; i++) {
+            System.out.print(matrix[i][cols - 1] + " ");
+        }
+
+        // Bottom row
+        for (int j = cols - 1; j >= 0; j--) {
+            System.out.print(matrix[rows - 1][j] + " ");
+        }
+
+        // Left column
+        for (int i = rows - 2; i > 0; i--) {
+            System.out.print(matrix[i][0] + " ");
+        }
+    }
+
+    public static void main(String[] args) {
+        int[][] matrix = {
+            { 1,  2,  3,  4},
+            { 5,  6,  7,  8},
+            { 9, 10, 11, 12},
+            {13, 14, 15, 16}
+        };
+
+        edgeTraversal(matrix);
+    }
+}
+```
+
+🔹 Cross (Diagonal) Traversal: Primary and Secondary Diagonals
+
+```java
+public class MatrixDiagonalTraversal {
+    public static void crossDiagonalTraversal(int[][] matrix) {
+        int n = matrix.length;
+
+        System.out.print("Primary Diagonal: ");
+        for (int i = 0; i < n; i++) {
+            System.out.print(matrix[i][i] + " ");
+        }
+
+        System.out.print("\nSecondary Diagonal: ");
+        for (int i = 0; i < n; i++) {
+            System.out.print(matrix[i][n - 1 - i] + " ");
+        }
+    }
+
+    public static void main(String[] args) {
+        int[][] matrix = {
+            { 1,  2,  3},
+            { 4,  5,  6},
+            { 7,  8,  9}
+        };
+
+        crossDiagonalTraversal(matrix);
+    }
+}
+```
