@@ -123,8 +123,8 @@ This guide explains how to handle **element deletion** in arrays and how to **ad
 Given a fixed-size array, delete the element at a specified index and maintain the remaining element order.
 
 **🧠 Design Approach**
-- Shift all elements one position to the left after the deletion index.
-- Optionally set the last position to a default value (`0`, `null`, etc.).
+- 1 Shift all elements one position to the left after the deletion index.
+- 2 Optionally set the last position to a default value (`0`, `null`, etc.).
 
 **1️⃣ Delete Element from Array (Using New Array)**
 
