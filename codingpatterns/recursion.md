@@ -1,30 +1,24 @@
-# 🔁 Recursion Techniques for Interview Preparation (with Java Examples)
+#### 🔁 Recursion Techniques for Interview Preparation (with Java Examples)
 
 Recursion is a fundamental concept in computer science and a common topic in coding interviews. This guide walks you through recursion step-by-step with design techniques and Java examples.
 
----
-
-## 📘 What is Recursion?
+**📘 What is Recursion?**
 
 > A recursive function is a function that calls itself with smaller inputs until a base condition is met.
 
----
+**🧱 Recursive Thinking: Step-by-Step Approach**
 
-## 🧱 Recursive Thinking: Step-by-Step Approach
-
-### Step 1: Identify if the problem is recursive
+**Step 1: Identify if the problem is recursive**
 - Can it be divided into smaller subproblems of the same type?
 
-### Step 2: Define the base case
+**Step 2: Define the base case**
 - The simplest possible case that can be solved directly.
 
-### Step 3: Define the recursive case
+**Step 3: Define the recursive case**
 - How to reduce the problem to a smaller version of itself.
 
-### Step 4: Combine the result from subproblems
+**Step 4: Combine the result from subproblems**
 - Merge results as the recursion unwinds.
-
----
 
 ## 📐 General Recursive Template
 
@@ -192,7 +186,7 @@ public class PalindromeCheck {
 }
 ```
 
-## 🧠 Recursion Patterns
+**🧠 Recursion Patterns**
 
 | Pattern         | Use Case                          | Example Problem                |
 |-----------------|------------------------------------|---------------------------------|
@@ -202,7 +196,7 @@ public class PalindromeCheck {
 | Backtracking    | Explore all possible paths         | N-Queens, Subset generation     |
 
 
-## ⚠️ Recursion Tips
+**⚠️ Recursion Tips**
 
 - ✅ Always define the **base case** clearly.
 - 🔁 Ensure each call **progresses toward the base case**.
