@@ -1,15 +1,15 @@
-# 📚 Array Techniques for Coding Interviews
+### 📚 Array Techniques for Coding Interviews
 
 Mastering arrays is essential for software engineers preparing for technical interviews at top tech companies like Google, Amazon, Meta, etc. This guide provides structured techniques, examples, and memory aids to solidify array concepts and boost problem-solving confidence. Arrays are one of the most fundamental and commonly tested topics in coding interviews. Mastering array patterns improves your ability to solve a wide range of problems efficiently.
 
-## 📌 Why Arrays Are Important?
+#### 📌 Why Arrays Are Important?
 
 - Arrays are used in almost all system-level and application-level programming.
 - Arrays are foundational to data structures.
 - Practicing arrays improves your grip on pointers, indexing, loops, and memory management.
 - They are heavily tested in interviews to assess logical thinking, optimization, and understanding of memory access patterns.
 
-## 🔍 Key Techniques and Patterns
+*🔍 Key Techniques and Patterns*
 
 ### 1️⃣ Traversal
 - Loop through elements to find min, max, or perform actions.
