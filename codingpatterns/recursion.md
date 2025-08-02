@@ -1,3 +1,4 @@
+
 #### 🔁 Recursion Techniques for Interview Preparation (with Java Examples)
 
 Recursion is a fundamental concept in computer science and a common topic in coding interviews. This guide walks you through recursion step-by-step with design techniques and Java examples.
@@ -20,7 +21,7 @@ Recursion is a fundamental concept in computer science and a common topic in cod
 **Step 4: Combine the result from subproblems**
 - Merge results as the recursion unwinds.
 
-## 📐 General Recursive Template
+**📐 General Recursive Template**
 
 ```java
 public ReturnType function(InputType input) {
@@ -36,18 +37,16 @@ public ReturnType function(InputType input) {
 }
 ```
 
-✅ Problem 1: Factorial  
-🧩 Problem
-Find the factorial of a number n.
+#### ✅ Problem 1: Factorial  
+**🧩 Problem**  
+Find the factorial of a number n.  
 n! = n * (n-1) * (n-2) * ... * 1
 
-🔄 Algorithm Steps
-If n == 0, return 1 (base case).
-
+**🔄 Algorithm Steps**  
+If n == 0, return 1 (base case).  
 Otherwise, return n * factorial(n - 1).
 
-💻 Java Code
-
+**💻 Java Code**  
 ```java
 public class Factorial {
     public static int factorial(int n) {
@@ -61,19 +60,16 @@ public class Factorial {
 }
 ```
 
-✅ Problem 2: Fibonacci  
-🧩 Problem
+#### ✅ Problem 2: Fibonacci  
+**🧩 Problem**  
 Return the nth Fibonacci number.
 
-🔄 Algorithm Steps
-If n == 0, return 0.
-
-If n == 1, return 1.
-
+**🔄 Algorithm Steps**  
+If n == 0, return 0.  
+If n == 1, return 1.  
 Otherwise, return fib(n-1) + fib(n-2).
 
-💻 Java Code
-
+**💻 Java Code**  
 ```java
 public class Fibonacci {
     public static int fib(int n) {
@@ -87,17 +83,15 @@ public class Fibonacci {
 }
 ```
 
-✅ Problem 3: Reverse a String  
-🧩 Problem  
-Reverse a string using recursion.  
+#### ✅ Problem 3: Reverse a String  
+**🧩 Problem**  
+Reverse a string using recursion.
 
-🔄 Algorithm Steps  
+**🔄 Algorithm Steps**  
 If the string is empty or has one character, return it.  
-
 Recursively reverse the substring from index 1 and append the first character at the end.
 
-💻 Java Code
-
+**💻 Java Code**  
 ```java
 public class ReverseString {
     public static String reverse(String s) {
@@ -111,17 +105,15 @@ public class ReverseString {
 }
 ```
 
-✅ Problem 4: Print Numbers from N to 1  
-🧩 Problem  
-Print numbers from N down to 1 using recursion.  
+#### ✅ Problem 4: Print Numbers from N to 1  
+**🧩 Problem**  
+Print numbers from N down to 1 using recursion.
 
-🔄 Algorithm Steps
-If n == 0, return (stop recursion).
-
+**🔄 Algorithm Steps**  
+If n == 0, return (stop recursion).  
 Print n, then call the function with n - 1.
 
-💻 Java Code
-
+**💻 Java Code**  
 ```java
 public class PrintDescending {
     public static void printDescending(int n) {
@@ -136,17 +128,15 @@ public class PrintDescending {
 }
 ```
 
-✅ Problem 5: Sum of Digits  
-🧩 Problem  
-Given an integer n, return the sum of its digits.  
+#### ✅ Problem 5: Sum of Digits  
+**🧩 Problem**  
+Given an integer n, return the sum of its digits.
 
-🔄 Algorithm Steps
-If n == 0, return 0.
-
+**🔄 Algorithm Steps**  
+If n == 0, return 0.  
 Return (n % 10) + sumDigits(n / 10).
 
-💻 Java Code
-
+**💻 Java Code**  
 ```java
 public class SumOfDigits {
     public static int sumDigits(int n) {
@@ -159,19 +149,17 @@ public class SumOfDigits {
     }
 }
 ```
-✅ Problem 6: Check Palindrome (String)
-🧩 Problem
+
+#### ✅ Problem 6: Check Palindrome (String)  
+**🧩 Problem**  
 Check whether a string is a palindrome using recursion.
 
-🔄 Algorithm Steps
-If the string has 0 or 1 characters, it's a palindrome.
-
-If first and last characters don’t match, return false.
-
+**🔄 Algorithm Steps**  
+If the string has 0 or 1 characters, it's a palindrome.  
+If first and last characters don’t match, return false.  
 Else, call recursively on the substring excluding first and last characters.
 
-💻 Java Code
-
+**💻 Java Code**  
 ```java
 public class PalindromeCheck {
     public static boolean isPalindrome(String str) {
@@ -189,13 +177,12 @@ public class PalindromeCheck {
 
 **🧠 Recursion Patterns**
 
-| Pattern         | Use Case                          | Example Problem                |
-|-----------------|------------------------------------|---------------------------------|
-| Tail Recursion  | Work done **before** return        | GCD, print numbers              |
-| Head Recursion  | Work done **after** return         | Reverse string, sum of digits   |
-| Tree Recursion  | Calls itself multiple times        | Fibonacci, Subsets, Permutations|
-| Backtracking    | Explore all possible paths         | N-Queens, Subset generation     |
-
+| Pattern         | Use Case                          | Example Problem                 |
+|----------------|------------------------------------|----------------------------------|
+| Tail Recursion  | Work done **before** return        | GCD, print numbers               |
+| Head Recursion  | Work done **after** return         | Reverse string, sum of digits    |
+| Tree Recursion  | Calls itself multiple times        | Fibonacci, Subsets, Permutations |
+| Backtracking    | Explore all possible paths         | N-Queens, Subset generation      |
 
 **⚠️ Recursion Tips**
 
@@ -203,7 +190,3 @@ public class PalindromeCheck {
 - 🔁 Ensure each call **progresses toward the base case**.
 - 🧪 Use **dry-run with small inputs** for debugging.
 - 🚫 Avoid deep recursion in **performance-critical problems**.
-
-
-
-
