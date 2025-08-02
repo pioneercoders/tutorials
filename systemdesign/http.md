@@ -1,4 +1,4 @@
-#### 🌐 HTTP Protocol - High-Level Overview
+#### 🌐 HTTP Protocol
 
 **✅ What is HTTP?**
 
