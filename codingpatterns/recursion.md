@@ -34,6 +34,7 @@ public ReturnType function(InputType input) {
     // combine results
     return combine(smallerResult);
 }
+```
 
 ✅ Problem 1: Factorial
 🧩 Problem
