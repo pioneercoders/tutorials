@@ -36,7 +36,7 @@ public ReturnType function(InputType input) {
 }
 ```
 
-✅ Problem 1: Factorial
+✅ Problem 1: Factorial  
 🧩 Problem
 Find the factorial of a number n.
 n! = n * (n-1) * (n-2) * ... * 1
@@ -61,7 +61,7 @@ public class Factorial {
 }
 ```
 
-✅ Problem 2: Fibonacci
+✅ Problem 2: Fibonacci  
 🧩 Problem
 Return the nth Fibonacci number.
 
@@ -87,12 +87,12 @@ public class Fibonacci {
 }
 ```
 
-✅ Problem 3: Reverse a String
-🧩 Problem
-Reverse a string using recursion.
+✅ Problem 3: Reverse a String  
+🧩 Problem  
+Reverse a string using recursion.  
 
-🔄 Algorithm Steps
-If the string is empty or has one character, return it.
+🔄 Algorithm Steps  
+If the string is empty or has one character, return it.  
 
 Recursively reverse the substring from index 1 and append the first character at the end.
 
@@ -111,9 +111,9 @@ public class ReverseString {
 }
 ```
 
-✅ Problem 4: Print Numbers from N to 1
-🧩 Problem
-Print numbers from N down to 1 using recursion.
+✅ Problem 4: Print Numbers from N to 1  
+🧩 Problem  
+Print numbers from N down to 1 using recursion.  
 
 🔄 Algorithm Steps
 If n == 0, return (stop recursion).
@@ -136,9 +136,9 @@ public class PrintDescending {
 }
 ```
 
-✅ Problem 5: Sum of Digits
-🧩 Problem
-Given an integer n, return the sum of its digits.
+✅ Problem 5: Sum of Digits  
+🧩 Problem  
+Given an integer n, return the sum of its digits.  
 
 🔄 Algorithm Steps
 If n == 0, return 0.
