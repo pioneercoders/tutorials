@@ -1,19 +1,15 @@
-# 🧠 Backtracking Techniques for Solving Coding Problems
+#### 🧠 Backtracking Techniques for Solving Coding Problems
 
 Backtracking is a powerful algorithmic technique for solving problems recursively by trying to build a solution incrementally and removing those solutions that fail to satisfy the constraints.
 
----
-
-## ✅ When to Use Backtracking
+**✅ When to Use Backtracking**
 
 Use backtracking when:
 - The problem asks for **all** solutions or **any one valid** solution.
 - You are exploring **combinations**, **permutations**, **subsets**, or **partitions**.
 - The solution space is **huge**, and you need **pruning** (skip bad candidates early).
 
----
-
-## 🛠 General Backtracking Template
+**🛠 General Backtracking Template**
 
 ```java
 void backtrack(State state) {
@@ -32,10 +28,10 @@ void backtrack(State state) {
 }
 ```
 
-🧩 Example 1: Subsets of an Array
-Problem: Given an integer array, return all possible subsets (the power set).
+**🧩 Example 1: Subsets of an Array**
+**Problem:** Given an integer array, return all possible subsets (the power set).
 
-🧮 Algorithmic Steps
+**🧮 Algorithmic Steps**
 1. Start with an empty list current to build subsets.
 2. At each step, add current to the final result.
 3. Loop through remaining elements from the current index:
@@ -70,10 +66,10 @@ public class SubsetsBacktracking {
 }
 ```
 
-🧩 Example 2: Permutations
-Problem: Given a list of distinct integers, return all possible permutations.
+**🧩 Example 2: Permutations**
+**Problem:** Given a list of distinct integers, return all possible permutations.
 
-🧮 Algorithmic Steps
+**🧮 Algorithmic Steps**
 1. Use a list current to build a permutation and a boolean array used[] to track used elements.
 2. If current length equals input length, add to result (base case).
 3. Loop through each element:
