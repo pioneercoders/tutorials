@@ -323,4 +323,158 @@ logLength("Hello"); // ✅ Works
 logLength([1, 2, 3]); // ✅ Works
 logLength(42); // ❌ Error: number has no 'length'
 
+#### 6.What is the difference between a generic interface and a generic function?
+
+The main difference between a generic interface and a generic function in TypeScript is where and how the type parameter (T) is defined and applied.
+
+1.Generic Function
+The type parameter is declared per function call.
+
+Each call can use a different type for T.
+
+Useful for operations where the type depends on the input.
+
+function identity<T>(value: T): T {
+  return value;
+}
+
+let a = identity<string>("Hello"); // T = string
+let b = identity<number>(42);      // T = number
+
+Here, T exists only inside this function, and you can pick a new T for each call.
+
+2. Generic Interface
+The type parameter is declared when you create an instance or implement it.
+
+That type is fixed for the entire interface usage.
+
+Useful for data structures or contracts that consistently use one type.
+interface Box<T> {
+  value: T;
+  getValue(): T;
+}
+
+let stringBox: Box<string> = {
+  value: "Hi",
+  getValue() { return this.value; }
+};
+
+let numberBox: Box<number> = {
+  value: 123,
+  getValue() { return this.value; }
+};
+
+ Here, T is locked when you define stringBox or numberBox.
+
+ 3.Key Differences Table
+
+ | Feature              | Generic Function                                                 | Generic Interface                                |
+| -------------------- | ---------------------------------------------------------------- | ------------------------------------------------ |
+| Type parameter scope | Per function call                                                | Per instance/implementation                      |
+| Flexibility          | Can change `T` each call                                         | Fixed `T` for lifetime of the instance           |
+| Best for             | Reusable operations (sorting, mapping, identity functions, etc.) | Data structures, API contracts, class blueprints |
+| Example use case     | `map<T>(array: T[], callback: ...)`                              | `Repository<T>` for database entities            |
+
+#### 7.What’s the difference between public, private, protected, and readonly in TypeScript classes?
+In TypeScript classes, public, private, protected, and readonly are access modifiers (plus readonly is also an immutability modifier) that control how and where class members (properties/methods) can be accessed and/or modified.
+
+1.public
+Default if no modifier is specified.
+
+Accessible anywhere: inside the class, subclasses, and outside the class.
+class Person {
+  public name: string; // default
+  constructor(name: string) {
+    this.name = name;
+  }
+}
+
+const p = new Person("Alice");
+console.log(p.name); // ✅ Accessible
+
+2. private
+Accessible only inside the same class.
+
+Not accessible in subclasses or outside the class.
+class Person {
+  private ssn: string;
+  constructor(ssn: string) {
+    this.ssn = ssn;
+  }
+  getSSN() {
+    return this.ssn; // ✅ Allowed
+  }
+}
+
+const p = new Person("123-45-6789");
+console.log(p.ssn); // ❌ Error
+
+3.protected
+Accessible inside the same class and in subclasses.
+
+Not accessible outside the class hierarchy.
+class Animal {
+  protected type: string;
+  constructor(type: string) {
+    this.type = type;
+  }
+}
+
+class Dog extends Animal {
+  bark() {
+    console.log(`Woof! I am a ${this.type}`); // ✅ Allowed in subclass
+  }
+}
+
+const d = new Dog("Bulldog");
+d.type; // ❌ Error: protected
+
+4.readonly
+Makes the property immutable after initialization.
+
+Can be combined with public, private, or protected.
+
+Can be set only in declaration or constructor.
+class Person {
+  readonly id: number;
+  constructor(id: number) {
+    this.id = id; // ✅ Allowed in constructor
+  }
+}
+
+const p = new Person(1);
+p.id = 2; // ❌ Error: read-only property
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
