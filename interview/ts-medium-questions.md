@@ -259,6 +259,7 @@ A generic in TypeScript is a way to create reusable, type-safe code that works w
 Think of it as a type parameter you can pass into a function, class, or interface — similar to how you pass a value parameter into a function.
 
 1.Why Generics?
+
 Without generics, you might use any for flexibility, but any loses type safety.
 function identity(arg: any): any {
   return arg;
