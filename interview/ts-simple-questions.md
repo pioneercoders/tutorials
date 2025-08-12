@@ -70,10 +70,10 @@ Some basic data types in TypeScript are:
 In TypeScript, you can declare an array in two main ways — by specifying the element type either with square brackets ([]) or with a generic type (Array<type>).
 
 1. Using Square Brackets ([])
- 
+  ```typescript
 let numbers: number[] = [1, 2, 3, 4];
 let names: string[] = ["haswin", "devansh", "Anu"];
-
+```
 2. Using Generic Array Type (Array<type>)
 
 let numbers: Array<number> = [1, 2, 3, 4];
