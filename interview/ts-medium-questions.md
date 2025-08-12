@@ -176,4 +176,81 @@ readonly prevents reassignment of a property or array element, but does not make
 
 If you want deep immutability, you’d need extra tooling (like Readonly<T> recursively).
 
+#### 4.What is the difference between Partial<T>, Required<T>, Pick<T, K> and Omit<T, K> utility types?
+In TypeScript, Partial<T>, Required<T>, Pick<T, K>, and Omit<T, K> are built-in utility types that help transform existing types without rewriting them.
+
+1.Partial<T>
+Makes all properties in T optional.
+
+interface User {
+  id: number;
+  name: string;
+  email: string;
+}
+
+type PartialUser = Partial<User>;
+/*
+type PartialUser = {
+  id?: number;
+  name?: string;
+  email?: string;
+}
+*/
+
+const u: PartialUser = { name: "Alice" }; // ✅ Allowed
+
+Use case: When updating part of an object (e.g., patch updates).
+
+2.Required<T>
+Makes all properties in T required, even if they were optional.
+interface User {
+  id: number;
+  name?: string;
+}
+
+type RequiredUser = Required<User>;
+/*
+type RequiredUser = {
+  id: number;
+  name: string;
+}
+*/
+
+const u: RequiredUser = { id: 1, name: "Alice" }; // ✅ Must include all props
+
+Use case: Enforcing completeness of an object (e.g., after validation).
+
+3.Pick<T, K>
+Creates a new type by picking only specific properties from T.
+
+interface User {
+  id: number;
+  name: string;
+  email: string;
+}
+
+type UserName = Pick<User, "id" | "name">;
+/*
+type UserName = {
+  id: number;
+  name: string;
+}
+*/
+
+const u: UserName = { id: 1, name: "Alice" }; // ✅ Only id & name allowed
+
+Use case: Selecting a subset of properties for specific operations (e.g., displaying minimal data).
+
+4.Omit<T, K>
+Creates a new type by removing specific properties from T.
+
+5.Quick Comparison Table
+| Utility Type  | What it does                  | Example                       |
+| ------------- | ----------------------------- | ----------------------------- |
+| `Partial<T>`  | Makes all properties optional | Update object partially       |
+| `Required<T>` | Makes all properties required | Ensure full object is present |
+| `Pick<T, K>`  | Keep only certain properties  | Minimal data type             |
+| `Omit<T, K>`  | Remove certain properties     | Hide sensitive data           |
+
+
 
