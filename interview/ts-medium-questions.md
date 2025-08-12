@@ -252,5 +252,74 @@ Creates a new type by removing specific properties from T.
 | `Pick<T, K>`  | Keep only certain properties  | Minimal data type             |
 | `Omit<T, K>`  | Remove certain properties     | Hide sensitive data           |
 
+#### 5.What is a generic in TypeScript? Give an example.
+
+A generic in TypeScript is a way to create reusable, type-safe code that works with multiple types without sacrificing type checking.
+
+Think of it as a type parameter you can pass into a function, class, or interface — similar to how you pass a value parameter into a function.
+
+1.Why Generics?
+Without generics, you might use any for flexibility, but any loses type safety.
+function identity(arg: any): any {
+  return arg;
+}
+
+let result = identity("Hello"); // ✅ Works, but result is 'any'
+
+2.With Generics
+
+function identity<T>(arg: T): T {
+  return arg;
+}
+
+let result1 = identity<string>("Hello"); // T = string
+let result2 = identity<number>(42);      // T = number
+
+Type is preserved — result1 is string, result2 is number.
+
+3.Generic Function (Type Inference)
+TypeScript can infer T automatically:
+function identity<T>(arg: T): T {
+  return arg;
+}
+
+let val = identity("Test"); // T inferred as string
+
+4.Generic Interface
+interface Box<T> {
+  value: T;
+}
+
+let stringBox: Box<string> = { value: "Hello" };
+let numberBox: Box<number> = { value: 123 };
+
+5.Generic Class
+class DataStore<T> {
+  private data: T[] = [];
+  
+  add(item: T) {
+    this.data.push(item);
+  }
+  
+  getAll(): T[] {
+    return this.data;
+  }
+}
+
+const stringStore = new DataStore<string>();
+stringStore.add("apple");
+
+const numberStore = new DataStore<number>();
+numberStore.add(42);
+
+6.Generic Constraints
+You can restrict what types are allowed:
+function logLength<T extends { length: number }>(arg: T) {
+  console.log(arg.length);
+}
+
+logLength("Hello"); // ✅ Works
+logLength([1, 2, 3]); // ✅ Works
+logLength(42); // ❌ Error: number has no 'length'
 
 
