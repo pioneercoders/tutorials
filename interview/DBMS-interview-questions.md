@@ -15,3 +15,18 @@
 
  - Allows backup and recovery.
 
+#### 3.What is data independence?
+- The ability to change the database schema without changing the application programs.
+
+- Logical data independence: Change in logical schema doesn’t affect applications.
+
+- Physical data independence: Change in physical storage doesn’t affect logical structure.
+
+#### 4.Types of databases:
+- Hierarchical – Data in tree-like structure.
+
+- Network – Data as records connected via links.
+
+- Relational – Data in tables (most common).
+
+- Object-oriented – Data as objects.
