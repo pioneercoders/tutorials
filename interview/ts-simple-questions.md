@@ -75,21 +75,23 @@ let numbers: number[] = [1, 2, 3, 4];
 let names: string[] = ["haswin", "devansh", "Anu"];
 ```
 2. Using Generic Array Type (Array<type>)
-
+```typescript
 let numbers: Array<number> = [1, 2, 3, 4];
 let names: Array<string> = ["haswin", "devansh", "Anu"];
-
+```
 3.Array with Multiple Types (Union Type)
-
+```typescript
 let mixed: (number | string)[] = [1, "two", 3, "four"];
-
+```
 4. Readonly Array
+```typescript
 let colors: readonly string[] = ["red", "green"];
 // colors.push("blue"); ❌ Error
-
+```
 5.Tuple (Fixed Length & Types)
+```typescript
 let person: [string, number] = ["haswin", 25];
-
+```
 If you know the type of elements, always specify it — it helps TypeScript catch errors early and improves IntelliSense.
 
 #### 7.How do you define a tuple in TypeScript?
@@ -101,15 +103,17 @@ The number of elements is fixed
 The type of each element is known and can be different
 
 Syntax:
+```typescript
 let tupleName: [type1, type2, ..., typeN] = [value1, value2, ..., valueN];
-
+```
 Example:
+```typescript
 let person: [string, number, boolean] = ["Keerthi", 25, true];
 
 console.log(person[0]); // "Keerthi"
 console.log(person[1]); // 25
 console.log(person[2]); // true
-
+```
 Arrays can have any number of elements of the same type,
 while tuples have a fixed length and predetermined types for each position.
 
@@ -127,12 +131,13 @@ Automatically binds this (doesn’t change this context)
 Works well with callbacks & functional programming
 
 Syntax
-
+```typescript
 const functionName = (param1: Type1, param2: Type2): ReturnType => {
   // function body
 };
-
+```
 Example
+```typescript
 const add = (a: number, b: number): number => {
   return a + b;
 };
@@ -141,7 +146,7 @@ console.log(add(5, 3)); // 8
 
 Single-Line Arrow Function (Implicit Return)
 const multiply = (x: number, y: number): number => x * y;
-
+```
 #### 9.What is function overloading in TypeScript?
 
 Function overloading in TypeScript means you can define multiple function signatures for a single function,
@@ -161,6 +166,7 @@ but they have some differences in capabilities, extension, and usage.
 
 1. Basic Similarity
 Both can define object structures:
+```typescript
 interface Person {
   name: string;
   age: number;
@@ -170,7 +176,7 @@ type PersonType = {
   name: string;
   age: number;
 };
-
+```
 2. Key Differences
 
 | Feature                      | `interface`                                                                                    | `type`                                                                      |
@@ -193,6 +199,7 @@ Use type when you need unions, intersections, or complex type expressions.
 The readonly modifier in TypeScript is used to make a property immutable — meaning it can only be assigned a value once (either during declaration or in the constructor, if it’s in a class).
 1.For Object Properties
 When used in interfaces or type aliases, readonly prevents changing the property after it’s set.
+```typescript
 interface Person {
   readonly name: string;
   age: number;
@@ -202,16 +209,18 @@ const p: Person = { name: "Haswin", age: 25 };
 
 p.age = 26;      // ✅ OK
 // p.name = "Ravi"; // ❌ Error: Cannot assign to 'name' because it is a read-only property
-
+```
 2.For Arrays
 TypeScript provides readonly arrays that cannot be modified.
+```typescript
 let colors: readonly string[] = ["red", "green", "blue"];
 
 // colors.push("yellow"); // ❌ Error
 // colors[0] = "pink";    // ❌ Error
-
+```
 3.For Class Properties
 readonly in a class means the property can be assigned only once, inside the constructor or at declaration.
+```typescript
 class Car {
   readonly model: string;
   
@@ -222,7 +231,7 @@ class Car {
 
 const c = new Car("Tesla");
 // c.model = "BMW"; // ❌ Error
-
+```
 readonly only prevents reassignment;
 it does not make nested objects immutable.
 
