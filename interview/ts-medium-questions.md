@@ -445,6 +445,72 @@ class Person {
 const p = new Person(1);
 p.id = 2; // ❌ Error: read-only property
 
+#### 8.What are intersection types (&) and union types (|)? Give examples of when you’d use them.
+
+In TypeScript, intersection types (&) and union types (|) let you combine or allow multiple types in flexible ways — but they mean very different things.
+
+1. Union Types (|)
+"Either this type or that type"
+A value can be one of several types.
+
+let value: string | number;
+value = "Hello"; // ✅ OK
+value = 42;      // ✅ OK
+value = true;    // ❌ Error
+
+Common use cases:
+
+Function parameters that accept multiple formats.
+
+API responses with different possible shapes.
+function printId(id: string | number) {
+  console.log(`ID: ${id}`);
+}
+
+printId(101);      // ✅
+printId("abc123"); // ✅
+
+2.Intersection Types (&)
+"Must satisfy all types at the same time"
+A value must have all properties/methods from all combined types.
+interface Name {
+  name: string;
+}
+interface Age {
+  age: number;
+}
+
+type Person = Name & Age;
+
+const p: Person = {
+  name: "Alice",
+  age: 30
+}; // ✅ Must have BOTH name and age
+
+Common use cases:
+
+Combining multiple interfaces into one.
+
+type Developer = { skills: string[] };
+type Manager = { teamSize: number };
+
+type TechLead = Developer & Manager;
+
+const lead: TechLead = {
+  skills: ["TypeScript", "Angular"],
+  teamSize: 5
+};
+
+3.Quick Analogy
+Union (|) → "This OR that" — like a menu where you pick one dish.
+
+Intersection (&) → "This AND that" — like a combo meal that includes everything.
+
+ 4.When to Use Each
+ | Type                   | Use When...                                                    |                                                              |
+| ---------------------- | -------------------------------------------------------------- | ------------------------------------------------------------ |
+| \*\*Union (\`          | \`)\*\*                                                        | You want flexibility — value can be one of multiple options. |
+| **Intersection (`&`)** | You want to merge multiple types into a single required shape. |                                                              |
 
 
 
