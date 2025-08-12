@@ -142,6 +142,47 @@ console.log(add(5, 3)); // 8
 Single-Line Arrow Function (Implicit Return)
 const multiply = (x: number, y: number): number => x * y;
 
+#### 9.What is function overloading in TypeScript?
+
+Function overloading in TypeScript means you can define multiple function signatures for a single function,
+so the same function name can handle different parameter types or counts, but still provide type safety.
+
+How It Works
+You write multiple function signatures (overload declarations) with different parameter and/or return types.
+
+You write one implementation that handles all cases.
+
+TypeScript will check at compile time that calls match one of the declared signatures.
+
+#### 10.What is the difference between interface and type in TypeScript?
+
+In TypeScript, both interface and type are used to define the shape (structure) of data,
+but they have some differences in capabilities, extension, and usage.
+
+1. Basic Similarity
+Both can define object structures:
+interface Person {
+  name: string;
+  age: number;
+}
+
+type PersonType = {
+  name: string;
+  age: number;
+};
+
+2. Key Differences
+
+| Feature                      | `interface`                                                                                    | `type`                                                                      |
+| ---------------------------- | ---------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| **Extension / Inheritance**  | Can **extend** other interfaces or multiple interfaces (`extends`)                             | Can **intersect** with other types using `&`                                |
+| **Merging**                  | Supports **declaration merging** (can define the same interface multiple times and they merge) | Cannot be re-declared; no merging                                           |
+| **Usage**                    | Best for defining object shapes, class contracts                                               | Can represent **objects, primitives, unions, tuples, function types**, etc. |
+| **Complex Types**            | Limited to describing objects, arrays, and functions                                           | More flexible — can describe unions, intersections, conditional types       |
+| **Implements (in classes)**  | ✅ Yes                                                                                          | ✅ Yes                                                                       |
+| **Extending Built-in Types** | ✅ Easier with `interface`                                                                      | Possible, but not as straightforward                                        |
+
+
 
 
 
