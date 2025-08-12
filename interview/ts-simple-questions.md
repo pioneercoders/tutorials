@@ -183,6 +183,52 @@ type PersonType = {
 | **Extending Built-in Types** | ✅ Easier with `interface`                                                                      | Possible, but not as straightforward                                        |
 
 
+Rule of Thumb
+Use interface when defining object shapes or class contracts, especially when you expect them to be extended or merged.
+
+Use type when you need unions, intersections, or complex type expressions.
+
+#### 11.What is the readonly modifier in TypeScript?
+
+The readonly modifier in TypeScript is used to make a property immutable — meaning it can only be assigned a value once (either during declaration or in the constructor, if it’s in a class).
+1.For Object Properties
+When used in interfaces or type aliases, readonly prevents changing the property after it’s set.
+interface Person {
+  readonly name: string;
+  age: number;
+}
+
+const p: Person = { name: "Haswin", age: 25 };
+
+p.age = 26;      // ✅ OK
+// p.name = "Ravi"; // ❌ Error: Cannot assign to 'name' because it is a read-only property
+
+2.For Arrays
+TypeScript provides readonly arrays that cannot be modified.
+let colors: readonly string[] = ["red", "green", "blue"];
+
+// colors.push("yellow"); // ❌ Error
+// colors[0] = "pink";    // ❌ Error
+
+3.For Class Properties
+readonly in a class means the property can be assigned only once, inside the constructor or at declaration.
+class Car {
+  readonly model: string;
+  
+  constructor(model: string) {
+    this.model = model; // ✅ Allowed
+  }
+}
+
+const c = new Car("Tesla");
+// c.model = "BMW"; // ❌ Error
+
+readonly only prevents reassignment;
+it does not make nested objects immutable.
+
+If you need deep immutability, you need Readonly<T> utility type or external libraries.
+
+
 
 
 
