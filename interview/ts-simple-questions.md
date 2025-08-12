@@ -43,5 +43,29 @@ but they differ in scope, reassignment rules, and hoisting behavior.
 | `const` | ❌ No (must be assigned at declaration) | ❌ No                          |
 
 
+#### 4.What is the purpose of type annotations in TypeScript?
+The purpose of type annotations in TypeScript is to explicitly tell the compiler what type of data a variable, function parameter, or return value should hold.
+
+They help catch errors early (at compile time) and make the code more readable, maintainable, and predictable.
+
+Type annotations act like labels that tell TypeScript (and other developers) the shape and type of data you intend to use, ensuring safer and more maintainable code.
+
+#### 5.Name some basic data types in TypeScript.
+Some basic data types in TypeScript are:
+
+| Data Type       | Description                                                             | Example                                                 |
+| --------------- | ----------------------------------------------------------------------- | ------------------------------------------------------- |
+| **`number`**    | Represents numeric values (integer, float, hex, binary, octal)          | `let age: number = 25;`                                 |
+| **`string`**    | Represents text values                                                  | `let name: string = "Keerthi";`                         |
+| **`boolean`**   | Represents `true` or `false`                                            | `let isActive: boolean = true;`                         |
+| **`null`**      | Represents an explicitly empty value                                    | `let data: null = null;`                                |
+| **`undefined`** | Represents a variable with no value assigned                            | `let value: undefined = undefined;`                     |
+| **`any`**       | Can store any type (disables type checking)                             | `let randomValue: any = "hello";`                       |
+| **`void`**      | Used for functions that don’t return a value                            | `function log(): void { console.log("Hello"); }`        |
+| **`unknown`**   | Type-safe alternative to `any`; must check before use                   | `let data: unknown = 10;`                               |
+| **`never`**     | Represents a value that never occurs (e.g., function that throws error) | `function fail(): never { throw new Error("Error!"); }` |
+
+
+
 
 
