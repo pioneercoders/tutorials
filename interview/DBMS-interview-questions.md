@@ -4,7 +4,7 @@
 - RDBMS (Relational DBMS): Stores data in tables with relationships based on keys. Example: MySQL, PostgreSQL.
 - Key difference: RDBMS follows relational model, supports normalization and ACID properties, while DBMS may not.
 
-  #### 2. Advantages of DBMS over file system:
+#### 2. Advantages of DBMS over file system:
  - Reduces data redundancy.
 
  - Provides data security.
