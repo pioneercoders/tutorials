@@ -161,19 +161,51 @@ Core components & recommended settings
 
 - Maintenance window: define a maintenance window and prefer manual minor upgrades in critical systems.
 
+Connection & failover behavior
 
+- Managed endpoints: RDS/Aurora provides a single writer endpoint (and reader endpoint for Aurora) — after failover the endpoint DNS is updated automatically. Applications should use the cluster writer endpoint rather than instance IPs.
 
+- RDS Proxy: use RDS Proxy (or PgBouncer / ProxySQL for self-managed) to pool connections and reduce connection storms during failover and to improve failover resilience.
 
+- Retry logic: clients should implement exponential backoff, retry with idempotency, and short transaction timeouts.
 
+- Session state: keep application stateless or store sessions in DynamoDB/ElastiCache with multi-AZ replication.
 
+Scaling & read traffic
 
+- Read replicas: use read replicas for read scaling (Aurora Replicas are preferred for low-lag). Monitor replica lag and distribute reads via reader endpoints or custom proxies.
 
+- Write scaling: scale vertically (bigger instance), or shard at application layer if write scale exceeds a single DB.
 
+Cross-region DR
 
+- Snapshots + snapshot copy: regularly copy snapshots to another region (cheap but higher RTO).
 
+- Read replica cross-region: create async read replica in another region, promote during DR (longer RTO and potential data loss).
 
+- Aurora Global DB: best for fast cross-region recovery and read locality; designed for RTO in minutes and near zero RPO for most workloads.
 
+#### 8. What is the difference between an AWS Region and an Availability Zone (AZ)?
 
+- Region: A physical geographical location (e.g., us-east-1, ap-south-1) that contains multiple Availability Zones.
 
+- Availability Zone (AZ): An isolated data center within a Region. Each Region has 2–6 AZs connected via low-latency networking.
+Example: us-east-1 (N. Virginia) has multiple AZs like us-east-1a, us-east-1b.
+
+#### 9.What is the difference between S3 Standard, S3 IA, and S3 Glacier?
+
+- S3 Standard: High durability, high availability, low latency; suitable for frequently accessed data.
+
+- S3 IA (Infrequent Access): Lower storage cost, higher retrieval cost; for infrequently accessed but important data.
+
+- S3 Glacier: Very low storage cost, high retrieval time; for archival data.
+  
+#### 10.What is the difference between AWS CloudFormation and Terraform?
+
+- CloudFormation: AWS-native Infrastructure as Code (IaC) service.
+
+- Terraform: Open-source multi-cloud IaC tool.
+  
+- Key Point: Terraform works with multiple providers, CloudFormation is AWS-specific.
 
 
