@@ -5,15 +5,11 @@ It’s basically a superset of JavaScript — which means any valid JavaScript c
 Key Differences Between TypeScript and JavaScript
 | Feature                   | JavaScript                                          | TypeScript                                                                        |
 | ------------------------- | --------------------------------------------------- | --------------------------------------------------------------------------------- |
-| **Typing**                | Dynamically typed (types are determined at runtime) | Statically typed (types are checked at compile time)  
-
-| **Compilation**           | Interpreted directly by browsers/Node.js            | Needs to be compiled (transpiled) to JavaScript before running        
-
-| **Error Detection**       | Errors are found at runtime                         | Many errors are caught during compile time       
-
-| **Language Features**     | Standard ECMAScript features                        | All JavaScript features **+** type annotations, interfaces, enums, generics, etc.
-
-| **IDE Support**           | Limited IntelliSense and refactoring support        | Excellent IntelliSense, autocompletion, and refactoring due to type information 
-
+| **Typing**                | Dynamically typed (types are determined at runtime) | Statically typed (types are checked at compile time)                              |
+| **Compilation**           | Interpreted directly by browsers/Node.js            | Needs to be compiled (transpiled) to JavaScript before running                    |
+| **Error Detection**       | Errors are found at runtime                         | Many errors are caught during compile time                                        |
+| **Language Features**     | Standard ECMAScript features                        | All JavaScript features **+** type annotations, interfaces, enums, generics, etc. |
+| **IDE Support**           | Limited IntelliSense and refactoring support        | Excellent IntelliSense, autocompletion, and refactoring due to type information   |
 | **Use in Large Projects** | Can become hard to maintain as it grows             | Easier to scale and maintain due to strong typing and tooling support             |
+            |
 
