@@ -92,6 +92,56 @@ let person: [string, number] = ["haswin", 25];
 
 If you know the type of elements, always specify it — it helps TypeScript catch errors early and improves IntelliSense.
 
+#### 7.How do you define a tuple in TypeScript?
+
+In TypeScript, a tuple is a special type of array where:
+
+The number of elements is fixed
+
+The type of each element is known and can be different
+
+Syntax:
+let tupleName: [type1, type2, ..., typeN] = [value1, value2, ..., valueN];
+
+Example:
+let person: [string, number, boolean] = ["Keerthi", 25, true];
+
+console.log(person[0]); // "Keerthi"
+console.log(person[1]); // 25
+console.log(person[2]); // true
+
+Arrays can have any number of elements of the same type,
+while tuples have a fixed length and predetermined types for each position.
+
+#### 8.How do you define an arrow function in TypeScript?
+In TypeScript, an arrow function is defined using the => syntax, just like in JavaScript,
+but you can add type annotations for parameters and the return value.
+
+
+ Why use Arrow Functions in TypeScript?
+
+Shorter syntax
+
+Automatically binds this (doesn’t change this context)
+
+Works well with callbacks & functional programming
+
+Syntax
+
+const functionName = (param1: Type1, param2: Type2): ReturnType => {
+  // function body
+};
+
+Example
+const add = (a: number, b: number): number => {
+  return a + b;
+};
+
+console.log(add(5, 3)); // 8
+
+Single-Line Arrow Function (Implicit Return)
+const multiply = (x: number, y: number): number => x * y;
+
 
 
 
