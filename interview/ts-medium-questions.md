@@ -128,3 +128,52 @@ You are in a temporary prototyping phase.
 
 You truly cannot type the value yet and don’t care about type safety.
 
+#### 3.How do readonly properties work in TypeScript? Can you make an array readonly?
+
+In TypeScript, the readonly modifier is used to make properties immutable after they are assigned — meaning you can set them once (either during declaration or in the constructor), but you cannot reassign them later.
+
+1.Readonly on Object Properties
+class Person {
+  readonly name: string;
+
+  constructor(name: string) {
+    this.name = name; // ✅ Allowed (initial assignment)
+  }
+
+  changeName(newName: string) {
+    this.name = newName; // ❌ Error: Cannot assign to 'name' because it is a read-only property
+  }
+}
+
+const p = new Person("Alice");
+p.name = "Bob"; // ❌ Error
+
+readonly works for:
+
+Class properties
+
+Object properties
+
+Interface/type definitions
+
+Readonly in Interfaces and Types
+interface User {
+  readonly id: number;
+  name: string;
+}
+
+const u: User = { id: 1, name: "John" };
+u.id = 2; // ❌ Error
+
+Both approaches:
+
+Prevent modifying methods (push, pop, splice, etc.).
+
+Still allow reading values and using non-mutating methods (map, filter, etc.).
+
+ Important Notes
+readonly prevents reassignment of a property or array element, but does not make nested objects immutable.
+
+If you want deep immutability, you’d need extra tooling (like Readonly<T> recursively).
+
+
