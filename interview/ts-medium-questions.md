@@ -513,6 +513,62 @@ Intersection (&) → "This AND that" — like a combo meal that includes everyth
 | **Intersection (`&`)** | You want to merge multiple types into a single required shape. |                                                              |
 
 
+#### 8.Explain mapped types with an example.
+Mapped types in TypeScript let you create new types by transforming each property of an existing type according to a specific rule.
+
+Think of them as a “loop” over the keys of a type that changes their modifiers (optional, readonly, required) or their value types.
+
+interface User {
+  id: number;
+  name: string;
+  email: string;
+}
+
+// Mapped type to make all properties readonly
+type ReadonlyUser = {
+  readonly [K in keyof User]: User[K];
+};
+
+const u: ReadonlyUser = { id: 1, name: "Alice", email: "a@example.com" };
+u.name = "Bob"; // ❌ Error: Cannot assign to 'name' because it is a read-only property
+
+Here:
+
+K in keyof User iterates over "id" | "name" | "email".
+
+User[K] gets the type of each property.
+
+readonly modifier is applied to each property.
+
+2. Built-in Mapped Types
+TypeScript’s utility types (Partial<T>, Required<T>, Readonly<T>, Record<K, T>) are all built with mapped types.
+
+Example: Partial<T> internally is like:
+type Partial<T> = {
+  [K in keyof T]?: T[K];
+};
+
+This makes all properties optional.
+
+3.Custom Transformation Example
+You can also transform value types:
+
+type Stringify<T> = {
+  [K in keyof T]: string;
+};
+
+type StringifiedUser = Stringify<User>;
+/*
+type StringifiedUser = {
+  id: string;
+  name: string;
+  email: string;
+}
+*/
+4.Why use mapped types?
+They avoid repetitive code when modifying many properties.
+
+They make your types DRY (Don’t Repeat Yourself).
 
 
 
