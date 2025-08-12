@@ -30,3 +30,53 @@
 - Relational – Data in tables (most common).
 
 - Object-oriented – Data as objects.
+
+#### 5.What is a primary key? Can it be NULL?
+- A primary key uniquely identifies a record in a table and cannot be NULL or duplicate.
+
+#### 6.What is a foreign key?
+- A foreign key is a field in one table that refers to the primary key in another table to maintain referential integrity.
+
+#### 7.Candidate key, primary key, super key
+
+- Candidate key: Minimum set of attributes that can uniquely identify a row.
+
+- Primary key: One selected candidate key.
+
+- Super key: Any set of attributes that uniquely identifies a row (may have extra attributes).
+
+#### 8.Schema vs. instance:
+
+- Schema: Structure/blueprint of the database (design).
+
+- Instance: Actual data at a given time.
+
+#### 9. Levels of data abstraction
+
+- Physical level – How data is stored.
+
+- Logical level – What data is stored and relationships.
+
+- View level – User interaction with the data.
+
+#### 10.Data redundancy
+
+-Unnecessary duplication of data. Reduced by normalization.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
