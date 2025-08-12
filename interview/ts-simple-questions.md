@@ -65,6 +65,33 @@ Some basic data types in TypeScript are:
 | **`unknown`**   | Type-safe alternative to `any`; must check before use                   | `let data: unknown = 10;`                               |
 | **`never`**     | Represents a value that never occurs (e.g., function that throws error) | `function fail(): never { throw new Error("Error!"); }` |
 
+#### 6.How do you declare an array in TypeScript?
+
+In TypeScript, you can declare an array in two main ways — by specifying the element type either with square brackets ([]) or with a generic type (Array<type>).
+
+1. Using Square Brackets ([])
+ 
+let numbers: number[] = [1, 2, 3, 4];
+let names: string[] = ["haswin", "devansh", "Anu"];
+
+2. Using Generic Array Type (Array<type>)
+
+let numbers: Array<number> = [1, 2, 3, 4];
+let names: Array<string> = ["haswin", "devansh", "Anu"];
+
+3.Array with Multiple Types (Union Type)
+
+let mixed: (number | string)[] = [1, "two", 3, "four"];
+
+4. Readonly Array
+let colors: readonly string[] = ["red", "green"];
+// colors.push("blue"); ❌ Error
+
+5.Tuple (Fixed Length & Types)
+let person: [string, number] = ["haswin", 25];
+
+If you know the type of elements, always specify it — it helps TypeScript catch errors early and improves IntelliSense.
+
 
 
 
