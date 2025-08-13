@@ -29,8 +29,6 @@ In TypeScript (and modern JavaScript), let, const, and var are all used to decla
 but they differ in scope, reassignment rules, and hoisting behavior.
 1. Scope
 
-## Variable Declaration Keywords in JavaScript
-
 | Keyword | Scope           | Meaning                                                      |
 | ------- | --------------- | ------------------------------------------------------------ |
 | `var`   | Function-scoped | Available throughout the entire function where it’s declared |
