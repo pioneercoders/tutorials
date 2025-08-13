@@ -18,22 +18,6 @@ The loop runs phase by phase, picking up callbacks from queues.
 3.The Phases of the Event Loop
 Here’s the exact order of phases:
 
-┌──────────────────────┐
-│  timers              │  // setTimeout, setInterval
-├──────────────────────┤
-│  pending callbacks   │  // I/O callbacks from previous operations
-├──────────────────────┤
-│  idle, prepare       │  // Internal use only (libuv)
-├──────────────────────┤
-│  poll                │  // Main phase for I/O
-├──────────────────────┤
-│  check               │  // setImmediate()
-├──────────────────────┤
-│  close callbacks     │  // e.g., socket.on('close')
-└──────────────────────┘
-
-
-
 Phase 1: Timers
 Handles setTimeout() and setInterval() callbacks.
 
