@@ -333,22 +333,22 @@ To create an immutable class in java, you have to do following steps.
 + Perform cloning of objects in the getter methods to return a copy rather than returning the actual object reference.
 
 
-## 22. What is the difference between an Interface and an Abstract class?****
+## 22. What is the difference between an Interface and an Abstract class?
 
     Both define an interface that has to be implemented. Abstract class can contain concrete methods as well as abstract. Abstract class can contain regular class fields. Interface can contain only public static final fields.
 
-## 23. What is the purpose of garbage collection in Java, and when is it used?**
+## 23. What is the purpose of garbage collection in Java, and when is it used?
 
     GC in Java is the mechanism that keeps track of memory and objects residing in memory. GC collects the object when it is no longer needed (usually when no references to the object are available).
 
-## 24. What is the difference between a constructor and a method?**
+## 24. What is the difference between a constructor and a method?
 
     We can say that constructor is a special kind of method that instantiates the object. The main differences are
 
     * Special treatment of constructors when they are called (memory allocation, superclass constructors chain)
     * More caution is required when writing a constructor
 
-## 25. State the significance of public, private, protected, default modifiers both singly and in combination and state the effect of package relationships on declared items qualified by these modifiers.**
+## 25. State the significance of public, private, protected, default modifiers both singly and in combination and state the effect of package relationships on declared items qualified by these modifiers.
 
     * public  
         class -- accessible from anywhere. Can be subclassed by anyone (if not declared final)  
@@ -375,11 +375,11 @@ To create an immutable class in java, you have to do following steps.
         inner class -- same  
         nested class -- same 
 
-## 26. What is an abstract class?**
+## 26. What is an abstract class?
 
     An abstract class is a java class that has one or more abstract methods (no body). Abstract classes cannot be instantiated. Abstract class defines an interface that has to be implemented by all its subclasses.
 
-## 27. What is static in java?**
+## 27. What is static in java?
 
     static is Java Language keyword.  
     a) When used with a method defines a method of a class.  
@@ -388,37 +388,37 @@ To create an immutable class in java, you have to do following steps.
     d) Also can be used for static initialization block.  
     e) Can be used as a static initialization block
 
-## 28. What is final?**
+## 28. What is final?
 
     final is Java Language keyword.  
     a) When used with a method protects it from being overridden in subclasses. Done for security and/or performance reasons.  
     b) When used with a field means that the value stored in the field cannon be changed after initialization. Not to be confused with immutability of the object.  
     c) When used with a class declaration protects it from being subclassed. Done for security and/or performance reasons. Also for immutability. Many of Java core classes are final (e.g. String)
 
-## 29. How can one prove that the array is not null but empty using one line of code?**
+## 29. How can one prove that the array is not null but empty using one line of code?
 
     array == null ? xx : array.length == 0
     if the array is instance field it's initialized to null. And this code works.
     if the array is local variable the compiler will generate an error if it has not been initialized
 
-## 30. What environment variables do I need to set on my machine in order to be able to run Java programs?**
+## 30. What environment variables do I need to set on my machine in order to be able to run Java programs?
 
     CLASSPATH, PATH and/or JAVA_HOME
 
-## 31. Do I need to import java.lang package any time? Why ?**
+## 31. Do I need to import java.lang package any time? Why ?
 
     No. It is imported by default
 
-## 32.Can I import same package/class twice? Will the JVM load the package twice at runtime?**
+## 32.Can I import same package/class twice? Will the JVM load the package twice at runtime?
 
     Yes you can declare import twice in the import section.
     No it will not be loaded twice at runtime.
 
-## 33.What is Overriding?**
+## 33.What is Overriding?
 
     Changing method behavior in the subclasses.
 
-## 34.What are different types of inner classes?**
+## 34.What are different types of inner classes?
 
     if declared with static -- it's nested class. Nested classes are fairly independent and treated as top-level classes. But the constructor call is different.
     To construct one: new OuterClassNeme.InnerClassName().
@@ -429,7 +429,7 @@ To create an immutable class in java, you have to do following steps.
     local class -- declared and visible only within a block of code
     anonymous -- same, but they don't even have a name.
 
-## 35. Are the imports checked for validity at compile time? e.g. will the code containing an import such as java.lang.ABCD compile?**
+## 35. Are the imports checked for validity at compile time? e.g. will the code containing an import such as java.lang.ABCD compile?
 
     Yes, they are checked. No it won't compile.
 
@@ -437,96 +437,96 @@ To create an immutable class in java, you have to do following steps.
 
     No. This declaration will only import classes located directly in com.MyTest package.
 
-## 37.What is the difference between declaring a variable and defining a variable?**
+## 37.What is the difference between declaring a variable and defining a variable?
 
     Declaring is declaring. Defining is assigning some value to the declared vaiable.
 
-## 38. What is the default value of an object reference declared as an instance variable?**
+## 38. What is the default value of an object reference declared as an instance variable?
 
     null
 
-## 39. Can a top level class be private or protected?**
+## 39. Can a top level class be private or protected?
 
     No. It is only allowed to be public or to have default access modifier.
 
-## 40. What type of parameter passing does Java support?**
+## 40. What type of parameter passing does Java support?
 
     Java passes all parameters by values. The references to objects are passed by values.
 
-## 41. Primitive data types are passed by reference or pass by value?**
+## 41. Primitive data types are passed by reference or pass by value?
 
     See above
 
-## 42.Objects are passed by value or by reference?**
+## 42.Objects are passed by value or by reference?
 
     See above
 
-## 43.What are pass by reference and pass by value?**
+## 43.What are pass by reference and pass by value?
 
     Pass by reference -- a reference to the Object is passed to the method.
     Pass by value -- a copy of the actual value of the Object is passed to the method. The method is then unable to modify the original Object. (Not true in Java. In Java references to objects are passed by value)
 
-## 44.Give a simplest way to find out the time a method takes for execution without using any profiling tool?**
+## 44.Give a simplest way to find out the time a method takes for execution without using any profiling tool?
 
     System.currentTimeMillis() in the beginning and end of the method
 
-## 45.Is Empty .java file a valid source file?**
+## 45.Is Empty .java file a valid source file?
 
     Yes it is.
 
-## 46.Can a .java file contain more than one java classes?**
+## 46.Can a .java file contain more than one java classes?
 
     Yes it can. It has to contain only one top level public java class but it can contain any number of inner, anonymous and top level classes with default access modifier.
 
-## 47. Is String a primitive data type in Java?**
+## 47. Is String a primitive data type in Java?
 
     No. String is an Object. An immutable one.
 
-## 48. Is main a keyword in Java?**
+## 48. Is main a keyword in Java?
 
     No. main is the name of the method that is treated in special way if declared properly.
 
-## 49. Is next a keyword in Java?**
+## 49. Is next a keyword in Java?
 
     No. next() is method of Iterator or Enumeration interface.
 
-## 50. Is delete a keyword in Java?**
+## 50. Is delete a keyword in Java?
 
     No. delete is not a keyword. And I cannot even remember a class that has a method called delete(). Rather remove()
 
-##  52. Is exit a keyword in Java?**
+##  52. Is exit a keyword in Java?
 
     No. exit() is a method of java.lang.System class
 
-## 53.What happens if you dont initialize an instance variable of any of the primitive types in Java?**
+## 53.What happens if you dont initialize an instance variable of any of the primitive types in Java?
 
     It gets assigned the default value. 0 for int and long, 0.0 for float and double, false for boolean. Though I tried to compile a class where variables were not initialized and it didn't compile.
 
-## 54.What are the different scopes for Java variables?**
+## 54.What are the different scopes for Java variables?
 
     static fields, instance fields, method parameters, local variables
 
-## 55.What is the default value of the local variables?**
+## 55.What is the default value of the local variables?
 
     No default value. Default values are assigned to instance fields. Local variables have to be explicitly initialized.
 
-## 56.Does garbage collection guarantee that a program will not run out of memory?**
+## 56.Does garbage collection guarantee that a program will not run out of memory?
 
     No. Not at all. Example: recursive call. Or just create lots of objects until you get OutOfMemoryError (or is it an exception?)
 
-## 57.What is the purpose of finalization?**
+## 57.What is the purpose of finalization?
 
     Free up the resources. (e.g. close connections and streams, release a lock etc)
 
-## 58.Can a public class MyClass be defined in a source file named YourClass.java?**
+## 58.Can a public class MyClass be defined in a source file named YourClass.java?
 
     no. Unless it is a nested class public class.
 
-## 59.What will be the output of the following statement? System.out.println ("1" **+ 3);**
+## 59.What will be the output of the following statement? System.out.println ("1" **+ 3);
 
     13
 
-## 60.What will be the default values of all the elements of an array defined as an instance variable?**
+## 60.What will be the default values of all the elements of an array defined as an instance variable?
 
     All elements will be initialized to default value of corresponding type.
 
@@ -544,23 +544,23 @@ To create an immutable class in java, you have to do following steps.
     | double        | 8 bytes          |                                         |
 
 
-## 62.Contract between equals() and hashCode()**
+## 62.Contract between equals() and hashCode()
 
     if a.equals(b) returns true then a.hashCode() == b.hashCode() is also true. Note that equal hashCode doesn't mean anything.
 
-## 63.What different between StringBuffer and StringBuilder?**
+## 63.What different between StringBuffer and StringBuilder?
 
     StringBuilder -- new. StringBuffer -- old. StringBuffer -- synchronized. Where possible use StringBuilder.
     Both represent mutable sequence of characters.
 
-## 64.What internal methods of String do you know?**
+## 64.What internal methods of String do you know?
 
     static methods of String class: valueOf
     indexOf, lastIndexOf, replace, contains, startsWith, endsWith, substring
     matches, split
     equals, isEmpty
 
-## 65.Purpose, types and creation of nested classes**
+## 65.Purpose, types and creation of nested classes
 
     Types of nested classes see above.
     Purpose:
@@ -573,20 +573,20 @@ To create an immutable class in java, you have to do following steps.
     One common use of anonymous classes is to create function objects on the fly. For example, the sort method invocation sorts an array of strings according to their length using an anonymous Comparator instance.
     To recap, there are four different kinds of nested classes, and each has its place. If a nested class needs to be visible outside of a single method or is too long to fit comfortably inside a method, use a member class. If each instance of the member class needs a reference to its enclosing instance, make it nonstatic; otherwise, make it static. Assuming the class belongs inside a method, if you need to create instances from only one location and there is a preexisting type that characterizes the class, make it an anonymous class; otherwise, make it a local class.
 
-## 66.What does it mean that an object or a class is mutable or immutable?**
+## 66.What does it mean that an object or a class is mutable or immutable?
 
     Immutability: the state of the object doesn't change
 
-## 67.Is it enough to define this class as final? To make this class immutable?**
+## 67.Is it enough to define this class as final? To make this class immutable?
 
     No. If the class is declared final it only means that it cannot be subclassed. If the instance of the class is declared to be final it only means that the reference will not change. The inner state of the object in both cases can change.
 
-## 68.Besides “String” do you know any other immutable classes?**
+## 68.Besides “String” do you know any other immutable classes?
 
     BigDecimal, BigInteger all classes that correspond to primitive types
     java.awt.Color
 
-## 69.Increasing/descreasing of methods visibility (inheritence)**
+## 69.Increasing/descreasing of methods visibility (inheritence)
 
     The main rule is that visibility cannot be reduced in the subclass
 
@@ -594,31 +594,31 @@ To create an immutable class in java, you have to do following steps.
 
     I would use StringBuilder class
 
-## 71.Garbage collection principles**
+## 71.Garbage collection principles
 
     The garbage collector first performs a task called marking. The garbage collector traverses the application graph, starting with the root objects; those are objects that are represented by all active stack frames and all the static variables loaded into the system. Each object the garbage collector meets is marked as being used, and will not be deleted in the sweeping stage. The sweeping stage is where the deletion of objects take place.
 
-## 72.Java de-compiler, when it could be helpful except studying, learning, stealing**
+## 72.Java de-compiler, when it could be helpful except studying, learning, stealing
 
     Recovering lost sources?TODO????????
 
-## 73.How is the virtual space divided in Java?**
+## 73.How is the virtual space divided in Java?
 
     http://stackoverflow.com/questions/1262328/how-is-the-java-memory-pool-divided
     http://docs.oracle.com/javase/6/docs/technotes/guides/management/jconsole.html
 
-## 74.What difference between float and BigDecimal. How they store the data?**
+## 74.What difference between float and BigDecimal. How they store the data?
 
     float is floating point number and can loose precision during the computations.
     BigDeciamal is fixed point number. The computations (which type of computations?) are guaranteed to maintain the needed precision.
     Internally BigDecimal consists of an arbitrary precision integer unscaled value and a 32-bit integer scale
     If no rounding mode is specified and the exact result cannot be represented, an exception is thrown
 
-## 75.What is deep copy of a Java object?**
+## 75.What is deep copy of a Java object?
 
     Deep copy creates a copy of the object including deep copies of all its fields.
 
-## 76.What are utilities for JVM monitoring? What is Jconsole?**
+## 76.What are utilities for JVM monitoring? What is Jconsole?
 
     From http://docs.oracle.com/javase/6/docs/technotes/tools/
 
@@ -642,69 +642,69 @@ To create an immutable class in java, you have to do following steps.
 
     Never used any of these tools yet. :(
 
-## 77.How and in what cases we need to configure sizes of memory areas in Java?**
+## 77.How and in what cases we need to configure sizes of memory areas in Java?
 
     In case of getting OutOfMemoryError: Java heap space. What other cases?
     JVM parameter -Xmx###m where ### is number of megabytes you need for the JVM.
     -Xms###m to set the initial heap size
     More info on this topic can be found here: http://blog.codecentric.de/en/2011/03/java-memory-configuration-and-monitoring-3rd-act/
 
-## 78.What is an Object and how do you allocate memory to it?**
+## 78.What is an Object and how do you allocate memory to it?
 
     Object is the base class in Java. Object in general case is an instance of a class. The memory is allocated when new operator is executed. The minimum size is 8 bytes (thats what you get if you call new Object). Each primitive data type takes 4 bytes, except double and long, which take 8 bytes.
 
-## 79.What are methods and how are they defined?**
+## 79.What are methods and how are they defined?
 
     Method is an abstraction that defines how a specific computation has to be carried out. Method "abstracts away" the code it contains.
 
-## 80.What is the use of bin and lib in JDK?**
+## 80.What is the use of bin and lib in JDK?
 
     bin -- all java binaries: javac, java, appletviewer, jconsole...
     lib -- java libraries
 
-## 81.What is casting?**
+## 81.What is casting?
 
     changing the type of the object.
 
-## 82.In how many ways can an argument be passed to a subroutine and explain them?**
+## 82.In how many ways can an argument be passed to a subroutine and explain them?
 
     only one. By value. See above
 
-## 83.What is the difference between an argument and a parameter?**
+## 83.What is the difference between an argument and a parameter?
 
     parameter -- abstract. argument -- concrete value of the parameter.
     parameters of the function are defined when the function is declared
     arguments of the funciton are defined when it is called
 
-## 84.What is final, finalize() and finally?**
+## 84.What is final, finalize() and finally?
 
     final -- Java keyword, see above
     finalize() -- gets called before the object is GC-ed
     finally -- Java keyword used in exception handling.
 
-## 85.What is UNICODE?**
+## 85.What is UNICODE?
 
     See info on Unicode here http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Character.html
 
-## 86.What is finalize() method?**
+## 86.What is finalize() method?
 
     See above.
 
-## 87.What are Transient and Volatile Modifiers?**
+## 87.What are Transient and Volatile Modifiers?
 
     Transient signifies that the field is not part of the object state (e.g. it's some derieved value or some cache). Transient fields are not present in serialized representation of the object.
     If field is declared with volatile keyword then any thread that reads the field will see the most recently written value [Effective Java Item 66]
 
-## 88.What is difference between overloading and overriding?**
+## 88.What is difference between overloading and overriding?
 
     overloading -- adding a method with the same name but different signature
     overriding -- changing the method implementation in the subclass
 
-## 89.What is meant by Inheritance and what are its advantages?**
+## 89.What is meant by Inheritance and what are its advantages?
 
     Inheritance is one of principles of OOP. It allows to create class hierarchies. Classes can inherit methods and properties from the base classes thus increasing code reuse.
 
-## 90.What is the difference between this() and super()?**
+## 90.What is the difference between this() and super()?
 
     this() calls the constructor of current class.
     super() calls the superclass constructor
@@ -712,48 +712,48 @@ To create an immutable class in java, you have to do following steps.
     this and super are references to the current object and to current object treated as superclass.
     this.new Something() has to be used to create inner classes
 
-## 91.What is the difference between superclass and subclass?**
+## 91.What is the difference between superclass and subclass?
 
     Obvious.
 
-## 92.What modifiers may be used with top-level class?**
+## 92.What modifiers may be used with top-level class?
 
     only public or default (package-private)
 
-## 93.What is a package?**
+## 93.What is a package?
 
     In Java package is a mechanism to oragnize classes into modules.
 
-## 94What is a reflection package?**
+## 94What is a reflection package?
 
     Not sure the question is clearly stated. What I would answer is pasted from javadoc of java.lang.reflect
     Provides classes and interfaces for obtaining reflective information about classes and objects. Reflection allows programmatic access to information about the fields, methods and constructors of loaded classes, and the use reflected fields, methods, and constructors to operate on their underlying counterparts on objects, within security restrictions.
 
-## 95.What is the difference between Integer and int?**
+## 95.What is the difference between Integer and int?
 
     Integer is a wrapper class for int primitive type. Integer can be used in generic collections whereas int cannot. Also contains a number of utility methods.
 
-## 96.What is a cloneable interface and how many methods does it contain?**
+## 96.What is a cloneable interface and how many methods does it contain?
 
     Cloneable -- is a marker interface and it doesn't contain any methods. It determines the behavior of Object’s protected clone implementation: if a class implements Cloneable, Object’s clone method returns a field-by-field copy of the object; otherwise it throws CloneNotSupportedException
 
-## 97.Can you have an inner class inside a method and what variables can you access?**
+## 97.Can you have an inner class inside a method and what variables can you access?
 
     You can create a local or anonymous class inside the method. It can access only final variables.
 
-## 98.What is the difference between String and StringBuffer?**
+## 98.What is the difference between String and StringBuffer?
 
-## 99.What is the difference between a while statement and a do statement?**
+## 99.What is the difference between a while statement and a do statement?
 
     do is guaranteed to execute at least once.
 
-## 100.What is the difference between static and non-static variables?**
+## 100.What is the difference between static and non-static variables?
 
     a) The way they are initialized. Static are initalized when the class is loaded. Non-static -- when it's instantiated.
     b) Non-static belong to the instance of an object while static are class variables.
     c) Static are accessed using ClassName.varName
 
-## 101.How does Java handle integer overflows and underflows?**
+## 101.How does Java handle integer overflows and underflows?
 
     It goes down to the MIN_INT value in case of overflow and to MAX_INT in case of overflow
 
