@@ -341,15 +341,6 @@ The time span when that happens, between the creation of a variable’s binding 
 
 Let's see this behavior with an example:
 
-```javascript
-function somemethod() {
-  console.log(counter1); // undefined
-  console.log(counter2); // ReferenceError
-  var counter1 = 1;
-  let counter2 = 2;
-}
-```
-
 #### 22.What is IIFE(Immediately Invoked Function Expression)?
 
 IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. The signature of it would be as below,
@@ -410,7 +401,7 @@ Memoization is a programming technique which attempts to increase a function’s
     console.log(message); //output : undefined
     var message = ’The variable Has been hoisted’;
  ```
-    The above code looks like as below to the interpreter,
+The above code looks like as below to the interpreter,
  ```javascript
     var message;
     console.log(message);
@@ -418,7 +409,7 @@ Memoization is a programming technique which attempts to increase a function’s
 ```
    #### 26.What are classes in ES6?
    In ES6, Javascript classes are primarily syntactical sugar over JavaScript’s existing prototype-based inheritance.
-    For example, the prototype based inheritance written in function expression as below,
+   For example, the prototype based inheritance written in function expression as below,
 ```javascript
     function Bike(model,color) {
         this.model = model;
@@ -429,7 +420,7 @@ Memoization is a programming technique which attempts to increase a function’s
         return this.model+ ' bike has' + this.color+ ' color';
     };
 ```
-    Whereas ES6 classes can be defined as an alternative
+Whereas ES6 classes can be defined as an alternative
 ```javascript
     class Bike{
       constructor(color, model) {
