@@ -152,3 +152,56 @@ Execution flow:
  - Non-blocking: Other tasks can run while waiting for slow operations.
 
  - Efficient I/O handling: Ideal for real-time applications (e.g., chats, streaming).
+
+#### 3.Explain the concept of backpressure in streams.
+
+In Node.js streams, backpressure refers to a situation where the data is being produced faster than it can be consumed.
+
+If the readable stream pushes data quicker than the writable stream can handle, the writable stream’s internal buffer starts filling up. If this is not handled properly, it can lead to memory bloat and even application crashes.
+
+How It Happens
+
+-  Readable stream emits data chunks continuously.
+
+-  Writable stream has a limited internal buffer size.
+
+-  If writable is still busy processing the previous chunk, new chunks start queuing.
+
+-  This “queue” growth is backpressure.
+
+Example
+```javascript
+const fs = require("fs");
+
+const readable = fs.createReadStream("large-file.txt");
+const writable = fs.createWriteStream("output.txt");
+
+readable.on("data", (chunk) => {
+  const canWrite = writable.write(chunk);
+  if (!canWrite) {
+    console.log("Backpressure detected! Pausing readable stream...");
+    readable.pause();
+  }
+});
+
+writable.on("drain", () => {
+  console.log("Buffer drained! Resuming readable stream...");
+  readable.resume();
+});
+
+```
+Explanation:
+
+ - writable.write(chunk) returns false when the internal buffer is full → Backpressure detected.
+
+ - We pause the readable stream to stop receiving more data.
+
+ - When the buffer drains, the drain event triggers, and we resume reading.
+
+Automatic Handling with .pipe()
+Node.js pipe() automatically handles backpressure:
+```javascript
+fs.createReadStream("large-file.txt")
+  .pipe(fs.createWriteStream("output.txt"));
+```
+Here, Node.js pauses and resumes the readable stream internally when backpressure occurs.
