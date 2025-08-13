@@ -341,16 +341,16 @@ The time span when that happens, between the creation of a variable’s binding 
 
 Let's see this behavior with an example:
 
-```javascript
+    ```javascript
 function somemethod() {
   console.log(counter1); // undefined
   console.log(counter2); // ReferenceError
   var counter1 = 1;
   let counter2 = 2;
 }
-```
+    ```
 #### 22. What is IIFE(Immediately Invoked Function Expression)?
- IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. The signature of it would be as below,
+IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. The signature of it would be as below,
  ```javascript
     (function ()
         {
