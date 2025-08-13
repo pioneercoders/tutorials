@@ -336,11 +336,11 @@ V8 manages memory allocation, deallocation, and garbage collection automatically
 
  Memory Limit
 
-     - By default, V8 has a memory limit (~2 GB for 64-bit systems, ~1 GB for 32-bit) for the heap.
+    - By default, V8 has a memory limit (~2 GB for 64-bit systems, ~1 GB for 32-bit) for the heap.
 
-     - You can increase it:
-     
-```javasript
+    - You can increase it:
+ 
+```bash
 node --max-old-space-size=4096 app.js  # 4GB heap
 ```
 
