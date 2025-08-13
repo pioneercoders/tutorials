@@ -2,7 +2,7 @@
 TypeScript is an open-source programming language developed and maintained by Microsoft.
 It’s basically a superset of JavaScript — which means any valid JavaScript code is also valid TypeScript code — but it adds extra features, the biggest being static typing.
 
-## Key Differences Between TypeScript and JavaScript
+#### Key Differences Between TypeScript and JavaScript
 | Feature                   | JavaScript                                          | TypeScript                                                                        |
 | ------------------------- | --------------------------------------------------- | --------------------------------------------------------------------------------- |
 | **Typing**                | Dynamically typed (types are determined at runtime) | Statically typed (types are checked at compile time)                              |
@@ -173,11 +173,12 @@ interface Person {
   age: number;
 }
 ```
+```typescript
 type PersonType = {
   name: string;
   age: number;
 };
-
+```
 2. Key Differences
 
 | Feature                      | `interface`                                                                                    | `type`                                                                      |
@@ -187,9 +188,9 @@ type PersonType = {
 | **Usage**                    | Best for defining object shapes, class contracts                                               | Can represent **objects, primitives, unions, tuples, function types**, etc. |
 | **Complex Types**            | Limited to describing objects, arrays, and functions                                           | More flexible — can describe unions, intersections, conditional types       |
 | **Implements (in classes)**  | ✅ Yes                                                                                          | ✅ Yes                                                                       |
-| **Extending Built-in Types** | ✅ Easier with `interface`                                                                      | Possible, but not as 
+| **Extending Built-in Types** | ✅ Easier with `interface`                                                                      | Possible, but not asstraightforward 
 
-straightforward                                        |
+                                       |
 
 
 Rule of Thumb
