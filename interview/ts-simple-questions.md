@@ -2,41 +2,41 @@
 TypeScript is an open-source programming language developed and maintained by Microsoft.
 It’s basically a superset of JavaScript — which means any valid JavaScript code is also valid TypeScript code — but it adds extra features, the biggest being static typing.
 
-1. Typing
+  1. Typing
 
-JavaScript: Dynamically typed — types are determined at runtime.
+  JavaScript: Dynamically typed — types are determined at runtime.
 
-TypeScript: Statically typed — types are checked at compile time.
+  TypeScript: Statically typed — types are checked at compile time.
 
-2. Compilation
+  2. Compilation
 
-JavaScript: Interpreted directly by browsers or Node.js.
+  JavaScript: Interpreted directly by browsers or Node.js.
 
-TypeScript: Needs to be compiled (transpiled) into JavaScript before running.
+  TypeScript: Needs to be compiled (transpiled) into JavaScript before running.
 
-3. Error Detection
+  3. Error Detection
 
-JavaScript: Errors are found only at runtime.
+  JavaScript: Errors are found only at runtime.
 
-TypeScript: Many errors are caught during compile time.
+  TypeScript: Many errors are caught during compile time.
 
-4. Language Features
+  4. Language Features
 
-JavaScript: Provides standard ECMAScript features.
+  JavaScript: Provides standard ECMAScript features.
 
-TypeScript: Includes all JavaScript features plus type annotations, interfaces, enums, generics, and more.
+  TypeScript: Includes all JavaScript features plus type annotations, interfaces, enums, generics, and more.
 
-5. IDE Support
+  5. IDE Support
 
-JavaScript: Limited IntelliSense and refactoring support.
+  JavaScript: Limited IntelliSense and refactoring support.
 
-TypeScript: Excellent IntelliSense, autocompletion, and refactoring because of type information.
+  TypeScript: Excellent IntelliSense, autocompletion, and refactoring because of type information.
 
-6. Use in Large Projects
+  6. Use in Large Projects
 
-JavaScript: Can become hard to maintain as the project grows.
+  JavaScript: Can become hard to maintain as the project grows.
 
-TypeScript: Easier to scale and maintain due to strong typing and rich tooling support.
+  TypeScript: Easier to scale and maintain due to strong typing and rich tooling support.
 
 
 #### 2.How do you declare a variable with a type in TypeScript?
