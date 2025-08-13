@@ -50,8 +50,6 @@ Terminated – Process has finished execution.
 | Heavier, requires more resources to create. | Lightweight, faster to create. |
 | Context switch is slower. | Context switch is faster. |
 
-
-
 #### 6.What is deadlock?
 
 Deadlock occurs when a set of processes are blocked because each process is holding a resource and waiting for another resource held by another process, creating a circular wait.
