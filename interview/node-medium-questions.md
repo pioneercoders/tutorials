@@ -33,6 +33,7 @@ Here’s the exact order of phases:
 └──────────────────────┘
 
 
+
 Phase 1: Timers
 Handles setTimeout() and setInterval() callbacks.
 
