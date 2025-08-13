@@ -317,6 +317,29 @@ Key Points
 
 - Works with npm ci for clean, reproducible installs in CI/CD pipelines.
 
+#### 6.How does Node.js handle memory management and garbage collection?
+Node.js handles memory management and garbage collection by relying on V8, the JavaScript engine it’s built on.
+V8 manages memory allocation, deallocation, and garbage collection automatically, so developers don’t need to manually free memory like in C or C++.
 
+1. Memory Management in Node.js
+   Memory Allocation
+    
+    - When you create objects, arrays, or variables, V8 allocates memory for them in the heap.
 
+    - Node.js applications are divided into:
+
+    - Heap → Stores objects, strings, closures, etc.
+
+    - Stack → Stores function calls and local primitive variables.
+
+    - C++ objects → Used internally by Node.js or native modules.
+
+ Memory Limit
+
+     - By default, V8 has a memory limit (~2 GB for 64-bit systems, ~1 GB for 32-bit) for the heap.
+
+     - You can increase it:
+```bash
+node --max-old-space-size=4096 app.js  # 4GB heap
+```
 
