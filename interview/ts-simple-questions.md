@@ -176,6 +176,7 @@ type PersonType = {
   name: string;
   age: number;
 };
+
 ```
 2. Key Differences
 
@@ -186,7 +187,9 @@ type PersonType = {
 | **Usage**                    | Best for defining object shapes, class contracts                                               | Can represent **objects, primitives, unions, tuples, function types**, etc. |
 | **Complex Types**            | Limited to describing objects, arrays, and functions                                           | More flexible — can describe unions, intersections, conditional types       |
 | **Implements (in classes)**  | ✅ Yes                                                                                          | ✅ Yes                                                                       |
-| **Extending Built-in Types** | ✅ Easier with `interface`                                                                      | Possible, but not as straightforward                                        |
+| **Extending Built-in Types** | ✅ Easier with `interface`                                                                      | Possible, but not as 
+
+straightforward                                        |
 
 
 Rule of Thumb
