@@ -341,9 +341,8 @@ GC in Java is the mechanism that keeps track of memory and objects residing in m
 
 ## 24. What is the difference between a constructor and a method?
     We can say that constructor is a special kind of method that instantiates the object. The main differences are
-
-    * Special treatment of constructors when they are called (memory allocation, superclass constructors chain)
-    * More caution is required when writing a constructor
+    - Special treatment of constructors when they are called (memory allocation, superclass constructors chain)
+    - More caution is required when writing a constructor
 
 ## 25. State the significance of public, private, protected, default modifiers both singly and in combination and state the effect of package relationships on declared items qualified by these modifiers.
 
