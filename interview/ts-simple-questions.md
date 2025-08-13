@@ -43,11 +43,11 @@ It’s basically a superset of JavaScript — which means any valid JavaScript c
 In TypeScript,
     you declare a variable with a type by adding a type annotation after the variable name using a colon (:).
 
-let variableName: type = value;
+    let variableName: type = value;
 
 (or)
 
-const variableName: type = value;
+    const variableName: type = value;
 
 #### 3.What is the difference between let, const, and var in TypeScript?
 
