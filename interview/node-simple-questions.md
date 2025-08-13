@@ -47,7 +47,17 @@ fs.readFile('file.txt', (err, data) => {
 });
 ```
 #### 12.What are Promises in Node.js?
+A Promise in JavaScript is an object that represents the eventual result (or error) of an asynchronous operation.
 Promises represent the eventual completion (or failure) of an asynchronous operation.
+
+It can be in one of three states:
+
+Pending → operation still running
+
+Fulfilled → operation finished successfully (resolve)
+
+Rejected → operation failed (reject)
+
 ```javascript
 fetchData().then(result => console.log(result)).catch(err => console.log(err));
 ```
@@ -68,3 +78,41 @@ What it is (in one line)
 Why it matters in Node.js
 
 Node is single-threaded and event-loop driven. I/O (files, DB, HTTP) must be non-blocking to keep throughput high. Async/await lets you write non-blocking I/O code in a top-to-bottom style without callback pyramids or deeply chained .then() calls.
+
+#### 14.What is the difference between readFile and readFileSync in Node.js?
+readFile: Asynchronous (non-blocking).
+
+readFileSync: Synchronous (blocking).
+
+#### 15.What is the difference between process.nextTick() and setImmediate()?
+deep dive into process.nextTick() vs setImmediate() in Node.js—what they are, where they sit in the event loop, how they schedule work, and when to use each, with runnable examples.
+
+process.nextTick(fn): runs immediately after the current JavaScript stack clears, before the event loop continues to the next phase. It has higher priority than Promise microtasks in Node and can starve the event loop if overused.
+
+setImmediate(fn): runs on the next iteration of the event loop in the check phase, i.e., after I/O callbacks are processed. It yields to the event loop and avoids starvation.
+
+Key differences explained
+| Aspect              | `process.nextTick(fn)`                                                      | `setImmediate(fn)`                                        |
+| ------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------- |
+| Event loop relation | **Not a phase**; runs **before** the loop continues                         | Runs in the **check** phase on the **next iteration**     |
+| Priority            | **Highest** (drained before Promise microtasks)                             | Lower (after poll, before timers on the next tick)        |
+| Typical use         | Make a callback truly async, finish work **right after** current call stack | Yield back to the loop; run **after I/O**, avoid blocking |
+| Risk                | **Starvation** if you schedule many (`while (true) nextTick(...)`)          | No starvation; naturally yields                           |
+| Browser support     | Node-only                                                                   | Node-only (not in browsers)                               |
+
+When to use which
+
+Use process.nextTick() when:
+
+ - You need to defer an action just beyond the current call stack so consumers can attach listeners first.
+
+- You want to normalize sync/async behavior (“Zalgo-proofing”) of a callback or EventEmitter.
+
+Use setImmediate() when:
+
+- You want to yield to the event loop and let I/O and timers progress.
+
+- You’re breaking up heavy CPU work into chunks without blocking I/O.
+
+- You’re inside an I/O callback and want your continuation to run immediately after that I/O turn.
+
