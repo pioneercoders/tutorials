@@ -179,7 +179,7 @@ type PersonType = {
 };
 
 ```
-  2. Key Differences
+2. Key Differences
 
 | Feature                      | `interface`                                                                                    | `type`                                                                      |
 | ---------------------------- | ---------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
@@ -208,12 +208,12 @@ interface Person {
   readonly name: string;
   age: number;
 }
-
+```
 const p: Person = { name: "Haswin", age: 25 };
 
 p.age = 26;      // ✅ OK
 // p.name = "Ravi"; // ❌ Error: Cannot assign to 'name' because it is a read-only property
-```
+
 2.For Arrays
 TypeScript provides readonly arrays that cannot be modified.
 ```typescript
