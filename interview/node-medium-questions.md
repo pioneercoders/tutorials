@@ -295,6 +295,8 @@ package.json
   }
 }
 ```
+```javascript
+
 package-lock.json (excerpt)
 {
   "name": "my-app",
