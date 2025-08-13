@@ -249,10 +249,12 @@ interface Person {
   age: number;
 }
 ```
+```typescript
 type PersonType = {
   name: string;
   age: number;
 };
+```
 2. Key Differences
 
 | Feature                      | `interface`                                                                                    | `type`                                                                      |
