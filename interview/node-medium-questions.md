@@ -205,3 +205,70 @@ fs.createReadStream("large-file.txt")
   .pipe(fs.createWriteStream("output.txt"));
 ```
 Here, Node.js pauses and resumes the readable stream internally when backpressure occurs.
+
+
+#### 4.What is clustering in Node.js? Why is it needed?
+
+Clustering in Node.js is a technique that allows you to run multiple instances of a Node.js application across different CPU cores, while sharing the same server port.
+
+By default, Node.js runs in a single thread, meaning only one CPU core is used, no matter how many cores your machine has.
+Clustering helps utilize all cores for better performance and scalability.
+
+
+Why Clustering is Needed
+
+- Single-thread limitation – Node.js can’t automatically use multiple cores.
+
+- Better performance – Multiple worker processes can handle requests in parallel.
+
+- High availability – If one worker crashes, others can still serve requests.
+
+- Load balancing – Distributes incoming requests across workers.
+
+How Clustering Works
+
+- The master process spawns multiple worker processes.
+
+- Each worker runs on a separate CPU core but shares the same server port.
+
+- The cluster module in Node.js manages these processes and distributes requests.
+
+Example
+```javascript
+const cluster = require("cluster");
+const os = require("os");
+
+if (cluster.isMaster) {
+  const numCPUs = os.cpus().length;
+  console.log(`Master ${process.pid} is running`);
+
+  // Fork workers
+  for (let i = 0; i < numCPUs; i++) {
+    cluster.fork();
+  }
+
+  // Restart worker if it dies
+  cluster.on("exit", (worker) => {
+    console.log(`Worker ${worker.process.pid} died, restarting...`);
+    cluster.fork();
+  });
+
+} else {
+  // Workers can share the same TCP connection
+  const http = require("http");
+  http.createServer((req, res) => {
+    res.writeHead(200);
+    res.end(`Handled by worker ${process.pid}\n`);
+  }).listen(3000);
+
+  console.log(`Worker ${process.pid} started`);
+}
+```
+
+
+
+
+
+
+
+
