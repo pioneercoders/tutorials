@@ -2,7 +2,7 @@
 TypeScript is an open-source programming language developed and maintained by Microsoft.
 It’s basically a superset of JavaScript — which means any valid JavaScript code is also valid TypeScript code — but it adds extra features, the biggest being static typing.
 
-Key Differences Between TypeScript and JavaScript
+## Key Differences Between TypeScript and JavaScript
 | Feature                   | JavaScript                                          | TypeScript                                                                        |
 | ------------------------- | --------------------------------------------------- | --------------------------------------------------------------------------------- |
 | **Typing**                | Dynamically typed (types are determined at runtime) | Statically typed (types are checked at compile time)                              |
