@@ -14,7 +14,7 @@ It’s basically a superset of JavaScript — which means any valid JavaScript c
 
 
 #### 2.How do you declare a variable with a type in TypeScript?
-In TypeScript, 
+In TypeScript
 you declare a variable with a type by adding a type annotation after the variable name using a colon (:).
 
 let variableName: type = value;
@@ -28,7 +28,7 @@ const variableName: type = value;
 In TypeScript (and modern JavaScript), let, const, and var are all used to declare variables,
 but they differ in scope, reassignment rules, and hoisting behavior.
 1. Scope
-| Keyword | Scope           | Meaning                                                      |
+| Keyword    | Scope           | Meaning                                                      |
 | ------- | --------------- | ------------------------------------------------------------ |
 | `var`   | Function-scoped | Available throughout the entire function where it’s declared |
 | `let`   | Block-scoped    | Available only within the block `{}` where it’s declared     |
