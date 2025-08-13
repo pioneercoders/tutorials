@@ -42,6 +42,7 @@ Waiting – Process is waiting for I/O or event.
 Terminated – Process has finished execution.
 
 #### 5. What is the difference between process and thread?
+## Differences between process and thread
 
 | Process | Thread |
 | ------- | ------ |
