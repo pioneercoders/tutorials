@@ -303,10 +303,10 @@ function userDetails(username) {
 }
 ```
 #### 19.What is the reason to choose the name let as keyword?
-    Let is a mathematical statement that was adopted by early programming languages like Scheme and Basic. It has been borrowed from dozens of other languages that use let already as a traditional keyword as close to var as possible.
+Let is a mathematical statement that was adopted by early programming languages like Scheme and Basic. It has been borrowed from dozens of other languages that use let already as a traditional keyword as close to var as possible.
     
 #### 20. How do you redeclare variables in switch block without an error?
-    If you try to redeclare variables in a `switch block` then it will cause errors because there is only one block. For example, the below code block throws a syntax error as below,
+If you try to redeclare variables in a `switch block` then it will cause errors because there is only one block. For example, the below code block throws a syntax error as below,
     ```javascript
     let counter = 1;
     switch(x) {
@@ -334,7 +334,7 @@ function userDetails(username) {
         }
     ```
 #### 21. What is Temporal Dead Zone?
-    The Temporal Dead Zone is a behavior in JavaScript that occurs when declaring a variable with the let and const keywords, but not with var. In ECMAScript 6, accessing a let or const variable before its declaration (within its scope) causes a ReferenceError. The time span when that happens, between the creation of a variable’s binding and its declaration, is called the temporal dead zone. Let's see this behavior with an example,
+The Temporal Dead Zone is a behavior in JavaScript that occurs when declaring a variable with the let and const keywords, but not with var. In ECMAScript 6, accessing a let or const variable before its declaration (within its scope) causes a ReferenceError. The time span when that happens, between the creation of a variable’s binding and its declaration, is called the temporal dead zone. Let's see this behavior with an example,
     ```javascript
     function somemethod() {
       console.log(counter1); // undefined
@@ -344,7 +344,7 @@ function userDetails(username) {
     }
     ```
 #### 22. What is IIFE(Immediately Invoked Function Expression)?
-    IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. The signature of it would be as below,
+ IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. The signature of it would be as below,
     ```javascript
     (function ()
         {
@@ -365,12 +365,12 @@ function userDetails(username) {
     console.log(message); //Error: message is not defined
     ```
 #### 23. What is the benefit of using modules?
-    There are a lot of benefits to using modules in favour of a sprawling. Some of the benefits are,
+ There are a lot of benefits to using modules in favour of a sprawling. Some of the benefits are,
     1. Maintainablity
     2. Reusability
     3. Namespacing
 #### 24. What is memoization?
-    Memoization is a programming technique which attempts to increase a function’s performance by caching its previously computed results.  Each time a memoized function is called, its parameters are used to index the cache. If the data is present, then it can be returned, without executing the entire function. Otherwise the function is executed and then the result is added to the cache.
+Memoization is a programming technique which attempts to increase a function’s performance by caching its previously computed results.  Each time a memoized function is called, its parameters are used to index the cache. If the data is present, then it can be returned, without executing the entire function. Otherwise the function is executed and then the result is added to the cache.
     Let's take an example of adding function with memoization,
     ```javascript
     const memoizAddition = () => {
@@ -394,7 +394,7 @@ function userDetails(username) {
     console.log(addition(20)); //output: 40 cached
     ```
  #### 25.What is Hoisting?
-    Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution. Remember that JavaScript only hoists declarations, not initialisation.
+ Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution. Remember that JavaScript only hoists declarations, not initialisation.
     Let's take a simple example of variable hoisting,
     ```javascript
     console.log(message); //output : undefined
@@ -407,7 +407,7 @@ function userDetails(username) {
     message = ’The variable Has been hoisted’;
     ```
    #### 26.What are classes in ES6?
-    In ES6, Javascript classes are primarily syntactical sugar over JavaScript’s existing prototype-based inheritance.
+   In ES6, Javascript classes are primarily syntactical sugar over JavaScript’s existing prototype-based inheritance.
     For example, the prototype based inheritance written in function expression as below,
     ```javascript
     function Bike(model,color) {
@@ -429,7 +429,7 @@ function userDetails(username) {
     }
     ```
 #### 27. What are closures?
-    A closure is the combination of a function and the lexical environment within which that function was declared. i.e, It is an inner function that has access to the outer or enclosing function’s variables. The closure has three scope chains
+A closure is the combination of a function and the lexical environment within which that function was declared. i.e, It is an inner function that has access to the outer or enclosing function’s variables. The closure has three scope chains
     1. Own scope where variables defined between its curly brackets
     2. Outer function’s variables
     3. Global variables
@@ -448,11 +448,11 @@ function userDetails(username) {
     As per the above code, the inner function(greetingInfo) has access to the variables in the outer function scope(Welcome) even after outer function has returned.
 
 #### 28. What are modules?
-    Modules refers small units of independent, reusable code and also act as foundation of many JavaScript design patterns.  Most of the JavaScript modules export an object literal, a function, or a constructor
+Modules refers small units of independent, reusable code and also act as foundation of many JavaScript design patterns.  Most of the JavaScript modules export an object literal, a function, or a constructor
 #### 29. Why do you need modules?
-    Below are the list of benefits using modules in javascript ecosystem
+Below are the list of benefits using modules in javascript ecosystem
     1. Maintainablity
     2. Reusability
     3. Namespacing
 #### 30. What is scope in javascript?
-    Scope is the accessibility of variables, functions, and objects in some particular part of your code during runtime. In other words, scope determines the visibility of variables and other resources in areas of your code.
+ Scope is the accessibility of variables, functions, and objects in some particular part of your code during runtime. In other words, scope determines the visibility of variables and other resources in areas of your code.
