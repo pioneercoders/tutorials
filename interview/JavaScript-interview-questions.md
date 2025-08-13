@@ -446,7 +446,7 @@ A closure is the combination of a function and the lexical environment within wh
     myFunction('Welcome '); //Output: Welcome John
     myFunction('Hello Mr.'); //output: Hello Mr.John
 ```
-    As per the above code, the inner function(greetingInfo) has access to the variables in the outer function scope(Welcome) even after outer function has returned.
+As per the above code, the inner function(greetingInfo) has access to the variables in the outer function scope(Welcome) even after outer function has returned.
 
 #### 28. What are modules?
 Modules refers small units of independent, reusable code and also act as foundation of many JavaScript design patterns.  Most of the JavaScript modules export an object literal, a function, or a constructor
