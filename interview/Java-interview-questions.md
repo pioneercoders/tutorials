@@ -333,16 +333,13 @@ To create an immutable class in java, you have to do following steps.
 + Perform cloning of objects in the getter methods to return a copy rather than returning the actual object reference.
 
 
-#### 22. What is the difference between an Interface and an Abstract class?
-
+## 22. What is the difference between an Interface and an Abstract class?
 Both define an interface that has to be implemented. Abstract class can contain concrete methods as well as abstract. Abstract class can contain regular class fields. Interface can contain only public static final fields.
 
-#### 23. What is the purpose of garbage collection in Java, and when is it used?
-
+## 23. What is the purpose of garbage collection in Java, and when is it used?
 GC in Java is the mechanism that keeps track of memory and objects residing in memory. GC collects the object when it is no longer needed (usually when no references to the object are available).
 
 ## 24. What is the difference between a constructor and a method?
-
     We can say that constructor is a special kind of method that instantiates the object. The main differences are
 
     * Special treatment of constructors when they are called (memory allocation, superclass constructors chain)
