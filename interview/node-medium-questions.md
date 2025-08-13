@@ -340,7 +340,7 @@ V8 manages memory allocation, deallocation, and garbage collection automatically
 
      - You can increase it:
      
-```bash
+```javasript
 node --max-old-space-size=4096 app.js  # 4GB heap
 ```
 
