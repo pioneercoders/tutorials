@@ -40,7 +40,7 @@ It’s basically a superset of JavaScript — which means any valid JavaScript c
 
 
 #### 2.How do you declare a variable with a type in TypeScript?
-In TypeScript,
+In TypeScript,<br>
   you declare a variable with a type by adding a type annotation after the variable name using a colon (:).
 
     let variableName: type = value;
