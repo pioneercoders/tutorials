@@ -319,7 +319,7 @@ If you try to redeclare variables in a `switch block` then it will cause errors 
         break;
     }
     ```
-    To avoid this error, you can create a nested block inside a case clause will create a new block scoped lexical environment.
+ To avoid this error, you can create a nested block inside a case clause will create a new block scoped lexical environment.
     ```javascript
     let counter = 1;
         switch(x) {
