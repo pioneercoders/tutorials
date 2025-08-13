@@ -335,26 +335,26 @@ If you try to redeclare variables in a `switch block` then it will cause errors 
     ```
 #### 21. What is Temporal Dead Zone?
 The Temporal Dead Zone is a behavior in JavaScript that occurs when declaring a variable with the let and const keywords, but not with var. In ECMAScript 6, accessing a let or const variable before its declaration (within its scope) causes a ReferenceError. The time span when that happens, between the creation of a variable’s binding and its declaration, is called the temporal dead zone. Let's see this behavior with an example,
-    ```javascript
+```javascript
     function somemethod() {
       console.log(counter1); // undefined
       console.log(counter2); // ReferenceError
       var counter1 = 1;
       let counter2 = 2;
     }
-    ```
+```
 #### 22. What is IIFE(Immediately Invoked Function Expression)?
  IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. The signature of it would be as below,
-    ```javascript
+ ```javascript
     (function ()
         {
           // logic here
         }
      )
     ();
-    ```
+```
     The primary reason to use an IIFE is to obtain data privacy because any variables declared within the IIFE cannot be accessed by the outside world. i.e, If you try to access variables with IIFE then it throws an error as below,
-    ```javascript
+```javascript
     (function ()
             {
               var message = "IIFE";
@@ -363,7 +363,7 @@ The Temporal Dead Zone is a behavior in JavaScript that occurs when declaring a 
      )
     ();
     console.log(message); //Error: message is not defined
-    ```
+```
 #### 23. What is the benefit of using modules?
  There are a lot of benefits to using modules in favour of a sprawling. Some of the benefits are,
     1. Maintainablity
@@ -372,7 +372,7 @@ The Temporal Dead Zone is a behavior in JavaScript that occurs when declaring a 
 #### 24. What is memoization?
 Memoization is a programming technique which attempts to increase a function’s performance by caching its previously computed results.  Each time a memoized function is called, its parameters are used to index the cache. If the data is present, then it can be returned, without executing the entire function. Otherwise the function is executed and then the result is added to the cache.
     Let's take an example of adding function with memoization,
-    ```javascript
+ ```javascript
     const memoizAddition = () => {
       let cache = {};
      return (value) => {
@@ -392,24 +392,24 @@ Memoization is a programming technique which attempts to increase a function’s
     const addition = memoizAddition();
     console.log(addition(20)); //output: 40 calculated
     console.log(addition(20)); //output: 40 cached
-    ```
+```
  #### 25.What is Hoisting?
  Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution. Remember that JavaScript only hoists declarations, not initialisation.
     Let's take a simple example of variable hoisting,
-    ```javascript
+ ```javascript
     console.log(message); //output : undefined
     var message = ’The variable Has been hoisted’;
-    ```
+ ```
     The above code looks like as below to the interpreter,
-    ```javascript
+ ```javascript
     var message;
     console.log(message);
     message = ’The variable Has been hoisted’;
-    ```
+```
    #### 26.What are classes in ES6?
    In ES6, Javascript classes are primarily syntactical sugar over JavaScript’s existing prototype-based inheritance.
     For example, the prototype based inheritance written in function expression as below,
-    ```javascript
+```javascript
     function Bike(model,color) {
         this.model = model;
         this.color = color;
@@ -418,23 +418,23 @@ Memoization is a programming technique which attempts to increase a function’s
     Bike.prototype.getDetails = function() {
         return this.model+ ' bike has' + this.color+ ' color';
     };
-    ```
+```
     Whereas ES6 classes can be defined as an alternative
-    ```javascript
+```javascript
     class Bike{
       constructor(color, model) {
         this.color= color;
         this.model= model;
       }
     }
-    ```
+```
 #### 27. What are closures?
 A closure is the combination of a function and the lexical environment within which that function was declared. i.e, It is an inner function that has access to the outer or enclosing function’s variables. The closure has three scope chains
     1. Own scope where variables defined between its curly brackets
     2. Outer function’s variables
     3. Global variables
     Let's take an example of closure concept,
-    ```javascript
+```javascript
     function Welcome(name){
       var greetingInfo = function(message){
        console.log(message+' '+name);
@@ -444,7 +444,7 @@ A closure is the combination of a function and the lexical environment within wh
     var myFunction = Welcome('John');
     myFunction('Welcome '); //Output: Welcome John
     myFunction('Hello Mr.'); //output: Hello Mr.John
-    ```
+```
     As per the above code, the inner function(greetingInfo) has access to the variables in the outer function scope(Welcome) even after outer function has returned.
 
 #### 28. What are modules?
