@@ -78,18 +78,70 @@ Type annotations act like labels that tell TypeScript (and other developers) the
 #### 5.Name some basic data types in TypeScript.
 Some basic data types in TypeScript are:
 
-| Data Type       | Description                                                             | Example                                                 |
-| --------------- | ----------------------------------------------------------------------- | ------------------------------------------------------- |
-| **`number`**    | Represents numeric values (integer, float, hex, binary, octal)          | `let age: number = 25;`                                 |
-| **`string`**    | Represents text values                                                  | `let name: string = "Keerthi";`                         |
-| **`boolean`**   | Represents `true` or `false`                                            | `let isActive: boolean = true;`                         |
-| **`null`**      | Represents an explicitly empty value                                    | `let data: null = null;`                                |
-| **`undefined`** | Represents a variable with no value assigned                            | `let value: undefined = undefined;`                     |
-| **`any`**       | Can store any type (disables type checking)                             | `let randomValue: any = "hello";`                       |
-| **`void`**      | Used for functions that don’t return a value                            | `function log(): void { console.log("Hello"); }`        |
-| **`unknown`**   | Type-safe alternative to `any`; must check before use                   | `let data: unknown = 10;`                               |
-| **`never`**     | Represents a value that never occurs (e.g., function that throws error) | `function fail(): never { throw new Error("Error!"); }` |
+**Data Types in TypeScript**
+ - 1.number
+Represents numeric values (integer, float, hex, binary, octal).
+Example:
+```ts
+let age: number = 25;
+```
 
+ - 2.string
+Represents text values.
+Example:
+```ts
+let name: string = "Haswin";
+```
+3.boolean
+Represents true or false.
+Example:
+```ts
+let isActive: boolean = true;
+```
+4.null
+Represents an explicitly empty value.
+Example:
+```ts
+let data: null = null;
+```
+5.undefined
+Represents a variable with no value assigned.
+Example:
+```ts
+let value: undefined = undefined;
+
+```
+
+6.any
+Can store any type (disables type checking).
+Example:
+```ts
+let randomValue: any = "hello";
+```
+
+7.void
+Used for functions that don’t return a value.
+Example:
+```ts
+function log(): void { 
+  console.log("Hello"); 
+}
+```
+8.unknown
+Type-safe alternative to any; must check before use.
+Example:
+```ts
+let data: unknown = 10;
+```
+9.never
+Represents a value that never occurs (e.g., function that throws error).
+Example:
+
+```ts
+function fail(): never { 
+  throw new Error("Error!"); 
+}
+```
 #### 6.How do you declare an array in TypeScript?
 
 In TypeScript, you can declare an array in two main ways — by specifying the element type either with square brackets ([]) or with a generic type (Array<type>).
