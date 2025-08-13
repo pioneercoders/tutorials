@@ -1,7 +1,7 @@
 #### 1. What is CSS and why is it used?
 CSS (Cascading Style Sheets) is used to style HTML elements — controlling layout, colors, fonts, spacing, and responsiveness. It separates content (HTML) from presentation, improving maintainability.
 
-#### 2. Types of CSS?
+#### 2.Types of CSS?
 Inline CSS – inside the HTML element (style attribute).
 
 Internal CSS – inside <style> tag in the HTML <head>.
