@@ -334,6 +334,7 @@ To create an immutable class in java, you have to do following steps.
 
 
 ## 22. What is the difference between an Interface and an Abstract class?
+
 Both define an interface that has to be implemented. Abstract class can contain concrete methods as well as abstract. Abstract class can contain regular class fields. Interface can contain only public static final fields.
 
 ## 23. What is the purpose of garbage collection in Java, and when is it used?
