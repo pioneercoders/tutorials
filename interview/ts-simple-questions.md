@@ -241,7 +241,7 @@ TypeScript will check at compile time that calls match one of the declared signa
 In TypeScript, both interface and type are used to define the shape (structure) of data,
 but they have some differences in capabilities, extension, and usage.
 
-1. Basic Similarity
+**1. Basic Similarity**
 Both can define object structures:
 ```typescript
 interface Person {
@@ -255,18 +255,42 @@ type PersonType = {
   age: number;
 };
 ```
-2. Key Differences
+**2. Key Differences**
+1. Feature: Extension / Inheritance
 
-| Feature                      | `interface`                                                                                    | `type`                                                                      |
-| ---------------------------- | ---------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| **Extension / Inheritance**  | Can **extend** other interfaces or multiple interfaces (`extends`)                             | Can **intersect** with other types using `&`                                |
-| **Merging**                  | Supports **declaration merging** (can define the same interface multiple times and they merge) | Cannot be re-declared; no merging                                           |
-| **Usage**                    | Best for defining object shapes, class contracts                                               | Can represent **objects, primitives, unions, tuples, function types**, etc. |
-| **Complex Types**            | Limited to describing objects, arrays, and functions                                           | More flexible — can describe unions, intersections, conditional types       |
-| **Implements (in classes)**  | ✅ Yes                                                                                          | ✅ Yes                                                                       |
-| **Extending Built-in Types** | ✅ Easier with `interface`                                                                      | Possible, but not asstraightforward 
+  - interface: Can extend other interfaces or multiple interfaces (extends)
 
-                                       |
+  - type: Can intersect with other types using &
+    
+2. Feature: Merging
+
+  - interface: Supports declaration merging (can define the same interface multiple times and they merge)
+
+  - type: Cannot be re-declared; no merging
+    
+3.Feature: Usage
+
+  - interface: Best for defining object shapes, class contracts
+
+  - type: Can represent objects, primitives, unions, tuples, function types, etc.
+
+4.Feature: Complex Types
+
+  - interface: Limited to describing objects, arrays, and functions
+
+  - type: More flexible — can describe unions, intersections, conditional types
+
+5.Feature: Implements (in classes)
+
+  - interface: ✅ Yes
+
+  - type: ✅ Yes
+
+6.Feature: Extending Built-in Types
+
+  - interface: ✅ Easier with interface
+
+  - type: Possible, but not as straightforward
 
 
 Rule of Thumb
