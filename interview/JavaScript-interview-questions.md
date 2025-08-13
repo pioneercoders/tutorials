@@ -350,7 +350,7 @@ function somemethod() {
 }
 ```
 
-#### 22. What is IIFE(Immediately Invoked Function Expression)?
+#### 22.What is IIFE(Immediately Invoked Function Expression)?
 
 IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. The signature of it would be as below,
  ```javascript
@@ -372,11 +372,13 @@ The primary reason to use an IIFE is to obtain data privacy because any variable
     ();
     console.log(message); //Error: message is not defined
 ```
+
 #### 23. What is the benefit of using modules?
  There are a lot of benefits to using modules in favour of a sprawling. Some of the benefits are,
     1. Maintainablity
     2. Reusability
     3. Namespacing
+    
 #### 24. What is memoization?
 Memoization is a programming technique which attempts to increase a function’s performance by caching its previously computed results.  Each time a memoized function is called, its parameters are used to index the cache. If the data is present, then it can be returned, without executing the entire function. Otherwise the function is executed and then the result is added to the cache.
     Let's take an example of adding function with memoization,
