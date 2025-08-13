@@ -172,13 +172,12 @@ interface Person {
   name: string;
   age: number;
 }
-
+```
 type PersonType = {
   name: string;
   age: number;
 };
 
-```
 2. Key Differences
 
 | Feature                      | `interface`                                                                                    | `type`                                                                      |
