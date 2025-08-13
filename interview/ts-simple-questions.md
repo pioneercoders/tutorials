@@ -56,8 +56,8 @@ but they differ in scope, reassignment rules, and hoisting behavior.
 1. Scope
 
 **- var**  
-- **Scope:** Function-scoped.  
-- **Meaning:** Variables declared with `var` are available throughout the entire function in which they are declared, regardless of block boundaries.
+- Scope: Function-scoped.  
+- Meaning: Variables declared with `var` are available throughout the entire function in which they are declared, regardless of block boundaries.
 
 **- let**  
 - **Scope:** Block-scoped.  
