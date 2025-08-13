@@ -348,7 +348,7 @@ function somemethod() {
   var counter1 = 1;
   let counter2 = 2;
 }
-
+```
 #### 22. What is IIFE(Immediately Invoked Function Expression)?
 IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. The signature of it would be as below,
  ```javascript
