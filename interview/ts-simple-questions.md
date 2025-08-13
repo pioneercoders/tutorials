@@ -2,15 +2,41 @@
 TypeScript is an open-source programming language developed and maintained by Microsoft.
 It’s basically a superset of JavaScript — which means any valid JavaScript code is also valid TypeScript code — but it adds extra features, the biggest being static typing.
 
-#### Key Differences Between TypeScript and JavaScript
-| Feature                   | JavaScript                                          | TypeScript                                                                        |
-| ------------------------- | --------------------------------------------------- | --------------------------------------------------------------------------------- |
-| **Typing**                | Dynamically typed (types are determined at runtime) | Statically typed (types are checked at compile time)                              |
-| **Compilation**           | Interpreted directly by browsers/Node.js            | Needs to be compiled (transpiled) to JavaScript before running                    |
-| **Error Detection**       | Errors are found at runtime                         | Many errors are caught during compile time                                        |
-| **Language Features**     | Standard ECMAScript features                        | All JavaScript features **+** type annotations, interfaces, enums, generics, etc. |
-| **IDE Support**           | Limited IntelliSense and refactoring support        | Excellent IntelliSense, autocompletion, and refactoring due to type information   |
-| **Use in Large Projects** | Can become hard to maintain as it grows             | Easier to scale and maintain due to strong typing and tooling support             |
+1. Typing
+
+JavaScript: Dynamically typed — types are determined at runtime.
+
+TypeScript: Statically typed — types are checked at compile time.
+
+2. Compilation
+
+JavaScript: Interpreted directly by browsers or Node.js.
+
+TypeScript: Needs to be compiled (transpiled) into JavaScript before running.
+
+3. Error Detection
+
+JavaScript: Errors are found only at runtime.
+
+TypeScript: Many errors are caught during compile time.
+
+4. Language Features
+
+JavaScript: Provides standard ECMAScript features.
+
+TypeScript: Includes all JavaScript features plus type annotations, interfaces, enums, generics, and more.
+
+5. IDE Support
+
+JavaScript: Limited IntelliSense and refactoring support.
+
+TypeScript: Excellent IntelliSense, autocompletion, and refactoring because of type information.
+
+6. Use in Large Projects
+
+JavaScript: Can become hard to maintain as the project grows.
+
+TypeScript: Easier to scale and maintain due to strong typing and rich tooling support.
 
 
 #### 2.How do you declare a variable with a type in TypeScript?
@@ -173,12 +199,10 @@ interface Person {
   age: number;
 }
 ```
-```typescript
 type PersonType = {
   name: string;
   age: number;
 };
-```
 2. Key Differences
 
 | Feature                      | `interface`                                                                                    | `type`                                                                      |
