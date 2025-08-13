@@ -99,28 +99,28 @@ Node.js handles asynchronous operations using an event-driven, non-blocking I/O 
 Here’s how it works step-by-step:
 
 1. Single-threaded Execution
-Node.js runs JavaScript code in a single thread (the main thread).
+ - Node.js runs JavaScript code in a single thread (the main thread).
 
-Instead of blocking for slow operations (like file reading, network calls, or database queries), it delegates them to the system kernel or background threads.
+ - Instead of blocking for slow operations (like file reading, network calls, or database queries), it delegates them to the system kernel or background threads.
 
 2. Asynchronous APIs
-Node.js provides asynchronous APIs (e.g., fs.readFile, http.get, setTimeout) that immediately return control to the main thread.
+ - Node.js provides asynchronous APIs (e.g., fs.readFile, http.get, setTimeout) that immediately return control to the main thread.
 
-These APIs accept callbacks (or use Promises/async-await) to run after the operation finishes.
+ - These APIs accept callbacks (or use Promises/async-await) to run after the operation finishes.
 
 3. Libuv and Thread Pool
-Node.js uses the libuv library for handling asynchronous tasks.
+ - Node.js uses the libuv library for handling asynchronous tasks.
 
-Some tasks (like file I/O, DNS lookup) are handled in a thread pool to avoid blocking the main thread.
+ - Some tasks (like file I/O, DNS lookup) are handled in a thread pool to avoid blocking the main thread.
 
 4. Event Loop
-The event loop constantly checks:
+ - The event loop constantly checks:
 
-If the call stack is empty.
+   - If the call stack is empty.
 
-If there are any pending callbacks/events ready to run.
+   - If there are any pending callbacks/events ready to run.
 
-When an asynchronous operation finishes, its callback is pushed into the callback queue.
+   - When an asynchronous operation finishes, its callback is pushed into the callback queue.
 
 The event loop moves these callbacks to the call stack when the main thread is free.
 
@@ -137,17 +137,18 @@ console.log("End");
 ```
 Execution flow:
 
-"Start" is printed immediately.
+  - "Start" is printed immediately.
 
-setTimeout is registered, and the timer runs in the background.
+  - setTimeout is registered, and the timer runs in the background.
 
-"End" is printed.
+  - "End" is printed.
 
-After 2 seconds, the callback from setTimeout is added to the queue.
+  - After 2 seconds, the callback from setTimeout is added to the queue.
 
-Event loop executes it → "Async operation complete" is printed.
+  - Event loop executes it → "Async operation complete" is printed.
 
 6. Key Benefits
-Non-blocking: Other tasks can run while waiting for slow operations.
 
-Efficient I/O handling: Ideal for real-time applications (e.g., chats, streaming).
+ - Non-blocking: Other tasks can run while waiting for slow operations.
+
+ - Efficient I/O handling: Ideal for real-time applications (e.g., chats, streaming).
