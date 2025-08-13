@@ -54,24 +54,18 @@ const variableName: type = value;
 In TypeScript (and modern JavaScript), let, const, and var are all used to declare variables,
 but they differ in scope, reassignment rules, and hoisting behavior.
 1. Scope
+
 var
-
 Scope: Function-scoped.
-
 Meaning: Variables declared with var are available throughout the entire function in which they are declared, regardless of block boundaries.
 
 let
-
 Scope: Block-scoped.
-
 Meaning: Variables declared with let are only accessible within the block {} where they are defined.
 
 const
-
 Scope: Block-scoped.
-
 Meaning: Variables declared with const are only accessible within the block {} where they are defined, and their value cannot be reassigned (though object/array contents can be mutated).
-
 
 2. Reassignment
 
