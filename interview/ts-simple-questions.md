@@ -268,25 +268,25 @@ type PersonType = {
 
   - type: Cannot be re-declared; no merging
     
-3.Feature: Usage
+3. Feature: Usage
 
   - interface: Best for defining object shapes, class contracts
 
   - type: Can represent objects, primitives, unions, tuples, function types, etc.
 
-4.Feature: Complex Types
+4. Feature: Complex Types
 
   - interface: Limited to describing objects, arrays, and functions
 
   - type: More flexible — can describe unions, intersections, conditional types
 
-5.Feature: Implements (in classes)
+5. Feature: Implements (in classes)
 
   - interface: ✅ Yes
 
   - type: ✅ Yes
 
-6.Feature: Extending Built-in Types
+6. Feature: Extending Built-in Types
 
   - interface: ✅ Easier with interface
 
