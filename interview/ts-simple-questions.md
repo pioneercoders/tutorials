@@ -40,7 +40,7 @@ It’s basically a superset of JavaScript — which means any valid JavaScript c
 
 
 #### 2.How do you declare a variable with a type in TypeScript?
-In TypeScript
+In TypeScript,
 you declare a variable with a type by adding a type annotation after the variable name using a colon (:).
 
 let variableName: type = value;
@@ -63,11 +63,23 @@ but they differ in scope, reassignment rules, and hoisting behavior.
 
 2. Reassignment
 
-| Keyword | Can Reassign?                          | Can Re-declare in same scope? |
-| ------- | -------------------------------------- | ----------------------------- |
-| `var`   | ✅ Yes                                  | ✅ Yes                         |
-| `let`   | ✅ Yes                                  | ❌ No                          |
-| `const` | ❌ No (must be assigned at declaration) | ❌ No                          |
+var
+
+Scope: Function-scoped.
+
+Meaning: Variables declared with var are available throughout the entire function in which they are declared, regardless of block boundaries.
+
+let
+
+Scope: Block-scoped.
+
+Meaning: Variables declared with let are only accessible within the block {} where they are defined.
+
+const
+
+Scope: Block-scoped.
+
+Meaning: Variables declared with const are only accessible within the block {} where they are defined, and their value cannot be reassigned (though object/array contents can be mutated).
 
 
 #### 4.What is the purpose of type annotations in TypeScript?
