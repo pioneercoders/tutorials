@@ -42,8 +42,6 @@ Waiting – Process is waiting for I/O or event.
 Terminated – Process has finished execution.
 
 #### 5. What is the difference between process and thread?
-## Differences between process and thread
-
 Process
 
   - Independent unit with its own memory space.
@@ -185,9 +183,20 @@ External Fragmentation – Wasted space between allocated memory blocks due to v
 
 #### 20.What is the difference between kernel mode and user mode?
 
-| Kernel Mode                                   | User Mode                        |
-| --------------------------------------------- | -------------------------------- |
-| Full access to hardware and system resources. | Restricted access to resources.  |
-| Runs OS services.                             | Runs user applications.          |
-| Switching requires a mode bit change.         | Cannot directly access hardware. |
+Kernel Mode
+
+   - Has full access to hardware and system resources.
+
+   - Runs operating system services.
+
+   - Switching to it requires a mode bit change.
+
+User Mode
+
+   - Has restricted access to resources.
+
+   - Runs user applications.
+
+   - Cannot directly access hardware.
+
 
