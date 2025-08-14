@@ -72,13 +72,13 @@ The type of credit card or debit card that you have for paying does not even mat
 + Instance Initialization blocks are executed whenever the class is initialized and before constructors are invoked. 
 They are typically placed above the constructors within braces.
 
-## 7. Differences between Lambda Expressions and Closures in Java.
+### 7. Differences between Lambda Expressions and Closures in Java.
 Java supports lambda expressions but not the Closures. 
 A lambda expression is an anonymous function and can be defined as a parameter. 
 The Closures are like code fragments or code blocks that can be used without being a method or a class. 
 It means that Closures can access variables not defined in its parameter list and also assign it to a variable.
 
-## 8. Give the list of Java Object class methods.
+### 8. Give the list of Java Object class methods.
 
 + clone() - Creates and returns a copy of this object.
 + equals() - Indicates whether some other object is "equal to" this one.
@@ -93,7 +93,7 @@ no more references to the object.
 or the notifyAll() method for this object.
 
 
-## 9. What is the difference between atomic, volatile, synchronized?
+### 9. What is the difference between atomic, volatile, synchronized?
 
 It basically reads value from memory, increments it and puts back to memory. 
 This works in single thread but nowadays, in the era of multi-core, multi-CPU, multi-level caches it won't work correctly. 
@@ -135,14 +135,14 @@ locking on different objects, but only one thread can execute a synchronized met
 at a time for any given single object.
 
 
-## 10. Explain object finalization
+### 10. Explain object finalization
 
 Called by the garbage collector on an object when garbage collection determines that 
 there are no more references to the object. If an object can not be accessed from any live object, 
 this means that it can be safely garbage collected.
 
 
-## 11. What is Serialization in Java?
+### 11. What is Serialization in Java?
 
 Object Serialization in Java is a process used to convert Object into a binary format which can be persisted into 
 a disk or sent over the network to any other running Java virtual machine; 
@@ -170,7 +170,7 @@ Externalizable interface has more control over serialization process and it is m
 to override writeExternal and readExternal.
 
 
-## 12. Concept Of Java Cloning
+### 12. Concept Of Java Cloning
 
 Java supports two type of cloning: - Deep and shallow cloning. By default shallow clone is used in Java. 
 Object class has a method clone() which does shallow cloning. Shallow copies duplicate as little as possible. 
@@ -187,13 +187,13 @@ a deep copy of an instance of one of your classes.
 Other common solution to the deep copy problem is to use Java Object Serialization.
 
 
-## 13. StringBuffer vs StringBuilder
+### 13. StringBuffer vs StringBuilder
 
 StringBuffer is synchronized, StringBuilder is not. 
 StringBuilder is faster than StringBuffer because it's not synchronized.
 
 
-## 14. Name some of the parsers which are commonly used to parse XML documents.
+### 14. Name some of the parsers which are commonly used to parse XML documents.
 
 + **Dom** Parser - Parses the document by loading the complete contents of the document and creating its complete 
 hiearchical tree in memory. Using DOM parser, we can parse, modify or create a XML document.                           
@@ -209,7 +209,7 @@ when SAX parser notifies the client application that information is available.
 Using StAX parser, we can parse, modify and create a XML document.
 
 
-## 15. What New Features Were Added in Java 8?
+### 15. What New Features Were Added in Java 8?
 
 Java 8 ships with several new features, but the most significant are the following:
 
@@ -223,7 +223,7 @@ Java 8 ships with several new features, but the most significant are the followi
 + Date API − an improved, immutable JodaTime-inspired Date API
 
 
-## 16. What New Features Were Added in Java 11?
+### 16. What New Features Were Added in Java 11?
 
 Java 11 ships with several new features, but the most significant are the following:
 
@@ -233,7 +233,7 @@ Java 11 ships with several new features, but the most significant are the follow
 + Modular System – since Java 9
 
 
-## 17. What Is a Lambda Expression and What Is It Used For?
+### 17. What Is a Lambda Expression and What Is It Used For?
 
 In very simple terms, a lambda expression is a function that we can reference and pass around as an object.
 
@@ -244,7 +244,7 @@ As a result, lambda expressions are a natural replacement for anonymous classes 
 One of their main uses is to define inline implementations of functional interfaces.
 
 
-## 18. What Is an Exception?
+### 18. What Is an Exception?
 
 An exception is an abnormal event that occurs during the execution of a program 
 and disrupts the normal flow of the program's instructions.
@@ -260,7 +260,7 @@ An exception is an event that represents a condition from which is possible to r
 whereas error represents an external situation usually impossible to recover from.
 
 
-## 19. How to Generate OutOfMemoryError and StackOverflowException?
+### 19. How to Generate OutOfMemoryError and StackOverflowException?
 
 OutOfMemoryError
 ```java
@@ -290,7 +290,7 @@ public class StackOverflowErrorExample {
 ```
 
 
-## 20. What Are Annotations? What Are Their Typical Use Cases?
+### 20. What Are Annotations? What Are Their Typical Use Cases?
 
 Annotations are metadata bound to elements of the source code of a program and have no effect on the operation of the code they operate.
 
@@ -316,7 +316,7 @@ public class Element {
 }
 ```
 
-## 21. What is immutable class?
+### 21. What is immutable class?
 
 Immutable objects are those objects whose state can not be changed once created. 
 Class whose objects possess this characteristic can be termed as immutable class.
@@ -333,14 +333,14 @@ To create an immutable class in java, you have to do following steps.
 + Perform cloning of objects in the getter methods to return a copy rather than returning the actual object reference.
 
 
-## 22. What is the difference between an Interface and an Abstract class?
+### 22. What is the difference between an Interface and an Abstract class?
 
 Both define an interface that has to be implemented. Abstract class can contain concrete methods as well as abstract. Abstract class can contain regular class fields. Interface can contain only public static final fields.
 
-## 23. What is the purpose of garbage collection in Java, and when is it used?
+### 23. What is the purpose of garbage collection in Java, and when is it used?
 GC in Java is the mechanism that keeps track of memory and objects residing in memory. GC collects the object when it is no longer needed (usually when no references to the object are available).
 
-## 24. What is the difference between a constructor and a method?
+### 24. What is the difference between a constructor and a method?
 
 We can say that constructor is a special kind of method that instantiates the object.  
 The main differences are:
@@ -348,7 +348,7 @@ The main differences are:
 - More caution is required when writing a constructor
 
 
-## 25. State the significance of public, private, protected, default modifiers both singly and in combination and state the effect of package relationships on declared items qualified by these modifiers.
+### 25. State the significance of public, private, protected, default modifiers both singly and in combination and state the effect of package relationships on declared items qualified by these modifiers.
 
     * public  
         class -- accessible from anywhere. Can be subclassed by anyone (if not declared final)  
@@ -375,11 +375,11 @@ The main differences are:
         inner class -- same  
         nested class -- same 
 
-## 26. What is an abstract class?
+### 26. What is an abstract class?
 
 An abstract class is a java class that has one or more abstract methods (no body). Abstract classes cannot be instantiated. Abstract class defines an interface that has to be implemented by all its subclasses.
 
-## 27. What is static in java?
+### 27. What is static in java?
 
  static is Java Language keyword.  
     a) When used with a method defines a method of a class.  
@@ -388,37 +388,37 @@ An abstract class is a java class that has one or more abstract methods (no body
     d) Also can be used for static initialization block.  
     e) Can be used as a static initialization block
 
-## 28. What is final?
+### 28. What is final?
 
  final is Java Language keyword.  
     a) When used with a method protects it from being overridden in subclasses. Done for security and/or performance reasons.  
     b) When used with a field means that the value stored in the field cannon be changed after initialization. Not to be confused with immutability of the object.  
     c) When used with a class declaration protects it from being subclassed. Done for security and/or performance reasons. Also for immutability. Many of Java core classes are final (e.g. String)
 
-## 29. How can one prove that the array is not null but empty using one line of code?
+### 29. How can one prove that the array is not null but empty using one line of code?
 
  array == null ? xx : array.length == 0
     if the array is instance field it's initialized to null. And this code works.
     if the array is local variable the compiler will generate an error if it has not been initialized
 
-## 30. What environment variables do I need to set on my machine in order to be able to run Java programs?
+### 30. What environment variables do I need to set on my machine in order to be able to run Java programs?
 
 CLASSPATH, PATH and/or JAVA_HOME
 
-## 31. Do I need to import java.lang package any time? Why ?
+### 31. Do I need to import java.lang package any time? Why ?
 
 No. It is imported by default
 
-## 32.Can I import same package/class twice? Will the JVM load the package twice at runtime?
+### 32.Can I import same package/class twice? Will the JVM load the package twice at runtime?
 
 Yes you can declare import twice in the import section.
 No it will not be loaded twice at runtime.
 
-## 33.What is Overriding?
+### 33.What is Overriding?
 
 Changing method behavior in the subclasses.
 
-## 34.What are different types of inner classes?
+### 34.What are different types of inner classes?
 
 if declared with static -- it's nested class. Nested classes are fairly independent and treated as top-level classes. But the constructor call is different.
 To construct one: new OuterClassNeme.InnerClassName().
@@ -429,68 +429,68 @@ To construct one: instanceOfOuterClass.new InnerClassName()
 local class -- declared and visible only within a block of code
 anonymous -- same, but they don't even have a name.
 
-## 35. Are the imports checked for validity at compile time? e.g. will the code containing an import such as java.lang.ABCD compile?
+### 35. Are the imports checked for validity at compile time? e.g. will the code containing an import such as java.lang.ABCD compile?
 
 Yes, they are checked. No it won't compile.
 
-## 36. Does importing a package imports the sub-packages as well? e.g. Does importing com.MyTest.* also** import com.MyTest.UnitTests.*?
+### 36. Does importing a package imports the sub-packages as well? e.g. Does importing com.MyTest.* also** import com.MyTest.UnitTests.*?
 
 No. This declaration will only import classes located directly in com.MyTest package.
 
-## 37.What is the difference between declaring a variable and defining a variable?
+### 37.What is the difference between declaring a variable and defining a variable?
 
 Declaring is declaring. Defining is assigning some value to the declared vaiable.
 
-## 38. What is the default value of an object reference declared as an instance variable?
+### 38. What is the default value of an object reference declared as an instance variable?
 
 null
 
-## 39. Can a top level class be private or protected?
+### 39. Can a top level class be private or protected?
 
 No. It is only allowed to be public or to have default access modifier.
 
-## 40. What type of parameter passing does Java support?
+### 40. What type of parameter passing does Java support?
 
 Java passes all parameters by values. The references to objects are passed by values.
 
-## 41. Primitive data types are passed by reference or pass by value?
+### 41. Primitive data types are passed by reference or pass by value?
 
 See above
 
-## 42.Objects are passed by value or by reference?
+### 42.Objects are passed by value or by reference?
 
 See above
 
-## 43.What are pass by reference and pass by value?
+### 43.What are pass by reference and pass by value?
 
 Pass by reference -- a reference to the Object is passed to the method.
 Pass by value -- a copy of the actual value of the Object is passed to the method. The method is then unable to modify the original Object. (Not true in Java. In Java references to objects are passed by value)
 
-## 44.Give a simplest way to find out the time a method takes for execution without using any profiling tool?
+### 44.Give a simplest way to find out the time a method takes for execution without using any profiling tool?
 
 System.currentTimeMillis() in the beginning and end of the method
 
-## 45.Is Empty .java file a valid source file?
+### 45.Is Empty .java file a valid source file?
 
 Yes it is.
 
-## 46.Can a .java file contain more than one java classes?
+### 46.Can a .java file contain more than one java classes?
 
 Yes it can. It has to contain only one top level public java class but it can contain any number of inner, anonymous and top level classes with default access modifier.
 
-## 47. Is String a primitive data type in Java?
+### 47. Is String a primitive data type in Java?
 
 No. String is an Object. An immutable one.
 
-## 48. Is main a keyword in Java?
+### 48. Is main a keyword in Java?
 
 No. main is the name of the method that is treated in special way if declared properly.
 
-## 49. Is next a keyword in Java?
+### 49. Is next a keyword in Java?
 
 No. next() is method of Iterator or Enumeration interface.
 
-## 50. Is delete a keyword in Java?
+### 50. Is delete a keyword in Java?
 
 No. delete is not a keyword. And I cannot even remember a class that has a method called delete(). Rather remove()
 
