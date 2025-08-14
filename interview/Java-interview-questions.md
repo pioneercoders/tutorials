@@ -487,7 +487,11 @@ Even though a is modified inside modify(), the original x remains 10.
 
 ### 42.Objects are passed by value or by reference?
 
-See above
+In Java, objects are also passed by value, but it’s a bit subtle:
+
+  - When you pass an object to a method, Java passes a copy of the reference (pointer) to that object.
+
+  - This means the method can modify the object’s internal state, but it cannot change the original reference to point to a new object.
 
 ### 43.What are pass by reference and pass by value?
 
