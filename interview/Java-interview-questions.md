@@ -481,9 +481,9 @@ Even though a is modified inside modify(), the original x remains 10.
 
 2.Objects vs primitives:
 
- - Primitives: Passed by value (copy of value).
+  - Primitives: Passed by value (copy of value).
 
- - Objects: The reference to the object is passed by value. This means the method gets a copy of the reference; it can modify the object’s contents but cannot    make the original reference point to a new object.
+  - Objects: The reference to the object is passed by value. This means the method gets a copy of the reference; it can modify the object’s contents but cannot    make the original reference point to a new object.
 
 ### 42.Objects are passed by value or by reference?
 
