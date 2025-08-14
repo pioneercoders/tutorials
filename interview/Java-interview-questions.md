@@ -714,7 +714,9 @@ The main rule is that visibility cannot be reduced in the subclass
 
 ### 70.You need to create the string, which contains 1,000,000 **random numbers, comma separated. How would** you do that, considering performance?
 
-I would use StringBuilder class
+If the goal is performance when creating a large comma-separated string of 1,000,000 random numbers in Java, the key is to avoid string concatenation with + inside a loop (which creates too many intermediate String objects, since Strings are immutable).
+
+Instead, use a StringBuilder (or StringJoiner), which is mutable and much more memory-efficient.
 
 ### 71.Garbage collection principles
 
@@ -722,7 +724,17 @@ The garbage collector first performs a task called marking. The garbage collecto
 
 ### 72.Java de-compiler, when it could be helpful except studying, learning, stealing
 
-Recovering lost sources?TODO????????
+A Java decompiler can be useful in legitimate cases like:
+
+  - Recovering lost source code from compiled .class or .jar files.
+
+  - Debugging when you only have bytecode, not the original .java files.
+
+  - Investigating bugs in third-party libraries you’re allowed to inspect.
+
+  - Verifying obfuscation to see if your code is protected before release.
+
+  - Auditing for security issues like hard-coded credentials or weak logic.
 
 ### 73.How is the virtual space divided in Java?
 
@@ -881,6 +893,26 @@ Cloneable -- is a marker interface and it doesn't contain any methods. It determ
 You can create a local or anonymous class inside the method. It can access only final variables.
 
 ### 98.What is the difference between String and StringBuffer?
+
+Difference between String and StringBuffer
+String: Immutable — once created, it cannot be changed. Any modification creates a new object.
+
+StringBuffer: Mutable — can be modified without creating a new object, better for frequent changes.
+
+Example:
+```java
+public class Main {
+    public static void main(String[] args) {
+        String s = "Hello";
+        s.concat(" World");  // creates new object, s is unchanged
+        System.out.println(s); // Output: Hello
+
+        StringBuffer sb = new StringBuffer("Hello");
+        sb.append(" World");   // modifies same object
+        System.out.println(sb); // Output: Hello World
+    }
+}
+```
 
 ### 99.What is the difference between a while statement and a do statement?
 
