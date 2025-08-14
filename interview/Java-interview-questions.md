@@ -494,43 +494,47 @@ No. next() is method of Iterator or Enumeration interface.
 
 No. delete is not a keyword. And I cannot even remember a class that has a method called delete(). Rather remove()
 
-##  52. Is exit a keyword in Java?
+### 51. Is delete a keyword in Java?
+
+No. delete is not a keyword. And I cannot even remember a class that has a method called delete(). Rather remove()
+
+###  52. Is exit a keyword in Java?
 
 No. exit() is a method of java.lang.System class
 
-## 53.What happens if you dont initialize an instance variable of any of the primitive types in Java?
+### 53.What happens if you dont initialize an instance variable of any of the primitive types in Java?
 
 It gets assigned the default value. 0 for int and long, 0.0 for float and double, false for boolean. Though I tried to compile a class where variables were not initialized and it didn't compile.
 
-## 54.What are the different scopes for Java variables?
+### 54.What are the different scopes for Java variables?
 
 static fields, instance fields, method parameters, local variables
 
-## 55.What is the default value of the local variables?
+### 55.What is the default value of the local variables?
 
 No default value. Default values are assigned to instance fields. Local variables have to be explicitly initialized.
 
-## 56.Does garbage collection guarantee that a program will not run out of memory?
+### 56.Does garbage collection guarantee that a program will not run out of memory?
 
 No. Not at all. Example: recursive call. Or just create lots of objects until you get OutOfMemoryError (or is it an exception?)
 
-## 57.What is the purpose of finalization?
+### 57.What is the purpose of finalization?
 
 Free up the resources. (e.g. close connections and streams, release a lock etc)
 
-## 58.Can a public class MyClass be defined in a source file named YourClass.java?
+### 58.Can a public class MyClass be defined in a source file named YourClass.java?
 
 no. Unless it is a nested class public class.
 
-## 59.What will be the output of the following statement? System.out.println ("1" **+ 3);
+### 59.What will be the output of the following statement? System.out.println ("1" **+ 3);
 
 13
 
-## 60.What will be the default values of all the elements of an array defined as an instance variable?
+### 60.What will be the default values of all the elements of an array defined as an instance variable?
 
 All elements will be initialized to default value of corresponding type.
 
-## 61. Length in bytes for primitive types**
+##### 61. Length in bytes for primitive types**
 
     | Primitive type| length in bytes  | Comment                                 |
     | :------------ |:----------------:| ---------------------------------------:|
