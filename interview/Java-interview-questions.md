@@ -583,6 +583,7 @@ Java is always pass by value.
 For primitives → value is copied.
 
 For objects → reference is copied (so you can modify the object, but not the reference itself).
+
 ### 44.Give a simplest way to find out the time a method takes for execution without using any profiling tool?
 
 System.currentTimeMillis() in the beginning and end of the method
@@ -651,7 +652,7 @@ no. Unless it is a nested class public class.
 
 All elements will be initialized to default value of corresponding type.
 
-##### 61. Length in bytes for primitive types**
+### 61. Length in bytes for primitive types**
 
     | Primitive type| length in bytes  | Comment                                 |
     | :------------ |:----------------:| ---------------------------------------:|
@@ -665,23 +666,23 @@ All elements will be initialized to default value of corresponding type.
     | double        | 8 bytes          |                                         |
 
 
-## 62.Contract between equals() and hashCode()
+### 62.Contract between equals() and hashCode()
 
 if a.equals(b) returns true then a.hashCode() == b.hashCode() is also true. Note that equal hashCode doesn't mean anything.
 
-## 63.What different between StringBuffer and StringBuilder?
+### 63.What different between StringBuffer and StringBuilder?
 
 StringBuilder -- new. StringBuffer -- old. StringBuffer -- synchronized. Where possible use StringBuilder.
 Both represent mutable sequence of characters.
 
-## 64.What internal methods of String do you know?
+### 64.What internal methods of String do you know?
 
 static methods of String class: valueOf
 indexOf, lastIndexOf, replace, contains, startsWith, endsWith, substring
 matches, split
 equals, isEmpty
 
-## 65.Purpose, types and creation of nested classes
+### 65.Purpose, types and creation of nested classes
 
 Types of nested classes see above.
 Purpose:
@@ -694,52 +695,52 @@ Purpose:
     One common use of anonymous classes is to create function objects on the fly. For example, the sort method invocation sorts an array of strings according to their length using an anonymous Comparator instance.
     To recap, there are four different kinds of nested classes, and each has its place. If a nested class needs to be visible outside of a single method or is too long to fit comfortably inside a method, use a member class. If each instance of the member class needs a reference to its enclosing instance, make it nonstatic; otherwise, make it static. Assuming the class belongs inside a method, if you need to create instances from only one location and there is a preexisting type that characterizes the class, make it an anonymous class; otherwise, make it a local class.
 
-## 66.What does it mean that an object or a class is mutable or immutable?
+### 66.What does it mean that an object or a class is mutable or immutable?
 
 Immutability: the state of the object doesn't change
 
-## 67.Is it enough to define this class as final? To make this class immutable?
+### 67.Is it enough to define this class as final? To make this class immutable?
 
 No. If the class is declared final it only means that it cannot be subclassed. If the instance of the class is declared to be final it only means that the reference will not change. The inner state of the object in both cases can change.
 
-## 68.Besides “String” do you know any other immutable classes?
+### 68.Besides “String” do you know any other immutable classes?
 
 BigDecimal, BigInteger all classes that correspond to primitive types
 java.awt.Color
 
-## 69.Increasing/descreasing of methods visibility (inheritence)
+### 69.Increasing/descreasing of methods visibility (inheritence)
 
 The main rule is that visibility cannot be reduced in the subclass
 
-## 70.You need to create the string, which contains 1,000,000 **random numbers, comma separated. How would** you do that, considering performance?
+### 70.You need to create the string, which contains 1,000,000 **random numbers, comma separated. How would** you do that, considering performance?
 
 I would use StringBuilder class
 
-## 71.Garbage collection principles
+### 71.Garbage collection principles
 
 The garbage collector first performs a task called marking. The garbage collector traverses the application graph, starting with the root objects; those are objects that are represented by all active stack frames and all the static variables loaded into the system. Each object the garbage collector meets is marked as being used, and will not be deleted in the sweeping stage. The sweeping stage is where the deletion of objects take place.
 
-## 72.Java de-compiler, when it could be helpful except studying, learning, stealing
+### 72.Java de-compiler, when it could be helpful except studying, learning, stealing
 
 Recovering lost sources?TODO????????
 
-## 73.How is the virtual space divided in Java?
+### 73.How is the virtual space divided in Java?
 
 http://stackoverflow.com/questions/1262328/how-is-the-java-memory-pool-divided
 http://docs.oracle.com/javase/6/docs/technotes/guides/management/jconsole.html
 
-## 74.What difference between float and BigDecimal. How they store the data?
+### 74.What difference between float and BigDecimal. How they store the data?
 
 float is floating point number and can loose precision during the computations.
 BigDeciamal is fixed point number. The computations (which type of computations?) are guaranteed to maintain the needed precision.
 Internally BigDecimal consists of an arbitrary precision integer unscaled value and a 32-bit integer scale
 If no rounding mode is specified and the exact result cannot be represented, an exception is thrown
 
-## 75.What is deep copy of a Java object?
+### 75.What is deep copy of a Java object?
 
 Deep copy creates a copy of the object including deep copies of all its fields.
 
-## 76.What are utilities for JVM monitoring? What is Jconsole?
+### 76.What are utilities for JVM monitoring? What is Jconsole?
 
 From http://docs.oracle.com/javase/6/docs/technotes/tools/
 
@@ -763,69 +764,86 @@ From http://docs.oracle.com/javase/6/docs/technotes/tools/
 
     Never used any of these tools yet. :(
 
-## 77.How and in what cases we need to configure sizes of memory areas in Java?
+### 77.How and in what cases we need to configure sizes of memory areas in Java?
 
 In case of getting OutOfMemoryError: Java heap space. What other cases?
     JVM parameter -Xmx###m where ### is number of megabytes you need for the JVM.
     -Xms###m to set the initial heap size
     More info on this topic can be found here: http://blog.codecentric.de/en/2011/03/java-memory-configuration-and-monitoring-3rd-act/
 
-## 78.What is an Object and how do you allocate memory to it?
+### 78.What is an Object and how do you allocate memory to it?
 
 Object is the base class in Java. Object in general case is an instance of a class. The memory is allocated when new operator is executed. The minimum size is 8 bytes (thats what you get if you call new Object). Each primitive data type takes 4 bytes, except double and long, which take 8 bytes.
 
-## 79.What are methods and how are they defined?
+### 79.What are methods and how are they defined?
 
 Method is an abstraction that defines how a specific computation has to be carried out. Method "abstracts away" the code it contains.
 
-## 80.What is the use of bin and lib in JDK?
+### 80.What is the use of bin and lib in JDK?
 
 bin -- all java binaries: javac, java, appletviewer, jconsole...
 lib -- java libraries
 
-## 81.What is casting?
+### 81.What is casting?
 
 changing the type of the object.
 
-## 82.In how many ways can an argument be passed to a subroutine and explain them?
+### 82.In how many ways can an argument be passed to a subroutine and explain them?
 
 only one. By value. See above
 
-## 83.What is the difference between an argument and a parameter?
+### 83.What is the difference between an argument and a parameter?
 
 parameter -- abstract. argument -- concrete value of the parameter.
 parameters of the function are defined when the function is declared
 arguments of the funciton are defined when it is called
 
-## 84.What is final, finalize() and finally?
+### 84.What is final, finalize() and finally?
 
 final -- Java keyword, see above
 finalize() -- gets called before the object is GC-ed
 finally -- Java keyword used in exception handling.
 
-## 85.What is UNICODE?
+### 85.What is UNICODE?
 
 See info on Unicode here http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Character.html
 
-## 86.What is finalize() method?
+### 86.What is finalize() method?
 
-See above.
+The finalize() method in Java is a special method provided by the Object class that allows an object to clean up resources before it is garbage collected.
 
-## 87.What are Transient and Volatile Modifiers?
+1.Purpose:
+
+To perform cleanup operations, like releasing memory, closing file streams, or releasing network connections, before the object is destroyed by the garbage collector.
+
+2.Declaration:
+```java
+protected void finalize() throws Throwable {
+    // cleanup code
+}
+
+```
+
+3.Called by Garbage Collector:
+The JVM calls finalize() automatically just before an object is garbage collected.
+
+You should not call it explicitly in normal code.
+
+### 87.What are Transient and Volatile Modifiers?
 
 Transient signifies that the field is not part of the object state (e.g. it's some derieved value or some cache). Transient fields are not present in serialized representation of the object.
 If field is declared with volatile keyword then any thread that reads the field will see the most recently written value [Effective Java Item 66]
 
-## 88.What is difference between overloading and overriding?
+### 88.What is difference between overloading and overriding?
 
 overloading -- adding a method with the same name but different signature
 overriding -- changing the method implementation in the subclass
 
-## 89.What is meant by Inheritance and what are its advantages?
+### 89.What is meant by Inheritance and what are its advantages?
 
 Inheritance is one of principles of OOP. It allows to create class hierarchies. Classes can inherit methods and properties from the base classes thus increasing code reuse.
 
-## 90.What is the difference between this() and super()?
+### 90.What is the difference between this() and super()?
 
 this() calls the constructor of current class.
 super() calls the superclass constructor
@@ -833,48 +851,48 @@ super() has to be the first statement of subclass constructor;
 this and super are references to the current object and to current object treated as superclass.
 this.new Something() has to be used to create inner classes
 
-## 91.What is the difference between superclass and subclass?
+### 91.What is the difference between superclass and subclass?
 
 Obvious.
 
-## 92.What modifiers may be used with top-level class?
+### 92.What modifiers may be used with top-level class?
 
 only public or default (package-private)
 
-## 93.What is a package?
+### 93.What is a package?
 
 In Java package is a mechanism to oragnize classes into modules.
 
-## 94What is a reflection package?
+### 94What is a reflection package?
 
 Not sure the question is clearly stated. What I would answer is pasted from javadoc of java.lang.reflect
 Provides classes and interfaces for obtaining reflective information about classes and objects. Reflection allows programmatic access to information about the fields, methods and constructors of loaded classes, and the use reflected fields, methods, and constructors to operate on their underlying counterparts on objects, within security restrictions.
 
-## 95.What is the difference between Integer and int?
+### 95.What is the difference between Integer and int?
 
 Integer is a wrapper class for int primitive type. Integer can be used in generic collections whereas int cannot. Also contains a number of utility methods.
 
-## 96.What is a cloneable interface and how many methods does it contain?
+### 96.What is a cloneable interface and how many methods does it contain?
 
 Cloneable -- is a marker interface and it doesn't contain any methods. It determines the behavior of Object’s protected clone implementation: if a class implements Cloneable, Object’s clone method returns a field-by-field copy of the object; otherwise it throws CloneNotSupportedException
 
-## 97.Can you have an inner class inside a method and what variables can you access?
+### 97.Can you have an inner class inside a method and what variables can you access?
 
 You can create a local or anonymous class inside the method. It can access only final variables.
 
-## 98.What is the difference between String and StringBuffer?
+### 98.What is the difference between String and StringBuffer?
 
-## 99.What is the difference between a while statement and a do statement?
+### 99.What is the difference between a while statement and a do statement?
 
 do is guaranteed to execute at least once.
 
-## 100.What is the difference between static and non-static variables?
+### 100.What is the difference between static and non-static variables?
 
 a) The way they are initialized. Static are initalized when the class is loaded. Non-static -- when it's instantiated.
 b) Non-static belong to the instance of an object while static are class variables.
 c) Static are accessed using ClassName.varName
 
-## 101.How does Java handle integer overflows and underflows?
+### 101.How does Java handle integer overflows and underflows?
 
 It goes down to the MIN_INT value in case of overflow and to MAX_INT in case of overflow
 
@@ -919,7 +937,7 @@ Main method
 
 # Java Collections
 
-## 102. What are the basic interfaces of Java Collections Framework ?  
+### 102. What are the basic interfaces of Java Collections Framework ?  
 [Java Collections Framework](http://docs.oracle.com/javase/7/docs/technotes/guides/collections/overview.html) provides a well designed set of interfaces and classes that support operations on a collections of objects. The most basic interfaces that reside in the Java Collections Framework are:
 
 * [Collection](http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html), which represents a group of objects known as its elements.
@@ -927,29 +945,29 @@ Main method
 * [List](http://docs.oracle.com/javase/7/docs/api/java/util/List.html), which is an ordered collection and can contain duplicate elements.
 * [Map](http://docs.oracle.com/javase/7/docs/api/java/util/Map.html), which is an object that maps keys to values and cannot contain duplicate keys.
 
-## 103. Why Collection doesn’t extend Cloneable and Serializable interfaces ? 
+### 103. Why Collection doesn’t extend Cloneable and Serializable interfaces ? 
 The [Collection](http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html) interface specifies groups of objects known as elements. Each concrete implementation of a [Collection](http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html) can choose its own way of how to maintain and order its elements. Some collections allow duplicate keys, while some other collections don’t. The semantics and the implications of either cloning or serialization come into play when dealing with actual implementations. Thus, the concrete implementations of collections should decide how they can be cloned or serialized.
 
-## 104. What is an Iterator ? 
+### 104. What is an Iterator ? 
 The [Iterator](http://docs.oracle.com/javase/7/docs/api/java/util/Iterator.html) interface provides a number of methods that are able to iterate over any [Collection](http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html). Each Java [Collection](http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html) contains the [Iterator](http://docs.oracle.com/javase/7/docs/api/java/util/Iterator.html)  method that returns an [Iterator](http://docs.oracle.com/javase/7/docs/api/java/util/Iterator.html)  instance. Iterators are capable of removing elements from the underlying collection during the iteration.
 
-## 105. What differences exist between Iterator and ListIterator ? 
+### 105. What differences exist between Iterator and ListIterator ? 
 The differences of these elements are listed below:
 
 * An [Iterator](http://docs.oracle.com/javase/7/docs/api/java/util/Iterator.html)  can be used to traverse the [Set](http://docs.oracle.com/javase/7/docs/api/java/util/Set.html) and [List](http://docs.oracle.com/javase/7/docs/api/java/util/List.html)  collections, while the [ListIterator](http://docs.oracle.com/javase/7/docs/api/java/util/ListIterator.html) can be used to iterate only over [List](http://docs.oracle.com/javase/7/docs/api/java/util/List.html) .
 * The [Iterator](http://docs.oracle.com/javase/7/docs/api/java/util/Iterator.html)  can traverse a collection only in forward direction, while the [ListIterator](http://docs.oracle.com/javase/7/docs/api/java/util/ListIterator.html) can traverse a [List](http://docs.oracle.com/javase/7/docs/api/java/util/List.html) in both directions.
 * The [ListIterator](http://docs.oracle.com/javase/7/docs/api/java/util/ListIterator.html) implements the [Iterator](http://docs.oracle.com/javase/7/docs/api/java/util/Iterator.html)  interface and contains extra functionality, such as adding an element, replacing an element, getting the index position for previous and next elements, etc.
 
-## 106. What is difference between fail-fast and fail-safe ? 
+### 106. What is difference between fail-fast and fail-safe ? 
 The [Iterator's](http://docs.oracle.com/javase/7/docs/api/java/util/Iterator.html)  fail-safe property works with the clone of the underlying collection and thus, it is not affected by any modification in the collection. All the collection classes in java.util package are fail-fast, while the collection classes in java.util.concurrent are fail-safe. Fail-fast iterators throw a [ConcurrentModificationException](http://examples.javacodegeeks.com/java-basics/exceptions/java-util-concurrentmodificationexception-how-to-handle-concurrent-modification-exception/), while fail-safe iterator never throws such an exception.
 
-## 107. How HashMap works in Java ? 
+### 107. How HashMap works in Java ? 
 [A HashMap in Java stores key-value pairs](http://www.javacodegeeks.com/2014/03/how-hashmap-works-in-java.html). The [HashMap](http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html) requires a hash function and uses hashCode and equals methods, in order to put and retrieve elements to and from the collection respectively. When the put method is invoked, the [HashMap](http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html) calculates the hash value of the key and stores the pair in the appropriate index inside the collection. If the key exists, its value is updated with the new value. Some important characteristics of a [HashMap](http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html) are its capacity, its load factor and the threshold resizing.
 
-####24. What is the importance of hashCode() and equals() methods ? 
+### 108. What is the importance of hashCode() and equals() methods ? 
 A [HashMap](http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html) in Java uses the hashCode and equals methods to determine the index of the key-value pair. These methods are also used when we request the value of a specific key. If these methods are not implemented correctly, two different keys might produce the same hash value and thus, will be considered as equal by the collection. Furthermore, these methods are also used to detect duplicates. Thus, the implementation of both methods is crucial to the accuracy and correctness of the [HashMap](http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html).
 
-## 108. What differences exist between HashMap and Hashtable ? 
+### 109. What differences exist between HashMap and Hashtable ? 
 Both the [HashMap](http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html) and [Hashtable](http://docs.oracle.com/javase/7/docs/api/java/util/Hashtable.html) classes implement the Map interface and thus, have very similar characteristics. However, they differ in the following features:
 
 * A [HashMap](http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html) allows the existence of null keys and values, while a [Hashtable](http://docs.oracle.com/javase/7/docs/api/java/util/Hashtable.html) doesn’t allow neither null keys, nor null values.
@@ -957,7 +975,7 @@ Both the [HashMap](http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.ht
 * A [HashMap](http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html) provides its set of keys and a Java application can iterate over them. Thus, a [HashMap](http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html) is fail-fast. On the other hand, a [Hashtable](http://docs.oracle.com/javase/7/docs/api/java/util/Hashtable.html) provides an [Enumeration](http://docs.oracle.com/javase/7/docs/api/java/util/Enumeration.html) of its keys.
 * The [Hashtable](http://docs.oracle.com/javase/7/docs/api/java/util/Hashtable.html) class is considered to be a legacy class.
 
-#### 109. What is difference between Array and ArrayList ? When will you use Array over ArrayList ?
+### 110. What is difference between Array and ArrayList ? When will you use Array over ArrayList ?
 The Array and ArrayList classes differ on the following features:
 
 * [Arrays](http://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html) can contain primitive or objects, while an [ArrayList](http://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html) can contain only objects.
@@ -965,7 +983,7 @@ The Array and ArrayList classes differ on the following features:
 * An [ArrayList](http://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html) provides more methods and features, such as addAll, removeAll, iterator, etc.
 * For a list of primitive data types, the collections use autoboxing to reduce the coding effort. However, this approach makes them slower when working on fixed size primitive data types.
 
-## 110. What is difference between ArrayList and LinkedList ? 
+### 111. What is difference between ArrayList and LinkedList ? 
 Both the [ArrayList](http://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html) and [LinkedList](http://docs.oracle.com/javase/7/docs/api/java/util/LinkedList.html) classes implement the List interface, but they differ on the following features:
 
 * An [ArrayList](http://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html) is an index based data structure backed by an [Array](http://docs.oracle.com/javase/7/docs/api/java/lang/reflect/Array.html). It provides random access to its elements with a performance equal to O(1). On the other hand, a [LinkedList](http://docs.oracle.com/javase/7/docs/api/java/util/LinkedList.html) stores its data as list of elements and every element is linked to its previous and next element. In this case, the search operation for an element has execution time equal to O(n).
@@ -973,19 +991,19 @@ Both the [ArrayList](http://docs.oracle.com/javase/7/docs/api/java/util/ArrayLis
 * A [LinkedList](http://docs.oracle.com/javase/7/docs/api/java/util/LinkedList.html) consumes more memory than an [ArrayList](http://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html), because every node in a [LinkedList](http://docs.oracle.com/javase/7/docs/api/java/util/LinkedList.html) stores two references, one for its previous element and one for its next element.
 Check also our article [ArrayList](http://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html) vs. [LinkedList](http://docs.oracle.com/javase/7/docs/api/java/util/LinkedList.html).
 
-## 111. What is Comparable and Comparator interface ?
+### 112. What is Comparable and Comparator interface ?
 List their differences. Java provides the [Comparable](http://docs.oracle.com/javase/7/docs/api/java/lang/Comparable.html) interface, which contains only one method, called [compareTo](http://docs.oracle.com/javase/7/docs/api/java/lang/Comparable.html#compareTo(T)). This method compares two objects, in order to impose an order between them. Specifically, it returns a negative integer, zero, or a positive integer to indicate that the input object is less than, equal or greater than the existing object. Java provides the [Comparator](http://docs.oracle.com/javase/7/docs/api/java/util/Comparator.html) interface, which contains two methods, called [compare](http://docs.oracle.com/javase/7/docs/api/java/util/Comparator.html#compare(T,%20T)) and [equals](http://docs.oracle.com/javase/7/docs/api/java/util/Comparator.html#equals(java.lang.Object)). The first method compares its two input arguments and imposes an order between them. It returns a negative integer, zero, or a positive integer to indicate that the first argument is less than, equal to, or greater than the second. The second method requires an object as a parameter and aims to decide whether the input object is equal to the comparator. The method returns true, only if the specified object is also a comparator and it imposes the same ordering as the comparator.
 
-## 112. What is Java Priority Queue ? 
+### 113. What is Java Priority Queue ? 
 The [PriorityQueue](http://docs.oracle.com/javase/7/docs/api/java/util/PriorityQueue.html) is an unbounded queue, based on a priority heap and its elements are ordered in their natural order. At the time of its creation, we can provide a Comparator that is responsible for ordering the elements of the [PriorityQueue](http://docs.oracle.com/javase/7/docs/api/java/util/PriorityQueue.html). A [PriorityQueue](http://docs.oracle.com/javase/7/docs/api/java/util/PriorityQueue.html) doesn’t allow null values, those objects that doesn’t provide natural ordering, or those objects that don’t have any comparator associated with them. Finally, the Java [PriorityQueue](http://docs.oracle.com/javase/7/docs/api/java/util/PriorityQueue.html) is not thread-safe and it requires O(log(n)) time for its enqueing and dequeing operations.
 
-## 113. What do you know about the big-O notation and can you give some examples with respect to different data structures ?
+### 114. What do you know about the big-O notation and can you give some examples with respect to different data structures ?
 The Big-O notation simply describes how well an algorithm scales or performs in the worst case scenario as the number of elements in a data structure increases. The Big-O notation can also be used to describe other behavior such as memory consumption. Since the collection classes are actually data structures, we usually use the Big-O notation to chose the best implementation to use, based on time, memory and performance. Big-O notation can give a good indication about performance for large amounts of data.
 
-## 114. What is the tradeoff between using an unordered array versus an ordered array ? 
+### 115. What is the tradeoff between using an unordered array versus an ordered array ? 
 The major advantage of an ordered array is that the search times have time complexity of O(log n), compared to that of an unordered array, which is O (n). The disadvantage of an ordered array is that the insertion operation has a time complexity of O(n), because the elements with higher values must be moved to make room for the new element. Instead, the insertion operation for an unordered array takes constant time of O(1).
 
-## 115. What are some of the best practices relating to the Java Collection framework ?
+### 116. What are some of the best practices relating to the Java Collection framework ?
 
 * Choosing the right type of the collection to use, based on the application’s needs, is very crucial for its performance. For example if the size of the elements is fixed and know a priori, we shall use an [Array](http://docs.oracle.com/javase/7/docs/api/java/lang/reflect/Array.html), instead of an [ArrayList](http://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html).
 * Some collection classes allow us to specify their initial capacity. Thus, if we have an estimation on the number of elements that will be stored, we can use it to avoid rehashing or resizing.
@@ -994,29 +1012,29 @@ The major advantage of an ordered array is that the search times have time compl
 * Program in terms of interface not implementation.
 * Return zero-length collections or arrays as opposed to returning a null in case the underlying collection is actually empty.
 
-## 116. What’s the difference between Enumeration and Iterator interfaces ? 
+### 117. What’s the difference between Enumeration and Iterator interfaces ? 
 [Enumeration](http://docs.oracle.com/javase/7/docs/api/java/util/Enumeration.html) is twice as fast as compared to an Iterator and uses very less memory. However, the [Iterator](http://docs.oracle.com/javase/7/docs/api/java/util/Iterator.html) is much safer compared to [Enumeration](http://docs.oracle.com/javase/7/docs/api/java/util/Enumeration.html), because other threads are not able to modify the collection object that is currently traversed by the iterator. Also, [Iterators](http://docs.oracle.com/javase/7/docs/api/java/util/Iterator.html) allow the caller to remove elements from the underlying collection, something which is not possible with [Enumeration](http://docs.oracle.com/javase/7/docs/api/java/util/Enumeration.html).
 
-## 117. What is the difference between HashSet and TreeSet ? 
+### 118. What is the difference between HashSet and TreeSet ? 
 The [HashSet](http://docs.oracle.com/javase/7/docs/api/java/util/HashSet.html) is Implemented using a hash table and thus, its elements are not ordered. The add, remove, and contains methods of a [HashSet](http://docs.oracle.com/javase/7/docs/api/java/util/HashSet.html)  have constant time complexity O(1). On the other hand, a [TreeSet](http://docs.oracle.com/javase/7/docs/api/java/util/TreeSet.html) is implemented using a tree structure. The elements in a [TreeSet](http://docs.oracle.com/javase/7/docs/api/java/util/TreeSet.html) are sorted, and thus, the add, remove, and contains methods have time complexity of O(logn).
 
 
 # Exception Handling
 
-## 118. What are the two types of Exceptions in Java ? Which are the differences between them ? 
+### 119. What are the two types of Exceptions in Java ? Which are the differences between them ? 
 Java has two types of exceptions: checked exceptions and unchecked exceptions. Unchecked exceptions do not need to be declared in a method or a constructor’s throws clause, if they can be thrown by the execution of the method or the constructor, and propagate outside the method or constructor boundary. On the other hand, checked exceptions must be declared in a method or a constructor’s throws clause. See here for tips on [Java exception handling](http://www.javacodegeeks.com/2013/07/java-exception-handling-tutorial-with-examples-and-best-practices.html).
 
-## 119. What is the difference between Exception and Error in java ? 
+### 120. What is the difference between Exception and Error in java ? 
 [Exception](http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html) and [Error](http://docs.oracle.com/javase/7/docs/api/java/lang/Error.html) classes are both subclasses of the [Throwable](http://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html) class. The [Exception](http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html)  class is used for exceptional conditions that a user’s program should catch. The [Error](http://docs.oracle.com/javase/7/docs/api/java/lang/Error.html)  class defines exceptions that are not excepted to be caught by the user program.
 
-## 120. What is the difference between throw and throws ? 
+### 121. What is the difference between throw and throws ? 
 The throw keyword is used to explicitly raise a exception within the program. On the contrary, the throws clause is used to indicate those exceptions that are not handled by a method. Each method must explicitly specify which exceptions does not handle, so the callers of that method can guard against possible exceptions. Finally, multiple exceptions are separated by a comma.
 
-## 121. What is the importance of finally block in exception handling ?
+### 122. What is the importance of finally block in exception handling ?
 A finally block will always be executed, whether or not an exception is actually thrown. Even in the case where the catch statement is missing and an exception is thrown, the finally block will still be executed. Last thing to mention is that the finally block is used to release resources like I/O buffers, database connections, etc.
 
-## 122. What will happen to the Exception object after exception handling ? 
+### 123. What will happen to the Exception object after exception handling ? 
 The [Exception](http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html) object will be garbage collected in the next garbage collection.
 
-## 123. How does finally block differ from finalize() method ?
+### 124. How does finally block differ from finalize() method ?
 A finally block will be executed whether or not an exception is thrown and is used to release those resources held by the application. Finalize is a protected method of the Object class, which is called by the Java Virtual Machine (JVM) just before an object is garbage collected.
