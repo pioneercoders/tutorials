@@ -652,7 +652,7 @@ no. Unless it is a nested class public class.
 All elements will be initialized to default value of corresponding type.
 
 ### 61. Length in bytes for primitive types**
-
+    
     | Primitive type| length in bytes  | Comment                                 |
     | :------------ |:----------------:| ---------------------------------------:|
     | boolean       | 1 bit            |  saved as 4 bytes; 1 byte in an array   |
