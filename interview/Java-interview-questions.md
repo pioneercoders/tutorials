@@ -10,7 +10,7 @@ JIT converts the bytecode into machine language and then JVM starts the executio
 + Secured: Java is secured because it doesn't use explicit pointers.
 + Java is a strong programming language as it uses strong memory management. The concepts like Automatic garbage collection.
 
-## 2. What are the OOPs concepts?
+### 2. What are the OOPs concepts?
 OOPs concepts include:
 + **Inheritance** 
     + Inheritance means one class can extend to another class. 
@@ -32,13 +32,13 @@ OOPs concepts include:
     + Multiple inheritances cannot be achieved in java. To overcome this problem the Interface concept is introduced.
    An interface is a template which has only method declarations and not the method implementation.
 
-## 3. What are different access modifiers in Java?
+### 3. What are different access modifiers in Java?
 + **Default** access modifier is without any access specifier data members, class and methods, and are accessible within the same package.
 + **Private** access modifiers are marked with the keyword private, and are accessible only within class, and not even accessible by class from the same package.
 + **Protected** access modifiers can be accessible within the same package or subclasses from different packages.
 + **Public** access modifiers are accessible from everywhere.
 
-## 4. What is the meaning of SOLID?
+### 4. What is the meaning of SOLID?
 Solid represents five principles of java which are:
 
 + **S**: Single responsibility principle. One class should have only one and only responsibility.
@@ -54,7 +54,7 @@ So, when you give your card to the clerk for making the payment,
 the clerk doesn’t bother to check what kind of card you have given.
 The type of credit card or debit card that you have for paying does not even matter; they will simply swipe it.
 
-## 5. What are primitive data types?
+### 5. What are primitive data types?
 
 + byte - 1 byte (8 bits). Min -2^7 Max 2^7-1
 + short - 2 byte (16 bits). Min -2^15 Max 2^15-1
@@ -65,7 +65,7 @@ The type of credit card or debit card that you have for paying does not even mat
 + double - 8 byte (64 bits). Min -2^63-1 Max 2^63
 + boolean - NA usualy 1 byte
 
-## 6. Order of execution of Initialization blocks and Constructors in Java.
+### 6. Order of execution of Initialization blocks and Constructors in Java.
 
 + Static initialization blocks will run whenever the class is loaded first time in JVM
 + Initialization blocks run in the same order in which they appear in the program.
