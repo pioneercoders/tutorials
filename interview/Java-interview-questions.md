@@ -455,7 +455,35 @@ Java passes all parameters by values. The references to objects are passed by va
 
 ### 41. Primitive data types are passed by reference or pass by value?
 
-See above
+In Java, primitive data types are always passed by value.
+
+Here’s what that means:
+
+1.Pass by value: 
+A copy of the actual value is passed to the method. Changes made to the parameter inside the method do not affect the original variable.
+
+Example:
+
+```java
+public class Test {
+    public static void main(String[] args) {
+        int x = 10;
+        modify(x);
+        System.out.println(x); // Output: 10
+    }
+
+    public static void modify(int a) {
+        a = a + 5;
+    }
+}
+```
+Even though a is modified inside modify(), the original x remains 10.
+
+2.Objects vs primitives:
+
+ - Primitives: Passed by value (copy of value).
+
+ - Objects: The reference to the object is passed by value. This means the method gets a copy of the reference; it can modify the object’s contents but cannot    make the original reference point to a new object.
 
 ### 42.Objects are passed by value or by reference?
 
