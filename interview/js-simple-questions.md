@@ -57,8 +57,8 @@ Non-Primitive (Reference) Data Types – objects and more complex structures
     These are more complex and can store multiple values or objects.
 
     1.Object → Stores related data as key-value pairs.
-```javascript
-let person = {name: "Keerthi", age: 25};
+           ```javascript
+           let person = {name: "Keerthi", age: 25};
 ```
     2.Array → Ordered list of items.
     ```javascript
