@@ -74,7 +74,21 @@ function greet() {
 ```javascript
 let today = new Date();
 ```
+#### 4.What is the difference between == and ===?
 
+1. == (Equality Operator / Loose Equality)
+
+  - Compares values only.
+
+  - Performs type coercion if the types of the two operands are different.
+
+  - Converts one value to match the type of the other before comparing.
+
+2. === (Strict Equality Operator)
+
+ - Compares both value and type.
+
+ - No type coercion occurs. Both must be exactly the same type and value.
 
 
 
