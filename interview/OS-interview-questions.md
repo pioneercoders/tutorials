@@ -97,12 +97,21 @@ Segment Number
 Segment Offset
 
 #### 11. What is the difference between paging and segmentation?
-| Paging                                                                | Segmentation                                                          |
-| --------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| Fixed-size blocks.                                                    | Variable-size blocks.                                                 |
-| Prevents external fragmentation but may cause internal fragmentation. | Prevents internal fragmentation but may cause external fragmentation. |
-| Mapping is page-based.                                                | Mapping is segment-based.                                             |
+Paging
 
+  - Uses fixed-size blocks.
+
+  - Prevents external fragmentation but may cause internal fragmentation.
+
+  - Mapping is page-based.
+
+Segmentation
+
+  - Uses variable-size blocks.
+
+  - Prevents internal fragmentation but may cause external fragmentation.
+
+  - Mapping is segment-based.
 
 #### 12.What is a scheduling algorithm?
 A scheduling algorithm decides the order in which processes access the CPU.
