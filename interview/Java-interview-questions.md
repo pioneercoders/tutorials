@@ -535,9 +535,54 @@ public class Test {
 The original reference p does not change, because the method only had a copy of the reference.
 ### 43.What are pass by reference and pass by value?
 
-Pass by reference -- a reference to the Object is passed to the method.
-Pass by value -- a copy of the actual value of the Object is passed to the method. The method is then unable to modify the original Object. (Not true in Java. In Java references to objects are passed by value)
+Pass by Value
 
+The actual value of the variable is copied and passed to the method.
+
+Changes made to the parameter inside the method do not affect the original variable.
+Example (primitive type in Java):
+
+```java
+public class Test {
+    public static void main(String[] args) {
+        int x = 10;
+        modify(x);
+        System.out.println(x); // Output: 10
+    }
+
+    public static void modify(int a) {
+        a = a + 5; // only modifies the copy
+    }
+}
+
+```
+Original x remains 10.
+
+2. Pass by Reference
+The reference (or address) of the variable is passed to the method.
+
+Changes made inside the method directly affect the original variable.
+
+```java
+void modify(int &a) {
+    a = a + 5; // modifies the original variable
+}
+
+int main() {
+    int x = 10;
+    modify(x);
+    cout << x; // Output: 15
+}
+```
+Original x is modified because the reference was passed.
+
+In short (Java perspective):
+
+Java is always pass by value.
+
+For primitives → value is copied.
+
+For objects → reference is copied (so you can modify the object, but not the reference itself).
 ### 44.Give a simplest way to find out the time a method takes for execution without using any profiling tool?
 
 System.currentTimeMillis() in the beginning and end of the method
