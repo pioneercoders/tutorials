@@ -57,12 +57,12 @@ Non-Primitive (Reference) Data Types – objects and more complex structures
     These are more complex and can store multiple values or objects.
 
     1.Object → Stores related data as key-value pairs.
-           ```javascript
-           let person = {name: "Keerthi", age: 25};
+```javascript
+let person = {name: "Keerthi", age: 25};
 ```
     2.Array → Ordered list of items.
-    ```javascript
-    let fruits = ["Apple", "Banana", "Mango"];
+```javascript
+let fruits = ["Apple", "Banana", "Mango"];
 ```
     3.Function → A reusable block of code that performs a task.
 ```javascript
@@ -71,8 +71,8 @@ function greet() {
 }
 ```
     4.Date → Represents date and time.
-    ```javascript
-    let today = new Date();
+```javascript
+let today = new Date();
 ```
 
 
