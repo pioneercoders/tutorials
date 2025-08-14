@@ -1,5 +1,5 @@
 
-## 1. What is Java. What are features of Java?
+# 1. What is Java. What are features of Java?
 Java is a high-level programming language and is platform-independent.
 + Java is also an object-oriented language. However, everything (except fundamental types) is an object in Java
 + Platform independent: A single program works on different platforms without any modification.
