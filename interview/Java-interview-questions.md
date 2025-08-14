@@ -492,7 +492,47 @@ In Java, objects are also passed by value, but it’s a bit subtle:
   - When you pass an object to a method, Java passes a copy of the reference (pointer) to that object.
 
   - This means the method can modify the object’s internal state, but it cannot change the original reference to point to a new object.
+    
+Example 1 – Modifying the object’s state:
 
+```java
+class Person {
+    String name;
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Person p = new Person();
+        p.name = "Alice";
+        changeName(p);
+        System.out.println(p.name); // Output: Bob
+    }
+
+    public static void changeName(Person person) {
+        person.name = "Bob"; // modifies the object’s internal state
+    }
+}
+```
+The object itself is modified.
+
+Example 2 – Trying to reassign the reference:
+
+```java
+public class Test {
+    public static void main(String[] args) {
+        Person p = new Person();
+        p.name = "Alice";
+        reassign(p);
+        System.out.println(p.name); // Output: Alice
+    }
+
+    public static void reassign(Person person) {
+        person = new Person(); // new object assigned to local copy
+        person.name = "Bob";
+    }
+}
+```
+The original reference p does not change, because the method only had a copy of the reference.
 ### 43.What are pass by reference and pass by value?
 
 Pass by reference -- a reference to the Object is passed to the method.
