@@ -44,11 +44,21 @@ Terminated – Process has finished execution.
 #### 5. What is the difference between process and thread?
 ## Differences between process and thread
 
-| Process | Thread |
-| ------- | ------ |
-| Independent unit with its own memory space. | Shares memory space with other threads in the same process. |
-| Heavier, requires more resources to create. | Lightweight, faster to create. |
-| Context switch is slower. | Context switch is faster. |
+Process
+
+  - Independent unit with its own memory space.
+
+  - Heavier, requires more resources to create.
+
+  - Context switch is slower.
+
+Thread
+
+  - Shares memory space with other threads in the same process.
+
+  - Lightweight, faster to create.
+
+  - Context switch is faster.
 
 #### 6.What is deadlock?
 
