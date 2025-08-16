@@ -8,6 +8,7 @@ Internal CSS – inside <style> tag in the HTML <head>.
 
 External CSS – in a .css file linked via <link>.
 
+
 #### 3.Difference between relative, absolute, fixed, and sticky positioning?
 
 Relative – positioned relative to its original position.
