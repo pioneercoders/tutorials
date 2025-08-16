@@ -307,8 +307,8 @@ Let is a mathematical statement that was adopted by early programming languages 
     
 #### 20. How do you redeclare variables in switch block without an error?
 If you try to redeclare variables in a `switch block` then it will cause errors because there is only one block. For example, the below code block throws a syntax error as below,
-    ```javascript
-    let counter = 1;
+```javascript
+let counter = 1;
     switch(x) {
       case 0:
         let name;
@@ -317,10 +317,10 @@ If you try to redeclare variables in a `switch block` then it will cause errors 
       case 1:
         let name; // SyntaxError for redeclaration.
         break;
-    }
-    ```
- To avoid this error, you can create a nested block inside a case clause will create a new block scoped lexical environment.
-    ```javascript
+    }    
+```
+To avoid this error, you can create a nested block inside a case clause will create a new block scoped lexical environment.
+ ```javascript
     let counter = 1;
         switch(x) {
           case 0: {
@@ -332,7 +332,7 @@ If you try to redeclare variables in a `switch block` then it will cause errors 
             break;
           }
         }
-    ```
+```
 #### 21. What is Temporal Dead Zone?
 
 The Temporal Dead Zone is a behavior in JavaScript that occurs when declaring a variable with the `let` and `const` keywords, but not with `var`.  
