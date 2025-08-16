@@ -477,7 +477,7 @@ child.on("message", (msg) => {
 child.send({ hello: "world" });
 ```
 
-#### 8.hat is the difference between synchronous and asynchronous error handling in Node.js?
+#### 8.what is the difference between synchronous and asynchronous error handling in Node.js?
 
 In Node.js, synchronous and asynchronous error handling differ mainly in when and how errors are detected and caught.
 
