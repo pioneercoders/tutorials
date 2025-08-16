@@ -542,9 +542,84 @@ Example with async/await:
   }
 })();
 ```
-#### 9.
+#### 9.What are Streams in Node.js? Types of streams?
+In Node.js, a stream is an abstract interface for working with streaming data. Streams allow you to read or write data continuously in chunks instead of loading it all into memory at once. This makes them very efficient for handling large files, network operations, or any I/O-heavy tasks.
 
+For example:
 
+  - Reading a large file line by line instead of loading the whole file into memory.
+
+  - Streaming video/audio data.
+
+  - Handling HTTP requests and responses.
+
+** Types of Streams in Node.js **
+
+There are 4 main types of streams:
+
+1.Readable Streams
+
+  - Used to read data from a source.
+
+  - Example: fs.createReadStream(), process.stdin.
+
+```js
+const fs = require('fs');
+const readStream = fs.createReadStream('file.txt', 'utf8');
+readStream.on('data', chunk => {
+  console.log('Received chunk:', chunk);
+});
+
+```
+
+2.Writable Streams
+   - Used to write data to a destination.
+   - Example: fs.createWriteStream(), process.stdout.
+```js
+const fs = require('fs');
+const writeStream = fs.createWriteStream('output.txt');
+writeStream.write('Hello, Stream!');
+writeStream.end();
+```
+
+3.Duplex Streams
+
+  - Can be used for both reading and writing.
+
+  - Example: TCP sockets (net.Socket).
+
+```js
+const { Duplex } = require('stream');
+const duplex = new Duplex({
+  read(size) {
+    this.push('Hello from duplex!\n');
+    this.push(null);
+  },
+  write(chunk, encoding, callback) {
+    console.log('Writing:', chunk.toString());
+    callback();
+  }
+});
+duplex.on('data', chunk => console.log('Read:', chunk.toString()));
+duplex.write('Writing into duplex');
+```
+
+4.Transform Streams
+
+A special type of duplex stream that can modify or transform data while reading and writing.
+
+Example: zlib.createGzip(), crypto.createCipher().
+
+```js
+const { Transform } = require('stream');
+const transform = new Transform({
+  transform(chunk, encoding, callback) {
+    this.push(chunk.toString().toUpperCase());
+    callback();
+  }
+});
+process.stdin.pipe(transform).pipe(process.stdout);
+```
 
 
 
