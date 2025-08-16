@@ -10,163 +10,66 @@ interface C extends A, B {}
 
 type D = A & B; // Same as above, but works with any type
 
-#### 2.How do you enforce type safety in a function that accepts both strings and numbers but behaves differently for each?
-You can use function overloads.
-function processInput(input: string): string;
-function processInput(input: number): number;
-function processInput(input: string | number): string | number {
-  return typeof input === "string" ? input.toUpperCase() : input * 2;
-}
+#### 2.Explain the difference between any, unknown, and never in detail?
 
-processInput("hello"); // Returns string
-processInput(5);       // Returns number
+--> any disables type checking — you can assign and use any value, but it’s unsafe.
+--> unknown is like a safer any: it can hold any value, but you must check its type before using it.
+--> never represents a type that never occurs, usually for functions that don’t return or for exhaustive type checks.
 
-Key point: Overloads allow precise type inference for different input types.
+#### 3.What are mapped types in TypeScript? Provide an example.
 
-#### 3.How does TypeScript handle never type and when would you use it?
-never represents values that never occur.
+Mapped types in TypeScript let you create new types by transforming existing ones.
+They work by looping over the keys of another type (keyof) and applying a transformation to each property.
 
-Used in:
+For example:
 
-Functions that throw errors
+```typescript
+type PartialPerson = { [K in keyof Person]?: Person[K] };
+```
+makes all properties of Person optional.
+TypeScript also provides built-in mapped types like Partial<T>, Readonly<T>, Pick<T>, and Record<K, T> that are commonly used in real-world projects.
 
-Exhaustive type checking
+#### 4.How does TypeScript handle function overloading?
+TypeScript handles function overloading by letting us define multiple signatures for a single function, but with one shared implementation. The overload signatures define the valid ways a function can be called, while the single implementation must handle all cases, usually using type checks. At runtime, only the single implementation exists — the overloads are purely for compile-time type safety.
 
-function throwError(message: string): never {
-  throw new Error(message);
-}
+#### 5.What is the difference between nominal typing and structural typing? Why does TypeScript use structural typing?
 
-type Shape = { kind: "circle" } | { kind: "square" };
-function area(shape: Shape) {
-  if (shape.kind === "circle") { /* ... */ }
-  else if (shape.kind === "square") { /* ... */ }
-  else {
-    const _exhaustive: never = shape; // Compile error if new shape type is added
-  }
-}
+Nominal typing is name-based: types are compatible only if they are explicitly declared related (like in Java or C#). Structural typing is shape-based: types are compatible if they have the same structure, regardless of their names. TypeScript uses structural typing because JavaScript itself is dynamic and duck-typed, so structural typing makes TypeScript more flexible, easier to use with existing JS code, and better suited for real-world JS interoperability.
 
-Key point: never ensures you handle all possible cases.
+#### 6.Explain how decorators work in TypeScript.
+Decorators in TypeScript are special functions used to attach metadata or modify behavior of classes, methods, properties, or parameters. They are written with an @ prefix, like @Component in Angular. TypeScript provides class, method, property, accessor, and parameter decorators. For example, a method decorator can wrap a function to log when it’s called. They’re widely used in frameworks like Angular and NestJS for dependency injection, metadata, and configuration.
 
-#### 4.How do you make a property read-only but only during runtime, not at compile time?
+Types of Decorators
 
-Use Object.freeze() with a mutable type.
-type Config = {
-  url: string;
-};
+Class Decorator – applied to classes
 
-const config: Config = { url: "https://api.com" };
-Object.freeze(config);
+Property Decorator – applied to class properties
 
-config.url = "https://new.com"; // Runtime error, not compile-time
+Method Decorator – applied to class methods
 
-Key point: Compile-time immutability uses readonly; runtime immutability uses Object.freeze().
+Accessor Decorator – applied to getters/setters
 
-#### 5.What is the difference between keyof and typeof?
-typeof: Gets the type of a value.
+Parameter Decorator – applied to method parameters
 
-keyof: Gets all keys of a type as a union.
+#### 7.How does TypeScript handle async/await with types?
 
-const person = { name: "John", age: 25 };
+In TypeScript, async functions always return a Promise<T>. The type T is inferred from the value you return. When you use await, TypeScript unwraps the promise and infers the correct type for the resolved value. For example, if a function returns Promise<User>, then await will give you a User. Errors are inferred as unknown in catch blocks. Generics also work seamlessly with async/await, making it type-safe for APIs and data fetching.
 
-type PersonType = typeof person; // { name: string; age: number; }
-type PersonKeys = keyof PersonType; // "name" | "age"
+#### 8.What is the difference between global and module augmentation?
 
-#### 6.How can you restrict a generic type to accept only certain keys of another type?
-interface User {
-  id: number;
-  name: string;
-  age: number;
-}
+In TypeScript, augmentation means extending existing types.
 
-function getUserProperty<T extends keyof User>(key: T, user: User): User[T] {
-  return user[key];
-}
+Global augmentation is when we add new properties or methods to types that exist in the global scope, like String, Window, or Array. For example, I can add a custom method to String and it will be available everywhere in the project.
 
-const u: User = { id: 1, name: "John", age: 30 };
-const nameValue = getUserProperty("name", u); // string
+Module augmentation is when we extend types inside a specific module, usually an external library. For example, in an Express project, I can augment the Request interface to include a userId property, and it will only affect the express module.
 
-#### 7.How does type narrowing work in TypeScript?
-Type narrowing in TypeScript is the process where the compiler refines a variable’s type to something more specific than its declared type, based on control flow analysis and type guards.
+#### 10.How does TypeScript support JSX in React applications?
+TypeScript supports JSX by treating it as a special syntax extension. When we use React with TypeScript, the JSX is type-checked and then compiled down to JavaScript function calls like React.createElement.
 
-Think of it like detective work:
-TypeScript starts with a broad suspect list (union type) and, as your code provides clues, it eliminates impossible types until it’s sure who’s left.
+In tsconfig.json, we enable JSX support with the "jsx" compiler option ("react", "react-jsx", or "react-jsxdev" depending on the React version).
 
-How it works
-Start: You declare a variable with a union or broad type.
+TypeScript uses the JSX namespace and React’s type definitions (@types/react) to check JSX expressions, component props, and children.
 
-Evidence: You use checks (like typeof, instanceof, equality checks, truthiness) or custom type guards.
-
-Refinement: TypeScript “narrows” the type within that code branch.
-
-function printLength(value: string | number) {
-  if (typeof value === "string") {
-    // value is narrowed to string here
-    console.log(value.length);
-  } else {
-    // value is narrowed to number here
-    console.log(value.toFixed(2));
-  }
-}
-
-Common Ways to Narrow Types
-1️⃣ typeof narrowing
-if (typeof x === "boolean") {
-  // x is boolean here
-}
-
-2️⃣ instanceof narrowing
-if (obj instanceof Date) {
-  // obj is Date
-}
-
-3️⃣ Equality checks
-if (status === "success") {
-  // status is "success" literal type
-}
-
-4️⃣ Truthiness checks
-if (value) {
-  // value is not null/undefined/false/0/""
-}
-
-5️⃣ Custom type guards
-A type guard is a function that returns a boolean and has a return type in the form parameterName is Type.
-type Cat = { meow: () => void };
-type Dog = { bark: () => void };
-
-function isCat(animal: Cat | Dog): animal is Cat {
-  return (animal as Cat).meow !== undefined;
-}
-
-function makeSound(animal: Cat | Dog) {
-  if (isCat(animal)) {
-    animal.meow(); // animal is Cat here
-  } else {
-    animal.bark(); // animal is Dog here
-  }
-}
-
-Narrowing happens per branch — outside the branch, the type returns to its original form.
-
-The compiler follows the logical flow of your code to deduce types.
-
-Type narrowing helps avoid runtime errors by catching impossible operations at compile time.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Function components are typed using React.FC or explicit prop interfaces, so TypeScript ensures that the JSX elements we pass match the expected props.
 
 
