@@ -14,14 +14,13 @@ For example, if I need all animals to have a makeSound() method but also want to
 A union type allows a variable to hold one of several types.
 
 Example :
-
 ```typescript
 let value: string | number;
 
-value = "Hello";  // ✅ valid
-value = 42;       // ✅ valid
-// value = true;  // ❌ invalid (not part of union)
-``
+value = "Hello"; 
+value = 42;       
+// value = true;  
+```
 
 2.Intersection Type
 
