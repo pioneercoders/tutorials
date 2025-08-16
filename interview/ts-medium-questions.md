@@ -37,6 +37,33 @@ const staffMember: Staff = {
   employeeId: 123
 };
 ```
+#### 3.Explain generics in TypeScript. Why are they useful?
 
+Generics in TypeScript let us create reusable and type-safe components. Instead of using any, we pass types as parameters, which gives flexibility while preserving type safety. For example, a generic function identity<T>(value: T): T can work with both strings and numbers without losing type information.
+
+Example without Generics
+```typescript
+function identity(value: any): any {
+  return value;
+}
+
+let a = identity("Hello"); // returns string, but TS thinks it's `any`
+a.toUpperCase(); // works, but not type-safe
+```
+
+Example with Generics
+
+```typescript
+function identity<T>(value: T): T {
+  return value;
+}
+
+let a = identity<string>("Hello"); // type = string
+a.toUpperCase(); // ✅ safe
+
+let b = identity<number>(42); // type = number
+// b.toUpperCase(); ❌ error: number doesn’t have toUpperCase
+
+```
 
 
