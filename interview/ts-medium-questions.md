@@ -15,7 +15,7 @@ A union type allows a variable to hold one of several types.
 
 Example :
 
-```ts
+```typescript
 let value: string | number;
 
 value = "Hello";  // ✅ valid
@@ -27,7 +27,7 @@ value = 42;       // ✅ valid
 
 An intersection type combines multiple types into one.
 
-```ts
+```typescript
 type Person = { name: string };
 type Employee = { employeeId: number };
 
