@@ -18,16 +18,20 @@ type Person = {
 Both define the shape of an object, but type can also represent primitives, unions, intersections, tuples, etc., whereas interface is purely for object-like structures.
 
  2.Capabilities
-| Feature                   | Interface              | Type Alias  |
-| ------------------------- | ---------------------- | ----------- |
-| **Describes objects**     | ✅                      | ✅           |
-| **Describes functions**   | ✅                      | ✅           |
-| **Describes tuples**      | ❌                      | ✅           |
-| **Union types**           | ❌                      | ✅           |
-| **Intersection types**    | ❌ (only via `extends`) | ✅           |
-| **Primitives**            | ❌                      | ✅           |
-| **Declaration merging**   | ✅                      | ❌           |
-| **Extending other types** | ✅ (via `extends`)      | ✅ (via `&`) |
+Describes objects → Both interface and type can do this.
+
+Describes functions → Both interface and type can handle functions.
+Describes tuples → Only type can do this.
+
+Union types → Only type supports union types.
+
+Intersection types → interface only via extends, but type fully supports intersections with
+
+Primitives → Only type can represent primitives (like string, number, etc.).
+
+Declaration merging → Only interface supports declaration merging.
+
+Extending other types → interface uses extends, while type uses
 
 3.Extending
 Interface extends interface
@@ -111,12 +115,14 @@ if (typeof value === "string") {
 ```
 
 2.Why unknown is safer
-| Feature                                    | `any` | `unknown`                   |
-| ------------------------------------------ | ----- | --------------------------- |
-| Can be assigned to anything                | ✅     | ❌ (only `unknown` or `any`) |
-| Can call properties/methods without checks | ✅     | ❌                           |
-| Requires type narrowing before usage       | ❌     | ✅                           |
-| Type safety                                | ❌     | ✅                           |
+
+Can be assigned to anything → any can, unknown cannot (only assignable to unknown or any).
+
+Can call properties/methods without checks → any allows it, unknown does not.
+
+Requires type narrowing before usage → any does not require it, unknown does.
+
+Type safety → any is unsafe, unknown is safe.
 
 3.When to Use Which
 
@@ -176,7 +182,7 @@ Prevent modifying methods (push, pop, splice, etc.).
 
 Still allow reading values and using non-mutating methods (map, filter, etc.).
 
- Important Notes
+Important Notes
 readonly prevents reassignment of a property or array element, but does not make nested objects immutable.
 
 If you want deep immutability, you’d need extra tooling (like Readonly<T> recursively).
@@ -252,12 +258,14 @@ Use case: Selecting a subset of properties for specific operations (e.g., displa
 Creates a new type by removing specific properties from T.
 
 5.Quick Comparison Table
-| Utility Type  | What it does                  | Example                       |
-| ------------- | ----------------------------- | ----------------------------- |
-| `Partial<T>`  | Makes all properties optional | Update object partially       |
-| `Required<T>` | Makes all properties required | Ensure full object is present |
-| `Pick<T, K>`  | Keep only certain properties  | Minimal data type             |
-| `Omit<T, K>`  | Remove certain properties     | Hide sensitive data           |
+
+Partial<T> → Makes all properties optional. Example: useful for updating an object partially.
+
+Required<T> → Makes all properties required. Example: ensures the full object is present.
+
+Pick<T, K> → Keeps only certain properties. Example: create a minimal data type.
+
+Omit<T, K> → Removes certain properties. Example: hide sensitive data.
 
 #### 5.What is a generic in TypeScript? Give an example.
 
@@ -381,12 +389,14 @@ let numberBox: Box<number> = {
 
  3.Key Differences Table
 
- | Feature              | Generic Function                                                 | Generic Interface                                |
-| -------------------- | ---------------------------------------------------------------- | ------------------------------------------------ |
-| Type parameter scope | Per function call                                                | Per instance/implementation                      |
-| Flexibility          | Can change `T` each call                                         | Fixed `T` for lifetime of the instance           |
-| Best for             | Reusable operations (sorting, mapping, identity functions, etc.) | Data structures, API contracts, class blueprints |
-| Example use case     | `map<T>(array: T[], callback: ...)`                              | `Repository<T>` for database entities            |
+Type parameter scope → In a generic function, the type parameter is scoped per function call. In a generic interface, it is scoped per instance/implementation.
+
+Flexibility → A generic function can change T with each call. A generic interface has a fixed T for the lifetime of the instance.
+
+Best for → Generic functions are best for reusable operations like sorting, mapping, or identity functions. Generic interfaces are best for data structures, API contracts, or class blueprints.
+
+Example use case → A generic function like map<T>(array: T[], callback: ...). A generic interface like Repository<T> for database entities.
+
 
 #### 7.What’s the difference between public, private, protected, and readonly in TypeScript classes?
 In TypeScript classes, public, private, protected, and readonly are access modifiers (plus readonly is also an immutability modifier) that control how and where class members (properties/methods) can be accessed and/or modified.
@@ -526,10 +536,10 @@ Union (|) → "This OR that" — like a menu where you pick one dish.
 Intersection (&) → "This AND that" — like a combo meal that includes everything.
 
  4.When to Use Each
- | Type                   | Use When...                                                    |                                                              |
-| ---------------------- | -------------------------------------------------------------- | ------------------------------------------------------------ |
-| \*\*Union (\`          | \`)\*\*                                                        | You want flexibility — value can be one of multiple options. |
-| **Intersection (`&`)** | You want to merge multiple types into a single required shape. |                                                              |
+ 
+Union (|) → Use when you want flexibility, meaning a value can be one of multiple options.
+
+Intersection (&) → Use when you want to merge multiple types into a single required shape.
 
 
 #### 8.Explain mapped types with an example.
