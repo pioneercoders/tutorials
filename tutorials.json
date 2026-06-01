@@ -20,11 +20,11 @@
       "description": "Master essential Data Structures and Algorithms patterns",
       "topics": [
         {
-          "title": "Sliding Window",
-          "slug": "sliding-window",
+          "title": "Arrays",
+          "slug": "arrays",
           "level": "Beginner",
-          "description": "Efficiently process arrays using a sliding window technique",
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/sliding-window.md"
+          "description": "Learn array fundamentals and operations",
+          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/refs/heads/master/codingpatterns/arrays.md"
         }
       ]
     },
@@ -38,7 +38,7 @@
           "slug": "api-design",
           "level": "Beginner",
           "description": "Design RESTful and scalable APIs",
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/api-design.md"
+          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/refs/heads/master/systemdesign/api-design.md"
         }
       ]
     }
