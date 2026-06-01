@@ -1,0 +1,25 @@
+{
+  "categories": [
+    {
+      "name": "Artificial Intelligence",
+      "path": "artificial-intelligence",
+      "description": "Learn Artificial Intelligence from foundations and algorithms to deployment, tools, and interview readiness",
+      "topics": [
+        {
+          "title": "AI Fundamentals",
+          "slug": "ai-fundamentals",
+          "level": "Beginner",
+          "description": "Build a strong foundation in AI concepts, workflows, and the AI lifecycle",
+          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/ai/ai-fundamentals.md"
+        },
+        {
+          "title": "Machine Learning",
+          "slug": "machine-learning",
+          "level": "Intermediate",
+          "description": "Learn core supervised, unsupervised, and evaluation techniques for ML",
+          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/ai/machine-learning.md"
+        }
+      ]
+    }
+  ]
+}
