@@ -10,7 +10,7 @@
           "slug": "ai-fundamentals",
           "level": "Beginner",
           "description": "Build a strong foundation in AI concepts, workflows, and the AI lifecycle",
-          "contentUrl": "https://github.com/pioneercoders/tutorials/blob/master/ai/ai-fundamentals.md"
+          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/refs/heads/master/ai/ai-fundamentals.md"
         },
         {
           "title": "AI Tools & Frameworks",
