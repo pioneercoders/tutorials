@@ -88,7 +88,7 @@
           "slug": "bit-manipulation",
           "level": "Beginner",
           "description": "Optimize operations using bitwise operators",
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/bit-manipulation.md"
+          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/refs/heads/master/codingpatterns/bit-manipulation.md"
         },
         {
           "title": "Hashing",
