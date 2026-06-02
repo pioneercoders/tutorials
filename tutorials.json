@@ -10,21 +10,21 @@
           "slug": "ai-fundamentals",
           "level": "Beginner",
           "description": "Build a strong foundation in AI concepts, workflows, and the AI lifecycle",
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/refs/heads/master/ai/ai-fundamentals.md"
+          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/ai/ai-fundamentals.md"
         },
         {
           "title": "AI Tools & Frameworks",
           "slug": "ai-tools-frameworks",
           "level": "Intermediate",
           "description": "Compare the most-used frameworks, APIs, and MLOps tools in AI engineering",
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/refs/heads/master/ai/ai-tools-%26-frameworks.md"
+          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/ai/ai-tools-&-frameworks.md"
         },
         {
           "title": "Computer Vision",
           "slug": "computer-vision",
           "level": "Intermediate",
           "description": "Learn image understanding, detection, segmentation, and vision model workflows",
-          "contentUrl": "https://github.com/pioneercoders/tutorials/blob/master/ai/computer-vision.md"
+          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/ai/computer-vision.md"
         },
         {
           "title": "Generative AI",
