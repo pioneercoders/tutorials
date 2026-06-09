@@ -278,7 +278,7 @@
       "slug": "http-https",
       "level": "Beginner",
       "description": "Web protocol fundamentals",
-      "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/http-https.md"
+      "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/http.md"
     },
     {
       "title": "Load Balancer",
@@ -369,14 +369,14 @@
       "slug": "microservices",
       "level": "Advanced",
       "description": "Build distributed microservice architectures",
-      "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/microservices.md"
+      "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/micro-services.md"
     },
     {
       "title": "Stream Processing",
       "slug": "stream-processing",
       "level": "Advanced",
       "description": "Real-time data processing",
-      "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/stream-processing.md"
+      "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/steam-processing.md"
       }
     ]
   },
