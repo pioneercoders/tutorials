@@ -334,7 +334,7 @@
       "slug": "sharding-vs-replication",
       "level": "Intermediate",
       "description": "Database scaling strategies",
-      "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/sharding-vs-replication.md"
+      "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/sharding-replication.md"
     },
     {
       "title": "Consistent Hashing",
