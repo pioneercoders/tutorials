@@ -1,997 +1,504 @@
 {
-
   "categories": [
-
-    {
-
-      "name": "Artificial Intelligence",
-
-      "path": "artificial-intelligence",
-
-      "description": "Learn Artificial Intelligence from foundations to advanced AI systems and deployment",
-
-      "topics": [
-
-        {
-
-          "title": "AI Fundamentals",
-
-          "slug": "ai-fundamentals",
-
-          "level": "Beginner",
-
-          "description": "Build a strong foundation in AI concepts, workflows, and the AI lifecycle",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/ai/ai-fundamentals.md"
-
-        },
-
-        {
-
-          "title": "AI Tools & Frameworks",
-
-          "slug": "ai-tools-frameworks",
-
-          "level": "Intermediate",
-
-          "description": "Compare the most-used frameworks, APIs, and MLOps tools in AI engineering",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/ai/ai-tools-&-frameworks.md"
-
-        },
-
-        {
-
-          "title": "Computer Vision",
-
-          "slug": "computer-vision",
-
-          "level": "Intermediate",
-
-          "description": "Learn image understanding, detection, segmentation, and vision model workflows",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/ai/computer-vision.md"
-
-        },
-
-        {
-
-          "title": "Generative AI",
-
-          "slug": "generative-ai",
-
-          "level": "Intermediate",
-
-          "description": "Explore LLMs, prompt engineering, retrieval, and generative workflows",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/ai/generative-ai.md"
-
-        },
-
-        {
-
-          "title": "Machine Learning",
-
-          "slug": "machine-learning",
-
-          "level": "Intermediate",
-
-          "description": "Learn core supervised, unsupervised, and evaluation techniques for ML",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/ai/machine-learning.md"
-
-        },
-
-        {
-
-          "title": "NLP",
-
-          "slug": "nlp",
-
-          "level": "Intermediate",
-
-          "description": "Master text processing, embeddings, language models, and NLP pipelines",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/ai/natural-language-processing.md"
-
-        },
-
-        {
-
-          "title": "AI Interview Preparation",
-
-          "slug": "ai-interview-preparation",
-
-          "level": "Advanced",
-
-          "description": "Practice AI interview questions, case studies, and model design reasoning",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/ai/ai-interview-preparation.md"
-
-        },
-
-        {
-
-          "title": "Deep Learning",
-
-          "slug": "deep-learning",
-
-          "level": "Advanced",
-
-          "description": "Understand neural networks, backpropagation, and modern deep learning architectures",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/ai/deep-learning.md"
-
-        },
-
-        {
-
-          "title": "MLOps & Deployment",
-
-          "slug": "mlops-deployment",
-
-          "level": "Advanced",
-
-          "description": "Deploy, monitor, and productionize ML models with modern tooling",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/ai/mlops-&-deployment.md"
-
-        }
-
-      ]
-
-    },
-
-
-
-    {
-
-      "name": "Coding Patterns",
-
-      "path": "coding-patterns",
-
-      "description": "Master essential coding interview patterns and problem solving techniques",
-
-      "topics": [
-
-        {
-
-          "title": "Binary Search",
-
-          "slug": "binary-search",
-
-          "level": "Beginner",
-
-          "description": "Efficiently search in sorted arrays",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/binary-search.md"
-
-        },
-
-        {
-
-          "title": "Bit Manipulation",
-
-          "slug": "bit-manipulation",
-
-          "level": "Beginner",
-
-          "description": "Optimize operations using bitwise operators",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/bit-manipulation.md"
-
-        },
-
-        {
-
-          "title": "Hashing",
-
-          "slug": "hashing",
-
-          "level": "Beginner",
-
-          "description": "Use hash tables for O(1) lookups",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/hashing.md"
-
-        },
-
-        {
-
-          "title": "Prefix Sum",
-
-          "slug": "prefix-sum",
-
-          "level": "Beginner",
-
-          "description": "Compute cumulative sums for range queries",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/prefix-sum.md"
-
-        },
-
-        {
-
-          "title": "Queue",
-
-          "slug": "queue",
-
-          "level": "Beginner",
-
-          "description": "FIFO data structure for BFS and task scheduling",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/queue.md"
-
-        },
-
-        {
-
-          "title": "Recursion",
-
-          "slug": "recursion",
-
-          "level": "Beginner",
-
-          "description": "Understand recursive problem solving",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/recursion.md"
-
-        },
-
-        {
-
-          "title": "Sliding Window",
-
-          "slug": "sliding-window",
-
-          "level": "Beginner",
-
-          "description": "Efficiently process arrays using a sliding window technique",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/sliding-window.md"
-
-        },
-
-        {
-
-          "title": "Stack",
-
-          "slug": "stack",
-
-          "level": "Beginner",
-
-          "description": "LIFO data structure for recursion and parsing",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/stack.md"
-
-        },
-
-        {
-
-          "title": "Two Pointers",
-
-          "slug": "two-pointers",
-
-          "level": "Beginner",
-
-          "description": "Solve array problems with two pointer approach",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/two-pointers.md"
-
-        },
-
-        {
-
-          "title": "Backtracking",
-
-          "slug": "backtracking",
-
-          "level": "Intermediate",
-
-          "description": "Explore all possible solutions systematically",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/backtracking.md"
-
-        },
-
-        {
-
-          "title": "Graph Traversal",
-
-          "slug": "graph-traversal",
-
-          "level": "Intermediate",
-
-          "description": "Navigate graphs using BFS and DFS",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/graph-traversal.md"
-
-        },
-
-        {
-
-          "title": "Greedy Algorithms",
-
-          "slug": "greedy-algorithms",
-
-          "level": "Intermediate",
-
-          "description": "Make locally optimal choices for global optimum",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/greedy-algorithms.md"
-
-        },
-
-        {
-
-          "title": "Heap / Priority Queue",
-
-          "slug": "heap-priority-queue",
-
-          "level": "Intermediate",
-
-          "description": "Efficiently access min/max elements",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/heap-priority-queue.md"
-
-        },
-
-        {
-
-          "title": "Monotonic Stack",
-
-          "slug": "monotonic-stack",
-
-          "level": "Intermediate",
-
-          "description": "Maintain stack in sorted order",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/monotonic-stack.md"
-
-        },
-
-        {
-
-          "title": "Trie",
-
-          "slug": "trie",
-
-          "level": "Intermediate",
-
-          "description": "Prefix tree for efficient string search",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/trie.md"
-
-        },
-
-        {
-
-          "title": "Union Find",
-
-          "slug": "union-find",
-
-          "level": "Intermediate",
-
-          "description": "Disjoint set data structure",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/union-find.md"
-
-        },
-
-        {
-
-          "title": "Advanced Graph",
-
-          "slug": "advanced-graph",
-
-          "level": "Advanced",
-
-          "description": "Shortest paths and network flow algorithms",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/advanced-graph.md"
-
-        },
-
-        {
-
-          "title": "Bitmask DP",
-
-          "slug": "bitmask-dp",
-
-          "level": "Advanced",
-
-          "description": "DP with bitmask state representation",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/bitmask-dp.md"
-
-        },
-
-        {
-
-          "title": "Dynamic Programming",
-
-          "slug": "dynamic-programming",
-
-          "level": "Advanced",
-
-          "description": "Optimize solutions using memoization and tabulation",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/dynamic-programming.md"
-
-        },
-
-        {
-
-          "title": "Fenwick Tree",
-
-          "slug": "fenwick-tree",
-
-          "level": "Advanced",
-
-          "description": "Binary indexed tree for prefix sums",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/fenwick-tree.md"
-
-        },
-
-        {
-
-          "title": "KMP Algorithm",
-
-          "slug": "kmp-algorithm",
-
-          "level": "Advanced",
-
-          "description": "Pattern matching in linear time",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/kmp-algorithm.md"
-
-        },
-
-        {
-
-          "title": "Segment Tree",
-
-          "slug": "segment-tree",
-
-          "level": "Advanced",
-
-          "description": "Range query data structure",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/segment-tree.md"
-
-        }
-
-      ]
-
-    },
-
-
-
-    {
-
-      "name": "System Design",
-
-      "path": "system-design",
-
-      "description": "Learn scalable system architecture and distributed systems design",
-
-      "topics": [
-
-        {
-
-          "title": "API Design",
-
-          "slug": "api-design",
-
-          "level": "Beginner",
-
-          "description": "Design RESTful and GraphQL APIs",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/api-design.md"
-
-        },
-
-        {
-
-          "title": "Caching",
-
-          "slug": "caching",
-
-          "level": "Beginner",
-
-          "description": "Improve performance with caching strategies",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/caching.md"
-
-        },
-
-        {
-
-          "title": "CAP Theorem",
-
-          "slug": "cap-theorem",
-
-          "level": "Beginner",
-
-          "description": "Consistency, availability, partition tolerance tradeoffs",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/cap-theorem.md"
-
-        },
-
-        {
-
-          "title": "Client-Server Architecture",
-
-          "slug": "client-server-architecture",
-
-          "level": "Beginner",
-
-          "description": "Fundamental client-server communication model",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/client-server-architecture.md"
-
-        },
-
-        {
-
-          "title": "DNS",
-
-          "slug": "dns",
-
-          "level": "Beginner",
-
-          "description": "Domain name system resolution",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/dns.md"
-
-        },
-
-        {
-
-          "title": "HTTP/HTTPS",
-
-          "slug": "http-https",
-
-          "level": "Beginner",
-
-          "description": "Web protocol fundamentals",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/http.md"
-
-        },
-
-        {
-
-          "title": "Load Balancer",
-
-          "slug": "load-balancer",
-
-          "level": "Beginner",
-
-          "description": "Distribute traffic across multiple servers",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/load-balancer.md"
-
-        },
-
-        {
-
-          "title": "API Gateway",
-
-          "slug": "api-gateway",
-
-          "level": "Intermediate",
-
-          "description": "Central API management layer",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/api-gateway.md"
-
-        },
-
-        {
-
-          "title": "CDN",
-
-          "slug": "cdn",
-
-          "level": "Intermediate",
-
-          "description": "Content delivery networks",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/cdn.md"
-
-        },
-
-        {
-
-          "title": "Database Indexing",
-
-          "slug": "database-indexing",
-
-          "level": "Intermediate",
-
-          "description": "Optimize database queries with indexes",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/database-indexing.md"
-
-        },
-
-        {
-
-          "title": "Database Scaling",
-
-          "slug": "database-scaling",
-
-          "level": "Intermediate",
-
-          "description": "Scale databases for high traffic",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/database-scaling.md"
-
-        },
-
-        {
-
-          "title": "Message Queue",
-
-          "slug": "message-queue",
-
-          "level": "Intermediate",
-
-          "description": "Implement asynchronous communication",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/message-queue.md"
-
-        },
-
-        {
-
-          "title": "Rate Limiting",
-
-          "slug": "rate-limiting",
-
-          "level": "Intermediate",
-
-          "description": "Protect APIs from abuse",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/rate-limiting.md"
-
-        },
-
-        {
-
-          "title": "Sharding vs Replication",
-
-          "slug": "sharding-vs-replication",
-
-          "level": "Intermediate",
-
-          "description": "Database scaling strategies",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/sharding-replication.md"
-
-        },
-
-        {
-
-          "title": "Consistent Hashing",
-
-          "slug": "consistent-hashing",
-
-          "level": "Advanced",
-
-          "description": "Load balancing with minimal rehashing",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/consistent-hashing.md"
-
-        },
-
-        {
-
-          "title": "Distributed Locks",
-
-          "slug": "distributed-locks",
-
-          "level": "Advanced",
-
-          "description": "Coordination across distributed systems",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/distributed-locks.md"
-
-        },
-
-        {
-
-          "title": "Distributed Transactions",
-
-          "slug": "distributed-transactions",
-
-          "level": "Advanced",
-
-          "description": "ACID across distributed systems",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/distributed-transactions.md"
-
-        },
-
-        {
-
-          "title": "Leader Election",
-
-          "slug": "leader-election",
-
-          "level": "Advanced",
-
-          "description": "Distributed consensus algorithms",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/leader-election.md"
-
-        },
-
-        {
-
-          "title": "Microservices",
-
-          "slug": "microservices",
-
-          "level": "Advanced",
-
-          "description": "Build distributed microservice architectures",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/micro-services.md"
-
-        },
-
-        {
-
-          "title": "Stream Processing",
-
-          "slug": "stream-processing",
-
-          "level": "Advanced",
-
-          "description": "Real-time data processing",
-
-          "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/steam-processing.md"
-
-        }
-
-      ]
-
-    },
-
-
+  {
+    "name": "Artificial Intelligence",
+    "path": "artificial-intelligence",
+    "description": "Learn Artificial Intelligence from foundations to advanced AI systems and deployment",
+    "topics": [
+      {
+        "title": "AI Fundamentals",
+        "slug": "ai-fundamentals",
+        "level": "Beginner",
+        "description": "Build a strong foundation in AI concepts, workflows, and the AI lifecycle",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/ai/ai-fundamentals.md"
+      },
+      {
+        "title": "AI Tools & Frameworks",
+        "slug": "ai-tools-frameworks",
+        "level": "Intermediate",
+        "description": "Compare the most-used frameworks, APIs, and MLOps tools in AI engineering",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/ai/ai-tools-frameworks.md"
+      },
+      {
+        "title": "Computer Vision",
+        "slug": "computer-vision",
+        "level": "Intermediate",
+        "description": "Learn image understanding, detection, segmentation, and vision model workflows",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/ai/computer-vision.md"
+      },
+      {
+        "title": "Generative AI",
+        "slug": "generative-ai",
+        "level": "Intermediate",
+        "description": "Explore LLMs, prompt engineering, retrieval, and generative workflows",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/ai/generative-ai.md"
+      },
+      {
+        "title": "Machine Learning",
+        "slug": "machine-learning",
+        "level": "Intermediate",
+        "description": "Learn core supervised, unsupervised, and evaluation techniques for ML",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/ai/machine-learning.md"
+      },
+      {
+        "title": "NLP",
+        "slug": "nlp",
+        "level": "Intermediate",
+        "description": "Master text processing, embeddings, language models, and NLP pipelines",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/ai/nlp.md"
+      },
+      {
+        "title": "AI Interview Preparation",
+        "slug": "ai-interview-preparation",
+        "level": "Advanced",
+        "description": "Practice AI interview questions, case studies, and model design reasoning",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/ai/ai-interview-preparation.md"
+      },
+      {
+        "title": "Deep Learning",
+        "slug": "deep-learning",
+        "level": "Advanced",
+        "description": "Understand neural networks, backpropagation, and modern deep learning architectures",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/ai/deep-learning.md"
+      },
+      {
+        "title": "MLOps & Deployment",
+        "slug": "mlops-deployment",
+        "level": "Advanced",
+        "description": "Deploy, monitor, and productionize ML models with modern tooling",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/ai/mlops-deployment.md"
+      }
+    ]
+  },
+
+  {
+    "name": "Coding Patterns",
+    "path": "coding-patterns",
+    "description": "Master essential coding interview patterns and problem solving techniques",
+    "topics": [
+      {
+        "title": "Binary Search",
+        "slug": "binary-search",
+        "level": "Beginner",
+        "description": "Efficiently search in sorted arrays",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/binary-search.md"
+      },
+      {
+        "title": "Bit Manipulation",
+        "slug": "bit-manipulation",
+        "level": "Beginner",
+        "description": "Optimize operations using bitwise operators",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/bit-manipulation.md"
+      },
+      {
+        "title": "Hashing",
+        "slug": "hashing",
+        "level": "Beginner",
+        "description": "Use hash tables for O(1) lookups",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/hashing.md"
+      },
+      {
+        "title": "Prefix Sum",
+        "slug": "prefix-sum",
+        "level": "Beginner",
+        "description": "Compute cumulative sums for range queries",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/prefix-sum.md"
+      },
+      {
+        "title": "Queue",
+        "slug": "queue",
+        "level": "Beginner",
+        "description": "FIFO data structure for BFS and task scheduling",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/queue.md"
+      },
+      {
+        "title": "Recursion",
+        "slug": "recursion",
+        "level": "Beginner",
+        "description": "Understand recursive problem solving",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/recursion.md"
+      },
+      {
+        "title": "Sliding Window",
+        "slug": "sliding-window",
+        "level": "Beginner",
+        "description": "Efficiently process arrays using a sliding window technique",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/sliding-window.md"
+      },
+      {
+        "title": "Stack",
+        "slug": "stack",
+        "level": "Beginner",
+        "description": "LIFO data structure for recursion and parsing",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/stack.md"
+      },
+      {
+        "title": "Two Pointers",
+        "slug": "two-pointers",
+        "level": "Beginner",
+        "description": "Solve array problems with two pointer approach",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/two-pointers.md"
+      },
+      {
+        "title": "Backtracking",
+        "slug": "backtracking",
+        "level": "Intermediate",
+        "description": "Explore all possible solutions systematically",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/backtracking.md"
+      },
+      {
+        "title": "Graph Traversal",
+        "slug": "graph-traversal",
+        "level": "Intermediate",
+        "description": "Navigate graphs using BFS and DFS",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/graph-traversal.md"
+      },
+      {
+        "title": "Greedy Algorithms",
+        "slug": "greedy-algorithms",
+        "level": "Intermediate",
+        "description": "Make locally optimal choices for global optimum",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/greedy-algorithms.md"
+      },
+      {
+        "title": "Heap / Priority Queue",
+        "slug": "heap-priority-queue",
+        "level": "Intermediate",
+        "description": "Efficiently access min/max elements",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/heap-priority-queue.md"
+      },
+      {
+        "title": "Monotonic Stack",
+        "slug": "monotonic-stack",
+        "level": "Intermediate",
+        "description": "Maintain stack in sorted order",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/monotonic-stack.md"
+      },
+      {
+        "title": "Trie",
+        "slug": "trie",
+        "level": "Intermediate",
+        "description": "Prefix tree for efficient string search",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/trie.md"
+      },
+      {
+        "title": "Union Find",
+        "slug": "union-find",
+        "level": "Intermediate",
+        "description": "Disjoint set data structure",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/union-find.md"
+      },
+      {
+        "title": "Advanced Graph",
+        "slug": "advanced-graph",
+        "level": "Advanced",
+        "description": "Shortest paths and network flow algorithms",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/advanced-graph.md"
+      },
+      {
+        "title": "Bitmask DP",
+        "slug": "bitmask-dp",
+        "level": "Advanced",
+        "description": "DP with bitmask state representation",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/bitmask-dp.md"
+      },
+      {
+        "title": "Dynamic Programming",
+        "slug": "dynamic-programming",
+        "level": "Advanced",
+        "description": "Optimize solutions using memoization and tabulation",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/dynamic-programming.md"
+      },
+      {
+        "title": "Fenwick Tree",
+        "slug": "fenwick-tree",
+        "level": "Advanced",
+        "description": "Binary indexed tree for prefix sums",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/fenwick-tree.md"
+      },
+      {
+        "title": "KMP Algorithm",
+        "slug": "kmp-algorithm",
+        "level": "Advanced",
+        "description": "Pattern matching in linear time",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/kmp-algorithm.md"
+      },
+      {
+        "title": "Segment Tree",
+        "slug": "segment-tree",
+        "level": "Advanced",
+        "description": "Range query data structure",
+        "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/codingpatterns/segment-tree.md"
+      }
+    ]
+  },
 
 {
-  "name": "Data Structures",
-  
-  "path": "data-structures",
-  
-  "description": "Learn data structures from beginner to advanced level",
-  
+  "name": "System Design",
+  "path": "system-design",
+  "description": "Learn scalable system architecture and distributed systems design",
   "topics": [
-    
+    {
+      "title": "API Design",
+      "slug": "api-design",
+      "level": "Beginner",
+      "description": "Design RESTful and GraphQL APIs",
+      "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/api-design.md"
+    },
+    {
+      "title": "Caching",
+      "slug": "caching",
+      "level": "Beginner",
+      "description": "Improve performance with caching strategies",
+      "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/caching.md"
+    },
+    {
+      "title": "CAP Theorem",
+      "slug": "cap-theorem",
+      "level": "Beginner",
+      "description": "Consistency, availability, partition tolerance tradeoffs",
+      "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/cap-theorem.md"
+    },
+    {
+      "title": "Client-Server Architecture",
+      "slug": "client-server-architecture",
+      "level": "Beginner",
+      "description": "Fundamental client-server communication model",
+      "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/client-server-architecture.md"
+    },
+    {
+      "title": "DNS",
+      "slug": "dns",
+      "level": "Beginner",
+      "description": "Domain name system resolution",
+      "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/dns.md"
+    },
+    {
+      "title": "HTTP/HTTPS",
+      "slug": "http-https",
+      "level": "Beginner",
+      "description": "Web protocol fundamentals",
+      "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/http-https.md"
+    },
+    {
+      "title": "Load Balancer",
+      "slug": "load-balancer",
+      "level": "Beginner",
+      "description": "Distribute traffic across multiple servers",
+      "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/load-balancer.md"
+    },
+    {
+      "title": "API Gateway",
+      "slug": "api-gateway",
+      "level": "Intermediate",
+      "description": "Central API management layer",
+      "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/api-gateway.md"
+    },
+    {
+      "title": "CDN",
+      "slug": "cdn",
+      "level": "Intermediate",
+      "description": "Content delivery networks",
+      "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/cdn.md"
+    },
+    {
+      "title": "Database Indexing",
+      "slug": "database-indexing",
+      "level": "Intermediate",
+      "description": "Optimize database queries with indexes",
+      "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/database-indexing.md"
+    },
+    {
+      "title": "Database Scaling",
+      "slug": "database-scaling",
+      "level": "Intermediate",
+      "description": "Scale databases for high traffic",
+      "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/database-scaling.md"
+    },
+    {
+      "title": "Message Queue",
+      "slug": "message-queue",
+      "level": "Intermediate",
+      "description": "Implement asynchronous communication",
+      "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/message-queue.md"
+    },
+    {
+      "title": "Rate Limiting",
+      "slug": "rate-limiting",
+      "level": "Intermediate",
+      "description": "Protect APIs from abuse",
+      "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/rate-limiting.md"
+    },
+    {
+      "title": "Sharding vs Replication",
+      "slug": "sharding-vs-replication",
+      "level": "Intermediate",
+      "description": "Database scaling strategies",
+      "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/sharding-vs-replication.md"
+    },
+    {
+      "title": "Consistent Hashing",
+      "slug": "consistent-hashing",
+      "level": "Advanced",
+      "description": "Load balancing with minimal rehashing",
+      "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/consistent-hashing.md"
+    },
+    {
+      "title": "Distributed Locks",
+      "slug": "distributed-locks",
+      "level": "Advanced",
+      "description": "Coordination across distributed systems",
+      "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/distributed-locks.md"
+    },
+    {
+      "title": "Distributed Transactions",
+      "slug": "distributed-transactions",
+      "level": "Advanced",
+      "description": "ACID across distributed systems",
+      "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/distributed-transactions.md"
+    },
+    {
+      "title": "Leader Election",
+      "slug": "leader-election",
+      "level": "Advanced",
+      "description": "Distributed consensus algorithms",
+      "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/leader-election.md"
+    },
+    {
+      "title": "Microservices",
+      "slug": "microservices",
+      "level": "Advanced",
+      "description": "Build distributed microservice architectures",
+      "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/microservices.md"
+    },
+    {
+      "title": "Stream Processing",
+      "slug": "stream-processing",
+      "level": "Advanced",
+      "description": "Real-time data processing",
+      "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/systemdesign/stream-processing.md"
+      }
+    ]
+  },
+
+  {
+  "name": "Data Structures",
+  "path": "data-structures",
+  "description": "Learn data structures from beginner to advanced level",
+  "topics": [
     {
       "title": "Introduction to Data Structures",
-      
       "slug": "introduction-to-data-structures",
-      
       "level": "Beginner",
-      
       "description": "Understand the fundamentals of data structures and their applications",
-      
       "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/data-structures/Introduction%20to%20Data%20Structures.md"
-      
     },
-    
     {
       "title": "Arrays in Data Structures",
-      
       "slug": "arrays-in-data-structures",
-      
       "level": "Beginner",
-      
       "description": "Learn array operations, traversal, insertion, deletion, and searching",
-      
       "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/data-structures/Arrays%20in%20Data%20Structures.md"
-      
     },
-    
     {
       "title": "Strings in Data Structures & Algorithms",
-      
       "slug": "strings-in-data-structures-algorithms",
-      
       "level": "Beginner",
-      
       "description": "Master string manipulation techniques and algorithms",
-      
       "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/data-structures/Strings%20in%20Data%20Structures%20%26%20Algorithms.md"
     },
-    
     {
       "title": "Linked Lists",
-      
       "slug": "linked-lists",
-      
       "level": "Beginner",
-      
       "description": "Understand singly, doubly, and circular linked lists",
-      
       "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/data-structures/Linked%20Lists.md"
-      
     },
-    
     {
-      
       "title": "Stacks",
-      
       "slug": "stacks",
-      
       "level": "Beginner",
-      
       "description": "Learn stack operations and applications using LIFO principle",
-      
       "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/data-structures/Stacks.md"
-      
     },
-    
     {
-      
       "title": "Queues",
-      
       "slug": "queues",
-      
       "level": "Beginner",
-      
       "description": "Understand queue operations and FIFO data processing",
-      
       "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/data-structures/Queues.md"
-      
     },
-    
     {
-      
       "title": "Hash-Based Structures",
-      
       "slug": "hash-based-structures",
-      
       "level": "Intermediate",
-      
       "description": "Learn hashing, hash maps, hash sets, and collision handling",
-      
       "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/data-structures/Hash-Based%20Structures.md"
-      
     },
-    
     {
-      
       "title": "Heaps",
-      
       "slug": "heaps",
-      
       "level": "Intermediate",
-      
       "description": "Understand min heaps, max heaps, and priority queues",
-      
       "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/data-structures/Heaps.md"
-      
     },
-    
     {
-      
       "title": "Tree Data Structures",
-      
       "slug": "tree-data-structures",
-      
       "level": "Intermediate",
-      
       "description": "Learn tree concepts, traversals, and hierarchical structures",
-      
       "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/data-structures/Tree%20Data%20Structures.md"
-      
     },
-    
     {
-      
       "title": "Binary Search Trees (BST)",
-      
       "slug": "binary-search-trees-bst",
-      
       "level": "Intermediate",
-      
       "description": "Understand BST operations, balancing, and searching",
-      
       "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/data-structures/Binary%20Search%20Trees%20(BST).md"
-      
     },
-    
     {
-      
       "title": "Advanced Trees",
-      
       "slug": "advanced-trees",
-      
       "level": "Advanced",
-      
       "description": "Explore AVL trees, Red-Black trees, B Trees, and Segment Trees",
-      
       "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/data-structures/Advanced%20Trees.md"
-      
     },
-    
     {
-      
       "title": "Graph Data Structures",
-      
       "slug": "graph-data-structures",
-      
       "level": "Intermediate",
-      
       "description": "Represent and manage graph-based relationships and networks",
-      
       "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/data-structures/Graph%20Data%20Structures.md"
-      
     },
-    
     {
-      
       "title": "Graph Traversal",
-      
       "slug": "graph-traversal",
-      
       "level": "Intermediate",
-      
       "description": "Learn BFS, DFS, and graph traversal techniques",
-      
       "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/data-structures/Graph%20Traversal.md"
-      
     },
-    
     {
-      
       "title": "Advanced Graph Algorithms",
-      
       "slug": "advanced-graph-algorithms",
-      
       "level": "Advanced",
-      
       "description": "Study shortest paths, MSTs, SCCs, and advanced graph algorithms",
-      
       "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/data-structures/Advanced%20Graph%20Algorithms.md"
-      
     },
-    
     {
-      
       "title": "Concurrent Data Structures",
-      
       "slug": "concurrent-data-structures",
-      
       "level": "Advanced",
-      
       "description": "Understand thread-safe and lock-free data structures",
-      
       "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/data-structures/Concurrent%20Data%20Structures.md"
-      
     },
-    
     {
-      
       "title": "Distributed Data Structures",
-      
       "slug": "distributed-data-structures",
-      
       "level": "Advanced",
-      
       "description": "Learn scalable data structures used in distributed systems",
-      
       "contentUrl": "https://raw.githubusercontent.com/pioneercoders/tutorials/master/data-structures/Distributed%20Data%20Structures.md"
-      
-    }
-    
+     }
   ]
-  
+}
+  ]
 }
